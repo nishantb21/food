@@ -1,0 +1,9 @@
+0 |roiAndLabel 9.0 5.0 241.0 211.0 1.0
+1 |roiAndLabel 4.0 6.0 524.0 329.0 1.0
+2 |roiAndLabel 42.0 26.0 1029.0 659.0 1.0
+3 |roiAndLabel 9.0 20.0 204.0 212.0 1.0
+4 |roiAndLabel 95.0 11.0 274.0 219.0 1.0
+5 |roiAndLabel 22.0 101.0 787.0 806.0 1.0
+6 |roiAndLabel 6.0 4.0 244.0 217.0 1.0
+7 |roiAndLabel 129.0 28.0 236.0 206.0 1.0
+8 |roiAndLabel 36.0 3.0 244.0 236.0 1.0

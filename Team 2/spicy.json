@@ -1,0 +1,73 @@
+{
+	"S": [
+		"SRIRACHA",
+		"SICHUAN",
+		"SESAME",
+		"SPICY",
+		"SZECHUAN"
+	],
+	"C": [
+		"CALIENTE",
+		"CHILLI",
+		"CAJUN",
+		"CHILLY",
+		"CREOLE",
+		"CHIPOTLE",
+		"CHILATE",
+		"CHILI"
+	],
+	"P": [
+		"PEPPERY",
+		"PEPPER",
+		"PAPRIKA"
+	],
+	"F": [
+		"FLAMIN",
+		"FIRE"
+	],
+	"J": [
+		"JALAPENO"
+	],
+	"H": [
+		"HOT AND SOUR",
+		"HOT WINGS",
+		"HABANERO"
+	],
+	"M": [
+		"MUSTARD"
+	],
+	"V": [
+		"VINDALOO"
+	],
+	"W": [
+		"WOT"
+	],
+	"A": [
+		"ANDHRA"
+	],
+	"T": [
+		"TAMALE",
+		"TACO"
+	],
+	"B": [
+		"BURRITO",
+		"BURNING",
+		"BURN"
+	],
+	"K": [
+		"KIMCHI"
+	],
+	"D": [],
+	"E": [],
+	"G": [],
+	"I": [],
+	"L": [],
+	"N": [],
+	"O": [],
+	"Q": [],
+	"R": [],
+	"U": [],
+	"X": [],
+	"Y": [],
+	"Z": []
+}

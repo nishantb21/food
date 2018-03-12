@@ -1,0 +1,3198 @@
+[
+	{
+		"dish_id": 1,
+		"dish_name": "Curried Green Bean Salad",
+		"description": null,
+		"overall_rating": 3.0,
+		"image_url": "https://lh5.ggpht.com/82LNJrcdbf-HLcSBMb36FH51fX4V2kd0FrU91MSdtgRPTGIWq2pofpTTRGVduMlSHvFGTGWPeKttIR173BIOTg",
+		"url": "http://capepointpress.com/curried-green-bean-salad/",
+		"ingredients": [
+			"1 pound green beans, shredded or sliced",
+			"1 medium onion, halved and sliced (half-rings)",
+			"1 large clove garlic, crushed",
+			"1 cup water",
+			"\u00be cup vinegar",
+			"3 tablespoons sugar",
+			"\u00be teaspoon salt",
+			"1\u00bd teaspoons mild curry powder",
+			"\u00bd teaspoon ground turmeric",
+			"1 tablespoon cornstarch mixed with a little cold water"
+		],
+		"directions": null,
+		"prep_time": 0,
+		"cook_time": "30 m",
+		"total_time": "30 m",
+		"query": "Curried Green Bean Salad",
+		"nutrients": {
+			"Calories": [
+				"102.77kcal",
+				"0%%"
+			],
+			"Fat": [
+				"0.15g",
+				"0%%"
+			],
+			"Carbs": [
+				"22.5g",
+				"7%"
+			],
+			"Protein": [
+				"2.71g",
+				"0%%"
+			],
+			"Cholesterol": null,
+			"Sodium": [
+				"0.45g",
+				"19%"
+			],
+			"Sugar": [
+				"13.92g",
+				"0%%"
+			],
+			"Sat_Fat": [
+				"0.02g",
+				"0%%"
+			],
+			"Dietary_Fiber": [
+				"4.31g",
+				"16%"
+			]
+		}
+	},
+	{
+		"dish_id": 2,
+		"dish_name": "Keema Aloo (Ground Beef and Potatoes)",
+		"description": null,
+		"overall_rating": 4.0,
+		"image_url": "https://lh3.googleusercontent.com/HZQYvWZNmiRyIlNNwHbtBFNqsSo-RHS-O9-NBvro49OX3TlyvQtJvc_k3Ucmd4uuyaUlBl0MlPiLn-57OXv_CCs",
+		"url": "http://allrecipes.com/recipe/231026/keema-aloo-ground-beef-and-potatoes/",
+		"ingredients": [
+			"2 tablespoons extra-virgin olive oil",
+			"1 extra-large Spanish onion, chopped",
+			"2 tablespoons water (optional)",
+			"2 pounds lean ground beef",
+			"4 cloves garlic, minced",
+			"2 tablespoons grated fresh ginger root",
+			"1 serrano chile pepper, finely chopped",
+			"2 teaspoons chopped fresh cilantro",
+			"1 tablespoon ground coriander",
+			"1 1/2 teaspoons salt",
+			"1 1/2 teaspoons ground cumin",
+			"1 teaspoon ground cayenne pepper",
+			"1 teaspoon ground turmeric",
+			"1 (28 ounce) can diced tomatoes",
+			"3 potatoes, peeled and diced",
+			"1 cup frozen green peas",
+			"1 teaspoon garam masala"
+		],
+		"directions": null,
+		"prep_time": 0,
+		"cook_time": "80 m",
+		"total_time": "80 m",
+		"query": "Keema Aloo (Ground Beef and Potatoes)",
+		"nutrients": {
+			"Calories": [
+				"292.55kcal",
+				"0%%"
+			],
+			"Fat": [
+				"9.77g",
+				"15%"
+			],
+			"Carbs": [
+				"22.42g",
+				"7%"
+			],
+			"Protein": [
+				"28.18g",
+				"0%%"
+			],
+			"Cholesterol": [
+				"0.07g",
+				"23%"
+			],
+			"Sodium": [
+				"0.57g",
+				"24%"
+			],
+			"Sugar": [
+				"5.26g",
+				"0%%"
+			],
+			"Sat_Fat": [
+				"2.89g",
+				"15%"
+			],
+			"Dietary_Fiber": [
+				"4.28g",
+				"16%"
+			]
+		}
+	},
+	{
+		"dish_id": 3,
+		"dish_name": "Roti Canai/Paratha (Indian Pancake)",
+		"description": null,
+		"overall_rating": 3.0,
+		"image_url": "https://lh3.googleusercontent.com/CGx4wVifaWZa8qg-OOrm3fiLaPKzVynLpZ0ZMY9650VC5PoCXpfbJOyg6YBTq_4wKTUnX3fXr-Xr6t1_i2quxg",
+		"url": "http://allrecipes.asia/recipe/3457/roti-canai-paratha--indian-pancake-.aspx",
+		"ingredients": [
+			"600 gm flour",
+			"200 ml warm water",
+			"1 tsp salt",
+			"a pinch of sugar",
+			"1 egg, beaten with a little water",
+			"3 1/2 tbsp ghee",
+			"Extra ghee for cooking"
+		],
+		"directions": null,
+		"prep_time": 0,
+		"cook_time": "205 m",
+		"total_time": "205 m",
+		"query": "Roti Canai/Paratha (Indian Pancake)",
+		"nutrients": {
+			"Calories": [
+				"321.56kcal",
+				"0%%"
+			],
+			"Fat": [
+				"5.75g",
+				"9%"
+			],
+			"Carbs": [
+				"57.13g",
+				"19%"
+			],
+			"Protein": [
+				"8.31g",
+				"0%%"
+			],
+			"Cholesterol": [
+				"0.03g",
+				"8%"
+			],
+			"Sodium": [
+				"0.31g",
+				"13%"
+			],
+			"Sugar": [
+				"0.13g",
+				"0%%"
+			],
+			"Sat_Fat": [
+				"0.19g",
+				"0%%"
+			],
+			"Dietary_Fiber": [
+				"2.25g",
+				"8%"
+			]
+		}
+	},
+	{
+		"dish_id": 4,
+		"dish_name": "Black Chana with Potato",
+		"description": null,
+		"overall_rating": 3.0,
+		"image_url": "https://lh3.googleusercontent.com/KfozeyBx_t-JffeRBjALMqpCeoNEEpLsk9WJqN0tmj2AFKvXht8N2A7Aptz5R_yB0tlsBuo_haCoCm8xhTO4yw",
+		"url": "http://priyakitchenette.com/2015/12/kala-chana-shorba-black-chickpeas-soup/",
+		"ingredients": [
+			"Boiled Black Chickpeas - 1 cup",
+			"Onion - 1 (finely chopped)",
+			"Tomatoes - 2 (chopped)",
+			"Grated Ginger - 1 tbsp",
+			"Turmeric Powder - \u00bc tsp",
+			"Pepper corn - 2 tsp",
+			"Cumin seeds - 1 tsp",
+			"Amchur Powder/ dry mango powder - \u00bd tsp",
+			"Vegetable Oil - 1 tbsp",
+			"Salt to taste",
+			"Cilantro/Coriander leaves for garnishing"
+		],
+		"directions": null,
+		"prep_time": 0,
+		"cook_time": "30 m",
+		"total_time": "30 m",
+		"query": "Black Chana with Potato",
+		"nutrients": {
+			"Calories": [
+				"466.36kcal",
+				"0%%"
+			],
+			"Fat": [
+				"8.42g",
+				"12%"
+			],
+			"Carbs": [
+				"72.17g",
+				"24%"
+			],
+			"Protein": [
+				"27.79g",
+				"0%%"
+			],
+			"Cholesterol": null,
+			"Sodium": [
+				"0.41g",
+				"17%"
+			],
+			"Sugar": [
+				"8.07g",
+				"0%%"
+			],
+			"Sat_Fat": [
+				"0.55g",
+				"3%"
+			],
+			"Dietary_Fiber": [
+				"33.98g",
+				"136%"
+			]
+		}
+	},
+	{
+		"dish_id": 5,
+		"dish_name": "Tomato Cucumber Kachumbar",
+		"description": null,
+		"overall_rating": 4.0,
+		"image_url": "https://lh4.ggpht.com/Rsd4QaHRb9ckTYGXsgHVHzWmNdCzz4LrriR_c5SoYZ-7gVFm2-yp2BePNhX4wbuB1WSlobbiKvgRDoJOk2IFEf4",
+		"url": "http://dietrecipesblog.com/2008/07/26/indian-kachumbar-vegetable-salad-recipe-56-calories/",
+		"ingredients": [
+			"3 large tomatoes, cut into cubes",
+			"1 large onion, chopped",
+			"1 large cucumber, chopped",
+			"2 tablespoons fresh lemon juice",
+			"1 teaspoon powdered sugar",
+			"1/2 teaspoon salt",
+			"1/2 teaspoon black pepper"
+		],
+		"directions": null,
+		"prep_time": 0,
+		"cook_time": "40 m",
+		"total_time": "40 m",
+		"query": "Tomato Cucumber Kachumbar",
+		"nutrients": {
+			"Calories": [
+				"43.48kcal",
+				"0%%"
+			],
+			"Fat": [
+				"0.0g",
+				"0%%"
+			],
+			"Carbs": [
+				"10.55g",
+				"4%"
+			],
+			"Protein": [
+				"1.96g",
+				"0%%"
+			],
+			"Cholesterol": null,
+			"Sodium": [
+				"0.3g",
+				"13%"
+			],
+			"Sugar": [
+				"6.14g",
+				"0%%"
+			],
+			"Sat_Fat": [
+				"0.0g",
+				"0%%"
+			],
+			"Dietary_Fiber": [
+				"2.25g",
+				"8%"
+			]
+		}
+	},
+	{
+		"dish_id": 6,
+		"dish_name": "Red Split Lentils (Masoor Dal)",
+		"description": null,
+		"overall_rating": 4.0,
+		"image_url": "https://lh3.googleusercontent.com/3stuZ5h9_EWkPtYoBT8gZOppyi-5UxyTwioWSeapvJoEYH_3cLNa_htpSa3Gq_zfWHPgoZuCRlBKWGYxvGld",
+		"url": "http://myindiantaste.com/chicken-with-red-lentils-recipe-murghi-aur-masoor-dal/",
+		"ingredients": [
+			"100 g red split lentils, washed and drained;",
+			"1 onion, chopped;",
+			"1 green chilli, chopped;",
+			"1 tsp ground cumin;",
+			"\u00bc tsp turmeric powder;",
+			"1 tsp ginger paste/finely chopped;",
+			"700 ml water;",
+			"700 g chicken pieces, skinned;",
+			"1 tsp salt or as per taste;",
+			"1 tsp cumin seeds;",
+			"3 garlic cloves, finelly chopped;",
+			"\u00bd tsp cayenne pepper;",
+			"\u00bc tsp red chilli powder;",
+			"2 tbsp lemon/lime juice;",
+			"1 tsp garam masala;",
+			"1 dried red chilli (optional);",
+			"few coriander/cilantro leaves to garnish;",
+			"vegetable oil."
+		],
+		"directions": null,
+		"prep_time": 0,
+		"cook_time": "90 m",
+		"total_time": "90 m",
+		"query": "Red Split Lentils (Masoor Dal)",
+		"nutrients": {
+			"Calories": [
+				"614.1kcal",
+				"0%%"
+			],
+			"Fat": [
+				"36.46g",
+				"55%"
+			],
+			"Carbs": [
+				"24.33g",
+				"8%"
+			],
+			"Protein": [
+				"46.65g",
+				"0%%"
+			],
+			"Cholesterol": [
+				"0.15g",
+				"50%"
+			],
+			"Sodium": [
+				"0.84g",
+				"35%"
+			],
+			"Sugar": [
+				"2.77g",
+				"0%%"
+			],
+			"Sat_Fat": [
+				"8.45g",
+				"40%"
+			],
+			"Dietary_Fiber": [
+				"10.73g",
+				"44%"
+			]
+		}
+	},
+	{
+		"dish_id": 7,
+		"dish_name": "Coconut Chutney",
+		"description": null,
+		"overall_rating": 4.5,
+		"image_url": "https://lh6.ggpht.com/qP2zBFLq79oT5ZxWqN6TdoMl_ld-HjiiPwjemDJuhlXLez5MqfwJ959mYXmznqSaYZZWWBmx-2ySBKeffGKx",
+		"url": "http://www.foodrepublic.com/recipes/coconut-chutney-recipe/",
+		"ingredients": [
+			"1/2 large coconut, finely grated",
+			"1/2 cup plain yogurt",
+			"1 tablespoon vegetable oil",
+			"2 small red chilis, finely chopped",
+			"1/2 teaspoon black mustard seeds"
+		],
+		"directions": null,
+		"prep_time": 0,
+		"cook_time": "25 m",
+		"total_time": "25 m",
+		"query": "Coconut Chutney",
+		"nutrients": {
+			"Calories": [
+				"225.74kcal",
+				"0%%"
+			],
+			"Fat": [
+				"20.79g",
+				"32%"
+			],
+			"Carbs": [
+				"9.05g",
+				"3%"
+			],
+			"Protein": [
+				"2.48g",
+				"0%%"
+			],
+			"Cholesterol": [
+				"0.0g",
+				"1%"
+			],
+			"Sodium": [
+				"0.02g",
+				"1%"
+			],
+			"Sugar": [
+				"4.53g",
+				"0%%"
+			],
+			"Sat_Fat": [
+				"15.74g",
+				"80%"
+			],
+			"Dietary_Fiber": [
+				"4.5g",
+				"16%"
+			]
+		}
+	},
+	{
+		"dish_id": 8,
+		"dish_name": "Tamarind Sauce Fish Curry",
+		"description": null,
+		"overall_rating": 4.0,
+		"image_url": "https://lh3.googleusercontent.com/JWL7oC-v7q6bffQe2N2lyptydaRKUJUQ8VGPKOMSmAXKU6IHWiGoahud49IK4Knrs_vOlDbcI18Qeccal__7PA",
+		"url": "http://myindiantaste.com/tamarind-king-fish-curry-king-fish-surmai-in-tamarind-sauce/",
+		"ingredients": [
+			"6 slices/fillets of king fish/surmai or other firm-fleshed fish;",
+			"1 tbsp crushed garlic or garlic paste;",
+			"1 tbsp grated ginger or ginger paste;",
+			"1 tbsp coriander powder;",
+			"1 tsp turmeric powder;",
+			"\u00bd tsp red chilli powder, more or less as per taste;",
+			"\u00bd tsp salt or as per taste;",
+			"1 onion, chopped;",
+			"1 tbsp cumin seeds;",
+			"1 tsp fennel seeds;",
+			"2 tomatoes, pureed or grated;",
+			"1 cup of water;",
+			"1 tsp tamarind pulp/tamarind paste;",
+			"few cilantro/coriander leaves, to garnish;",
+			"vegetable oil."
+		],
+		"directions": null,
+		"prep_time": 0,
+		"cook_time": "30 m",
+		"total_time": "30 m",
+		"query": "Tamarind Sauce Fish Curry",
+		"nutrients": {
+			"Calories": [
+				"120.76kcal",
+				"0%%"
+			],
+			"Fat": [
+				"7.79g",
+				"12%"
+			],
+			"Carbs": [
+				"12.49g",
+				"4%"
+			],
+			"Protein": [
+				"2.54g",
+				"0%%"
+			],
+			"Cholesterol": null,
+			"Sodium": [
+				"0.46g",
+				"19%"
+			],
+			"Sugar": [
+				"5.41g",
+				"0%%"
+			],
+			"Sat_Fat": [
+				"0.56g",
+				"3%"
+			],
+			"Dietary_Fiber": [
+				"3.61g",
+				"16%"
+			]
+		}
+	},
+	{
+		"dish_id": 9,
+		"dish_name": "Kashmiri Lamb",
+		"description": null,
+		"overall_rating": 4.0,
+		"image_url": "https://lh3.googleusercontent.com/b3MfQ9t5rtJfoKIT0nbNc5oV0VKbEhsL5_83RKeLzVEnuFNCH2D0EeFAt79luPMLQEOrOjUP1VWSP3yLnT6-",
+		"url": "http://eatsmarter.com/recipes/kashmiri-lamb-flatbread-wraps",
+		"ingredients": [
+			"1 tsp fennel seeds",
+			"1 tsp Coriander seed",
+			"1 tsp peppercorns",
+			"1 Cardamom pod",
+			"1 Cinnamon stick",
+			"1 Dried chilli pepper",
+			"6 tbsp olive oil",
+			"5 cups lamb (e. g. leg, diced)",
+			"2 onions (diced)",
+			"2 Garlic clove (diced)",
+			"1 tsp fresh Ginger root (grated)",
+			"0,875 cup lamb stock",
+			"\u00be cup ground Almond",
+			"1 cup Yogurt",
+			"4 roti breads",
+			"Coriander leaves",
+			"Pomegranate seed",
+			"roasted Coconut flakes"
+		],
+		"directions": null,
+		"prep_time": 0,
+		"cook_time": "90 m",
+		"total_time": "90 m",
+		"query": "Kashmiri Lamb",
+		"nutrients": {
+			"Calories": null,
+			"Fat": null,
+			"Carbs": null,
+			"Protein": null,
+			"Cholesterol": null,
+			"Sodium": null,
+			"Sugar": null,
+			"Sat_Fat": null
+		}
+	},
+	{
+		"dish_id": 10,
+		"dish_name": "Chicken Tikka Masala",
+		"description": null,
+		"overall_rating": 5.0,
+		"image_url": "https://lh6.ggpht.com/6J9f5AmM-4whmJCIUKQPB0yUJwep9ovPzrQpaz36Q4ehNXdx1T0iEURw1elwbq0bnxlfSQNvB7d4N8KhPqVC",
+		"url": "http://www.seriouseats.com/recipes/2012/06/chicken-tikka-masala-for-the-grill-recipe.html",
+		"ingredients": [
+			"5 pounds bone-in chicken pieces (breasts, legs, or a mix), skin removed",
+			"3 tablespoons toasted ground cumin",
+			"3 tablespoons toasted paprika",
+			"2 tablespoon toasted ground coriander seed",
+			"2 teaspoon ground turmeric",
+			"1 teaspoon cayenne pepper",
+			"12 cloves garlic, grated on the medium holes of a box grater, divided",
+			"3 tablespoons fresh ginger, grated on the medium holes of a box grater, divided",
+			"2 cups yogurt",
+			"3/4 cup fresh juice from 4 to 6 lemons, divided",
+			"Kosher salt",
+			"4 tablespoons butter or ghee",
+			"1 large onion, thinly sliced",
+			"1 (28-ounce) can whole peeled tomatoes, roughly mashed",
+			"1/2 cup roughly chopped cilantro leaves and tender stems",
+			"1 cup heavy cream"
+		],
+		"directions": null,
+		"prep_time": 0,
+		"cook_time": "80 m",
+		"total_time": "80 m",
+		"query": "Chicken Tikka Masala",
+		"nutrients": {
+			"Calories": [
+				"1379.75kcal",
+				"0%%"
+			],
+			"Fat": [
+				"102.86g",
+				"158%"
+			],
+			"Carbs": [
+				"20.99g",
+				"7%"
+			],
+			"Protein": [
+				"92.54g",
+				"0%%"
+			],
+			"Cholesterol": [
+				"0.45g",
+				"152%"
+			],
+			"Sodium": [
+				"0.61g",
+				"25%"
+			],
+			"Sugar": [
+				"8.42g",
+				"0%%"
+			],
+			"Sat_Fat": [
+				"38.94g",
+				"195%"
+			],
+			"Dietary_Fiber": [
+				"3.78g",
+				"16%"
+			]
+		}
+	},
+	{
+		"dish_id": 11,
+		"dish_name": "Naan",
+		"description": null,
+		"overall_rating": 4.0,
+		"image_url": "https://lh3.googleusercontent.com/d_p0T3nvMwb3O5WnWixJGypLOJdD3V7KWEi6zssxJYnfNImiTC0d38zzHar_4AHoxhgEV2rmWDa0VlS-4pRzmQ",
+		"url": "http://rincon-cocina.blogspot.com/2011/01/homemade-naan.html",
+		"ingredients": [
+			"1 (.25 ounce) package active dry yeast",
+			"1 cup warm water",
+			"1/4 cup white sugar",
+			"3 tablespoons milk",
+			"1 egg, beaten",
+			"2 teaspoons salt",
+			"4 1/2 cups bread flour",
+			"2 teaspoons minced garlic (optional)",
+			"1/4 cup butter, melted"
+		],
+		"directions": null,
+		"prep_time": 0,
+		"cook_time": "75 m",
+		"total_time": "75 m",
+		"query": "Naan",
+		"nutrients": {
+			"Calories": [
+				"740.48kcal",
+				"0%%"
+			],
+			"Fat": [
+				"16.27g",
+				"25%"
+			],
+			"Carbs": [
+				"127.12g",
+				"42%"
+			],
+			"Protein": [
+				"21.61g",
+				"0%%"
+			],
+			"Cholesterol": [
+				"0.08g",
+				"28%"
+			],
+			"Sodium": [
+				"1.29g",
+				"54%"
+			],
+			"Sugar": [
+				"13.43g",
+				"0%%"
+			],
+			"Sat_Fat": [
+				"7.77g",
+				"40%"
+			],
+			"Dietary_Fiber": [
+				"3.59g",
+				"16%"
+			]
+		}
+	},
+	{
+		"dish_id": 12,
+		"dish_name": "Mulligatawny Soup I",
+		"description": null,
+		"overall_rating": 4.0,
+		"image_url": "https://lh3.ggpht.com/oYt8P92ny2pp7uWZfug_y3OXmlw0Grw2ete7XQiYDC45e48hMEZm7aatpGg-hEgphkV5GUOS86f7h42344RMdHg",
+		"url": "http://iadorefood.com/recipes/indian-mulligatawny-soup/",
+		"ingredients": [
+			"1 Tablespoon of butter (or ghee, which is clarified butter)",
+			"1 medium onion, chopped",
+			"4 cloves of garlic, minced",
+			"2 Teaspoon grated fresh ginger",
+			"2 green chili peppers, chopped",
+			"1/4 Teaspoon of ground cinnamon",
+			"1/4 Teaspoon ground cloves",
+			"1 1/4 Teaspoon of ground coriander",
+			"1 1/2 Teaspoon of ground cumin",
+			"1 Teaspoon ground turmeric",
+			"4 cardamom pods, bruised",
+			"1 Teaspoon of curry powder",
+			"1 Cup of chopped carrots",
+			"1 large potato, peeled and diced",
+			"1 Cup of red lentils, rinsed and drained",
+			"8 Cup of chicken broth",
+			"2 Cup of coconut milk",
+			"2 Tablespoon of fresh cilantro, chopped"
+		],
+		"directions": null,
+		"prep_time": 0,
+		"cook_time": "45 m",
+		"total_time": "45 m",
+		"query": "Mulligatawny Soup I",
+		"nutrients": {
+			"Calories": [
+				"433.06kcal",
+				"0%%"
+			],
+			"Fat": [
+				"25.24g",
+				"38%"
+			],
+			"Carbs": [
+				"42.35g",
+				"14%"
+			],
+			"Protein": [
+				"18.54g",
+				"0%%"
+			],
+			"Cholesterol": [
+				"0.01g",
+				"2%"
+			],
+			"Sodium": [
+				"0.14g",
+				"6%"
+			],
+			"Sugar": [
+				"5.87g",
+				"0%%"
+			],
+			"Sat_Fat": [
+				"18.09g",
+				"90%"
+			],
+			"Dietary_Fiber": [
+				"15.16g",
+				"60%"
+			]
+		}
+	},
+	{
+		"dish_id": 13,
+		"dish_name": "Vegetarian Korma",
+		"description": null,
+		"overall_rating": 4.0,
+		"image_url": "https://lh3.googleusercontent.com/d-OFBih4JFafsFcGU9S-xnA72h9dnOTl2aLyv0Q-vjkDQ-tjyGPFBJB3B3gMhFoABRxHkdtDetfucyUchxFRZO8",
+		"url": "http://allrecipes.com/recipe/60598/vegetarian-korma/",
+		"ingredients": [
+			"1 1/2 tablespoons vegetable oil",
+			"1 small onion, diced",
+			"1 teaspoon minced fresh ginger root",
+			"4 cloves garlic, minced",
+			"2 potatoes, cubed",
+			"4 carrots, cubed",
+			"1 fresh jalapeno pepper, seeded and sliced",
+			"3 tablespoons ground unsalted cashews",
+			"1 (4 ounce) can tomato sauce",
+			"2 teaspoons salt",
+			"1 1/2 tablespoons curry powder",
+			"1 cup frozen green peas",
+			"1/2 green bell pepper, chopped",
+			"1/2 red bell pepper, chopped",
+			"1 cup heavy cream",
+			"1 bunch fresh cilantro for garnish"
+		],
+		"directions": null,
+		"prep_time": 0,
+		"cook_time": "55 m",
+		"total_time": "55 m",
+		"query": "Vegetarian Korma",
+		"nutrients": {
+			"Calories": [
+				"531.2kcal",
+				"0%%"
+			],
+			"Fat": [
+				"36.81g",
+				"57%"
+			],
+			"Carbs": [
+				"46.26g",
+				"15%"
+			],
+			"Protein": [
+				"10.19g",
+				"0%%"
+			],
+			"Cholesterol": [
+				"0.1g",
+				"33%"
+			],
+			"Sodium": [
+				"1.45g",
+				"60%"
+			],
+			"Sugar": [
+				"11.72g",
+				"0%%"
+			],
+			"Sat_Fat": [
+				"17.83g",
+				"90%"
+			],
+			"Dietary_Fiber": [
+				"11.33g",
+				"44%"
+			]
+		}
+	},
+	{
+		"dish_id": 14,
+		"dish_name": "Curry Stand Chicken Tikka Masala Sauce",
+		"description": null,
+		"overall_rating": 4.0,
+		"image_url": "https://lh3.googleusercontent.com/aLgSXUxx7sV7LpGNrsN0G0a3NJ13cDxFCwbLHX29JsGwL_LwiVlt-G7XtTe7b89OcYpbxTsia-jzvJINqSfidT8",
+		"url": "http://allrecipes.com/recipe/228293/curry-stand-chicken-tikka-masala-sauce/",
+		"ingredients": [
+			"2 tablespoons ghee (clarified butter)",
+			"1 onion, finely chopped",
+			"4 cloves garlic, minced",
+			"1 tablespoon ground cumin",
+			"1 teaspoon salt",
+			"1 teaspoon ground ginger",
+			"1 teaspoon cayenne pepper",
+			"1/2 teaspoon ground cinnamon",
+			"1/4 teaspoon ground turmeric",
+			"1 (14 ounce) can tomato sauce",
+			"1 cup heavy whipping cream",
+			"2 teaspoons paprika",
+			"1 tablespoon white sugar",
+			"1 tablespoon vegetable oil",
+			"4 skinless, boneless chicken breast halves, cut into bite-size pieces",
+			"1/2 teaspoon curry powder",
+			"1/2 teaspoon salt, or to taste (optional)",
+			"1 teaspoon white sugar, or to taste (optional)"
+		],
+		"directions": null,
+		"prep_time": 0,
+		"cook_time": "80 m",
+		"total_time": "80 m",
+		"query": "Curry Stand Chicken Tikka Masala Sauce",
+		"nutrients": {
+			"Calories": [
+				"275.16kcal",
+				"0%%"
+			],
+			"Fat": [
+				"22.72g",
+				"35%"
+			],
+			"Carbs": [
+				"17.17g",
+				"6%"
+			],
+			"Protein": [
+				"2.82g",
+				"0%%"
+			],
+			"Cholesterol": [
+				"0.06g",
+				"18%"
+			],
+			"Sodium": [
+				"0.88g",
+				"37%"
+			],
+			"Sugar": [
+				"9.66g",
+				"0%%"
+			],
+			"Sat_Fat": [
+				"10.0g",
+				"50%"
+			],
+			"Dietary_Fiber": [
+				"3.1g",
+				"12%"
+			]
+		}
+	},
+	{
+		"dish_id": 15,
+		"dish_name": "Indian Chicken Curry II",
+		"description": null,
+		"overall_rating": 4.3,
+		"image_url": "https://lh4.ggpht.com/xBxf4QP4foHnrpQ4ubXNapYypRWL4oEPrddhX8Iy_e38fLrWR8kPMqI65UmHXOraRtK9sBDswt2sCnzG5wZQ",
+		"url": "http://allrecipes.com/recipe/46822/indian-chicken-curry-ii/",
+		"ingredients": [
+			"3 tablespoons olive oil",
+			"1 small onion, chopped",
+			"2 cloves garlic, minced",
+			"3 tablespoons curry powder",
+			"1 teaspoon ground cinnamon",
+			"1 teaspoon paprika",
+			"1 bay leaf",
+			"1/2 teaspoon grated fresh ginger root",
+			"1/2 teaspoon white sugar",
+			"salt to taste",
+			"2 skinless, boneless chicken breast halves - cut into bite-size pieces",
+			"1 tablespoon tomato paste",
+			"1 cup plain yogurt",
+			"3/4 cup coconut milk",
+			"1/2 lemon, juiced",
+			"1/2 teaspoon cayenne pepper"
+		],
+		"directions": null,
+		"prep_time": 0,
+		"cook_time": "45 m",
+		"total_time": "45 m",
+		"query": "Indian Chicken Curry II",
+		"nutrients": {
+			"Calories": [
+				"217.29kcal",
+				"0%%"
+			],
+			"Fat": [
+				"18.86g",
+				"29%"
+			],
+			"Carbs": [
+				"12.3g",
+				"4%"
+			],
+			"Protein": [
+				"3.34g",
+				"0%%"
+			],
+			"Cholesterol": [
+				"0.01g",
+				"2%"
+			],
+			"Sodium": [
+				"0.21g",
+				"9%"
+			],
+			"Sugar": [
+				"5.43g",
+				"0%%"
+			],
+			"Sat_Fat": [
+				"9.77g",
+				"50%"
+			],
+			"Dietary_Fiber": [
+				"3.63g",
+				"16%"
+			]
+		}
+	},
+	{
+		"dish_id": 16,
+		"dish_name": "Chicken Makhani (Indian Butter Chicken)",
+		"description": null,
+		"overall_rating": 4.8,
+		"image_url": "https://lh5.ggpht.com/pJfIhUy9YcaGtZdg4FLK30Ui51FUmVElqxDvAbw9XmmVl_CPQS5U7RrWCIDkWDQzv_TmmWXX2Fe4cxZXAPPQzQ",
+		"url": "http://bakedbree.com/butter-chicken",
+		"ingredients": [
+			"1 onion chopped",
+			"2 Tablespoons freshly grated ginger",
+			"2 cloves minced garlic",
+			"1 jalapeno, seeded and minced (I used half, the kids were eating this too)",
+			"1 Tablespoon olive oil",
+			"2 teaspoon garam masala",
+			"1 teaspoon chili powder",
+			"1 teaspoon ground cardamom",
+			"1/2 teaspoon ground coriander",
+			"1 (6-ounce) can tomato paste",
+			"2 1/2 cups chicken broth",
+			"1/2 cup heavy cream",
+			"2 bay leaves",
+			"1 1/2 pounds boneless, skinless chicken breast cut into small cubes",
+			"1/2 teaspoon freshly grated pepper",
+			"1 teaspoon salt",
+			"1/4 cup butter",
+			"lime wedges",
+			"chopped cilantro",
+			"cooked Basmati rice (cook according to package directions and set aside)"
+		],
+		"directions": null,
+		"prep_time": 0,
+		"cook_time": "60 m",
+		"total_time": "60 m",
+		"query": "Chicken Makhani (Indian Butter Chicken)",
+		"nutrients": {
+			"Calories": [
+				"600.45kcal",
+				"0%%"
+			],
+			"Fat": [
+				"35.52g",
+				"55%"
+			],
+			"Carbs": [
+				"31.94g",
+				"11%"
+			],
+			"Protein": [
+				"43.61g",
+				"0%%"
+			],
+			"Cholesterol": [
+				"0.19g",
+				"63%"
+			],
+			"Sodium": [
+				"1.27g",
+				"53%"
+			],
+			"Sugar": [
+				"7.09g",
+				"0%%"
+			],
+			"Sat_Fat": [
+				"17.77g",
+				"90%"
+			],
+			"Dietary_Fiber": [
+				"4.97g",
+				"20%"
+			]
+		}
+	},
+	{
+		"dish_id": 17,
+		"dish_name": "Red Lentil Curry",
+		"description": null,
+		"overall_rating": 4.0,
+		"image_url": "https://lh3.googleusercontent.com/DRHcjyxStrIZ3Adglk8Gs7-0xTgPo7_8VVMOqUtGQXfwCsZMcdhEVMOogI8A2jKTYc6ZFtpTcd5GoHX19FYdXoc",
+		"url": "http://allrecipes.com/recipe/16641/red-lentil-curry/",
+		"ingredients": [
+			"2 cups red lentils",
+			"1 large onion, diced",
+			"1 tablespoon vegetable oil",
+			"2 tablespoons curry paste",
+			"1 tablespoon curry powder",
+			"1 teaspoon ground turmeric",
+			"1 teaspoon ground cumin",
+			"1 teaspoon chili powder",
+			"1 teaspoon salt",
+			"1 teaspoon white sugar",
+			"1 teaspoon minced garlic",
+			"1 teaspoon minced fresh ginger",
+			"1 (14.25 ounce) can tomato puree"
+		],
+		"directions": null,
+		"prep_time": 0,
+		"cook_time": "40 m",
+		"total_time": "40 m",
+		"query": "Red Lentil Curry",
+		"nutrients": {
+			"Calories": [
+				"219.68kcal",
+				"0%%"
+			],
+			"Fat": [
+				"2.44g",
+				"4%"
+			],
+			"Carbs": [
+				"36.79g",
+				"12%"
+			],
+			"Protein": [
+				"13.86g",
+				"0%%"
+			],
+			"Cholesterol": null,
+			"Sodium": [
+				"0.5g",
+				"21%"
+			],
+			"Sugar": [
+				"5.14g",
+				"0%%"
+			],
+			"Sat_Fat": [
+				"0.16g",
+				"0%%"
+			],
+			"Dietary_Fiber": [
+				"16.67g",
+				"68%"
+			]
+		}
+	},
+	{
+		"dish_id": 18,
+		"dish_name": "Easy Indian Butter Chicken",
+		"description": null,
+		"overall_rating": 4.0,
+		"image_url": "https://lh3.googleusercontent.com/9UfdA25THCpGK_vpKyYI1KGHDIfZnp6m2Sz9ETLkoPjcJk-h0kHDDcm3Igqi0wrT94Um1hHkwM6kcsBZvymJ",
+		"url": "http://www.simplehealthykitchen.com/crockpot-indian-butter-chicken-easy-healthy/",
+		"ingredients": [
+			"2\u00bd- 3 lbs. boneless skinless chicken, cut into 2\" pieces (breasts or thighs) (I prefer thighs for this dish but either will work)",
+			"1 onion diced",
+			"3 cloves garlic, chopped",
+			"2 tsp curry",
+			"2 tsp garam masala (found in most grocery store's spice section)",
+			"\u00bd tsp cayenne powder",
+			"\u00bd tsp ground ginger (or 1\"inch knob fresh ginger, minced)",
+			"1 14 oz. can light coconut milk",
+			"1 6 oz. can tomato paste",
+			"\u00bd cup low-fat plain yogurt (optional)",
+			"1 head cauliflower, cut into florets- for cauliflower \"rice\" (optional) you could also serve over jasmine white or brown rice.",
+			"cilantro, chopped (for garnish) (optional)",
+			"lime (optional)"
+		],
+		"directions": null,
+		"prep_time": 0,
+		"cook_time": "190 m",
+		"total_time": "190 m",
+		"query": "Easy Indian Butter Chicken",
+		"nutrients": {
+			"Calories": [
+				"590.27kcal",
+				"0%%"
+			],
+			"Fat": [
+				"27.57g",
+				"43%"
+			],
+			"Carbs": [
+				"25.68g",
+				"9%"
+			],
+			"Protein": [
+				"64.84g",
+				"0%%"
+			],
+			"Cholesterol": [
+				"0.17g",
+				"58%"
+			],
+			"Sodium": [
+				"0.66g",
+				"28%"
+			],
+			"Sugar": [
+				"12.25g",
+				"0%%"
+			],
+			"Sat_Fat": [
+				"19.43g",
+				"95%"
+			],
+			"Dietary_Fiber": [
+				"7.3g",
+				"28%"
+			]
+		}
+	},
+	{
+		"dish_id": 19,
+		"dish_name": "Spicy Vegan Potato Curry",
+		"description": null,
+		"overall_rating": 4.0,
+		"image_url": "https://lh3.googleusercontent.com/vnUxUCGWqj9sOkEXbg4JIpHxXgMzjKo08XhjRjmvcasGSp8rUaeAt8SypTezAUV-sRgGXsnFW8wc2m3_eQezrQ",
+		"url": "http://allrecipes.com/recipe/165190/spicy-vegan-potato-curry/",
+		"ingredients": [
+			"4 potatoes, peeled and cubed",
+			"2 tablespoons vegetable oil",
+			"1 yellow onion, diced",
+			"3 cloves garlic, minced",
+			"2 teaspoons ground cumin",
+			"1 1/2 teaspoons cayenne pepper",
+			"4 teaspoons curry powder",
+			"4 teaspoons garam masala",
+			"1 (1 inch) piece fresh ginger root, peeled and minced",
+			"2 teaspoons salt",
+			"1 (14.5 ounce) can diced tomatoes",
+			"1 (15 ounce) can garbanzo beans (chickpeas), rinsed and drained",
+			"1 (15 ounce) can peas, drained",
+			"1 (14 ounce) can coconut milk"
+		],
+		"directions": null,
+		"prep_time": 0,
+		"cook_time": "60 m",
+		"total_time": "60 m",
+		"query": "Spicy Vegan Potato Curry",
+		"nutrients": {
+			"Calories": [
+				"641.28kcal",
+				"0%%"
+			],
+			"Fat": [
+				"25.31g",
+				"38%"
+			],
+			"Carbs": [
+				"87.06g",
+				"29%"
+			],
+			"Protein": [
+				"22.69g",
+				"0%%"
+			],
+			"Cholesterol": null,
+			"Sodium": [
+				"0.83g",
+				"35%"
+			],
+			"Sugar": [
+				"18.42g",
+				"0%%"
+			],
+			"Sat_Fat": [
+				"15.0g",
+				"75%"
+			],
+			"Dietary_Fiber": [
+				"21.97g",
+				"88%"
+			]
+		}
+	},
+	{
+		"dish_id": 20,
+		"dish_name": "Indian Chicken Curry (Murgh Kari)",
+		"description": null,
+		"overall_rating": 4.0,
+		"image_url": "https://lh3.googleusercontent.com/f3T1RSgePNbIIUkSS9tmqCDCYwIhrh6TraZbMjeVa-lLCNeZT85fafGO0L_Grcx0ueX7D5xnvGGVpGjWb4Hn",
+		"url": "http://allrecipes.com/recipe/212721/indian-chicken-curry-murgh-kari/",
+		"ingredients": [
+			"2 pounds skinless, boneless chicken breast halves",
+			"2 teaspoons salt",
+			"1/2 cup cooking oil",
+			"1 1/2 cups chopped onion",
+			"1 tablespoon minced garlic",
+			"1 1/2 teaspoons minced fresh ginger root",
+			"1 tablespoon curry powder",
+			"1 teaspoon ground cumin",
+			"1 teaspoon ground turmeric",
+			"1 teaspoon ground coriander",
+			"1 teaspoon cayenne pepper",
+			"1 tablespoon water",
+			"1 (15 ounce) can crushed tomatoes",
+			"1 cup plain yogurt",
+			"1 tablespoon chopped fresh cilantro",
+			"1 teaspoon salt",
+			"1/2 cup water",
+			"1 teaspoon garam masala",
+			"1 tablespoon chopped fresh cilantro",
+			"1 tablespoon fresh lemon juice"
+		],
+		"directions": null,
+		"prep_time": 0,
+		"cook_time": "60 m",
+		"total_time": "60 m",
+		"query": "Indian Chicken Curry (Murgh Kari)",
+		"nutrients": {
+			"Calories": [
+				"236.37kcal",
+				"0%%"
+			],
+			"Fat": [
+				"19.82g",
+				"31%"
+			],
+			"Carbs": [
+				"12.93g",
+				"4%"
+			],
+			"Protein": [
+				"3.49g",
+				"0%%"
+			],
+			"Cholesterol": [
+				"0.01g",
+				"2%"
+			],
+			"Sodium": [
+				"1.3g",
+				"54%"
+			],
+			"Sugar": [
+				"3.81g",
+				"0%%"
+			],
+			"Sat_Fat": [
+				"2.15g",
+				"10%"
+			],
+			"Dietary_Fiber": [
+				"3.04g",
+				"12%"
+			]
+		}
+	},
+	{
+		"dish_id": 21,
+		"dish_name": "Carrot Rice",
+		"description": null,
+		"overall_rating": 4.4,
+		"image_url": "https://lh4.ggpht.com/EVS8EgERbcXV-ZbqFYGREPhDMxd20Qiera2EROI0dJnU_Pz8wgY_K4uZJEddq88buTTntSIkCW02igXPJzFypBw",
+		"url": "https://www.yummly.com/private/recipe/Herbed-carrot-rice-304239?layout=prep-steps",
+		"ingredients": [
+			"1 Tbsp. vegetable oil",
+			"1 cup regular or converted rice",
+			"2 cups water",
+			"1 Tbsp. Knorr\u00ae Chicken flavor Bouillon",
+			"1 cup frozen sliced carrots, thawed",
+			"1 tsp. dried oregano leaves, crushed"
+		],
+		"directions": null,
+		"prep_time": 0,
+		"cook_time": "30 m",
+		"total_time": "30 m",
+		"query": "Carrot Rice",
+		"nutrients": {
+			"Calories": null,
+			"Fat": null,
+			"Carbs": null,
+			"Protein": null,
+			"Cholesterol": null,
+			"Sodium": null,
+			"Sugar": null,
+			"Sat_Fat": null
+		}
+	},
+	{
+		"dish_id": 22,
+		"dish_name": "Chickpea Curry",
+		"description": null,
+		"overall_rating": 4.0,
+		"image_url": "https://lh3.googleusercontent.com/bVZegFohgudFNT9auqYv9QS3Qh9rWeRiOCWfwFggGuQUziQoK_TpJx25xJLcmUN7PL8X5HToTDD9BiP7JeEO7g",
+		"url": "https://www.acommunaltable.com/cauliflower-and-chickpea-curry/",
+		"ingredients": [
+			"2 Tablespoons canola oil",
+			"2 onions, cut into 1/2 inch dice",
+			"5 teaspoons curry powder",
+			"1 medium head cauliflower, broken into small florets",
+			"1 package Melissa's steamed garbanzo beans, or one 15 oz. can garbanzo beans, rinsed and drained",
+			"two 10 oz. cans diced tomatoes with green chiles",
+			"one 14 oz. can reduced fat unsweetened coconut milk",
+			"1/2 cup chopped fresh cilantro",
+			"salt",
+			"pepper",
+			"cayenne pepper"
+		],
+		"directions": null,
+		"prep_time": 0,
+		"cook_time": "35 m",
+		"total_time": "35 m",
+		"query": "Chickpea Curry",
+		"nutrients": {
+			"Calories": [
+				"264.01kcal",
+				"0%%"
+			],
+			"Fat": [
+				"21.01g",
+				"32%"
+			],
+			"Carbs": [
+				"19.05g",
+				"6%"
+			],
+			"Protein": [
+				"5.23g",
+				"0%%"
+			],
+			"Cholesterol": null,
+			"Sodium": [
+				"0.18g",
+				"8%"
+			],
+			"Sugar": [
+				"8.5g",
+				"0%%"
+			],
+			"Sat_Fat": [
+				"14.31g",
+				"70%"
+			],
+			"Dietary_Fiber": [
+				"6.48g",
+				"24%"
+			]
+		}
+	},
+	{
+		"dish_id": 23,
+		"dish_name": "Slow Cooker Butter Chicken",
+		"description": null,
+		"overall_rating": 4.0,
+		"image_url": "https://lh3.googleusercontent.com/Gm5LqQcWTC7gu5bZ6csAvl7sZwpJgGQp6aejEv_qMj6gmOnk99sgLjXertHlo4iMhv4d45IuJmCTgmqMjTwXtA",
+		"url": "http://www.manilaspoon.com/2017/03/slow-cooker-butter-chicken.html",
+		"ingredients": [
+			"1 medium Onion, chopped",
+			"2.2 pounds (1 kilo) skinless but bone-in chicken thighs ((boneless are fine but they tend to fall apart)",
+			"3 teaspoons ground Cinnamon",
+			"2 teaspoons each red Curry powder, ground Cumin and ground Paprika",
+			"1 teaspoon ground Ginger",
+			"1 to 1 1/2 teaspoons Salt, or to taste",
+			"Ground Pepper, to taste",
+			"2 Tablespoons brown Sugar",
+			"1/2 cup plain Yogurt or (1/2 to 1 cup heavy cream or coconut milk or adjust to taste)",
+			"Freshly squeezed lemon juice (half a lemon or more to taste)"
+		],
+		"directions": null,
+		"prep_time": 0,
+		"cook_time": "430 m",
+		"total_time": "430 m",
+		"query": "Slow Cooker Butter Chicken",
+		"nutrients": {
+			"Calories": [
+				"303.69kcal",
+				"0%%"
+			],
+			"Fat": [
+				"17.79g",
+				"28%"
+			],
+			"Carbs": [
+				"7.57g",
+				"3%"
+			],
+			"Protein": [
+				"26.65g",
+				"0%%"
+			],
+			"Cholesterol": [
+				"0.12g",
+				"40%"
+			],
+			"Sodium": [
+				"0.63g",
+				"26%"
+			],
+			"Sugar": [
+				"4.16g",
+				"0%%"
+			],
+			"Sat_Fat": [
+				"4.66g",
+				"23%"
+			],
+			"Dietary_Fiber": [
+				"1.52g",
+				"8%"
+			]
+		}
+	},
+	{
+		"dish_id": 24,
+		"dish_name": "Baingan Bharta (Eggplant Curry)",
+		"description": null,
+		"overall_rating": 4.4,
+		"image_url": "https://lh6.ggpht.com/p0XoZ0x-I4qzSmy7kIjh_7Q0ZaFUKk3uhXTSiHIiTHDGBmhh-DY5BsWP4_K9gLO4m4_TwX1pDU_ESOZIWla14w",
+		"url": "http://allrecipes.com/recipe/47564/baingan-bharta-eggplant-curry/",
+		"ingredients": [
+			"1 large eggplant",
+			"2 tablespoons vegetable oil",
+			"1 teaspoon cumin seeds",
+			"1 medium onion, thinly sliced",
+			"1 tablespoon ginger garlic paste",
+			"1 tablespoon curry powder",
+			"1 tomato, diced",
+			"1/2 cup plain yogurt",
+			"1 fresh jalapeno chile pepper, finely chopped",
+			"1 teaspoon salt",
+			"1/4 bunch cilantro, finely chopped"
+		],
+		"directions": null,
+		"prep_time": 0,
+		"cook_time": "60 m",
+		"total_time": "60 m",
+		"query": "Baingan Bharta (Eggplant Curry)",
+		"nutrients": {
+			"Calories": [
+				"152.02kcal",
+				"0%%"
+			],
+			"Fat": [
+				"8.88g",
+				"14%"
+			],
+			"Carbs": [
+				"16.03g",
+				"5%"
+			],
+			"Protein": [
+				"4.22g",
+				"0%%"
+			],
+			"Cholesterol": [
+				"0.01g",
+				"2%"
+			],
+			"Sodium": [
+				"0.66g",
+				"28%"
+			],
+			"Sugar": [
+				"6.39g",
+				"0%%"
+			],
+			"Sat_Fat": [
+				"1.36g",
+				"8%"
+			],
+			"Dietary_Fiber": [
+				"5.62g",
+				"24%"
+			]
+		}
+	},
+	{
+		"dish_id": 25,
+		"dish_name": "Aloo Phujia",
+		"description": null,
+		"overall_rating": 4.5,
+		"image_url": "https://lh6.ggpht.com/_iwAVdhMz00mZ3xmcpaAsBLvLtdHcFpkfe2Iyr6vrZm1XlGee-1CqH7gyvxfHMIif7VbWLvVqDKjvY2QjD229Pg",
+		"url": "http://allrecipes.com/recipe/14035/aloo-phujia/",
+		"ingredients": [
+			"1 onion, chopped",
+			"1/4 cup vegetable oil",
+			"1 pound potatoes, peeled and cubed",
+			"1 teaspoon salt",
+			"1/2 teaspoon cayenne pepper",
+			"1/2 teaspoon ground turmeric",
+			"1/4 teaspoon ground cumin",
+			"2 tomatoes, chopped"
+		],
+		"directions": null,
+		"prep_time": 0,
+		"cook_time": "30 m",
+		"total_time": "30 m",
+		"query": "Aloo Phujia",
+		"nutrients": {
+			"Calories": [
+				"178.19kcal",
+				"0%%"
+			],
+			"Fat": [
+				"10.96g",
+				"17%"
+			],
+			"Carbs": [
+				"18.76g",
+				"6%"
+			],
+			"Protein": [
+				"2.58g",
+				"0%%"
+			],
+			"Cholesterol": null,
+			"Sodium": [
+				"0.48g",
+				"20%"
+			],
+			"Sugar": [
+				"3.29g",
+				"0%%"
+			],
+			"Sat_Fat": [
+				"0.78g",
+				"5%"
+			],
+			"Dietary_Fiber": [
+				"2.85g",
+				"12%"
+			]
+		}
+	},
+	{
+		"dish_id": 26,
+		"dish_name": "Indian Tandoori Chicken",
+		"description": null,
+		"overall_rating": 4.5,
+		"image_url": "https://lh4.ggpht.com/AMod_fk1OfbA1HXGhryQZa-On2RIOe3N0fgZGwNSTXPWLRK3EG3SuKD8lzbgakgcEFznJ7vtT2pDBAEenrNSEg",
+		"url": "http://www.davidlebovitz.com/tandoori-chicken/",
+		"ingredients": [
+			"1/8 teaspoon saffron powder, or 1/4 teaspoon saffron threads (see Note)",
+			"1/8 teaspoon saffron powder, or 1/4 teaspoon saffron threads (see Note)",
+			"1/8 teaspoon saffron powder, or 1/4 teaspoon saffron threads (see Note)",
+			"1 tablespoon boiling water",
+			"4 skinless chicken thighs",
+			"4 skinless chicken legs",
+			"3/4 teaspoon coarse salt",
+			"1 teaspoon ground cumin",
+			"1 teaspoon ground coriander",
+			"1 teaspoon ground cinnamon",
+			"1/2 teaspoon paprika (I used pimente d'Espelette)",
+			"1/2 teaspoon turmeric",
+			"1 to 1 1/2 teaspoons chili powder, depending on how hot you want it",
+			"10 turns fresh ground black pepper",
+			"1 cup whole milk plain yogurt",
+			"juice of one fresh lime",
+			"1 tablespoon finely-minced fresh ginger",
+			"2 cloves garlic, peeled and finely minced"
+		],
+		"directions": null,
+		"prep_time": 0,
+		"cook_time": null,
+		"total_time": null,
+		"query": "Indian Tandoori Chicken",
+		"nutrients": {
+			"Calories": [
+				"880.94kcal",
+				"0%%"
+			],
+			"Fat": [
+				"58.02g",
+				"89%"
+			],
+			"Carbs": [
+				"4.59g",
+				"2%"
+			],
+			"Protein": [
+				"77.64g",
+				"0%%"
+			],
+			"Cholesterol": [
+				"0.36g",
+				"122%"
+			],
+			"Sodium": [
+				"0.72g",
+				"30%"
+			],
+			"Sugar": [
+				"2.59g",
+				"0%%"
+			],
+			"Sat_Fat": [
+				"15.46g",
+				"75%"
+			],
+			"Dietary_Fiber": [
+				"0.9g",
+				"4%"
+			]
+		}
+	},
+	{
+		"dish_id": 27,
+		"dish_name": "Grilled Chicken Thighs Tandoori",
+		"description": null,
+		"overall_rating": 4.0,
+		"image_url": "https://lh6.ggpht.com/aWogA7s9j-AjuP7m6QERQqEnabib0lV79v3-qGJomfL8uid22XWCBADlZjdQ75NwV4A8oS3hjUki92qpVKjG",
+		"url": "http://thegingeredwhisk.yummly.com/2014/05/grilled-tandoori-chicken.html",
+		"ingredients": [
+			"1 tsp olive oil",
+			"2 tsp hungarian sweet paprika",
+			"3/4 tsp cumin",
+			"3/4 tsp ground coriander",
+			"1 tsp garam masala",
+			"1/2 tsp ground tumeric",
+			"1/2 tsp ground red pepper",
+			"1 cup minced onion",
+			"1/4 cup minced ginger",
+			"4 garlic cloves, minced",
+			"1/2 cup plain greek yogurt",
+			"1 TBSP lemon juice",
+			"1 tsp salt",
+			"1 pound boneless, skinless chicken thighs",
+			"1 cups plain greek yogurt",
+			"1 TBSP lemon juice",
+			"1/4 tsp cumin",
+			"1/4 tsp coriander",
+			"1/8 tsp salt"
+		],
+		"directions": null,
+		"prep_time": 0,
+		"cook_time": "35 m",
+		"total_time": "35 m",
+		"query": "Grilled Chicken Thighs Tandoori",
+		"nutrients": {
+			"Calories": [
+				"283.18kcal",
+				"0%%"
+			],
+			"Fat": [
+				"18.56g",
+				"29%"
+			],
+			"Carbs": [
+				"7.43g",
+				"2%"
+			],
+			"Protein": [
+				"20.25g",
+				"0%%"
+			],
+			"Cholesterol": [
+				"0.1g",
+				"32%"
+			],
+			"Sodium": [
+				"0.75g",
+				"31%"
+			],
+			"Sugar": [
+				"1.96g",
+				"0%%"
+			],
+			"Sat_Fat": [
+				"4.74g",
+				"23%"
+			],
+			"Dietary_Fiber": [
+				"1.48g",
+				"4%"
+			]
+		}
+	},
+	{
+		"dish_id": 28,
+		"dish_name": "Indian Style Basmati Rice",
+		"description": null,
+		"overall_rating": 4.0,
+		"image_url": "https://lh3.googleusercontent.com/RjOQLMYRmJkG2mx5XhiD5sVyw23RiqkjcRkO5BabiVeY9InnS2OWObbJwTJERJsNpoHLyNoDW4yABfVI85aGjw",
+		"url": "http://www.goodlifeeats.com/indian-butter-chicken-with-basmati-rice/",
+		"ingredients": [
+			"1 onion (1/2 lb.), peeled and chopped",
+			"2 tablespoons fresh ginger, finely chopped",
+			"2 cloves garlic, minced",
+			"1 fresh jalape\u00f1o, seeded, and chopped",
+			"1 tablespoon olive or canola oil",
+			"2 teaspoons garam masala",
+			"1 teaspoon chili powder",
+			"1 teaspoon cardamom",
+			"1/2 teaspoon coriander",
+			"1 can (6 oz.) tomato paste",
+			"2 1/2 cups chicken broth",
+			"1/2 cup half and half or heavy cream",
+			"1/4 teaspoon crushed bay leaves",
+			"1 1/2 pounds boneless, skinless chicken breasts, cut into 3/4-inch chunks",
+			"1/2 teaspoon coarse-ground black pepper",
+			"1 teaspoon salt",
+			"1/4 cup (1/8 lb.) butter",
+			"2 cups basmati rice, uncooked",
+			"Lime wedges",
+			"Fresh cilantro, chopped"
+		],
+		"directions": null,
+		"prep_time": 0,
+		"cook_time": "55 m",
+		"total_time": "55 m",
+		"query": "Indian Style Basmati Rice",
+		"nutrients": {
+			"Calories": [
+				"880.04kcal",
+				"0%%"
+			],
+			"Fat": [
+				"36.13g",
+				"55%"
+			],
+			"Carbs": [
+				"93.2g",
+				"31%"
+			],
+			"Protein": [
+				"48.86g",
+				"0%%"
+			],
+			"Cholesterol": [
+				"0.19g",
+				"63%"
+			],
+			"Sodium": [
+				"1.28g",
+				"53%"
+			],
+			"Sugar": [
+				"7.08g",
+				"0%%"
+			],
+			"Sat_Fat": [
+				"17.74g",
+				"90%"
+			],
+			"Dietary_Fiber": [
+				"5.1g",
+				"20%"
+			]
+		}
+	},
+	{
+		"dish_id": 29,
+		"dish_name": "Chicken Korma II",
+		"description": null,
+		"overall_rating": 5.0,
+		"image_url": "https://lh5.ggpht.com/Wcqgess8f58AC1GBe6G_ESKcscEkqX_ynuiwj6R1Ay6xuO1Dr6eRncgqQqlbY96Wa7MD7SBKLiYugZcyKZagjw",
+		"url": "http://allrecipes.com/recipe/68473/chicken-korma-ii/",
+		"ingredients": [
+			"1/4 cup cashew halves",
+			"1/4 cup boiling water",
+			"3 cloves garlic, peeled",
+			"1 (1/2 inch) piece fresh ginger root, peeled and chopped",
+			"3 tablespoons vegetable oil",
+			"2 bay leaves, crumbled",
+			"1 large onion, minced",
+			"1 teaspoon ground coriander",
+			"1 teaspoon garam masala",
+			"1 teaspoon ground cumin",
+			"1 teaspoon ground turmeric",
+			"1 teaspoon chili powder",
+			"3 skinless, boneless chicken breast halves - diced",
+			"1/4 cup tomato sauce",
+			"1 cup chicken broth",
+			"1/2 cup heavy cream",
+			"1/2 cup plain yogurt",
+			"1 teaspoon cornstarch, mixed with equal parts water"
+		],
+		"directions": null,
+		"prep_time": 0,
+		"cook_time": "60 m",
+		"total_time": "60 m",
+		"query": "Chicken Korma II",
+		"nutrients": {
+			"Calories": [
+				"362.57kcal",
+				"0%%"
+			],
+			"Fat": [
+				"32.24g",
+				"49%"
+			],
+			"Carbs": [
+				"15.43g",
+				"5%"
+			],
+			"Protein": [
+				"6.5g",
+				"0%%"
+			],
+			"Cholesterol": [
+				"0.05g",
+				"18%"
+			],
+			"Sodium": [
+				"0.12g",
+				"5%"
+			],
+			"Sugar": [
+				"5.06g",
+				"0%%"
+			],
+			"Sat_Fat": [
+				"10.97g",
+				"55%"
+			],
+			"Dietary_Fiber": [
+				"2.34g",
+				"8%"
+			]
+		}
+	},
+	{
+		"dish_id": 30,
+		"dish_name": "Indian Tomato Chicken",
+		"description": null,
+		"overall_rating": 4.0,
+		"image_url": "https://lh3.googleusercontent.com/sWtSodT_kx4GBqXB31sVBOYDs9bVDHfCL3H4ZJKPzTvJh4qwdgodP1r3pjB9mxWydj-2Cpv0Y5aKD0yNlOB4nQ",
+		"url": "http://thekitchenpaper.com/indian-butter-chicken/",
+		"ingredients": [
+			"6 tablespoons butter, divided",
+			"2 lbs chicken breasts, cut into 1\" chunks",
+			"1 yellow onion, diced",
+			"3 garlic cloves, minced",
+			"3 tsp garam masala",
+			"1 Tbsp fresh grated ginger",
+			"1 tsp chili powder",
+			"1 tsp ground cumin",
+			"\u00bd tsp cayenne pepper",
+			"1\u00bd cups tomato sauce (or one 14 oz can would work)",
+			"2 cups cream*",
+			"salt & pepper",
+			"salt & pepper",
+			"lime & cilantro, for garnish",
+			"lime & cilantro, for garnish",
+			"naan & rice for serving",
+			"naan & rice for serving"
+		],
+		"directions": null,
+		"prep_time": 0,
+		"cook_time": "30 m",
+		"total_time": "30 m",
+		"query": "Indian Tomato Chicken",
+		"nutrients": {
+			"Calories": [
+				"891.12kcal",
+				"0%%"
+			],
+			"Fat": [
+				"56.38g",
+				"86%"
+			],
+			"Carbs": [
+				"42.56g",
+				"14%"
+			],
+			"Protein": [
+				"57.33g",
+				"0%%"
+			],
+			"Cholesterol": [
+				"0.29g",
+				"97%"
+			],
+			"Sodium": [
+				"1.16g",
+				"48%"
+			],
+			"Sugar": [
+				"11.0g",
+				"0%%"
+			],
+			"Sat_Fat": [
+				"31.82g",
+				"160%"
+			],
+			"Dietary_Fiber": [
+				"6.69g",
+				"28%"
+			]
+		}
+	},
+	{
+		"dish_id": 31,
+		"dish_name": "Mango Lassi II",
+		"description": null,
+		"overall_rating": 4.0,
+		"image_url": "https://lh3.googleusercontent.com/O6g0pYWjsHRCprB2cgPjpbDGL60orhoBEo5TlrI2GtemD7xtNmNlvaTbLle3OojoRXVm7jYqxEJh0NkwqM0RAQ",
+		"url": "http://allrecipes.com/recipe/32620/mango-lassi-ii/",
+		"ingredients": [
+			"2 mangos - peeled, seeded and diced",
+			"2 cups plain yogurt",
+			"1/2 cup white sugar",
+			"1 cup ice"
+		],
+		"directions": null,
+		"prep_time": 0,
+		"cook_time": "5 m",
+		"total_time": "5 m",
+		"query": "Mango Lassi II",
+		"nutrients": {
+			"Calories": [
+				"479.05kcal",
+				"0%%"
+			],
+			"Fat": [
+				"7.35g",
+				"11%"
+			],
+			"Carbs": [
+				"97.84g",
+				"33%"
+			],
+			"Protein": [
+				"9.42g",
+				"0%%"
+			],
+			"Cholesterol": [
+				"0.03g",
+				"10%"
+			],
+			"Sodium": [
+				"0.12g",
+				"5%"
+			],
+			"Sugar": [
+				"93.7g",
+				"0%%"
+			],
+			"Sat_Fat": [
+				"4.9g",
+				"25%"
+			],
+			"Dietary_Fiber": [
+				"4.14g",
+				"16%"
+			]
+		}
+	},
+	{
+		"dish_id": 32,
+		"dish_name": "Absolutely Perfect Palak Paneer",
+		"description": null,
+		"overall_rating": 4.0,
+		"image_url": "https://lh3.googleusercontent.com/KhlPHff8nxgyWBdM5yv7FyYQhZzxw8Bmq3US76cygEj8Yknfdx-pRKtgY5vooHf1Z8juTiiqOOSACDt8yFPy",
+		"url": "http://allrecipes.com/recipe/20312/absolutely-perfect-palak-paneer/",
+		"ingredients": [
+			"6 tablespoons olive oil",
+			"2 cloves garlic, chopped",
+			"1 tablespoon grated fresh ginger root",
+			"2 dried red chile peppers",
+			"1/2 cup finely chopped onion",
+			"2 teaspoons ground cumin",
+			"1 teaspoon ground coriander",
+			"1 teaspoon ground turmeric",
+			"3/4 cup sour cream",
+			"3 pounds fresh spinach, torn",
+			"1 large tomato, quartered",
+			"4 sprigs fresh cilantro leaves",
+			"8 ounces ricotta cheese",
+			"coarse sea salt to taste"
+		],
+		"directions": null,
+		"prep_time": 0,
+		"cook_time": "45 m",
+		"total_time": "45 m",
+		"query": "Absolutely Perfect Palak Paneer",
+		"nutrients": {
+			"Calories": null,
+			"Fat": null,
+			"Carbs": null,
+			"Protein": null,
+			"Cholesterol": null,
+			"Sodium": null,
+			"Sugar": null,
+			"Sat_Fat": null
+		}
+	},
+	{
+		"dish_id": 33,
+		"dish_name": "Indian Dahl with Spinach",
+		"description": null,
+		"overall_rating": 4.3,
+		"image_url": "https://lh4.ggpht.com/DqNt_uTQbNCUnHVR28amHesqIB_YZiqVwkFxmnQEm9oLr5mjgcJI_k22Es6EdTLkOWg9BLO7hhhkTv2-DFxZdAE",
+		"url": "http://allrecipes.com/recipe/21459/indian-dahl-with-spinach/",
+		"ingredients": [
+			"1 1/2 cups red lentils",
+			"3 1/2 cups water",
+			"1/2 teaspoon salt",
+			"1/2 teaspoon ground turmeric",
+			"1/2 teaspoon chili powder",
+			"1 pound spinach, rinsed and chopped",
+			"2 tablespoons butter",
+			"1 onion, chopped",
+			"1 teaspoon ground cumin",
+			"1 teaspoon mustard seed",
+			"1 teaspoon garam masala",
+			"1/2 cup coconut milk"
+		],
+		"directions": null,
+		"prep_time": 0,
+		"cook_time": "40 m",
+		"total_time": "40 m",
+		"query": "Indian Dahl with Spinach",
+		"nutrients": {
+			"Calories": [
+				"419.47kcal",
+				"0%%"
+			],
+			"Fat": [
+				"14.13g",
+				"22%"
+			],
+			"Carbs": [
+				"53.05g",
+				"18%"
+			],
+			"Protein": [
+				"23.43g",
+				"0%%"
+			],
+			"Cholesterol": [
+				"0.02g",
+				"5%"
+			],
+			"Sodium": [
+				"0.45g",
+				"19%"
+			],
+			"Sugar": [
+				"3.53g",
+				"0%%"
+			],
+			"Sat_Fat": [
+				"9.97g",
+				"50%"
+			],
+			"Dietary_Fiber": [
+				"26.2g",
+				"104%"
+			]
+		}
+	},
+	{
+		"dish_id": 34,
+		"dish_name": "Chef John's Chicken Tikka Masala",
+		"description": null,
+		"overall_rating": 4.0,
+		"image_url": "https://lh3.googleusercontent.com/bF8feS2a-3JlQ5Q3JlM0zyIjJDnw4fHC0fUnOsJCnjrmcnlkOMLdRIBC2d1E-AkY1H6L_NPMEnfGzZmy7vc2Xu4",
+		"url": "http://allrecipes.com/recipe/239867/chef-johns-chicken-tikka-masala/",
+		"ingredients": [
+			"1 1/2 pounds skinless, boneless chicken thighs",
+			"1 tablespoon vegetable oil",
+			"2 teaspoons kosher salt",
+			"2 teaspoons garam masala",
+			"2 teaspoons ground cumin",
+			"1 teaspoon ground coriander",
+			"1 teaspoon smoked paprika",
+			"1 teaspoon ground turmeric",
+			"1/2 teaspoon ground black pepper",
+			"1/4 teaspoon cayenne pepper",
+			"1/8 teaspoon ground cardamom",
+			"2 tablespoons clarified butter (ghee), or more as needed",
+			"1 onion, chopped",
+			"1/4 cup tomato paste",
+			"4 cloves garlic, finely grated",
+			"1 tablespoon finely grated ginger, or more to taste",
+			"1 cup crushed tomatoes",
+			"1 (13 ounce) can coconut milk",
+			"1/2 cup chicken broth, or as needed",
+			"2 tablespoons chopped fresh cilantro",
+			"1/2 teaspoon red pepper flakes",
+			"salt and ground black pepper to taste"
+		],
+		"directions": null,
+		"prep_time": 0,
+		"cook_time": "70 m",
+		"total_time": "70 m",
+		"query": "Chef John's Chicken Tikka Masala",
+		"nutrients": {
+			"Calories": [
+				"720.14kcal",
+				"0%%"
+			],
+			"Fat": [
+				"57.78g",
+				"89%"
+			],
+			"Carbs": [
+				"19.26g",
+				"6%"
+			],
+			"Protein": [
+				"34.36g",
+				"0%%"
+			],
+			"Cholesterol": [
+				"0.16g",
+				"53%"
+			],
+			"Sodium": [
+				"1.56g",
+				"65%"
+			],
+			"Sugar": [
+				"6.05g",
+				"0%%"
+			],
+			"Sat_Fat": [
+				"30.1g",
+				"150%"
+			],
+			"Dietary_Fiber": [
+				"5.49g",
+				"20%"
+			]
+		}
+	},
+	{
+		"dish_id": 35,
+		"dish_name": "Beef Samosas",
+		"description": null,
+		"overall_rating": 4.0,
+		"image_url": "https://lh3.googleusercontent.com/FgpHijWNHJGR7H-uvI6QKzjjhCeZycwHa07xeN7jQy5kqIB2FDRfx4Ppd0MbPzIi0in4lOXYAQ2tr7dEp-Se",
+		"url": "http://allrecipes.com/recipe/24871/beef-samosas/",
+		"ingredients": [
+			"2 large potatoes, peeled",
+			"1 cup frozen peas, thawed",
+			"2 tablespoons vegetable oil",
+			"1/2 teaspoon cumin seeds",
+			"1 bay leaf, crushed",
+			"2 large onions, finely chopped",
+			"1 pound ground beef",
+			"4 cloves garlic, crushed",
+			"1 tablespoon minced fresh ginger root",
+			"1/2 teaspoon ground black pepper",
+			"1 1/2 teaspoons salt",
+			"1 teaspoon ground cumin",
+			"1 teaspoon ground coriander",
+			"1 teaspoon ground turmeric",
+			"1 teaspoon chili powder",
+			"1/2 teaspoon ground cinnamon",
+			"1/2 teaspoon ground cardamom",
+			"2 tablespoons chopped fresh cilantro",
+			"2 tablespoons chopped green chile peppers",
+			"1 quart oil for deep frying",
+			"1 (16 ounce) package phyllo dough"
+		],
+		"directions": null,
+		"prep_time": 0,
+		"cook_time": "40 m",
+		"total_time": "40 m",
+		"query": "Beef Samosas",
+		"nutrients": {
+			"Calories": [
+				"630.28kcal",
+				"0%%"
+			],
+			"Fat": [
+				"56.76g",
+				"88%"
+			],
+			"Carbs": [
+				"23.34g",
+				"8%"
+			],
+			"Protein": [
+				"8.09g",
+				"0%%"
+			],
+			"Cholesterol": [
+				"0.02g",
+				"5%"
+			],
+			"Sodium": [
+				"0.35g",
+				"15%"
+			],
+			"Sugar": [
+				"1.3g",
+				"0%%"
+			],
+			"Sat_Fat": [
+				"5.88g",
+				"30%"
+			],
+			"Dietary_Fiber": [
+				"2.21g",
+				"8%"
+			]
+		}
+	},
+	{
+		"dish_id": 36,
+		"dish_name": "Keon's Slow Cooker Curry Chicken",
+		"description": null,
+		"overall_rating": 4.0,
+		"image_url": "https://lh3.googleusercontent.com/o25jEoPCoIuYgQxrd-Z5BcvA9faRY0sdOBuxnsHeWvU8sC57wFbLJgyxrEv8O7VjJl60AU8a39UfoHYOuZos8m0",
+		"url": "http://allrecipes.com/recipe/213140/keons-slow-cooker-curry-chicken/",
+		"ingredients": [
+			"1 tablespoon butter",
+			"1 onion, chopped",
+			"1 (10.75 ounce) can condensed cream of mushroom soup",
+			"1 (10.75 ounce) can condensed cream of chicken soup",
+			"1 (14 ounce) can coconut milk",
+			"1 packet dry onion soup mix (such as Knorr\u00ae French Onion Soup Mix)",
+			"3 tablespoons curry powder, or to taste",
+			"1/2 teaspoon salt",
+			"1/2 teaspoon ground black pepper",
+			"2 teaspoons ground cayenne pepper, or to taste",
+			"3 large skinless, boneless chicken breast halves -- trimmed and cut into 1-inch pieces",
+			"1 cup green peas",
+			"2 cups sliced fresh mushrooms"
+		],
+		"directions": null,
+		"prep_time": 0,
+		"cook_time": "205 m",
+		"total_time": "205 m",
+		"query": "Keon's Slow Cooker Curry Chicken",
+		"nutrients": {
+			"Calories": [
+				"585.54kcal",
+				"0%%"
+			],
+			"Fat": [
+				"39.3g",
+				"60%"
+			],
+			"Carbs": [
+				"35.19g",
+				"12%"
+			],
+			"Protein": [
+				"28.58g",
+				"0%%"
+			],
+			"Cholesterol": [
+				"0.07g",
+				"23%"
+			],
+			"Sodium": [
+				"2.21g",
+				"92%"
+			],
+			"Sugar": [
+				"9.45g",
+				"0%%"
+			],
+			"Sat_Fat": [
+				"25.94g",
+				"130%"
+			],
+			"Dietary_Fiber": [
+				"7.31g",
+				"28%"
+			]
+		}
+	},
+	{
+		"dish_id": 37,
+		"dish_name": "Easy Masoor Daal",
+		"description": null,
+		"overall_rating": 4.0,
+		"image_url": "https://lh3.googleusercontent.com/G7xjrBI84T9RnOUw2vcRAgWpgh64igGk228qtkXNVARrr-NDQKGwMBvL85PKRP-zLNwbZ7_68NuVlsE5iZTLAA",
+		"url": "http://allrecipes.com/recipe/22765/easy-masoor-daal/",
+		"ingredients": [
+			"1 cup red lentils",
+			"1 slice ginger, 1 inch piece, peeled",
+			"1/4 teaspoon ground turmeric",
+			"1 teaspoon salt",
+			"1/2 teaspoon cayenne pepper, or to taste",
+			"4 teaspoons vegetable oil",
+			"4 teaspoons dried minced onion",
+			"1 teaspoon cumin seeds"
+		],
+		"directions": null,
+		"prep_time": 0,
+		"cook_time": "35 m",
+		"total_time": "35 m",
+		"query": "Easy Masoor Daal",
+		"nutrients": {
+			"Calories": [
+				"214.42kcal",
+				"0%%"
+			],
+			"Fat": [
+				"5.19g",
+				"8%"
+			],
+			"Carbs": [
+				"29.64g",
+				"10%"
+			],
+			"Protein": [
+				"12.66g",
+				"0%%"
+			],
+			"Cholesterol": null,
+			"Sodium": [
+				"0.59g",
+				"25%"
+			],
+			"Sugar": [
+				"1.14g",
+				"0%%"
+			],
+			"Sat_Fat": [
+				"0.34g",
+				"0%%"
+			],
+			"Dietary_Fiber": [
+				"15.1g",
+				"60%"
+			]
+		}
+	},
+	{
+		"dish_id": 38,
+		"dish_name": "Spicy Indian Chicken and Mango Curry",
+		"description": null,
+		"overall_rating": 4.5,
+		"image_url": "https://lh5.ggpht.com/fzDkB54MNNY1YnxvHad0uOkFFfBlJ_Af2V4wL-AcnqSpESF4tBCDfpf-8JYBKUeBWq8IBgTzaDsx23rHEszN9Q",
+		"url": "http://allrecipes.com/recipe/105553/spicy-indian-chicken-and-mango-curry/",
+		"ingredients": [
+			"2 medium mangoes, peeled and sliced, divided",
+			"1 (10 ounce) can coconut milk",
+			"4 teaspoons vegetable oil",
+			"4 teaspoons spicy curry paste",
+			"14 ounces skinless, boneless chicken breast halves - cut into cubes",
+			"4 medium shallots, sliced",
+			"1 large English cucumber, seeded and sliced"
+		],
+		"directions": null,
+		"prep_time": 0,
+		"cook_time": "35 m",
+		"total_time": "35 m",
+		"query": "Spicy Indian Chicken and Mango Curry",
+		"nutrients": {
+			"Calories": [
+				"363.83kcal",
+				"0%%"
+			],
+			"Fat": [
+				"21.54g",
+				"34%"
+			],
+			"Carbs": [
+				"44.34g",
+				"15%"
+			],
+			"Protein": [
+				"6.5g",
+				"0%%"
+			],
+			"Cholesterol": null,
+			"Sodium": [
+				"0.03g",
+				"1%"
+			],
+			"Sugar": [
+				"19.84g",
+				"0%%"
+			],
+			"Sat_Fat": [
+				"15.2g",
+				"75%"
+			],
+			"Dietary_Fiber": [
+				"4.29g",
+				"16%"
+			]
+		}
+	},
+		{
+		"dish_id": 39,
+		"dish_name": "Indian Eggplant - Bhurtha",
+		"description": "This is a traditional North Indian (Punjabi) Bhurtha made with eggplant and tomato, and seasoned with cumin, turmeric garlic and ginger. Serve with fresh roti or naan.",
+		"overall_rating": 4.48999977111816,
+		"image_url": "http://images.media-allrecipes.com/userphotos/250x250/00/54/91/549170.jpg",
+		"url": "http://www.allrecipes.com/recipe/80686/indian-eggplant-bhurtha/",
+		"ingredients": [
+			"1/4 cup chopped fresh cilantro",
+			"1 medium onion, sliced",
+			"1/2 teaspoon ground cumin",
+			"1 eggplant",
+			"1 teaspoon chopped fresh ginger",
+			"1/2 teaspoon ground coriander",
+			"1 large tomato - peeled, seeded and diced",
+			"1/2 teaspoon salt, or to taste",
+			"2 tablespoons vegetable oil",
+			"1/4 teaspoon cayenne pepper",
+			"ground black pepper to taste",
+			"1 clove garlic, minced",
+			"1/2 teaspoon cumin seeds",
+			"1/2 teaspoon ground turmeric"
+		],
+		"directions": [
+			"Preheat the oven's broiler. Rub oil on the outside of the egg plant, or coat with cooking spray. Place under the broiler, and cook until the flesh is soft and the skin is blistering off, about 30 minutes. Turn as needed for even cooking. Cut the eggplant in half lengthwise, and scoop the flesh out of the skin. Discard the skin; chop up the flesh, and set aside.",
+			"Heat the oil in a large skillet or wok over medium-high heat. Add the cumin seeds, and let them crackle for a few seconds and turn golden brown. Be careful not to burn them. Add the onion, ginger and garlic; cook and stir until tender. I don't let the onions get very brown. Stir in the tomato, and season with turmeric, ground cumin, ground coriander, cayenne pepper, salt and black pepper. Cook and stir for a few minutes.",
+			"Place the eggplant pieces in the skillet, and cook for 10 to 15 minutes so some of the moisture evaporates.  Taste, and adjust seasonings if desired. Garnish with fresh cilantro, and serve."
+		],
+		"prep_time": "15 m",
+		"cook_time": "50 m",
+		"total_time": "1 h 5 m",
+		"nutrients": {
+			"Calories": [
+				"119 kcal",
+				"6%"
+			],
+			"Fat": [
+				"7.4 g",
+				"11%"
+			],
+			"Carbs": [
+				"13.4g",
+				"4%"
+			],
+			"Protein": [
+				"2.4 g",
+				"5%"
+			],
+			"Cholesterol": [
+				"0 mg",
+				"0%"
+			],
+			"Sodium": [
+				"300 mg",
+				"12%"
+			]
+		}
+	},
+	{
+		"dish_id": 40,
+		"dish_name": "Indian Chicken Curry I",
+		"description": null,
+		"overall_rating": 3.0,
+		"image_url": "https://lh3.googleusercontent.com/Wnk00no2fyVG9G-tTz5sSYs5eV5XTgdwjRwamNTBXShiUP8lkaflMY8RzpCMcHt79Ylc86HT61Ve9LzD5Ydj",
+		"url": "https://recipes.sparkpeople.com/recipe-detail.asp?recipe=420972",
+		"ingredients": [
+			"skinless chicken thigh 350 gm",
+			"onion 1 cup chopped",
+			"oil 2 tbsp",
+			"ginger 5 slices",
+			"garlic 3 cloves",
+			"chicken curry powder 1tbsp/ 2tbsp(according to ur prefference for hot)",
+			"tomato 1/2 can chopped",
+			"boiled water 200ml"
+		],
+		"directions": null,
+		"prep_time": 0,
+		"cook_time": "50 m",
+		"total_time": "50 m",
+		"query": "Indian Chicken Curry I",
+		"nutrients": {
+			"Calories": [
+				"279.7kcal",
+				"0%%"
+			],
+			"Fat": [
+				"20.52g",
+				"32%"
+			],
+			"Carbs": [
+				"7.12g",
+				"2%"
+			],
+			"Protein": [
+				"16.0g",
+				"0%%"
+			],
+			"Cholesterol": [
+				"0.07g",
+				"25%"
+			],
+			"Sodium": [
+				"0.08g",
+				"3%"
+			],
+			"Sugar": [
+				"2.99g",
+				"0%%"
+			],
+			"Sat_Fat": [
+				"4.13g",
+				"20%"
+			],
+			"Dietary_Fiber": [
+				"2.05g",
+				"8%"
+			]
+		}
+	},
+	{
+		"dish_id": 41,
+		"dish_name": "Indian Shrimp Curry",
+		"description": null,
+		"overall_rating": 4.0,
+		"image_url": "https://lh3.googleusercontent.com/aV5pXanzdWYIUELnenCouGhoyx51atUqN_GZ5n1vENwHYGs-cjNqicgZ1sNMKCR908bg_-1of7r55D5rp4HQkg",
+		"url": "https://www.skinnytaste.com/indian-shrimp-curry/",
+		"ingredients": [
+			"1 tablespoon canola oil, divided",
+			"1 pound shrimp, peeled and deveined",
+			"1/2 yellow onion, finely chopped",
+			"1 teaspoon ground ginger",
+			"1 teaspoon ground cumin",
+			"1 teaspoon ground coriander",
+			"1 1/2 teaspoons ground turmeric",
+			"1 teaspoon curry powder",
+			"1 teaspoon paprika",
+			"1/2 teaspoon chili powder",
+			"2 cloves garlic, minced",
+			"1 (15 ounce) can tomato sauce",
+			"3/4 cup lite coconut milk",
+			"1/2 teaspoon Kosher salt",
+			"cilantro and chili peppers for garnish",
+			"cilantro and chili peppers for garnish"
+		],
+		"directions": null,
+		"prep_time": 0,
+		"cook_time": "35 m",
+		"total_time": "35 m",
+		"query": "Indian Shrimp Curry",
+		"nutrients": {
+			"Calories": [
+				"391.49kcal",
+				"0%%"
+			],
+			"Fat": [
+				"21.66g",
+				"34%"
+			],
+			"Carbs": [
+				"24.08g",
+				"8%"
+			],
+			"Protein": [
+				"28.13g",
+				"0%%"
+			],
+			"Cholesterol": [
+				"0.18g",
+				"60%"
+			],
+			"Sodium": [
+				"1.0g",
+				"42%"
+			],
+			"Sugar": [
+				"11.7g",
+				"0%%"
+			],
+			"Sat_Fat": [
+				"11.23g",
+				"55%"
+			],
+			"Dietary_Fiber": [
+				"5.58g",
+				"24%"
+			]
+		}
+	},
+	{
+		"dish_id": 42,
+		"dish_name": "Gobi Aloo (Indian Style Cauliflower with Potatoes)",
+		"description": null,
+		"overall_rating": 3.0,
+		"image_url": "https://lh3.googleusercontent.com/K1iUFDBS3j961gofq4NF7FdUX9526UjmKKn5Rxyta_7VQqygyCZtjPh6uj7lfvbobhN67r0GrKcaWqB7SkYN2Q",
+		"url": "http://www.cdkitchen.com/recipes/recs/262/Aloo_Gobi22228.shtml",
+		"ingredients": [
+			"1 cauliflower",
+			"4 potatoes",
+			"1/4 cup oil",
+			"1 teaspoon cumin seeds",
+			"1 piece (1 inch size) ginger root",
+			"3 cloves garlic",
+			"3/4 teaspoon turmeric",
+			"1 teaspoon red chili powder",
+			"3 tomatoes",
+			"1 teaspoon garam masala",
+			"2 teaspoons ground coriander",
+			"1 cup frozen peas"
+		],
+		"directions": null,
+		"prep_time": 0,
+		"cook_time": "29 m",
+		"total_time": "29 m",
+		"query": "Gobi Aloo (Indian Style Cauliflower with Potatoes)",
+		"nutrients": {
+			"Calories": [
+				"363.86kcal",
+				"0%%"
+			],
+			"Fat": [
+				"14.52g",
+				"23%"
+			],
+			"Carbs": [
+				"52.39g",
+				"17%"
+			],
+			"Protein": [
+				"10.33g",
+				"0%%"
+			],
+			"Cholesterol": null,
+			"Sodium": [
+				"0.11g",
+				"4%"
+			],
+			"Sugar": [
+				"9.64g",
+				"0%%"
+			],
+			"Sat_Fat": [
+				"1.18g",
+				"5%"
+			],
+			"Dietary_Fiber": [
+				"10.75g",
+				"44%"
+			]
+		}
+	},
+	{
+		"dish_id": 43,
+		"dish_name": "Coconut Tofu Keema",
+		"description": null,
+		"overall_rating": 4.4,
+		"image_url": "https://lh4.ggpht.com/oMKpnrekWi4OsXIF3bePzyy9dua0N0oLXNH83o8uPrNYUqcQirSZ7z3FzUAypGTXEh8RvBtj13e3MV5PjLXFYg",
+		"url": "http://allrecipes.com/recipe/104820/coconut-tofu-keema/",
+		"ingredients": [
+			"1/4 cup olive oil",
+			"4 cloves garlic, pressed",
+			"1 medium onions, minced",
+			"1 (14 ounce) package extra firm tofu, diced",
+			"1 (16 ounce) can coconut milk",
+			"1 tablespoon ground cumin",
+			"1 teaspoon curry powder",
+			"1 1/2 teaspoons ground ginger",
+			"1 teaspoon salt",
+			"1 tablespoon red pepper paste",
+			"6 cups tomato sauce",
+			"1 1/2 cups frozen peas, thawed",
+			"1 1/2 cups chopped carrot"
+		],
+		"directions": null,
+		"prep_time": 0,
+		"cook_time": "65 m",
+		"total_time": "65 m",
+		"query": "Coconut Tofu Keema",
+		"nutrients": {
+			"Calories": [
+				"376.47kcal",
+				"0%%"
+			],
+			"Fat": [
+				"24.68g",
+				"38%"
+			],
+			"Carbs": [
+				"32.39g",
+				"11%"
+			],
+			"Protein": [
+				"11.87g",
+				"0%%"
+			],
+			"Cholesterol": [
+				"0.0g",
+				"1%"
+			],
+			"Sodium": [
+				"0.92g",
+				"38%"
+			],
+			"Sugar": [
+				"17.58g",
+				"0%%"
+			],
+			"Sat_Fat": [
+				"12.24g",
+				"60%"
+			],
+			"Dietary_Fiber": [
+				"8.26g",
+				"32%"
+			]
+		}
+	},
+	{
+		"dish_id": 44,
+		"dish_name": "Indian Chapati Bread",
+		"description": null,
+		"overall_rating": 4.0,
+		"image_url": "https://lh4.ggpht.com/rxhdlpNVW6qSOkNTR96aAPSSqsjT9Bdp-ieAucKRGX0Ro5NdU7qarP8wQw_2DOVu6R8RbTGYIAIKN_wsI1bi",
+		"url": "http://www.manjulaskitchen.com/2007/03/21/roti-chapati-flat-indian-bread/",
+		"ingredients": [
+			"1/2 cup whole-wheat flour",
+			"1/8 teaspoon salt",
+			"1/4 cup lukewarm water (Use as needed)",
+			"2 teaspoons ghee (clear butter)",
+			"1/4 cup whole-wheat flour for rolling"
+		],
+		"directions": null,
+		"prep_time": 0,
+		"cook_time": "30 m",
+		"total_time": "30 m",
+		"query": "Indian Chapati Bread",
+		"nutrients": {
+			"Calories": [
+				"91.27kcal",
+				"0%%"
+			],
+			"Fat": [
+				"2.12g",
+				"3%"
+			],
+			"Carbs": [
+				"16.43g",
+				"5%"
+			],
+			"Protein": [
+				"3.15g",
+				"0%%"
+			],
+			"Cholesterol": null,
+			"Sodium": [
+				"0.08g",
+				"3%"
+			],
+			"Sugar": null,
+			"Sat_Fat": null,
+			"Dietary_Fiber": [
+				"2.7g",
+				"12%"
+			]
+		}
+	},
+	{
+		"dish_id": 45,
+		"dish_name": "Authentic Chicken Tikka Masala",
+		"description": null,
+		"overall_rating": 4.0,
+		"image_url": "https://lh3.googleusercontent.com/YIFfgjiKt16l8olKropRvKx_g71ATRTbT1MVRuOEFLq3oEChNu9yhsG5aiovGpr4ZIFeGr13MjQD4UK1X3r9",
+		"url": "http://nishkitchen.com/authentic-chicken-tikka-masala-recipe/",
+		"ingredients": [
+			"600g chicken thigh fillets, cut into cubes",
+			"2 tbsp lemon juice",
+			"6 garlic cloves",
+			"3 cm piece fresh ginger",
+			"1 \u00bd tsp cumin seeds",
+			"\u00bd tsp ground coriander (coriander powder)",
+			"\u00bd tsp garam masala",
+			"1 tsp paprika",
+			"1 tsp red chili powder",
+			"2 tbsp yogurt",
+			"2 tbsp oil",
+			"Salt to taste",
+			"2 tbsp oil",
+			"1 large onion, chopped",
+			"1 tsp minced ginger (ginger paste)",
+			"\u00bd tsp ground turmeric (turmeric powder)",
+			"2 tsp ground coriander (coriander powder)",
+			"1 tsp paprika",
+			"1 tsp red chili powder",
+			"1 tbsp tomato puree (tomato paste)",
+			"\u00bc cup canned tomatoes or 2 medium tomatoes, chopped",
+			"1 tsp lemon juice",
+			"\u00be cup fresh cream",
+			"\u00bc tsp garam masala",
+			"A handful coriander (cilantro) leaves, chopped",
+			"Salt to taste",
+			"Water",
+			"Naan or rice, to serve"
+		],
+		"directions": null,
+		"prep_time": 0,
+		"cook_time": "75 m",
+		"total_time": "75 m",
+		"query": "Authentic Chicken Tikka Masala",
+		"nutrients": {
+			"Calories": [
+				"646.7kcal",
+				"0%%"
+			],
+			"Fat": [
+				"49.2g",
+				"75%"
+			],
+			"Carbs": [
+				"20.44g",
+				"7%"
+			],
+			"Protein": [
+				"30.34g",
+				"0%%"
+			],
+			"Cholesterol": [
+				"0.16g",
+				"53%"
+			],
+			"Sodium": [
+				"0.69g",
+				"29%"
+			],
+			"Sugar": [
+				"2.46g",
+				"0%%"
+			],
+			"Sat_Fat": [
+				"14.17g",
+				"70%"
+			],
+			"Dietary_Fiber": [
+				"3.16g",
+				"12%"
+			]
+		}
+	},
+	{
+		"dish_id": 46,
+		"dish_name": "Alicia's Aloo Gobi",
+		"description": null,
+		"overall_rating": 4.5,
+		"image_url": "https://lh3.googleusercontent.com/m6z4LSSwT3fsS7hYX0fQ6cKKAYRMOHAi0ZOO__qPA0nkJqEADS6bfYQXNUqWjfDN-Ufx0SUQG1ZCCKgyxHiogy0",
+		"url": "http://allrecipes.com/recipe/151997/alicias-aloo-gobi/",
+		"ingredients": [
+			"1/4 cup olive oil",
+			"1 medium onion, chopped",
+			"1 tablespoon minced garlic",
+			"1 teaspoon cumin seeds",
+			"1 (15 ounce) can diced tomatoes",
+			"1 (15 ounce) can coconut milk",
+			"2 tablespoons ground coriander",
+			"1 tablespoon salt",
+			"1 tablespoon ground turmeric",
+			"1 tablespoon cayenne pepper",
+			"1 teaspoon ground cinnamon",
+			"1 teaspoon ground ginger",
+			"1 teaspoon ground cardamom",
+			"3 large Yukon Gold potatoes, peeled and cubed",
+			"1 medium head cauliflower, chopped into bite size pieces",
+			"1 (15 ounce) can garbanzo beans, drained",
+			"2 tablespoons garam masala"
+		],
+		"directions": null,
+		"prep_time": 0,
+		"cook_time": "90 m",
+		"total_time": "90 m",
+		"query": "Alicia's Aloo Gobi",
+		"nutrients": {
+			"Calories": [
+				"953.59kcal",
+				"0%%"
+			],
+			"Fat": [
+				"47.01g",
+				"72%"
+			],
+			"Carbs": [
+				"112.85g",
+				"38%"
+			],
+			"Protein": [
+				"32.94g",
+				"0%%"
+			],
+			"Cholesterol": null,
+			"Sodium": [
+				"1.88g",
+				"78%"
+			],
+			"Sugar": [
+				"22.45g",
+				"0%%"
+			],
+			"Sat_Fat": [
+				"25.5g",
+				"125%"
+			],
+			"Dietary_Fiber": [
+				"33.48g",
+				"132%"
+			]
+		}
+	},
+	{
+		"dish_id": 47,
+		"dish_name": "Kheer (Rice Pudding)",
+		"description": null,
+		"overall_rating": 4.8,
+		"image_url": "https://lh3.ggpht.com/-rSMnGGwg69tttINueFg6v2a4SXNlbu5XR78bhn1vV3EsR8T0OtTJkqYoRfFMF0AiKDP7KU3gpTnVbhQdG5VNw",
+		"url": "http://www.saveur.com/article/Recipes/Classic-Indian-Rice-Pudding",
+		"ingredients": [
+			"6 tbsp. jasmine rice",
+			"2 tbsp. unsalted butter",
+			"\u00bd tsp. lightly crushed saffron",
+			"\u00bd tsp. ground cardamom",
+			"6 cups milk",
+			"3 oz. jaggary or 6 tbsp. light brown sugar",
+			"\u00bc cup slivered almonds, toasted",
+			"\u00bc cup thinly sliced pistachios"
+		],
+		"directions": null,
+		"prep_time": 0,
+		"cook_time": "75 m",
+		"total_time": "75 m",
+		"query": "Kheer (Rice Pudding)",
+		"nutrients": {
+			"Calories": [
+				"421.57kcal",
+				"0%%"
+			],
+			"Fat": [
+				"17.32g",
+				"26%"
+			],
+			"Carbs": [
+				"48.6g",
+				"16%"
+			],
+			"Protein": [
+				"17.71g",
+				"0%%"
+			],
+			"Cholesterol": [
+				"0.04g",
+				"13%"
+			],
+			"Sodium": [
+				"0.22g",
+				"9%"
+			],
+			"Sugar": [
+				"34.47g",
+				"0%%"
+			],
+			"Sat_Fat": [
+				"7.04g",
+				"35%"
+			],
+			"Dietary_Fiber": [
+				"1.66g",
+				"8%"
+			]
+		}
+	},
+	{
+		"dish_id": 48,
+		"dish_name": "Indian Fish Curry",
+		"description": null,
+		"overall_rating": 3.0,
+		"image_url": "https://lh5.ggpht.com/cBtDK8Le2sjq4ggePs_oeF91K8M_bMOV_YtSplxcGW-UmttN9gW2n10zrPisjADK6t_VGQDTj5OdDrUcYfw6Sn0",
+		"url": "http://www.williams-sonoma.com/recipe/indian-fish-curry.html",
+		"ingredients": [
+			"1 Tbs. canola oil or clarified unsalted butter",
+			"1 Tbs. canola oil or clarified unsalted butter",
+			"1 yellow onion, halved and thinly sliced",
+			"2 garlic cloves, minced",
+			"1 Tbs. minced ginger",
+			"1 Tbs. curry powder",
+			"1 can (14 oz.) coconut milk, well shaken",
+			"2 small jalape\u00f1o or serrano chilies, halved and seeded",
+			"1 1/2 tsp. salt, plus more, to taste",
+			"1 lb. rockfish, snapper, cod or other white-fleshed fish fillets, pin bones removed and fillets cut into bite-size pieces",
+			"1 lb. rockfish, snapper, cod or other white-fleshed fish fillets, pin bones removed and fillets cut into bite-size pieces",
+			"1 lb. rockfish, snapper, cod or other white-fleshed fish fillets, pin bones removed and fillets cut into bite-size pieces",
+			"1/4 tsp. ground turmeric",
+			"2 plum tomatoes, seeded and chopped",
+			"Juice of 1 lemon",
+			"1/2 cup hot water"
+		],
+		"directions": null,
+		"prep_time": 0,
+		"cook_time": "35 m",
+		"total_time": "35 m",
+		"query": "Indian Fish Curry",
+		"nutrients": {
+			"Calories": [
+				"483.91kcal",
+				"0%%"
+			],
+			"Fat": [
+				"36.26g",
+				"55%"
+			],
+			"Carbs": [
+				"14.83g",
+				"5%"
+			],
+			"Protein": [
+				"29.36g",
+				"0%%"
+			],
+			"Cholesterol": [
+				"0.07g",
+				"23%"
+			],
+			"Sodium": [
+				"0.95g",
+				"40%"
+			],
+			"Sugar": [
+				"5.31g",
+				"0%%"
+			],
+			"Sat_Fat": [
+				"24.16g",
+				"120%"
+			],
+			"Dietary_Fiber": [
+				"5.01g",
+				"20%"
+			]
+		}
+	},
+	{
+		"dish_id": 49,
+		"dish_name": "Easy Garam Masala",
+		"description": null,
+		"overall_rating": 4.0,
+		"image_url": "https://lh5.ggpht.com/SI2Y5BMt-wWJ9ivp0ifZ8LuDCyR8kBz-7XVCD2-0fU8hCXTpEQ0CihqaRdQ7sllavKcuIedqGLG333rsMLQd1w",
+		"url": "http://zagleft.com/food/easy-garam-masala-recipe/",
+		"ingredients": [
+			"1 tablespoon ground cumin",
+			"1\u00bd teaspoon ground coriander",
+			"1\u00bd teaspoon ground cardamom",
+			"1\u00bd teaspoon ground pepper",
+			"1 teaspoon ground cinnamon",
+			"\u00bd teaspoon ground cloves",
+			"\u00bd teaspoon ground nutmeg",
+			"\u00bc teaspoon ground allspice",
+			"1 tablespoon ground cumin",
+			"1\u00bd teaspoon ground coriander",
+			"1\u00bd teaspoon ground cardamom",
+			"1\u00bd teaspoon ground pepper",
+			"1 teaspoon ground cinnamon",
+			"\u00bd teaspoon ground cloves",
+			"\u00bd teaspoon ground nutmeg",
+			"\u00bc teaspoon ground allspice"
+		],
+		"directions": null,
+		"prep_time": 0,
+		"cook_time": "5 m",
+		"total_time": "5 m",
+		"query": "Easy Garam Masala",
+		"nutrients": {
+			"Calories": [
+				"49.32kcal",
+				"0%%"
+			],
+			"Fat": [
+				"1.79g",
+				"3%"
+			],
+			"Carbs": [
+				"9.56g",
+				"3%"
+			],
+			"Protein": [
+				"1.77g",
+				"0%%"
+			],
+			"Cholesterol": null,
+			"Sodium": [
+				"0.01g",
+				"0%%"
+			],
+			"Sugar": [
+				"0.28g",
+				"0%%"
+			],
+			"Sat_Fat": [
+				"0.35g",
+				"0%%"
+			],
+			"Dietary_Fiber": [
+				"4.25g",
+				"16%"
+			]
+		}
+	},
+	{
+		"dish_id": 50,
+		"dish_name": "Chicken Stew With Coconut Milk",
+		"description": null,
+		"overall_rating": 4.5,
+		"image_url": "https://lh6.ggpht.com/u8ezeZKwtxJLAms8W9WTIVC7HxPXnoBy_cgdg_ZL7adkMxbXeP73geFf9GM3qUfXLsfgcdSZiLAUzEshS7TDtB4",
+		"url": "http://allrecipes.com/recipe/78008/chicken-stew-with-coconut-milk/",
+		"ingredients": [
+			"1 pound skinless, boneless chicken breast, cut into bite-sized chunks",
+			"1 medium yellow onion, chopped or sliced",
+			"1 cup peeled potatoes, cut in 1-inch chunks",
+			"1 cup halved baby carrots",
+			"1 (9 ounce) package frozen baby lima beans",
+			"1/4 (12 ounce) can diced tomatoes",
+			"1 cup canned coconut milk",
+			"1 cup fat-free, reduced-sodium chicken broth",
+			"1 tablespoon cumin",
+			"1 tablespoon curry powder",
+			"Salt and pepper to taste",
+			"Salt and pepper to taste",
+			"1/4 teaspoon hot sauce (such as Tabasco), or to taste",
+			"Parsley or cilantro for garnish"
+		],
+		"directions": null,
+		"prep_time": 0,
+		"cook_time": "35 m",
+		"total_time": "35 m",
+		"query": "Chicken Stew With Coconut Milk",
+		"nutrients": {
+			"Calories": [
+				"368.4kcal",
+				"0%%"
+			],
+			"Fat": [
+				"12.79g",
+				"20%"
+			],
+			"Carbs": [
+				"39.48g",
+				"13%"
+			],
+			"Protein": [
+				"27.25g",
+				"0%%"
+			],
+			"Cholesterol": [
+				"0.05g",
+				"17%"
+			],
+			"Sodium": [
+				"0.26g",
+				"11%"
+			],
+			"Sugar": [
+				"7.17g",
+				"0%%"
+			],
+			"Sat_Fat": [
+				"9.22g",
+				"45%"
+			],
+			"Dietary_Fiber": [
+				"12.37g",
+				"48%"
+			]
+		}
+	}
+]

@@ -1,0 +1,98 @@
+{
+	"north indian":
+	{
+		"sweet": 1.0,
+		"salt": 1.0,
+		"rich": 1.0,
+		"punjab":{
+			"sweet": 1.0,
+			"salt": 1.0,
+			"rich": 1.0
+		},
+		"uttar pradesh":{
+			"sweet": 1.0,
+			"salt": 1.0,
+			"rich": 1.0
+		},
+		"haryana":{
+			"sweet": 1.0,
+			"salt": 1.0,
+			"rich": 1.0
+		},
+		"kashmir":{
+			"sweet": 1.0,
+			"salt": 1.0,
+			"rich": 1.0
+		},
+		"delhi":{
+			"sweet": 1.0,
+			"salt": 1.0,
+			"rich": 1.0
+		}
+	},
+	"south indian":
+	{
+		"sweet": 1.0,
+		"salt": 1.0,
+		"rich": 1.0,
+		"karnataka":{
+			"sweet": 1.0,
+			"salt": 1.0,
+			"rich": 1.0
+		},
+		"tamil nadu":{
+			"sweet": 1.0,
+			"salt": 1.0,
+			"rich": 1.0
+		},
+		"kerala":{
+			"sweet": 1.0,
+			"salt": 1.0,
+			"rich": 1.0
+		},
+		"andhra pradesh":{
+			"sweet": 1.0,
+			"salt": 1.0,
+			"rich": 1.0
+		}
+
+	},
+	"east indian":
+	{
+		"sweet": 1.0,
+		"salt": 1.0,
+		"rich": 1.0,
+		"bengal":{
+			"sweet": 1.0,
+			"salt": 1.0,
+			"rich": 1.0
+		}
+
+	},
+	"west indian":
+	{
+		"sweet": 1.0,
+		"salt": 1.0,
+		"rich": 1.0,
+		"goa":{
+			"sweet": 1.0,
+			"salt": 1.0,
+			"rich": 1.0
+		},
+		"maharashtra":{
+			"sweet": 1.0,
+			"salt": 1.0,
+			"rich": 1.0
+		},
+		"gujarat":{
+			"sweet": 1.0,
+			"salt": 1.0,
+			"rich": 1.0
+		},
+		"rajasthan":{
+			"sweet": 1.0,
+			"salt": 1.0,
+			"rich": 1.0
+		}
+	}
+}

@@ -1,0 +1,729 @@
+dishId,dishName,reviewCount
+10,Chicken Tikka Masala,2105
+11,Naan,1683
+12,Mulligatawny Soup I,1134
+14,Curry Stand Chicken Tikka Masala Sauce,976
+13,Vegetarian Korma,956
+15,Indian Chicken Curry II,917
+16,Chicken Makhani (Indian Butter Chicken),871
+17,Red Lentil Curry,842
+18,Easy Indian Butter Chicken,726
+19,Spicy Vegan Potato Curry,641
+20,Indian Chicken Curry (Murgh Kari),615
+21,Carrot Rice,477
+22,Chickpea Curry,452
+23,Slow Cooker Butter Chicken,392
+24,Baingan Bharta (Eggplant Curry),315
+25,Aloo Phujia,300
+26,Indian Tandoori Chicken,225
+27,Grilled Chicken Thighs Tandoori,218
+29,Chicken Korma II,206
+28,Indian Style Basmati Rice,192
+30,Indian Tomato Chicken,191
+31,Mango Lassi II,183
+32,Absolutely Perfect Palak Paneer,178
+34,Chef John's Chicken Tikka Masala,175
+35,Beef Samosas,173
+36,Keon's Slow Cooker Curry Chicken,172
+41,Indian Shrimp Curry,165
+40,Indian Chicken Curry I,159
+33,Indian Dahl with Spinach,158
+42,Gobi Aloo (Indian Style Cauliflower with Potatoes),154
+37,Easy Masoor Daal,151
+38,Spicy Indian Chicken and Mango Curry,150
+39,Indian Eggplant - Bhurtha,149
+43,Coconut Tofu Keema,145
+44,Indian Chapati Bread,139
+48,Indian Fish Curry,138
+46,Alicia's Aloo Gobi,137
+47,Kheer (Rice Pudding),136
+52,Makhani Chicken (Indian Butter Chicken),136
+51,Easy Indian Style Okra,133
+45,Authentic Chicken Tikka Masala,130
+50,Chicken Stew With Coconut Milk,130
+49,Easy Garam Masala,115
+55,Chicken Biryani,114
+57,Tim Perry's Soup (Creamy Curry Cauliflower and Broccoli Soup),112
+53,Indian Naan II,105
+54,Indian Saffron Rice,104
+62,Keema (Indian-Style Ground Meat),98
+60,Curried Chicken and Brown Rice Casserole,97
+63,Indian Style Sheekh Kabab,95
+58,Navratan Korma,91
+67,Keema Aloo (Ground Beef and Potatoes),91
+65,Kulfi,90
+56,Spicy Indian Dahl,88
+69,Indian-Style Rice with Cashews,88
+59,Aloo Matar,87
+68,Indian Relish,87
+70,Authentic and Easy Shrimp Curry,87
+73,Easy Chicken Korma,87
+61,Cucumber Raita,86
+72,Chana Masala (Savory Indian Chick Peas),85
+64,Tandoori Chicken II,84
+76,Coconut Rice,83
+66,Coconut Curry Chili,81
+71,Potato Curry,81
+84,Easy Chicken Curry,79
+77,Curried Mango Chicken,78
+74,Evin's Indian Apricot Chicken,77
+75,Cod Curry,74
+79,Crispy Vegetable Pakoras,74
+81,Indian Curried Barley Pilaf,73
+83,Indian Stir-Fried Shrimp in Cream Sauce (Bhagari Jhinga),73
+78,Vegetarian Chickpea Curry with Turnips,72
+82,Banana Chai Bread,72
+90,Mulligatawny Soup II,71
+96,Saffron Rice,71
+80,Murgh Makhani (Indian Butter Chicken),69
+91,Delightful Indian Coconut Vegetarian Curry in the Slow Cooker,68
+95,Indian Saag,68
+97,Coconut Curry Fish,68
+89,Indian Cauliflower,67
+99,Easy Slow Cooker Chicken Tikka Masala,67
+101,Indian Peanut Stew,67
+86,Tofu Keema,66
+93,Sherry Chicken Curry,65
+94,Spicy Indian Chicken Curry Yummy,65
+98,Delicious Chickpea Curry,65
+85,Curried Cumin Potatoes,64
+92,Easy Curried Cauliflower,63
+87,Moong Dal,62
+88,Vegetable Masala,61
+108,Bombay Chicken and Rice,61
+109,Spicy Sweet Potato Salad,61
+105,Spicy Indian (Gujarati) Green Beans,59
+103,Authentic Saag Paneer,58
+102,Butter Lamb Gravy,57
+100,Cholay (Curried Chickpeas),56
+106,Paneer,56
+111,Raita,55
+104,Chole Saag,52
+135,Spicy Peach Chutney,52
+113,Indian Carrots,51
+114,Yogurt-Marinated Salmon Fillets (Dahi Machhali Masaledar),51
+120,Tandoori Fish,51
+123,Pumpkin Curry with Lentils and Apples,51
+107,Tofu Vindaloo,50
+117,Roomali Roti,50
+110,Paleo Slow Cooker Pork Loin,49
+127,Roasted Curried Chicken with Couscous,49
+112,Wendy's Indian Butter Chicken,48
+118,Indian Vegetable Rice,48
+119,Bengali Chicken Curry with Potatoes,48
+115,Rosy's Palak Paneer,47
+124,Steve's Chicken Korma,46
+132,Curried Chicken and Rice Salad,46
+116,Indian Sweet Bread,45
+125,Roti Bread from India,45
+128,Curried Cream of Cauliflower Soup,45
+129,Indian-Spiced Roasted Chickpeas,45
+130,Chicken Saag,44
+121,Channa Masala (Chickpea Curry),43
+122,Indian Chickpeas,43
+138,Easy Indian-Style Chicken,43
+143,Haldi Ka Doodh (Hot Turmeric Milk),43
+137,Chicken Hariyali Tikka,42
+139,Slow Cooker Chicken Curry with Quinoa,41
+151,Beef and Spinach Curry,41
+155,Basic Curry Sauce,41
+126,Naan Bread,40
+131,Cauliflower and Tofu Masala,40
+133,Maharaja Curry,39
+134,Potatoes Madras,39
+136,Kashmiri-Style Kidney Beans with Turnips,39
+153,Apple Chutney,39
+148,Garam Masala Seared Salmon with Coconut-Curry Butter,38
+141,Easy Chickpea Curry,37
+146,Cucumber Peanut Salad,37
+149,Roasted Grapes and Carrots,37
+164,Gulab Jamun,37
+142,Kashmiri Lamb,36
+159,Spicy Lentil Dip,36
+165,Chicken Biryani,36
+166,Slow Cooker Chicken Tikka Masala,36
+140,Lamb Madras Curry,35
+147,Vegetable Biryani,35
+169,Spicy Chicken Curry,35
+167,Cilantro Jalapeno Pesto with Lime,34
+170,Red Kidney Beans (Rajma),34
+150,Strawberry Lassi,33
+152,Aloo Gobi,33
+156,Green Chutney,33
+168,Mild Curry Powder,33
+176,Quick Nariyal Burfi (Indian Coconut Fudge),33
+144,Aloo Gobi Masala (Cauliflower and Potato Curry),32
+154,Shahi Paneer,32
+157,Bunjal Chicken,32
+160,Curried Chicken and Potatoes,32
+161,Rajma (Kidney Bean Curry),32
+162,Sweet and Spicy Curry with Chickpeas,32
+179,Pantry Curried Quinoa with Garbanzo Beans and Roasted Peppers,32
+158,Indian Vegetable Bhaji,31
+163,Dal Makhani (Indian Lentils),31
+172,Punjabi Chicken in Thick Gravy,31
+178,Sweet Tamarind Chutney,31
+185,Jeera Fried Rice,31
+145,Easy Veggie Samosas,30
+182,Slow Cooker Chai,30
+173,Chicken Korma,29
+174,Whole Wheat Chapati,29
+171,Samosas,28
+180,Indian Pork Chops,28
+181,Indian Hot Curried Mangos with Tofu,28
+187,Chicken Chicken Curry,28
+190,Spinach and Cauliflower Bhaji,28
+184,Pineapple,27
+193,Indian Barbeque Chicken,27
+177,Okra Curry,26
+183,Restaurant Style Mango Lassi,26
+222,Maharani Cupcakes,26
+175,Aloo Gobi ki Subzi (Potatoes and Cauliflower),25
+186,Indian Sweet Potato and Lentil Soup,25
+191,Gujarati Carrot and Peanut Salad,25
+195,Jeera (Cumin) Rice,25
+196,Indian Spiced Rice Treats,25
+199,Beef Vindaloo,25
+201,Jorge's Indian-Spiced Tomato Lentil Soup,25
+209,Bangan ka Bhurta (Indian Eggplant),25
+192,Exotic Brinjal (Spicy Eggplant),24
+203,Carrot Recipe,24
+213,Curried Microwaved Chicken,24
+217,Coconut Curry Cabbage,24
+220,Curried Pork Chops and Cauliflower with Basmati Rice,24
+189,Blue Ribbon Curry Chicken,23
+197,Mango-Pineapple Chutney,23
+198,Masala-Spiced Roast Chicken,23
+202,Coconut Curried Tofu with Green Beans and Coconut Rice,23
+204,Indian Peas And Cauliflower,23
+207,Traditional Chicken Curry,23
+215,Mini Sweet Potato Samosas,23
+188,Simple Spiced Rice,22
+205,Vegetable Biryani,22
+206,Indian Rice (Pulao),22
+208,Chicken Vindaloo,22
+219,Peanut Rice,22
+216,Paneer (Home Made),21
+233,Four Seasons Chicken Curry,21
+239,Sweet Lamb Curry,21
+211,Pav Bhaji,20
+212,Curried Peas,20
+214,Delicious Chana Masala,20
+223,Cucumber-Cilantro Raita (Yogurt),20
+225,Rogan Josh,20
+226,Best Potatoes Ever!,20
+242,Seared Salmon with Indian-Inspired Cream Sauce,20
+246,Masala Chai,20
+194,Indian Spiced Rice,19
+200,Chicken Saagwala,19
+218,Indian-Style Butter Chicken (Murgh Makhani),19
+221,Easy Baked Indian Samosas,19
+227,Carrot and Cilantro Soup,19
+228,Chana Masala (Chickpeas and Tomatoes),19
+229,Lamb (Gosht) Biryani,19
+232,Broken Thermostat Curry,19
+234,Fruited Tofu Curry Salad,19
+237,Curried Lamb,19
+238,Tofu Masala,19
+241,Spiced Eggplant Indian Style,19
+245,Mango Lassi I,19
+249,Easy Indian Curried Lamb,19
+252,Kedgeree,19
+210,Garam Masala Spice Blend,18
+244,Authentic South Indian Biryani,18
+230,Indian Rice Pilaf,17
+236,Chai Tea Latte,17
+247,Quinoa Biryani,17
+255,Basic Indian Curry with Paneer,17
+257,Aloo Gobhi,17
+224,Chef John's Tandoori Chicken,16
+240,Indian Lassi,16
+243,Masur Dahl,16
+250,Cilantro Garlic Chicken,16
+256,Quick and Easy Indian-Style Okra,16
+269,Indian Salad,16
+231,Curried Corn,15
+248,Bhindi Masala (Spicy Okra Curry),15
+258,Black Pepper Goat Curry,15
+260,Besan (Gram Flour) Halwa,15
+264,Spicy Indian Chicken with Green Masala,15
+265,Masala Beef with Ginger and Curry Leaf,15
+266,Indian Chai Hot Chocolate,15
+272,Bombay Chicken Wings,15
+273,Easy Curry Rice,15
+281,Spicy Tomato Chutney,15
+235,Quorn™ and Chickpea Curry,14
+251,Indian-Style Salmon Fry,14
+254,Spicy Baked Cod Fillets,14
+259,Kale and Spinach Saag,14
+275,Vendakka Paalu,14
+278,Naan Bread Margherita Pizza with Prosciutto,14
+279,Paneer Butter Masala,14
+287,Naan-like Easy Flatbread,14
+262,Curried Stew with Lamb,13
+270,Fried Curry Chicken,13
+282,Coconut Sevai (Rice Noodles),13
+286,Green Pea Poulourie,13
+293,Chicken Fry,13
+295,Spicy Swordfish,13
+253,Reshmi Kebab (Silken Kebabs),12
+274,Punjabi Sukha Urad Dal,12
+276,Mango Lassi-Come-Home,12
+277,Ras Malai,12
+288,Curry Sauce,12
+290,Curried Beef with Winter Vegetables,12
+294,Chai Tea,12
+300,Fettuccine Bombay,12
+267,Turmeric Milk,11
+283,Cilantro Chutney Chicken,11
+291,Best Burgers Ever,11
+304,Paneer Makhani,11
+306,Spicy Dry Fried Curry Chicken,11
+309,Indian Matar Paneer (Cottage Cheese and Peas),11
+313,Mango Coconut Sauce,11
+314,Spicy Chicken in Tomato-Coconut Sauce,11
+316,Carrot-Bean Sprouts Salad,11
+318,Mango-Mint Lassi with Indian Sweet Spices,11
+320,Paneer Jalfrazie,11
+329,Keerti's Karwari Prawns,11
+261,Indian Pot Roast,10
+268,Spiced Naan,10
+280,Turnip with Coconut,10
+284,Biriyani,10
+289,Turkey Curry,10
+292,Chicken Curry V,10
+298,Chicken Navratan Curry (Indian),10
+303,Baked Chicken Curry Flavor-Fest,10
+311,Quick Vegetable Curry,10
+315,Indian-Inspired Egg Salad,10
+327,Spinach and Tomato Dal (Indian Lentil Soup),10
+332,Sugar-Free Cardamom-Mango Smoothie,10
+335,Marian's Pumpkin Soup,10
+342,Prawn Biryani,10
+346,Sooji Upma,10
+263,Tandoori Chicken I,9
+271,Spinach and Buttermilk Soup,9
+285,Spicy Yogurt Dressing,9
+296,Goan Pork Vindaloo,9
+299,Lamb Shank Vindaloo,9
+302,Curried Hash Browns,9
+305,Indian Sabji Recipe,9
+307,Chocolate Chai,9
+308,Mulligatawny Soup III,9
+310,South Indian Chickpea Salad,9
+319,Spicy Shrimp (Chingri Maach),9
+321,Bangaladumpa (Potato) Upma Koora,9
+322,Spicy Tomato Soup,9
+325,East Indian Chicken with Tomato,9
+328,Easy Meat Samosas,9
+333,Dosas (Indian-style Pancakes),9
+336,Yogurt Samosas,9
+344,Spicy Banana Curry,9
+349,Hot and Spicy Himalayan Tea (Chai Tea),9
+350,Delicious and Fast Chicken Curry,9
+363,Elijah's Phulourie,9
+297,Seitan Makhani (Vegan-Style Indian Butter Chicken),8
+301,Pixie's Indian Style Halibut,8
+331,Lasooni Murgh (Garlic Flavored Spicy Chicken),8
+334,Vegetable Koftas,8
+338,Chaat - Dahi Batata Puri,8
+343,Cilantro Chutney,8
+345,Moong Dal with Spinach,8
+348,Rose Ice Cream,8
+353,Batata Nu Shak (Potato Curry),8
+355,Easy Mango Lassi,8
+356,Creamy Curried Root Vegetable Soup,8
+358,Heinz® Butter Chicken,8
+364,Exotic Indian Tangy Rice,8
+365,Alu Baigan,8
+367,Mild Curry Omelet,8
+368,Bangalore Cornish Hens,8
+377,Sarson Ka Saag (Indian Mustard Greens),8
+379,The Maharajah's Mulligatawny,8
+383,Indian Lentils and Spinach,8
+323,Prawns in Cashew Coconut Curry Sauce,7
+324,South Indian Lentil Kootu,7
+326,Kebab Massalam,7
+337,Carrot Soup Indienne I,7
+339,Cauliflower Fritters,7
+341,Saffron Rice with Raisins and Cashews,7
+352,Bhuna Gosht,7
+360,Jonagold's Chicken Vindaloo,7
+361,Tandoori Grilled Chicken,7
+369,Savory Lassi,7
+370,Potato Cutlets,7
+372,Gobi Masala  (Cauliflower Curry),7
+373,Curried Chicken with Rice,7
+375,Fish in Ginger-Tamarind Sauce,7
+378,Spiced Chickpeas (Chole),7
+381,Layered Chutney Dip,7
+384,Egg Curry,7
+385,Nitya's Cauliflower,7
+387,Quick Whole Wheat Chapati,7
+394,Chicken Chutney Sandwiches with Curry,7
+398,Bengaladumpa Vepudu (Potato Stir-Fry),7
+401,Indian-Style Grilled Chicken Salad,7
+404,Faux Bombay Potatoes,7
+330,Pumpkin,6
+340,Sambar,6
+347,Kheema Malai Kofta,6
+351,Tandoori Masala Spice Mix,6
+354,Masale Aaloo (Spice Potatoes),6
+359,Grilled Lamb Chops with Curry,6
+366,Charred Eggplant Raita,6
+376,Minty Cucumber Raita,6
+382,Aloo Matar Paneer (Simmered Potatoes with Peas and Paneer),6
+386,Banana Lassi,6
+389,Chana Masala,6
+390,Easy Carrot Salad (Indian-Style),6
+392,Beet and Yogurt Salad,6
+395,Sweet Corn Subji With Paneer and Cashew Nuts,6
+397,Aloo Palak,6
+400,Lemon Lentil Rice,6
+402,Tandoori Chicken Salad,6
+405,Mediterranean Yellow Rice and Vegetables,6
+407,Curried Mushroom Hot Pot,6
+408,Grilled Italian Burgers,6
+412,Indian Spiced Onions,6
+414,Tangy Chicken with Pistachios and Fruit,6
+422,Prawn Malai Curry,6
+425,Indian Curry Potato Fries,6
+426,Tandoori Chicken Skewers,6
+428,Palak Paneer,6
+312,Lamb Korma,5
+317,Grilled Indian Chicken,5
+357,Akki Rotti,5
+371,Indian Mustard Fish,5
+374,Coconut Chutney,5
+380,Palak Paneer (Indian Spinach and Paneer),5
+391,Frizzled Onions,5
+399,Indian Style Chicken with Apples,5
+406,Chicken Karhaai,5
+409,Besan Ladoo,5
+415,Cabbage,5
+417,Chicken Roti From India,5
+419,Indian-Style Vegetable Rice,5
+420,Kiwi Raita,5
+421,Hot Coffee Masala,5
+423,Chicken Salad with Mango Chutney,5
+424,Indian Chicken Rub,5
+427,Quinoa Pilau,5
+431,Easy Masala Hash Browns,5
+434,Indian-Influenced Zucchini Onion Pepper Latkes,5
+435,Makhani Daal (Buttery Lentils),5
+438,Crazy Spicy Chicken,5
+440,Indian Samosa Pie,5
+441,Cauliflower and Potato Stir-Fry - East Indian Recipe,5
+445,Besan Laddu,5
+457,Mad's Peach-Curry Soup,5
+458,Keema Matar,5
+459,Potatoes with Fresh Ginger and Chilies,5
+362,Okra Fry,4
+388,Indian-Style Chicken and Onions,4
+396,Cabbage Koora,4
+403,Potatoes in Spicy Peanut and Sesame Paste,4
+416,Yummy Curd Rice,4
+418,Yogurt Rice,4
+429,Paneer Tikka Masala,4
+430,Chai Tea Concentrate,4
+432,Biryani with Yogurt Marinated Chicken,4
+433,Red Split Lentils (Masoor Dal),4
+436,Tampa Coconut Cilantro Rice,4
+439,Egg and Potato Curry,4
+442,Spicy Potato Noodles (Bataka Sev),4
+443,Indian Curry Couscous with Broccoli and Edamame,4
+444,Cucumber Carrot Salad (Raita),4
+446,Beetroot Aloo Koora,4
+448,Easy Malai Kulfi,4
+453,Sweet and Sour Chutney,4
+455,Lucy's Tomato and Peach Chutney,4
+456,Mixed Grill of Sausage,4
+461,Tomato Rasam,4
+462,Broiled Chicken Breasts with Chutney-Lime Glaze and Broccoli Slaw,4
+463,Sweet Lentil Soup with Asparagus Tips,4
+465,Rasgullas,4
+466,Chettinad-Style Chicken,4
+469,Rob's Lamb Curry Pie,4
+471,Curried Green Bean Salad,4
+475,Zucchini Soup with Curry Spices,4
+477,Tamarind Sauce Fish Curry,4
+478,Country Captain Chicken with Rice,4
+480,Spiced Turnips (Shalgam Masala),4
+515,Methi Murgh (Fenugreek Chicken),4
+393,Chickpea Coconut Salad,3
+410,Matar Pulao with Nuts,3
+411,Masala Spicy Tea,3
+447,Kashmiri Garam Masala,3
+449,Tomato Onion Koora,3
+450,Tamarind-Date Chutney,3
+451,Sago Sabudana Khichdi,3
+452,Smoky Eggplant and Yogurt Salad,3
+454,Egg Halwa,3
+460,Muscat Gosht (Lamb in Spicy Tomato Gravy),3
+467,Ada (Adai),3
+470,Garam Masala,3
+472,Palak Paneer (Spinach Curry),3
+476,Egg Bhurji,3
+479,Vegetarian Splendor Chickpea Curry,3
+481,Indian Butter Chicken (Chicken Makhani),3
+482,Dal Makhani (Butter Lentils),3
+483,Spicy Lentil Quinoa Curry,3
+484,Easy Palak Paneer,3
+485,Butternut Squash Coconut Curry,3
+486,Tomato Cucumber Kachumbar,3
+487,Khitchari,3
+488,Cauliflower Rice (Biryani-Style),3
+490,Kheema Matar (Beef and Pea Curry),3
+493,Indian Chickpeas in Tea,3
+495,Bhel Puri,3
+501,Curry Vinaigrette Dressing,3
+502,Samosa Pot Pie,3
+504,Apricot Chutney,3
+505,Kheema Pulao,3
+506,Pesarattu,3
+507,Hara Masala Murgh,3
+508,Khara Pongal,3
+509,Pork Chops with Sweet Tomato Chutney,3
+510,Egg Kulambu,3
+511,Rabri (Barley-Yogurt Drink),3
+513,Gujarati Kadhi,3
+514,Tomato Bhath (Tomato Rice),3
+516,Makhani Murgh (Butter Chicken),3
+517,Prawns Curry,3
+520,Gujarati Shrikhand,3
+521,Potato Chapati Bread,3
+522,Madras Tomato Chutney,3
+524,Capsicum Zunka,3
+526,Eggless Mango Bread,3
+413,Easy Indian Tomato Soup (Saar),2
+437,Indian Spiced Chicken,2
+464,Sundal,2
+468,Vegetable Shepherd's Pie with Baked Beans,2
+473,Indian-Inspired Cauliflower and Potato Casserole,2
+474,Tom's Mulligatawny Soup,2
+491,Slow-Cooked Chicken Biryani,2
+494,Indian-Style Scrambled Eggs,2
+496,Lamb Meatballs Over Tandoori Naan,2
+498,Tandoori Chicken Burgers,2
+499,Chai Tea Ice Cream,2
+500,Lentil Samosas,2
+503,Indian Style Shrimp Fry,2
+518,Mixed Vegetable Pulao,2
+523,Carrot Soup Indienne II,2
+525,Awadi Dahi Murg (Chicken in Yogurt Gravy),2
+527,Kesari Bhat,2
+528,Vegan Yogurt Sundae,2
+530,Bean Sprouts Soup,2
+531,Vegetable Pancake,2
+532,Adipoli Parathas,2
+533,Pudina (Mint) Chutney,2
+536,Besan Laddu,2
+539,Vankaya Pulusu Pachadi (Andhra Sweet and Sour Eggplant Stew),2
+542,Pudina (Mint) Pacchadi,2
+543,Machhere Jhol (Bengali Fish Curry),2
+544,Atta (Whole Wheat) Halwa,2
+545,Cilantro-Mint Raita,2
+546,Indian Stuffed Eggplant,2
+547,Indian Crepes,2
+548,Indian-Style Corn on the Cob in Onion and Yogurt Sauce,2
+549,Curried Scallops with Angel Hair Pasta,2
+550,Eastern-Style Mulligatawny Soup,2
+551,Shyam's Goat Biryani,2
+552,Indian Pizza,2
+554,Curried Celery,2
+555,Veg Biryani,2
+556,Indian Onion Dipping Sauce,2
+557,Spicy Sesame Potatoes (Til Aloo),2
+558,Brussels Sprout Pakora,2
+559,Easy Raita with Mint and Cilantro,2
+560,Instant Pot® Indian Butter Chicken,2
+562,Sawine (Vermicelli Kheer),2
+489,"Grilled ""Tandoori"" Lamb",1
+492,Creamy Indian Yogurt Soup,1
+497,Cucumber Raita with Mint,1
+512,Anapakaya Paala Koora,1
+519,Minty Mint Chutney,1
+529,Rava Laddu,1
+534,Doodhi Chana,1
+535,Gasagage (Khus Khus) Payasa,1
+537,Bengali 5-Spice,1
+538,Poori Aloo Koora,1
+540,Aviyal,1
+541,Mummy's Ginger Soup,1
+553,Aarsi's Tofu Curry,1
+561,Vegetable Biryani (Tehri),1
+563,Green Curry with Sweet Potato and Aubergine (Eggplant),1
+564,Indian Chicken Marinade,1
+565,Shami Kebab,1
+566,Roti Canai/Paratha (Indian Pancake),1
+568,Indian Broccoli Junka,1
+569,Baked Gulab Jamun (Indian Dumplings in Syrup),1
+571,Kadai Chicken,1
+573,Pressure Cooker Goat Curry,1
+574,Easy Authentic Masala Chai,1
+575,Watermelon Chutney,1
+576,Indian Tomato Rice,1
+577,Healthier and Tastier Tikka Masala,1
+578,Indian Corn Pakoda,1
+579,Jackfruit Curry (Kathal Subzi),1
+580,Spiced Sweet Potato Dahl,1
+581,Ven Pongal,1
+583,Turmeric Golden Milk with Turmeric Paste,1
+584,Serena's Strawberry Lassi,1
+585,Spiced Mango Lassi,1
+586,Goan Prawn Pulao,1
+587,Masala Cabbage Soup,1
+588,Black Chana with Potato,1
+590,Quick and Easy Spinach Rice (Palak Rice),1
+591,Rajma (Kidney Beans),1
+592,Curried Potato and Spinach Soup,1
+593,Shami Kabab (Bun Kabab),1
+594,Mal's Samosa Quesadillas with Curried Cabbage and Chickpeas,1
+595,Fried Chicken Biryani (Filipino-Style),1
+597,Easy Indian-Style Pumpkin Curry,1
+598,Jeera Rice,1
+599,Mild Curry Turkey,1
+600,Shahi Tukray (Indian Bread Pudding),1
+601,Cranberry Curry Chicken,1
+602,Paneer (Cottage Cheese),1
+603,Rhubarb Pineapple Chutney,1
+604,Chocolate Chai Coffee Mix,1
+605,Pork Vindaloo,1
+606,Green Apple and Coconut Chutney,1
+607,Spicy Hot Garlic Chutney,1
+608,Quick Cranberry Chutney,1
+610,Easy Peasy Pea Salad,1
+611,Sher-a-Punjab Onion Chutney,1
+612,Baked Sweet Potato Vegetable Samosas,1
+614,Sambar - Spicy Indian Curry,1
+615,Classic Chicken Biryani,1
+616,Indian Bread Pudding (Double Ka Meeta),1
+617,Indian Sweet Tomato Chutney,1
+618,Madras Dhal,1
+619,Kadhai Murgh with Bell Pepper (Capsicum),1
+620,Ari's Sweet Indian Coconut Curry Chicken,1
+621,Mague's Green Mango Chutney,1
+622,Salty Cumin Lassi,1
+623,Peanut Cilantro Chutney,1
+624,Patholi,1
+625,Nimakayya (Lemon) Pulihora,1
+627,Nuvvu Podi (Sesame Seed Powder),1
+628,Hyderabadi Nargisi Kofta,1
+629,Vagharela Bhath,1
+630,Kobbari Annam (Coconut Rice),1
+631,Dosa Podi with Garlic,1
+633,Paalu Mithai (Milk Sweet),1
+637,Shahi Tukra (Indian Bread Pudding),1
+638,Shahi Paneer (Royal Cheese),1
+639,Shahi Tukri (Sweet Fried Bread),1
+640,Chutney Eggs,1
+673,White Hot Chocolate with Cardamom,1
+678,Easy Chicken Madras Recipe,1
+567,Vegan Japanese Turnip Curry,0
+570,Gulab Jamun or Kala Jam (Waffle Balls),0
+572,Chicken Cauliflower Korma,0
+582,Spicy Egg & Minced Lamb Roll,0
+589,Cranberry Thokku,0
+596,Super Easy Samosa Pie,0
+609,Geeta Auntie's Potato (and Vegetable) Bhaji,0
+613,Real Indian Mango Chutney,0
+626,Annam-Kobbari Parvanam (Rice and Coconut Kheer),0
+632,Milagai Podi,0
+634,Malai Kofta (Indian Cheese and Potato Dumplings),0
+635,Bell Pepper,0
+636,Tomato Raita (Yogurt),0
+641,Cilantro Relish,0
+642,Shahi Tukra (Sweet Bread Dessert),0
+643,Kobbari Louz,0
+644,Nimakayya Poori Koora,0
+645,Aaku Pappu (Dal with Greens),0
+646,Menthi Majjiga (Buttermilk with Fenugreek),0
+647,Shakkara (Sweet) Pongal,0
+648,Ullipaya (Onion) Tomato Chutney,0
+649,Curry Powder,0
+650,Indian-Style Mousse,0
+651,Spiced Moong Beans,0
+652,Curry Dip,0
+653,Mullingi (White Radish) Rasam,0
+654,Curried Mango Chutney Dip,0
+655,East Indian Peach Salad,0
+656,Easy Paneer Tikka,0
+657,Creamy Curry Sauce,0
+658,Rice Pudding - Indian-Style,0
+659,Phaal,0
+660,Easy Chicken Phaal,0
+661,Mushroom Moong Dal Dosas,0
+662,Indian Crisp Rice Pancake (Dosa),0
+663,Plain Dosai (South Indian Crepes),0
+664,Parathas,0
+665,Green Herb Pulao,0
+666,Boondi Raita,0
+667,Super Easy Egg Halwa - Anday ka Halwa,0
+668,South Indian Bitter Gourd Roast,0
+669,Crunchy Potato Curry,0
+670,Spicy Fried Shrimp,0
+671,Curried Cauliflower (Indian Style),0
+672,Kishmish Badam Korma,0
+674,Mutton Varuval (Malaysian Indian-Style Goat Curry),0
+675,Chicken Mulligatawny Soup,0
+676,Carrot Halwa,0
+677,South Indian-Style Lemon Rice,0
+679,Indian Chicken Korma in the Slow Cooker,0
+680,Farro and Lentil Masala,0
+681,Lamb Shoulder Vindaloo,0
+682,Easy Healthy Egg Kulambu,0
+683,Potato Bonda (Spicy Potato Balls),0
+684,Kachori With Fresh Peas,0
+685,Raisin and Olive Fettuccine,0
+686,Stuffed Okra,0
+687,Vegetarian Keema Matar with Cucumber Raita,0
+688,Culture-Blend Spaghetti,0
+689,South Indian-Style Okra Fritters,0
+690,Hyderabad Dum Biryani,0
+691,Bhindi Subzi (Okra Stir-Fry),0
+692,Kadai Bhindi (Indian style Okra with Bell Peppers),0
+693,La-jawab Sabut Bhindi,0
+694,Chili Paneer,0
+695,Vegetable Pulao,0
+696,Slow Cooker Mild Curry Split Black Lentils,0
+697,Kochi Panthar Jhol (Goat Curry),0
+698,Matar Paneer,0
+699,Goan Fish Curry,0
+700,South Indian Red Amaranth with Onions and Garlic,0
+701,Sweet Curry Pumpkin Seeds,0
+702,Spinach & Green Pea Patties (Hara Bhara Kebabs),0
+703,Warm Lentil Salad,0
+704,Easy Lentil Dal,0
+705,Coconut Chicken Tikka Masala,0
+706,Butter Chicken Chickpeas,0
+707,3-Step Butter Chicken,0
+708,Vegetarian Butter Chicken Stuffed Peppers with Mint Yogurt,0
+709,Tandoori Roasted Root Vegetable Stew,0
+710,Tikka Masala Skillet Shepherd's Pie,0
+711,Zucchini & Parsnip Moghlai,0
+712,Indian Tuna (or Chicken) Salad,0
+713,Almond Burfi,0
+714,Coconut and Molasses-Filled Rice Dumplings,0
+715,Holige (Flatbread with Sweet Raisin Filling),0
+716,Curried Short Ribs - Nontraditional Nihari,0
+717,Madras Crab Curry,0
+718,Peanut Chaat,0
+719,Microwave Khandvi,0
+720,Carrot and Ginger Chutney,0
+721,Palak Paneer (Curried Spinach),0
+722,Spicy Goat Curried Rice Pilaf,0
+723,Tomaten Chutney (Fabulous Tomato Chutney),0
+724,Spicy Yellow Squash Fig Chutnish,0
+725,Chicken Stew (Kerala-Style),0
+726,Quick Indian Vegetarian Cottage Cheese Breakfast,0
+727,Garadu (Baked Yams),0
+728,Punjabi Lamb Korma with Onion Cilantro Salad,0
+729,"Indian-Style ""Chettinad"" Chicken",0
+730,Brinjal (Eggplant) in Coconut Milk,0
+731,Quick Paneer Makhani,0
+732,Indian Egg Curry,0
+733,Pesaru Pappu (Thick Indian Lentil Dish),0
+734,Yellow Tarka Dal,0
+735,Paneer Tikka Sandwich,0
+736,Pomfret Macher Jhaal (Pomfret Fish Curry),0
+737,Mangalore Mutton Curry,0

@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Log In</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen" href="index.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</head>
+<body>
+    <div class="container fullscreen">
+        <div class="row align-items-center justify-content-center fullscreen">
+            <div class="col-3 align-self-center card custom-card">
+                <div class="card-header">
+                    <center>Log In</center>
+                </div>
+                <div class="card-body">
+                    <form action='/dashboard' method="POST" enctype="multipart/form-data">
+                        <div class="container fullscreen" style="height:200px">
+                            <div class="row align-items-center justify-content-center fullscreen">
+                                <div id="panel1" >
+                                    <div class="form-group">
+                                        <label for="userID">User ID</label>
+                                        <input type="number" class="form-control" id="userID" name="userID" placeholder="Enter UserID">
+                                        <small id="emailHelp" class="form-text text-muted">We will recommend new dishes for the supplied User ID.</small>
+                                    </div>
+                                </div>
+                                <div id="panel2" style="display:none">
+                                    <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                                        <label class="btn btn-secondary active" onclick="selectSelected()">
+                                            <input type="radio" name="options" id="search" value="select" autocomplete="off" checked> Select a dish
+                                        </label>
+                                        <label class="btn btn-secondary" onclick="uploadSelected()">
+                                            <input type="radio" name="options" id="upload" value="upload" autocomplete="off"> Upload image
+                                        </label>
+                                    </div>
+                                    <div id="selectForm">
+                                        <div class="form-group">
+                                            <label for="selectDish">Select a dish from the menu</label>
+                                            <select class="form-control" id="selectDish" name="selectDish">
+                                                <option value="tamarind sauce fish curry">Tamarind Sauce Fish Curry</option>
+                                                <option value="coconut chutney">Coconut Chutney</option>
+                                                <option value="keema aloo">Keema Aloo</option>                                                   </option>
+                                                <option value="chicken makhani">Chicken Makhani</option>
+                                                <!-- <option value="Curried Green Bean Salad">Curried Green Bean Salad</option> -->
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div id="uploadForm" style="display:none">
+                                        <div class="form-group">
+                                            <label for="uploadDish">Upload image of a meal</label>
+                                            <input type="file" class="form-control-file" id="uploadDish" name="uploadDish">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="panel3" style="display:none">
+                                    <div class="form-group">
+                                        <label for="rating">Ratings</label>
+                                        <input type="number" class="form-control" id="rating" name="rating" placeholder="Rating">
+                                        <small id="emailHelp" class="form-text text-muted">Rate the dish from 1 - 5, 5 indicating you loved the dish.</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <center><button type="button" class="custom-btn custom-btn-outline-dark rounded-button" id="next-button" onclick="nextButtonListener()">></button></center>
+                    </form>
+                </div>
+                
+            </div>
+          </div>
+    </div>
+</body>
+</html>

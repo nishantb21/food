@@ -1,0 +1,58 @@
+[{
+		"name": "bitter_l1",
+		"items": {
+			"arugula": 0.45,
+			"asparagus": 0.425,
+			"cabbage": 0.3,
+			"cauliflower": 0.3,
+			"chayotes": 0.5,
+			"cress": 0.5,
+			"endive": 0.35,
+			"escarole": 0.85,
+			"lettuce": 0.45,
+			"olives": 0.7,
+			"pumpkins": 0.30,
+			"rhubarb": 0.85,
+			"rocket": 0.5,
+			"rutabaga": 0.5,
+			"saffron": 0.6,
+			"thistles": 0.5,
+			"cucumbers": 0.94
+		}
+	},
+	{
+		"name": "bitter_l2",
+		"items": {
+			"coffee": 0.2749,
+			"sharp": 1,
+			"pungent":  1,
+			"artichokes": 1,
+			"broccoli": 1,
+			"chard": 1,
+			"chicory": 0.90,
+			"cocoa": 0.80,
+			"dill": 0.9,
+			"gourd": 0.95,
+			"kale": 1,
+			"tonic": 1,
+			"turmeric": 1,
+			"zucchini": 1,
+			"bitter": 1
+	}
+	},
+		{
+			"name": "multi_words",
+			"items": {
+			"bitter gourd": 1,
+			"bitter melon": 1,
+			"bok choi": 1,
+			"bok choy": 1,
+			"brussels sprouts": 1,
+			"courgettes": 1,
+			"dandelion greens": 0.5,
+			"dark chocolate": 0.85,
+			"milk thistle": 0.35,
+			"pak choi": 1
+			}
+		}
+]

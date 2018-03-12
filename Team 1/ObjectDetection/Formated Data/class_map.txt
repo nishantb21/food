@@ -1,0 +1,25 @@
+__background__	0
+Baingan Bharta (Eggplant Curry)	1
+Chicken Tikka Masala	2
+Tamarind Sauce Fish Curry	3
+Tomato Cucumber Kachumbar	4
+Chicken Makhani (Indian Butter Chicken)	5
+Rice	6
+Keema Aloo (Ground Beef and Potatoes)	7
+Curried Green Bean Salad	8
+Vegetarian Korma	9
+Naan	10
+Spicy Vegan Potato Curry	11
+Chickpea Curry	12
+Aloo Phujia	13
+Paratha	14
+Coconut Chutney	15
+Mulligatawny Soup I	16
+Carrot Rice	17
+Paratha (Indian Pancake)	18
+Red Lentil Curry	19
+Black Chana with Potato	20
+Kashmiri Lamb	21
+EXCLUDE	22
+onion	23
+tomato	24

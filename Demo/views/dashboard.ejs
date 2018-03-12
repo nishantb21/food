@@ -1,0 +1,218 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Log In</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen" href="dashboard.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.4/socket.io.js"></script>
+	<script src="https://code.highcharts.com/highcharts.js"></script>
+	<script src="https://code.highcharts.com/highcharts-more.js"></script>
+    <script src="dashboard.js"></script>
+</head>
+<body class="bg-light">
+	<% if (choice == 'select') { %>
+		<div class="container">
+			<div class="row align-items-center justify-content-center">
+				<div class="col-md-4 custom-card">
+					<h1 class="text-center">User ID: <%= userID %></h1>
+				</div>
+				<div class="col-md-6 custom-card">
+					<h6	class="text-center">Table 1. User History</h6>
+					<table class="table table-hover text-center">
+						<thead class="thead-dark">
+							<tr>
+								<th>#</th>
+								<th>Dish Name</th>
+								<th>Rating Given</th>
+							</tr>
+						</thead>
+						<tbody>
+						<% var count = 1; %>
+						<% Object.keys(historyData).forEach(function(key){ %>
+							<tr>
+								<td><%= count %></td>	
+								<td><%= key %></td>
+								<td><%= historyData[key] %></td>
+							</tr>
+						<% count += 1 %>
+						<%})%>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<div class="row align-items-center justify-content-center">
+				<div class="col-md-3 custom-card">
+					<h6>Dish name</h6>
+					<small>Showing statistics for the selected dish.</small>
+					<h1 class="text-center padding-all"> <%= dishName %> </h1>
+				</div>
+				<div class="col-md-3 custom-card">
+					<h6	class="text-center">Table 2. Nutrient Information</h6>
+					<table class="table table-hover text-center">
+						<thead class="thead-dark">
+							<tr>
+								<th>Nutrient</th>
+								<th>Amount</th>
+							</tr>
+						</thead>
+						<tbody>
+						<% Object.keys(nutrientData).forEach(function(key){ %>
+							<% if (key != 'Cholesterol'){ %>
+							<tr>
+								<td><%= key %></td>
+								<td><%= nutrientData[key][0] %></td>
+							</tr>
+							<% } %>
+						<%})%>
+						</tbody>
+
+					</table>
+				</div>
+				<div class="col-md-4 custom-card">
+					<div id="flavourChart">
+						
+					</div>
+				</div>
+			</div>
+			<div class="row align-items-center justify-content-center">
+				<div class="col-md-6 padding-all" id="progressbarContainer">
+					<div class="progress" style="height: 1px;">
+						<div class="progress-bar bg-dark" id="progressbar" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+					</div>
+				</div>
+					
+				<div class="col-md-6 custom-card" id="predictionsContainer" style="display:none">
+					<h6	class="text-center">Table 3. Predicting what the user might like</h6>
+					<table class="table table-hover text-center">
+						<thead class="thead-dark">
+							<tr>
+								<th>#</th>
+								<th>Dish name</th>
+								<th>Predicted ratings</th>
+							</tr>
+						</thead>
+						<tbody id="predictionsBody">
+
+						</tbody>
+					</table>
+				</div>
+			</div>
+
+		</div>
+	<% } else { %>
+		<div id="information" style="display:none"><%= userID %>,<%= rating %></div>
+		<div class="container">
+			<div class="row align-items-center justify-content-center">
+				<div class="col-md-4 custom-card">
+					<h1 class="text-center">User ID: <%= userID %></h1>
+				</div>
+				<div class="col-md-6 custom-card">
+					<h6	class="text-center">Table 1. User History</h6>
+					<table class="table table-hover text-center">
+						<thead class="thead-dark">
+							<tr>
+								<th>#</th>
+								<th>Dish Name</th>
+								<th>Rating Given</th>
+							</tr>
+						</thead>
+						<tbody>
+						<% var count = 1; %>
+						<% Object.keys(historyData).forEach(function(key){ %>
+							<tr>
+								<td><%= count %></td>	
+								<td><%= key %></td>
+								<td><%= historyData[key] %></td>
+							</tr>
+						<% count += 1 %>
+						<%})%>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<div class="row align-items-center" id="progressbarContainer">
+				<div class="col-md-6 offset-md-3 padding-all">
+					<div class="progress" style="height: 1px;">
+						<div class="progress-bar bg-dark" id="progressbar" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+					</div>
+				</div>
+			</div>
+			<div class="row align-items-center custom-card" id="recognitionContainer" style="display:none">
+				<div class="col-md-3 offset-md-1">
+					<h6	class="text-center">Recognition Results</h6>
+					<table class="table text-center">
+						<tbody id="recognitionResults">
+						</tbody>
+					</table>
+					<center><button type="button" class="custom-btn custom-btn-outline-dark" onclick="callWorkflow()">Submit </button></center>
+				</div>
+				<div class="col-md-6 offset-md-1">
+					<h6	class="text-center">Image 1. Supplied Image</h6>
+					<div class="canvas-wrapper">
+						<canvas width="400px" height="400px" id="imageContainer" style="margin-left:auto; margin-right:auto">
+						</canvas>
+					</div>
+				
+				</div>
+			</div>
+			<div class="row align-items-center justify-content-center" id ="progressbarWrapper" style="display:none">
+				<div class="col-md-6 padding-all" id="progressbarContainer">
+					<div class="progress" style="height: 1px;">
+						<div class="progress-bar bg-dark" id="progressbar2" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+					</div>
+				</div>
+			</div>
+			<div class="row align-items-center justify-content-center" id="workflowContainer" style="display:none">
+				<div class="col-md-3 custom-card">
+					<h6>Dish name</h6>
+					<small>Showing statistics for the selected dish.</small>
+					<h1 class="text-center padding-all" id="dishNameHeading"></h1>
+				</div>
+				<div class="col-md-3 custom-card">
+					<h6	class="text-center">Table 2. Nutrient Information</h6>
+					<table class="table table-hover text-center">
+						<thead class="thead-dark">
+							<tr>
+								<th>Nutrient</th>
+								<th>Amount</th>
+							</tr>
+						</thead>
+						<tbody id="nutrientBody">
+						</tbody>
+
+					</table>
+				</div>
+				<div class="col-md-4 custom-card">
+					<div id="flavourChart">
+						
+					</div>
+				</div>
+				<div class="col-md-6 custom-card" id="predictionsContainer">
+						<h6	class="text-center">Table 3. Predicting what the user might like</h6>
+						<table class="table table-hover text-center">
+							<thead class="thead-dark">
+								<tr>
+									<th>#</th>
+									<th>Dish name</th>
+									<th>Predicted ratings</th>
+								</tr>
+							</thead>
+							<tbody id="predictionsBody">
+	
+							</tbody>
+						</table>
+					</div>
+			</div>
+		</div>
+	<% } %>
+    
+</body>
+</html>

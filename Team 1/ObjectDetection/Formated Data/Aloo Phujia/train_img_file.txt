@@ -1,0 +1,9 @@
+0	positive/3.jpg	0
+1	positive/9.jpg	0
+2	positive/8.jpg	0
+3	positive/1.jpg	0
+4	positive/2.jpg	0
+5	positive/7.jpg	0
+6	positive/6.jpg	0
+7	positive/10.jpg	0
+8	positive/5.jpg	0

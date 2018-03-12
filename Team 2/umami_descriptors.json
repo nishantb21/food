@@ -1,0 +1,114 @@
+[
+	{
+		"name": "protein_supps",
+		"items": {
+			"casein": 0.92,
+			"whey": 1.0,
+			"eggs" : 0.87
+		}
+	},
+	{
+		"name": "vegetables",
+		"items": {
+			"apple": 0.0,
+			"asparagus": 0.0271,
+			"avocado": 0.0083,
+			"broccoli": 0.1014,
+			"cabbage": 0.0271,
+			"camembert": 0.2276,
+			"carrot": 0.0171,
+			"celery": 0.0153,
+			"corn": 0.0625,
+			"daikon": 0.0389,
+			"garlic": 0.0566,
+			"ginger": 0.0094,
+			"grape": 0.1061,
+			"ikura": 0.0094,
+			"katsuobushi": 0.0212,
+			"kimchi": 0.1392,
+			"kiwi": 0.0006,
+			"miso": 0.4104,
+			"mushroom": 0.1038,
+			"onion": 0.0277,
+			"plum": 0.0023,
+			"potatoes": 0.0578,
+			"shungiku": 0.0448,
+			"spinach": 0.0389,
+			"stilton": 0.4811,
+			"strawberries": 0.0238,
+			"strawberry": 0.0238,
+			"tomato": 0.3809,
+			"tomatoes": 0.3809,
+			"truffles": 0.0448,
+			"yellowfruit": 0.0023
+		}
+	},
+	{
+		"name": "meat",
+		"items": {
+			"aji": 0.29,
+			"anchovies": 0.452,
+			"bacon": 1.0,
+			"beef": 0.44,
+			"bonito": 0.2009,
+			"caviar": 0.517,
+			"chicken": 0.2980,
+			"clam": 0.1463,
+			"cod": 0.0007,
+			"prawn": 0.3808,
+			"squid": 0.3997,
+			"tuna": 0.1303,
+			"uni": 0.662
+		}
+	},
+	{
+		"name": "strings",
+		"items": {
+			"appetizing": 0.25,
+			"aromatic": 0.25,
+			"delectable": 0.50,
+			"relishing": 0.80,
+			"savoury": 1,
+			"savory": 1,
+			"palatable": 0.85,
+			"savorous": 1,
+			"scrumptious": 0.75,
+			"meatiness": 1
+		}
+	},
+	{
+		"name": "multi_words",
+		"items": {
+			"chicken egg yolk" : 0.97,
+			"blue crab": 0.0247,
+			"shimeji mushroom": 0.0403,
+			"white shrimp": 0.008,
+			"whole chicken egg": 0.0044,
+			"snow crab": 0.0073,
+			"sea urchin": 0.0662,
+			"japanese littleneck clam": 0.059,
+			"fish sauce": 1.0,
+			"dry-cured hams": 0.2409,
+			"cured ham": 0.2387,
+			"chicken bones": 0.0226,
+			"bamboo shoots": 0.0507,
+			"burdock root": 0.0094,
+			"chinese cabbage": 0.0507,
+			"enoki mushroom": 0.0507,
+			"fava beans": 0.0448,
+			"fresh tomato": 0.1509,
+			"grape juice": 0.1498,
+			"green asparagus": 0.0265,
+			"green onion": 0.0271,
+			"green peas": 0.0625,
+			"lotus root": 0.0566,
+			"orange juice": 0.01,
+			"peach juice": 0.0165,
+			"shimeji mushroom": 0.0802,
+			"shiitake mushroom": 0.0861,
+			"soy beans": 0.0448,
+			"soy sauce": 1.0,
+			"sweet potato": 0.033
+		}
+	}
+]

@@ -1,0 +1,9 @@
+0	testImages/3.jpg	0
+1	testImages/9.jpg	0
+2	testImages/8.jpg	0
+3	testImages/1.jpg	0
+4	testImages/2.jpg	0
+5	testImages/6.jpg	0
+6	testImages/10.jpg	0
+7	testImages/4.jpg	0
+8	testImages/5.jpg	0

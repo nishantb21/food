@@ -1,0 +1,107 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Demo</title>
+  </head>
+  <body>
+    <div class="container">
+    <div class="row" align="center">
+      <div class="col-sm-6">
+        <div class="user">
+          <img src="account_circle.svg" height="10%">
+        </div>
+        <div id="userID" style="font-size: 30px">
+          <span>User ID: <%= user_id %></span>
+        </div>
+      </div>
+        <div class="col-sm-6">
+          <div id="FoodHistory">
+            <h3> User Food History </h3>
+            <table class="table" id="historyTable">
+              <thead>
+                <th>Dish</th>
+                <th>Rating (Out of 5)</th>
+              </thead>
+              <tbody id="historyTableBody">
+                <% Object.keys(history).forEach(function(key){ %>
+                    <tr>
+                      <td><%= key %></td>
+                      <td><%= history[key] %></td>
+                    </tr>
+                <%})%>
+              </tbody>
+            </table>
+          </div>
+        </div>
+    </div>
+    <hr>
+    <!-- image -->
+    <div class="row" align="center">
+      <div class="col-sm-6" >
+        <div class="text-center">
+          <img src="<%= image_path %>" alt="FoodImage" id="foodImage" height="50%">
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div align="center" style="display: none" id="predictions">
+          <div class="btn-group" data-toggle="buttons">
+              <label class="btn btn-primary" id="label1" style="width: 100%"></label>
+              <br>
+              <label class="btn btn-primary" id="label2" style="width: 100%"></label>
+              <br>
+              <label class="btn btn-primary" id="label3" style="width: 100%"></label>
+              <br>
+              <label class="btn btn-primary" id="label4" style="width: 100%"></label>
+              <br>
+              <label class="btn btn-primary" id="label5" style="width: 100%"></label>
+              <br>
+          </div>
+          <br>
+          <br>
+          <div>
+            <button class="btn btn-default" id="predSelection">Submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <br>
+    <br>
+    <!-- flavor -->
+    <div class="row" align="center" style="display: none" id="flavor">
+      <div class="col-sm-12">
+        <div id="flavorChart">
+        </div>
+      </div>
+      <div id="recoLoader" align='center'>
+        <h3>Loading recommendations</h3>
+        <img src="giphy.gif">
+      </div>
+    </div>
+    <br>
+    <div class="row" align="center" style="display: none" id="recommendations">
+      <div class="col-sm-12">
+        <table class="table table-fixed" align='center' id="recoTable">
+          <h3>Dish recommendations</h3>
+          <thead>
+            <th>Dish</th>
+            <th>Predicted Rating</th>
+          </thead>
+          <tbody id="recoTableBody">
+
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  </body>
+  <script type="text/javascript" src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://code.highcharts.com/highcharts.src.js"></script>
+  <script src="https://code.highcharts.com/highcharts-more.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.4/socket.io.js"></script>
+  <script type="text/javascript" src="demo.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/siimple@3.0.0/dist/siimple.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+</html>
