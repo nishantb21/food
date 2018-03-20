@@ -1,11 +1,11 @@
 import argparse
 
 import matF
-import factMachines
+import tfidf
 
 ap = argparse.ArgumentParser()
 ap.add_argument("--matF", action='store_true')
-ap.add_argument("--factM", action = 'store_true')
+ap.add_argument("--tfidf", action = 'store_true')
 ap.add_argument("--retrain", action='store_true')
 ap.add_argument("--predict")
 argvalues = ap.parse_args()
@@ -23,5 +23,5 @@ if argvalues.matF:
 		else:
 			matF.start(retrain = False)
 
-elif argvalues.factM:
-	factMachines.start(predict_on = int(argvalues.predict))
+elif argvalues.tfidf:
+	tfidf.start(predict_on = int(argvalues.predict))

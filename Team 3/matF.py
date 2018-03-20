@@ -146,8 +146,8 @@ def df_to_list(dataframe, columns):
 
 
 def start(retrain = False, predict_on = 100):
-	dishes = pd.read_csv(os.path.join(my_path,'../Utilities/Team 2/id_name_mapping.csv'), names = ['dishId', 'dishName'])
-	df = pd.read_csv(os.path.join(my_path,'../Utilities/Team 2/review.csv'))
+	dishes = pd.read_csv(os.path.join(my_path,'../Utilities/Team 3/id_name_mapping.csv'), names = ['dishId', 'dishName'])
+	df = pd.read_csv(os.path.join(my_path,'../Utilities/Team 3/review.csv'))
 	df = df[df['userId'].isin(df['userId'].value_counts()[df['userId'].value_counts()>=5].index)]
 
 	n_users = df.userId.unique().max()
@@ -174,10 +174,10 @@ def start(retrain = False, predict_on = 100):
 
 		training_process = mf.train()
 		final_scores = mf.full_matrix()
-		pickle.dump(final_scores, open(os.path.join(my_path,'../Utilities/Team 2/final_scores.pickle'), 'wb'))
+		pickle.dump(final_scores, open(os.path.join(my_path,'../Utilities/Team 3/final_scores.pickle'), 'wb'))
 
 	else:
-		final_scores = pickle.load(open(os.path.join(my_path,"../Utilities/Team 2/final_scores.pickle"), "rb" ))
+		final_scores = pickle.load(open(os.path.join(my_path,"../Utilities/Team 3/final_scores.pickle"), "rb" ))
 
 	time_end = time.time()
 
