@@ -1,12 +1,11 @@
 import os
-import h5py
 import numpy as np
-from scipy import misc
+import cv2
 import itertools
 import random
 import json
-import sys
 import time
+
 
 class dataset_loader:
     dimensions = ()
@@ -93,8 +92,12 @@ class dataset_loader:
             if path in self.cache_mapping.keys():
                 img = self.cache[self.cache_mapping[path]]
             else:
-                img = misc.imread(path)
-                img = np.reshape(misc.imresize(img, self.dimensions), self.dimensions)
+                if self.dimensions[2] == 3:
+                    img = cv2.imread(path, cv2.IMREAD_COLOR)
+                else:
+                    img = cv2.imread(path, cv2.IMREAD_GRAYSCALE)
+                img = cv2.resize(img, (self.dimensions[0], self.dimensions[1]))
+                img = np.reshape(img, self.dimensions)
                 self.cache_mapping[path] = len(self.cache)
                 self.cache.append(img)
             ret_val.append(img)
@@ -162,17 +165,3 @@ class dataset_loader:
         end_index = min(start_index + self.batch_size, self.length)
         self.current_count = end_index
         return self.read_images(self.image_pairs_left[start_index:end_index]), self.read_images(self.image_pairs_right[start_index:end_index]), np.asarray(self.image_pairs_labels[start_index:end_index])
-
-
-if __name__ == '__main__':
-    t1 = time.time()
-    obj = dataset_loader('D:\\Python Projects\\8th Sem Project Work\\Resources\\FoodDataset\\Train', '.', [224, 224, 3], 32)
-
-    while not obj.done():
-        a, b, c = obj.get_training_batch()
-        print(a.shape)
-        print(b.shape)
-        print(c.shape)
-
-    t2 = time.time()
-    print("Time taken:", t2 - t1)

@@ -5,6 +5,9 @@ import csv
 from collections import OrderedDict
 import json
 import time
+import os
+
+my_path = os.path.abspath(os.path.dirname(__file__))
 
 def get_dish_name():
 	"""
@@ -56,7 +59,7 @@ def get_dish_name():
 				urlList.append([recipeId, name, des, rating, imageLink, link])
 				recipeId += 1
 
-	with open("dishnames.csv", "w+") as f:
+	with open(os.path.join(my_path,"../Utilities/Team 3/dishnames.csv"), "w+") as f:
 	    writer = csv.writer(f)
 	    writer.writerows(urlList)
 
@@ -74,7 +77,7 @@ def get_dish_details():
 
 	NOTE : itemdetails.json modified by Team2 to include 'sugar' in nutrients.
 	"""
-	filehandler = open('dishnames.csv', 'r')
+	filehandler = open(os.path.join(my_path,"../Utilities/Team 3/dishnames.csv"), 'r')
 	data = csv.reader(filehandler)
 
 	finalResult = []
@@ -169,7 +172,7 @@ def get_dish_details():
 
 			continue
 
-	json.dump(finalResult, open("itemdetails.json", "w+"), indent = 4)
+	json.dump(finalResult, open(os.path.join(my_path,'../Utilities/Database/itemdetails.json'), "w+"), indent = 4)
 
 
 def get_reviews():
@@ -274,13 +277,8 @@ def get_reviews():
 				if i == 1:
 					time.sleep(5)
 
-			filehandler_reviews = csv.writer(open('reviews.csv', 'a+'))
+			filehandler_reviews = csv.writer(open(os.path.join(my_path,"../Utilities/Team 3/reviews.csv"), 'a+'))
 			filehandler_reviews.writerows(allReviews)
-
-		else:
-			with open('failed.csv', 'a+') as filehandler_falied:
-				filehandler_failed_writer = csv.writer(filehandler_falied)
-				filehandler_failed_writer.writerow([int(line[0]), line[1], totalReviews, line[5]])
 
 def hash_user_id():
 	"""
@@ -291,7 +289,7 @@ def hash_user_id():
 	Input  - reviews.csv
 	Output - review.csv
 	"""
-	data = csv.reader(open('reviews.csv', 'r'))
+	data = csv.reader(open(os.path.join(my_path,"../Utilities/Team 3/reviews.csv"), 'r'))
 
 	data = list(data)[1:]
 
@@ -312,7 +310,7 @@ def hash_user_id():
 
 		result.append([int(line[0]), int(userId), int(line[2])])
 
-	fh = csv.writer(open("review.csv", 'w+'))
+	fh = csv.writer(open(os.path.join(my_path,"../Utilities/Team 3/review.csv"), 'w+'))
 	fh.writerows(result)
 
 def dish_name_csv():
@@ -322,11 +320,16 @@ def dish_name_csv():
 	Input  - itemdetails.json
 	Output - id_name_mapping.csv
 	"""
-	data = json.load(open('itemdetails.json', 'rb'))
+	a = []
+	with open(os.path.join(my_path,"../Utilities/Database/database.json")) as json_data:
+		d = json.load(json_data)
 
-	final = [['dishId', 'dishName']]
-	for i in data:
-		final.append([i['dish_id'], i['dish_name']])
+		for i in range(len(d)):
+			a.append([d[i]['dish_id'], d[i]['dish_name']])
 
-	fh = csv.writer(open('id_name_mapping.csv', 'w+'))
-	fh.writerows(final)
+	with open(os.path.join(my_path,"../Utilities/Team 3/id_name_mapping.csv"), 'w+') as f:
+		writer  = csv.writer(f)
+		writer.writerows(a)
+
+
+
