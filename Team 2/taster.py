@@ -4,10 +4,15 @@ import re
 import itertools
 import numpy
 import utilities
+from kb import Rejector
 import unicodedata
 import difflib
+import math
 from nltk import PorterStemmer
 from nltk.corpus import stopwords
+from sklearn.feature_extraction.text import CountVectorizer
+from sklearn.feature_extraction.text import TfidfTransformer
+from collections import Counter
 
 SWEET_FACTOR_X = 0.9
 SWEET_FACTOR_Y = 0.1
@@ -21,7 +26,13 @@ SOURNESS_FACTOR_Y = 0.25
 SOURNESS_FACTOR_Z = 0.5
 
 p = PorterStemmer()
+rejector = Rejector()
 stop_words = set(stopwords.words('english'))
+
+def strip_accents(s):
+   return ''.join(c for c in unicodedata.normalize('NFD', s)
+                  if unicodedata.category(c) != 'Mn')
+
 def sweet(nutrition_data, SWEET_FACTOR_X=0.85, SWEET_FACTOR_Y=0.1):
 	try:
 		total_weight = nutrition_data['Weight']
@@ -66,9 +77,8 @@ def salt(dish_nutrition):
 	return ((1000 * dish_nutrition['Sodium'] / totalweight)) / 3.8758
 
 def get_dishes():
-	with open('itemdetails.json') as json_file:
+	with open('database.json') as json_file:
 		foods_list = json.load(json_file)
-
 	return foods_list
 
 def total_weight(dish_nutrition):
@@ -110,11 +120,12 @@ def taste(food):
 		taste_scores['sweet'] = sweet_score
 		richness_score = rich(nutrients)
 		taste_scores['rich'] = richness_score
-		tags = get_cuisine_tags(food)
+		tags = get_cuisine_tags(food['dish_name'])
 		cuisine_multipliers = get_cuisine_multipliers(tags)
 		taste_scores = update_scores(taste_scores,cuisine_multipliers)
 		#taste_scores = cuisine_taste(taste_scores)
 		return taste_scores
+
 def update_scores(taste_scores,cuisine_multipliers):
 	print(cuisine_multipliers)
 	for taste in taste_scores:
@@ -141,24 +152,28 @@ def get_cuisine_multipliers(tags):
 
 def parse_recipe(food):
 	ingredients_list = list(set(food['ingredients']))
+	parsed_ingredients = list()
 	for ing in ingredients_list:
-		#print(ing)
 		ingredient = identify_measurement(ing)
+		#print(ingredient)
+		parsed_ingredients.append(ingredient)
 		if len(ingredient['measurement']) == 0:
-			#print(ingredient)
 			pass
+			#print(ingredient)
 		else:
 			pass
-			print(ingredient)
-	else:
-		pass
+			#print(ingredient)
+	#else:
+	#	print(ing)
+	#	pass
+	return parsed_ingredients 
 
 measurements = [
-	"tablespoon","tbsp","tbs","teaspoon","tsp","ts","lb","pound","cup","clove","quart","g","gm","gram","ml","ounce","oz","cloves","cups","lbs"
+	"tablespoon","tbsp","tbs","teaspoon","tsp","ts","lb","pound","cup","clove","quart","g","gm","gram","ml","ounce","sprig","oz","clove","cups","lbs","dash","pinch","pint"
 ]
 
 adjectives = [
-	"large","medium","small","diced","chopped","minced","crushed","fresh","warm","sliced","thinly","finely","divided","dried","peeled","cubed"
+	"large","medium","small","diced","chopped","minced","crushed","fresh","warm","sliced","thinly","finely","divided","dried","peeled","cubed","halved","ground","frozen","coarsely","roughly","pressed","drained","canned","thawed","quartered","plain","shredded","cored","grated","slivered"
 ]
 
 def convert_to_float(numeric_value):
@@ -190,7 +205,8 @@ def convert_vulgar_fractions(ingredient):
 	return ingredient
 
 def cleanup_str(ingredient):
-	ingredient = ingredient.replace('-',' ')
+	ingredient = strip_accents(ingredient)
+	ingredient = re.sub(r'(-|\(|\)|\[|\]|\{|\}|&|@)',"",ingredient)
 	ingredient_tokens = ingredient.split(' ')
 	for word in ingredient_tokens:
 		index = ingredient_tokens.index(word)
@@ -205,8 +221,9 @@ def identify_measurement(ingredient):
 	ingredient = cleanup_str(ingredient) 
 	numeric_value = re.match(pattern,ingredient.strip())
 	if numeric_value is not None:
-		number = convert_to_float(numeric_value[0])
+		number = convert_to_float(numeric_value.group(0))
 		ingredient = re.sub(pattern,str(number),ingredient)
+	
 	#else:
 		#print(ingredient)
 		#print(numeric_value[0])
@@ -230,24 +247,112 @@ def identify_measurement(ingredient):
 			measurement = str()
 	ingredient = ' '.join(ingredient_tokens).strip()
 	ingredient = ingredient.replace(measurement,'')
+	ingredient = rejector.process(ingredient.upper()) 
 	ingredient_dict['measurement'] = measurement
-	ingredient_dict['ingredient']  = ingredient
+	ingredient_dict['ingredient']  = rejector.process(ingredient.lower())
 	return ingredient_dict
 
-def get_cuisine_tags(food):
-	with open('first_50_tags.json') as json_file:
+def get_cuisine_tags(food_name):
+	with open('cuisine_tags.json') as json_file:
 		tags = json.load(json_file)
-	closest_match = utilities.modmatchi(food['dish_name'],list(tags),threshold=0.5)
+	closest_match = difflib.get_close_matches(food_name,list(tags),cutoff=0.8)
 	#print(food['dish_name'],closest_match)
 	if closest_match[0] is not None:
-		return tags[closest_match[0]]
+		try:
+			cuisine = tags[closest_match[0]]
+			if len(cuisine) == 2:
+				return cuisine[1]
+			elif len(cuisine) == 1:
+				return cuisine[0]
+		except Exception as e:
+			return 'unknown'
+	else:
+		return 'unknown'
 
+def identify_cuisine(food,foods_list,vector):
+	distances = dict()
+	print(food['dish_id'])
+	food_bitstring = vector.toarray()[food['dish_id']-1]
+	for index,bitstring in enumerate(vector.toarray()):
+		if index != food['dish_id']:
+			#print(index)
+			distances[(foods_list[index]['dish_name'])] = cosine_similarity(food_bitstring,bitstring) 
+	return sorted(distances.items(),key=lambda x: x[1],reverse = True)
+
+
+vectorizer = CountVectorizer()
+transformer = TfidfTransformer()
+
+def append_parsed(foods_list):
+	for food in foods_list:
+		parsed_ingredients = parse_recipe(food)
+		ingredient_str = ' '.join(line['ingredient'] for line in parsed_ingredients)
+		all_recipes.append(ingredient_str)
+		index = foods_list.index(food)
+		foods_list[index]['parsed_ingredients'] = parsed_ingredients
+	return foods_list
+
+def knn(neighbors_cuisines):
+	nearest_neighbor_dict = dict()
+	total_weight = 0.0
+	for item in neighbors_cuisines:
+		key = item[0]
+		if item[0] == None:
+			key = 'unknown'
+		nearest_neighbor_dict[key] = dict()
+		nearest_neighbor_dict[key]['weight'] = 0.0
+	for item in neighbors_cuisines:
+		key = item[0]
+		if item[0] == None:
+			key = 'unknown'
+		nearest_neighbor_dict[key]['weight'] += item[1]
+		total_weight += item[1]
+		#nearest_neighbor_dict[key]['size'] += 1
+	for key in nearest_neighbor_dict:
+		nearest_neighbor_dict[key]['weight'] /= total_weight
+	return nearest_neighbor_dict
+
+all_recipes = list()
 def main():
 	foods_list = get_dishes()
-	for food in foods_list:
-		#if food['dish_id'] == 98:
-		parse_recipe(food)
-		#print(food['dish_name'],taste(food))
+	all_ingredients = list()
+	# #print(len(foods_list))
+	#foods_list = append_parsed(foods_list)
+	foods_list = append_parsed(foods_list)
+	print(len(all_recipes))
+	#for food in foods_list:
+	#	print(food['dish_id'],food['dish_name'],food['parsed_ingredients'],sep='\t')
+	vector = vectorizer.fit_transform(all_recipes)
+	train_tf_idf = transformer.fit_transform(vector)
+	print(train_tf_idf)
+	#print(vector.toarray()[0])
+	dish_id = 1381
+	print(foods_list[dish_id]['dish_name'])
+	new_tf_idf = foods_list[dish_id]['parsed_ingredients']
+	#neighbors = identify_cuisine(foods_list[dish_id],foods_list,vector)
+	#neighbors_cuisines = [(get_cuisine_tags(dish_name[0]),dish_name[1]) for dish_name in neighbors]
+	#d = knn(neighbors_cuisines)
+	#print(json.dumps(d))
+	#print(sorted(d.items(), key = lambda x: x[1][0].itervalues().next()['weight']))
+	#neighbors_cuisines = Counter(item[0] for item in neighbors_cuisines)
+	#print(neighbors_cuisines)
+
+	
+	#print(json.dumps(nearest_neighbor_dict,indent='\t'))
+	#print(neighbors_cuisines)
+	#print(foods_list[dish_id]['dish_name'])
+	# all_ingredients = list(set(all_ingredients))
+	#for food in foods_list:
+	#	print(food['dish_name'],taste(food))
+	#print(all_ingredients)
+	#print(foods_list[1])
+
+def cosine_similarity(vector1, vector2):
+    dot_product = sum(p * q for p , q in zip(vector1, vector2))
+    magnitude = math.sqrt(sum([val**2 for val in vector1])) * math.sqrt(sum([val**2 for val in vector2]))
+    if magnitude is None:
+        return 0
+    return dot_product / magnitude
 
 if __name__ == '__main__':
 	main()
