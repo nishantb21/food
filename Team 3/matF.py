@@ -220,6 +220,6 @@ def start(retrain = False, predict_on = 100):
 	else:
 		answer['sum_square_error'] = None
 
-	answer = json.dumps(answer)
+	# answer = json.dumps(answer)
 
-	print(answer)
+	return answer

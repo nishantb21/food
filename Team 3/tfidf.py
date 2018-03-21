@@ -171,8 +171,8 @@ def start(predict_on = 100):
     time_end = time.time()
 
     answer = {"user" : predict_on, "predicted_test_error": round(predicted_test_error, 2), "time" : round(time_end - time_start, 2), "predicted_rating_list" : predicted_rating, "original_rating_list" : original_rating}
-    json.dumps(answer)
-    print(answer)
+    # answer = json.dumps(answer)
+    return answer
 
 def getpipedtags():
     objects = []
