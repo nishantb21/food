@@ -35,14 +35,14 @@ def sweet(nutrition_data, SWEET_FACTOR_X=0.85, SWEET_FACTOR_Y=0.1):
   try:
     total_weight = nutrition_data['Weight']
     fibtg = 0
-    if 'Dietary_Fiber' in nutrition_data:
-      fibtg = nutrition_data['Dietary_Fiber']
-    sweet_score_x1 = abs(nutrition_data['Sugar'] - fibtg) / total_weight
-    sweet_score_y = nutrition_data['Sugar'] / nutrition_data['Carbs']
+    if 'dietary_fiber' in nutrition_data:
+      fibtg = nutrition_data['dietary_fiber']
+    sweet_score_x1 = abs(nutrition_data['sugar'] - fibtg) / total_weight
+    sweet_score_y = nutrition_data['sugar'] / nutrition_data['carbs']
     sweet_score_1 = (SWEET_FACTOR_X * sweet_score_x1) + \
                     (SWEET_FACTOR_Y * sweet_score_y)
 
-  except Exception:
+  except KeyError:
     sweet_score_1 = 0
   return round(sweet_score_1 / 0.998, 3) * 10
 
@@ -52,7 +52,7 @@ def rich(nutrition_data,
          RICHNESS_FACTOR_Y=0.7,
          RICHNESS_FACTOR_Z=50):
   try:
-    total_weight = nutrition_data['weight']
+    total_weight = nutrition_data['Weight']
     richness_score_x = 0
     if 'sat_fat' in nutrition_data:
       richness_score_x = nutrition_data['sat_fat'] / \
@@ -66,7 +66,7 @@ def rich(nutrition_data,
     richness_score_1 = (RICHNESS_FACTOR_X * richness_score_x) + \
         (RICHNESS_FACTOR_Y * richness_score_y) + \
         (RICHNESS_FACTOR_Z * richness_score_z)
-  except Exception:
+  except KeyError:
     richness_score_1 = 0
 
     # Normalize to butter which has highest score
@@ -78,7 +78,7 @@ def salt(dish_nutrition):
   if totalweight == 0:
     return 0
 
-  return ((1000 * dish_nutrition['Sodium'] / totalweight)) / 3.8758
+  return ((1000 * dish_nutrition['sodium'] / totalweight)) / 3.8758
 
 
 def get_dishes():
@@ -133,7 +133,6 @@ def taste(food):
 
 
 def update_scores(taste_scores, cuisine_multipliers):
-  print(cuisine_multipliers)
   for taste in taste_scores:
     taste_scores[taste] = taste_scores[taste] * cuisine_multipliers[taste]
   return taste_scores
@@ -349,16 +348,15 @@ def get_cuisine_tags(food):
 
 def identify_cuisine(food, foods_list, vector, distance_metric):
   distances = dict()
-  print(food['dish_id'], food['ingredient_str'])
   if distance_metric == jaccard_similarity:
     similarity = 0
-    closest_dish = dict()
+    # closest_dish = dict()
     for dish in foods_list:
       js = jaccard_similarity(food['ingredient_str'], dish['ingredient'])
       if js > similarity:
         similarity = js
-        closest_dish = dish
-    print(closest_dish)
+        # closest_dish = dish
+
   else:
     food_bitstring = vector.toarray()[food['dish_id'] - 1]
     for index, bitstring in enumerate(vector.toarray()):
@@ -447,7 +445,7 @@ def main():
   all_recipes = [i['ingredient'] for i in training_set]
   vector = vectorizer.fit_transform(all_recipes)
   dish_id = 1380
-  print(foods_list[dish_id]['dish_name'])
+  # print(foods_list[dish_id]['dish_name'])
   neighbors = identify_cuisine(foods_list[dish_id],
                                training_set,
                                vector,
