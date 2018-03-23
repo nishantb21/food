@@ -5,9 +5,11 @@ import itertools
 import numpy
 import utilities
 from kb import Rejector
+from random import sample
 import unicodedata
 import difflib
 import math
+import copy
 from nltk import PorterStemmer
 from nltk.corpus import stopwords
 from sklearn.feature_extraction.text import CountVectorizer
@@ -50,16 +52,16 @@ def sweet(nutrition_data, SWEET_FACTOR_X=0.85, SWEET_FACTOR_Y=0.1):
 def rich(nutrition_data, RICHNESS_FACTOR_X=0.5, RICHNESS_FACTOR_Y=0.7,RICHNESS_FACTOR_Z=50):
 	try:
 		#total_weight = nutrition_data['metric_qty']
-		total_weight = nutrition_data['Weight']
+		total_weight = nutrition_data['weight']
 		richness_score_x = 0
-		if 'Sat_Fat' in nutrition_data:
-			richness_score_x = nutrition_data['Sat_Fat'] / nutrition_data['Fat'] #high
+		if 'sat_fat' in nutrition_data:
+			richness_score_x = nutrition_data['sat_fat'] / nutrition_data['fat'] #high
 		#Why consider sat_fat if we're considering total fat anyway? Would make more sense if total fat wasn't available
-		richness_score_y = nutrition_data['Fat'] / total_weight #low
+		richness_score_y = nutrition_data['fat'] / total_weight #low
 		#Why is this not enough to work off of?
 		richness_score_z = 0
-		if 'Cholesterol' in nutrition_data:
-			richness_score_z = nutrition_data['Cholesterol'] / (total_weight * 1000)
+		if 'cholesterol' in nutrition_data:
+			richness_score_z = nutrition_data['cholesterol'] / (total_weight * 1000)
 		#I'll admit that this is a good idea anyway
 		richness_score_1 = (RICHNESS_FACTOR_X * richness_score_x) + (RICHNESS_FACTOR_Y * richness_score_y) + (RICHNESS_FACTOR_Z * richness_score_z)
 	except Exception as e:
@@ -227,8 +229,8 @@ def identify_measurement(ingredient):
 	#else:
 		#print(ingredient)
 		#print(numeric_value[0])
-	ingredient_tokens = [i for i in ingredient.lower().split(' ') if i not in stop_words]
-	ingredient_tokens = [i for i in ingredient.lower().split(' ') if i not in adjectives]
+	ingredient_tokens = [i.strip() for i in ingredient.lower().split(' ') if i not in stop_words]
+	ingredient_tokens = [i.strip() for i in ingredient.lower().split(' ') if i not in adjectives]
 
 #	ingredient_tokens = [p.stem(word) for word in ingredient_tokens]
 	measurement = str()
@@ -245,6 +247,7 @@ def identify_measurement(ingredient):
 			measurement = measurement[0]
 		else:
 			measurement = str()
+	ingredient_tokens = [i.strip() for i in ingredient_tokens]
 	ingredient = ' '.join(ingredient_tokens).strip()
 	ingredient = ingredient.replace(measurement,'')
 	ingredient = rejector.process(ingredient.upper()) 
@@ -252,36 +255,84 @@ def identify_measurement(ingredient):
 	ingredient_dict['ingredient']  = rejector.process(ingredient.lower())
 	return ingredient_dict
 
-def get_cuisine_tags(food_name):
+def get_cuisine_tags(food):
 	with open('cuisine_tags.json') as json_file:
 		tags = json.load(json_file)
-	closest_match = difflib.get_close_matches(food_name,list(tags),cutoff=0.8)
+	closest_match = difflib.get_close_matches(food,list(tags),cutoff=0.7)
 	#print(food['dish_name'],closest_match)
-	if closest_match[0] is not None:
-		try:
-			cuisine = tags[closest_match[0]]
-			if len(cuisine) == 2:
-				return cuisine[1]
-			elif len(cuisine) == 1:
-				return cuisine[0]
-		except Exception as e:
-			return 'unknown'
+	if len(closest_match) > 0 and closest_match[0] in tags:
+		return tags[closest_match[0]]
 	else:
-		return 'unknown'
+		return list()
 
-def identify_cuisine(food,foods_list,vector):
+# def get_cuisine_tags(food_name):
+# 	with open('cuisine_tags.json') as json_file:
+# 		tags = json.load(json_file)
+# 	closest_match = utilities.modmatchi(food_name,list(tags),threshold=0.7)
+# 	#print(food['dish_name'],closest_match)
+# 	if closest_match[0] is not None:
+# 		try:
+# 			cuisine = tags[closest_match[0]]
+# 			if len(cuisine) == 2:
+# 				return cuisine[1]
+# 			elif len(cuisine) == 1:
+# 				return cuisine[0]
+# 		except Exception as e:
+# 			return 'unknown'
+# 	else:
+# 		return 'unknown'
+
+def identify_cuisine(food,foods_list,vector,distance_metric):
 	distances = dict()
-	print(food['dish_id'])
-	food_bitstring = vector.toarray()[food['dish_id']-1]
-	for index,bitstring in enumerate(vector.toarray()):
-		if index != food['dish_id']:
-			#print(index)
-			distances[(foods_list[index]['dish_name'])] = cosine_similarity(food_bitstring,bitstring) 
+	print(food['dish_id'],food['ingredient_str'])
+	if distance_metric == jaccard_similarity:
+		similarity = 0
+		closest_dish = dict()
+		for dish in foods_list:
+			js = jaccard_similarity(food['ingredient_str'],dish['ingredient'])
+			if js > similarity:
+				similarity = js
+				closest_dish = dish
+		print(closest_dish)
+	else:
+		food_bitstring = vector.toarray()[food['dish_id']-1]
+		for index,bitstring in enumerate(vector.toarray()):
+			if index != food['dish_id']:
+				#print(index)
+				distances[(foods_list[index]['dish_name'])] = compare_distance(food_bitstring,bitstring,distance_metric) 
 	return sorted(distances.items(),key=lambda x: x[1],reverse = True)
 
+def create_training_set(foods_list):
+	training_set = list()
+	total = 0
+	count = dict()
+	count['north indian'] = 0
+	count['south indian'] = 0
 
-vectorizer = CountVectorizer()
-transformer = TfidfTransformer()
+	sample = random.sample(foods_list,400)
+	for food in sample:
+		cuisine_tag = get_cuisine_tags(food['dish_name'])
+		if len(cuisine_tag) > 0 and cuisine_tag[0] not in count:
+			count[cuisine_tag[0]] = 0
+		if total < 400 and len(cuisine_tag) > 0:
+			item = dict()
+			item['name'] = food['dish_name']
+			item['ingredient'] = food['ingredient_str']
+			item['cuisine'] = cuisine_tag
+			''' probably use this to restrict amount of north indian tags '''
+			#if 'north indian' in cuisine_tag and count['north indian'] < 61:
+			#	count['north indian'] += 1
+			#	training_set.append(item)
+			#elif 'south indian' in cuisine_tag and count['south indian'] < 61:
+			#	count['south indian'] += 1
+			#	training_set.append(item)
+			#else:
+			count[cuisine_tag[0]] += 1
+			training_set.append(item)
+			total += 1
+	#print(count)
+	return training_set
+
 
 def append_parsed(foods_list):
 	for food in foods_list:
@@ -290,6 +341,7 @@ def append_parsed(foods_list):
 		all_recipes.append(ingredient_str)
 		index = foods_list.index(food)
 		foods_list[index]['parsed_ingredients'] = parsed_ingredients
+		foods_list[index]['ingredient_str'] = ingredient_str
 	return foods_list
 
 def knn(neighbors_cuisines):
@@ -312,47 +364,47 @@ def knn(neighbors_cuisines):
 		nearest_neighbor_dict[key]['weight'] /= total_weight
 	return nearest_neighbor_dict
 
+def 
+
 all_recipes = list()
+vectorizer = CountVectorizer()
+
 def main():
 	foods_list = get_dishes()
 	all_ingredients = list()
-	# #print(len(foods_list))
-	#foods_list = append_parsed(foods_list)
 	foods_list = append_parsed(foods_list)
-	print(len(all_recipes))
-	#for food in foods_list:
-	#	print(food['dish_id'],food['dish_name'],food['parsed_ingredients'],sep='\t')
+	copy_foods_list = copy.deepcopy(foods_list)
+	training_set = create_training_set(copy_foods_list)
+	all_recipes = [i['ingredient'] for i in training_set]
 	vector = vectorizer.fit_transform(all_recipes)
-	train_tf_idf = transformer.fit_transform(vector)
-	print(train_tf_idf)
-	#print(vector.toarray()[0])
 	dish_id = 1381
 	print(foods_list[dish_id]['dish_name'])
 	new_tf_idf = foods_list[dish_id]['parsed_ingredients']
-	#neighbors = identify_cuisine(foods_list[dish_id],foods_list,vector)
-	#neighbors_cuisines = [(get_cuisine_tags(dish_name[0]),dish_name[1]) for dish_name in neighbors]
-	#d = knn(neighbors_cuisines)
-	#print(json.dumps(d))
-	#print(sorted(d.items(), key = lambda x: x[1][0].itervalues().next()['weight']))
-	#neighbors_cuisines = Counter(item[0] for item in neighbors_cuisines)
-	#print(neighbors_cuisines)
-
+	neighbors = identify_cuisine(foods_list[dish_id],training_set,vector,jaccard_similarity)
+	neighbors_cuisines = [(get_cuisine_tags(dish_name[0]),dish_name[1]) for dish_name in neighbors]
+	d = knn(neighbors_cuisines)
+	print(json.dumps(d))
 	
-	#print(json.dumps(nearest_neighbor_dict,indent='\t'))
-	#print(neighbors_cuisines)
-	#print(foods_list[dish_id]['dish_name'])
-	# all_ingredients = list(set(all_ingredients))
 	#for food in foods_list:
 	#	print(food['dish_name'],taste(food))
-	#print(all_ingredients)
-	#print(foods_list[1])
+
+def compare_distance(vector1, vector2, distance_metric):
+	return distance_metric(vector1, vector2)
+
+def euclidean(vector1, vector2):
+	return math.sqrt(sum(pow(a-b,2) for a , b in zip(vector1, vector2)))
 
 def cosine_similarity(vector1, vector2):
     dot_product = sum(p * q for p , q in zip(vector1, vector2))
     magnitude = math.sqrt(sum([val**2 for val in vector1])) * math.sqrt(sum([val**2 for val in vector2]))
-    if magnitude is None:
+    if not magnitude:
         return 0
     return dot_product / magnitude
 
+def jaccard_similarity(vector1,vector2):
+	intersection_size = len(set(vector1).intersection(set(vector2)))
+	union_size = len(set(vector1).union(set(vector2)))
+	return intersection_size / float(union_size)
+	
 if __name__ == '__main__':
 	main()
