@@ -82,7 +82,7 @@ def salt(dish_nutrition):
 
 
 def get_dishes():
-  with open('database.json') as json_file:
+  with open('../Utilities/Database/database.json') as json_file:
     foods_list = json.load(json_file)
   return foods_list
 
@@ -326,8 +326,11 @@ def get_cuisine_tags(food):
   if len(closest_match) > 0 and closest_match[0] in tags:
     return tags[closest_match[0]]
   else:
-    return list()
-
+    closest_match = difflib.get_close_matches(food, list(tags), cutoff=0.4)
+    if len(closest_match) > 0 and closest_match[0] in tags:
+      return tags[closest_match[0]]
+    else:
+      return list()
 # def get_cuisine_tags(food_name):
 #   with open('cuisine_tags.json') as json_file:
 #     tags = json.load(json_file)
@@ -348,39 +351,48 @@ def get_cuisine_tags(food):
 
 def identify_cuisine(food, foods_list, vector, distance_metric):
   distances = dict()
-  if distance_metric == jaccard_similarity:
-    similarity = 0
-    # closest_dish = dict()
-    for dish in foods_list:
-      js = jaccard_similarity(food['ingredient_str'], dish['ingredient'])
-      if js > similarity:
-        similarity = js
-        # closest_dish = dish
-
-  else:
-    food_bitstring = vector.toarray()[food['dish_id'] - 1]
-    for index, bitstring in enumerate(vector.toarray()):
-      if index != food['dish_id']:
-        distances[(foods_list[index]['dish_name'])] = compare_distance(
-            food_bitstring, bitstring, distance_metric)
+  #print(food['dish_id'], food['ingredient_str'])
+  # if distance_metric == jaccard_similarity:
+  #   similarity = 0
+  #   closest_dish = dict()
+  #   for dish in foods_list:
+  #     js = jaccard_similarity(food['ingredient_str'], dish['ingredient'])
+  #     if js > similarity:
+  #       similarity = js
+  #       closest_dish = dish
+  #   print(closest_dish)
+  # else:
+  food_bitstring = vector.toarray()[food['dish_id'] - 1]
+  for index, bitstring in enumerate(vector.toarray()):
+    if index != food['dish_id']:
+      distances[(foods_list[index]['dish_name'])] = compare_distance(
+          food_bitstring, bitstring, distance_metric)
   return sorted(distances.items(), key=lambda x: x[1], reverse=True)
 
 
-def create_training_set(foods_list):
+def create_training_set(foods_list,test_set):
   training_set = list()
   total = 0
   count = dict()
   count['north indian'] = 0
   count['south indian'] = 0
+  for food in test_set:
+    item = dict()
+    item['dish_name'] = food['dish_name']
+    item['dish_id'] = total
+    item['ingredient'] = food['ingredient_str']
+    training_set.append(item)
+    total += 1
 
-  sample = random.sample(foods_list, 400)
-  for food in sample:
+  random.shuffle(foods_list)
+  for food in foods_list:
     cuisine_tag = get_cuisine_tags(food['dish_name'])
     if len(cuisine_tag) > 0 and cuisine_tag[0] not in count:
       count[cuisine_tag[0]] = 0
     if total < 400 and len(cuisine_tag) > 0:
       item = dict()
-      item['name'] = food['dish_name']
+      item['dish_name'] = food['dish_name']
+      item['dish_id'] = total
       item['ingredient'] = food['ingredient_str']
       item['cuisine'] = cuisine_tag
       ''' probably use this to restrict amount of north indian tags
@@ -395,9 +407,12 @@ def create_training_set(foods_list):
       count[cuisine_tag[0]] += 1
       training_set.append(item)
       total += 1
-
+  print(count)
   return training_set
 
+def load_test_dishes(test_file):
+  with open(test_file) as json_file:
+    return json.load(json_file)
 
 def append_parsed(foods_list):
   for food in foods_list:
@@ -414,48 +429,67 @@ def append_parsed(foods_list):
 
 def knn(neighbors_cuisines):
   nearest_neighbor_dict = dict()
-  total_weight = 0.0
-  for item in neighbors_cuisines:
-    key = item[0]
-    if item[0] is None:
-      key = 'unknown'
-    nearest_neighbor_dict[key] = dict()
-    nearest_neighbor_dict[key]['weight'] = 0.0
-  for item in neighbors_cuisines:
-    key = item[0]
-    if item[0] is None:
-      key = 'unknown'
-    nearest_neighbor_dict[key]['weight'] += item[1]
-    total_weight += item[1]
+  # for item in neighbors_cuisines:
+  #   vote = item[0]
+  #   nearest_neighbor_dict[key] = dict()
+  #   nearest_neighbor_dict[key]['weight'] = 0.0
+  # for item in neighbors_cuisines:
+  #   key = item[0]
+  #   if item[0] is None:
+  #     key = 'unknown'
+  #   nearest_neighbor_dict[key]['weight'] += item[1]
+  #   total_weight += item[1]
 
-  for key in nearest_neighbor_dict:
-    nearest_neighbor_dict[key]['weight'] /= total_weight
-  return nearest_neighbor_dict
+  for item in neighbors_cuisines:
+    key = item[0]
+    if len(key) == 1:
+      key = key[0]
+      if key in nearest_neighbor_dict:
+        nearest_neighbor_dict[key] += 1 / float(math.pow(item[1],2))
+      else:
+        nearest_neighbor_dict[key] = 1 / float(math.pow(item[1],2))
+    elif len(key) == 2:
+      if key[0] in nearest_neighbor_dict and key[1] in nearest_neighbor_dict:
+        nearest_neighbor_dict[key[0]] = 1 / float(math.pow(item[1],2))
+        nearest_neighbor_dict[key[1]] = 1 / float(math.pow(item[1],2)) 
+      elif key[0] not in nearest_neighbor_dict:
+        nearest_neighbor_dict[key[0]] = 1 / float(math.pow(item[1],2))
+      else:
+        nearest_neighbor_dict[key[1]] = 1 / float(math.pow(item[1],2))
+  return sorted(nearest_neighbor_dict.items(),key= lambda x : x[1])
 
 
 all_recipes = list()
 vectorizer = CountVectorizer()
 
-
 def main():
   foods_list = get_dishes()
   foods_list = append_parsed(foods_list)
   copy_foods_list = copy.deepcopy(foods_list)
-  training_set = create_training_set(copy_foods_list)
+  test_dishes = load_test_dishes('sample_five.json')
+  test_dishes = append_parsed(test_dishes)
+  training_set = create_training_set(copy_foods_list,test_dishes)
+  test_indices = [i['dish_id'] for i in training_set if 'cuisine' not in i]
   all_recipes = [i['ingredient'] for i in training_set]
   vector = vectorizer.fit_transform(all_recipes)
-  dish_id = 1380
-  # print(foods_list[dish_id]['dish_name'])
-  neighbors = identify_cuisine(foods_list[dish_id],
-                               training_set,
-                               vector,
-                               jaccard_similarity)
+  #for index in test_indices:
+  test_dish = training_set[test_indices[1]]
+  print(test_dish['dish_name'])
+  neighbors = identify_cuisine(test_dish,
+                             training_set,
+                             vector,
+                             cosine_similarity)
+  #print(json.dumps(neighbors))
+  #print(type(neighbors))
   neighbors_cuisines = [(get_cuisine_tags(dish_name[0]), dish_name[1])
-                        for dish_name
-                        in neighbors
-                        ]
+                      for dish_name
+                      in neighbors
+                      ][:7]
+  #print(json.dumps(neighbors_cuisines))
+  #print(foods_list[dish_id]['dish_name'])
   d = knn(neighbors_cuisines)
   print(json.dumps(d))
+
 
 
 def compare_distance(vector1, vector2, distance_metric):
