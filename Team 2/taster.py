@@ -9,7 +9,7 @@ from nltk import PorterStemmer
 from nltk.corpus import stopwords
 from sklearn.feature_extraction.text import CountVectorizer
 import random
-
+import user
 SWEET_FACTOR_X = 0.9
 SWEET_FACTOR_Y = 0.1
 
@@ -330,7 +330,7 @@ def get_cuisine_tags(food):
     if len(closest_match) > 0 and closest_match[0] in tags:
       return tags[closest_match[0]]
     else:
-      return list()
+      return ['unknown']
 # def get_cuisine_tags(food_name):
 #   with open('cuisine_tags.json') as json_file:
 #     tags = json.load(json_file)
@@ -381,6 +381,7 @@ def create_training_set(foods_list,test_set):
     item['dish_name'] = food['dish_name']
     item['dish_id'] = total
     item['ingredient'] = food['ingredient_str']
+    item['nutrients'] = food['nutrients']
     training_set.append(item)
     total += 1
 
@@ -395,6 +396,7 @@ def create_training_set(foods_list,test_set):
       item['dish_id'] = total
       item['ingredient'] = food['ingredient_str']
       item['cuisine'] = cuisine_tag
+      item['nutrients'] = food['nutrients']
       ''' probably use this to restrict amount of north indian tags
       if 'north indian' in cuisine_tag and count['north indian'] < 61:
         count['north indian'] += 1
@@ -451,7 +453,7 @@ def knn(neighbors_cuisines):
     elif len(key) == 2:
       if key[0] in nearest_neighbor_dict and key[1] in nearest_neighbor_dict:
         nearest_neighbor_dict[key[0]] = 1 / float(math.pow(item[1],2))
-        nearest_neighbor_dict[key[1]] = 1 / float(math.pow(item[1],2)) 
+        nearest_neighbor_dict[key[1]] = 1 / float(math.pow(item[1],2))
       elif key[0] not in nearest_neighbor_dict:
         nearest_neighbor_dict[key[0]] = 1 / float(math.pow(item[1],2))
       else:
@@ -467,28 +469,34 @@ def main():
   foods_list = append_parsed(foods_list)
   copy_foods_list = copy.deepcopy(foods_list)
   test_dishes = load_test_dishes('sample_five.json')
+  uprofile = user.Profile(data=test_dishes, history=5)
   test_dishes = append_parsed(test_dishes)
   training_set = create_training_set(copy_foods_list,test_dishes)
   test_indices = [i['dish_id'] for i in training_set if 'cuisine' not in i]
   all_recipes = [i['ingredient'] for i in training_set]
   vector = vectorizer.fit_transform(all_recipes)
-  #for index in test_indices:
-  test_dish = training_set[test_indices[1]]
-  print(test_dish['dish_name'])
-  neighbors = identify_cuisine(test_dish,
-                             training_set,
-                             vector,
-                             cosine_similarity)
-  #print(json.dumps(neighbors))
-  #print(type(neighbors))
-  neighbors_cuisines = [(get_cuisine_tags(dish_name[0]), dish_name[1])
-                      for dish_name
-                      in neighbors
-                      ][:7]
-  #print(json.dumps(neighbors_cuisines))
-  #print(foods_list[dish_id]['dish_name'])
-  d = knn(neighbors_cuisines)
-  print(json.dumps(d))
+  for index in test_indices:
+    test_dish = training_set[test_indices[index]]
+    print(test_dish['dish_name'])
+    neighbors = identify_cuisine(test_dish,
+                               training_set,
+                               vector,
+                               cosine_similarity)
+    #print(json.dumps(neighbors))
+    #print(type(neighbors))
+    neighbors_cuisines = [(get_cuisine_tags(dish_name[0]), dish_name[1])
+                        for dish_name
+                        in neighbors
+                        ][:7]
+    #print(json.dumps(neighbors_cuisines))
+    #print(foods_list[dish_id]['dish_name'])
+    d = knn(neighbors_cuisines)
+    print("The taste profile for the dish", test_dish['dish_name'],"is")
+    print(taste(test_dish))
+    print("Probable classes are ")
+    print(json.dumps(d, indent='  '))
+  print("User profile for the specified dishes is ")
+  print(uprofile)
 
 
 
