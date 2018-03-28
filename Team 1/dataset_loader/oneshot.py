@@ -4,7 +4,7 @@ import cv2
 import itertools
 import random
 import json
-import time
+import random
 
 
 class dataset_loader:
@@ -104,6 +104,11 @@ class dataset_loader:
 
         return np.asarray(ret_val)
 
+    def shuffle_dataset(self):
+        tuples = list(zip(self.image_pairs_left, self.image_pairs_right, self.image_pairs_labels))
+        random.shuffle(tuples)
+        self.image_pairs_left, self.image_pairs_right, self.image_pairs_labels = zip(*tuples)
+
     def generate_dataset(self):
         for category in self.categories:
             same_category_combinations = list(itertools.combinations(self.images_paths[category], 2))
@@ -124,6 +129,7 @@ class dataset_loader:
                     self.image_pairs_right.append(combination[1])
                     self.image_pairs_labels.append(0)
                 self.length += temp_length
+        self.shuffle_dataset()
 
     def update_dataset(self, image_label_pair):
         # image_label_pair --> [[path of image,name of category],[path...,category],...]
