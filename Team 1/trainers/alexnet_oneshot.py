@@ -1,4 +1,4 @@
-from models import default_oneshot
+from models import alexnet_oneshot
 from dataset_loader import oneshot
 from keras.optimizers import Adam
 from keras.preprocessing.image import ImageDataGenerator
@@ -29,7 +29,7 @@ def main(dataset_path, working_dir, testing_path, testing_working_dir, dimension
                 yield ({'left_input': x, 'right_input': y},  {'main_output': z})
             dataset_loader.reset()
 
-    model = default_oneshot(dimensions).get_model()
+    model = alexnet_oneshot(dimensions).get_model()
     optimizer = Adam(0.00006)
     dataset_loader = oneshot.dataset_loader(dataset_path, working_dir, dimensions, batch_size)
 
@@ -49,6 +49,7 @@ def main(dataset_path, working_dir, testing_path, testing_working_dir, dimension
     print("Testing...")
     print(model.evaluate(x={'left_input': consolidated_left, 'right_input': consolidated_right}, y=consolidated_label))
     dataset_loader.delete_from_disk()
+
 
 if __name__=='__main__':
     dataset_path = 'D:\\Python Projects\\8th Sem Project Work\\Resources\\imageData43scaled\\Train'
