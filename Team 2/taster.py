@@ -163,7 +163,7 @@ def parse_recipe(food):
   for ing in ingredients_list:
     ingredient = identify_measurement(ing)
     parsed_ingredients.append(ingredient)
-
+  print(parsed_ingredients)
   return parsed_ingredients
 
 
@@ -381,7 +381,6 @@ def create_training_set(foods_list,test_set):
     item['dish_name'] = food['dish_name']
     item['dish_id'] = total
     item['ingredient'] = food['ingredient_str']
-    item['nutrients'] = food['nutrients']
     training_set.append(item)
     total += 1
 
@@ -396,7 +395,6 @@ def create_training_set(foods_list,test_set):
       item['dish_id'] = total
       item['ingredient'] = food['ingredient_str']
       item['cuisine'] = cuisine_tag
-      item['nutrients'] = food['nutrients']
       ''' probably use this to restrict amount of north indian tags
       if 'north indian' in cuisine_tag and count['north indian'] < 61:
         count['north indian'] += 1
@@ -491,11 +489,11 @@ def main():
     #print(json.dumps(neighbors_cuisines))
     #print(foods_list[dish_id]['dish_name'])
     d = knn(neighbors_cuisines)
-    print("The taste profile for the dish", test_dish['dish_name'],"is")
-    print(taste(test_dish))
+    # print("The taste profile for the dish", test_dish['dish_name'],"is")
+    # print(taste(test_dish))
     print("Probable classes are ")
     print(json.dumps(d, indent='  '))
-  print("User profile for the specified dishes is ")
+  print("User profile for the specifie")
   print(uprofile)
 
 

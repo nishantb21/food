@@ -12,6 +12,7 @@ class Dish:
     self.data = data
 
     tastedata = taster.taste(data)
+    print("Taste profile for the dish ", data['dish_name'], "is ", tastedata)
     for key in tastedata.keys():
       setattr(self, key, tastedata[key])
 
