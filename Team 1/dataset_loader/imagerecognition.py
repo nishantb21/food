@@ -96,21 +96,41 @@ class dataset_loader:
 
         return np.asarray(ret_val)
 
-    def generate_dataset(self):
-        self.number_categories = len(self.categories)
+    def shuffle_dataset(self):
+        current_indices = [0] * self.number_categories
         count = 0
-        for category in self.categories:
+        for i in range(self.length):
+            current_category = self.categories[count]
             label = [0] * self.number_categories
             label[count] = 1
+            self.images_paths.append(self.images_paths_mapping[current_category][current_indices[count]])
+            self.labels.append(label)
+
+            current_indices[count] += 1
+            count += 1
+            count = count % self.number_categories
+            if i != (self.length - 1):
+                while current_indices[count] == self.categories_length[count]:
+                    count += 1
+                    count = count % self.number_categories
+
+        del self.images_paths_mapping
+        del self.categories_length
+
+    def generate_dataset(self):
+        self.number_categories = len(self.categories)
+        self.images_paths_mapping = {}
+        self.categories_length = []
+        for category in self.categories:
             temp_path = os.path.join(self.dataset_path, category)
             temp_category_paths = os.listdir(temp_path)
             temp_category_paths = [os.path.join(temp_path, x) for x in temp_category_paths]
             paths_length = len(temp_category_paths)
-
-            self.images_paths.extend(temp_category_paths)
-            self.labels.extend([label] * paths_length)
+            self.images_paths_mapping[category] = temp_category_paths
+            self.categories_length.append(paths_length)
             self.length += paths_length
-            count += 1
+
+        self.shuffle_dataset()
 
     def update_dataset(self, image_label_pair):
         # image_label_pair --> [[path of image,name of category],[path...,category],...]
