@@ -125,5 +125,5 @@ if __name__ == "__main__":
 
 	final_dict = pickle.load(open(os.path.join(my_path,"../Utilities/Team 3/tagged_dishes.pickle"), "rb" ))
 
-	x = get_tags_as_dict(final_dict, 4)
+	x = get_tags_as_dict(final_dict, 1381)
 	print(x)

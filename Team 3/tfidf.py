@@ -1,5 +1,6 @@
 from collections import Counter, defaultdict
 from sklearn.metrics import mean_squared_error
+from sklearn.model_selection import train_test_split
 import sys
 import json
 import math
@@ -40,7 +41,7 @@ def featurize(db):
     d is a document 
     tf(i, d) is the frequency of term i in document d
     max_k tf(k, d) is the maximum frequency of any term in document d
-    N is the number of documents 
+    N is the number of documents
     """
     def tf(word, doc):
         return doc.count(word) / Counter(doc).most_common()[0][1]
@@ -57,9 +58,12 @@ def featurize(db):
         for t in tokens:
             if t in vocab:
                 matrixRow_list[0][vocab[t]] = tfidf(t,tokens,dfdict,N)
+
+        # to matrixRow_list[0][max(vocab) + ...] = flavour scores
         return csr_matrix(matrixRow_list)
 
     N=len(db)
+
     doclist = db['tokens'].tolist()
     vocab = { i:x for x,i in enumerate(sorted(list(set(i for s in doclist for i in s)))) }
 
@@ -69,7 +73,7 @@ def featurize(db):
 
     csrlist = []
     for index, row in db.iterrows():
-         csrlist.append(getcsrmatrix(row['tokens'],dfdict,N,vocab))
+         csrlist.append(getcsrmatrix(row['tokens'],dfdict,N,vocab)) # row['dishId'] and df with flavour scores
 
     db['features'] =  csrlist
     return (db,vocab)
@@ -79,11 +83,14 @@ def my_train_test_split(ratings):
     """
     Returns a random split of the ratings matrix into a training and testing set.
     """
-
-    test = set(range(len(ratings))[::20])
+    train_set, test_set = train_test_split(ratings, test_size = 0.20, random_state = 42)
+    return train_set, test_set
+    '''
+    test = set(range(len(ratings))[::10])
     train = sorted(set(range(len(ratings))) - test)
     test = sorted(test)
     return ratings.iloc[train], ratings.iloc[test]
+    '''
 
 def cosine_sim(a, b):
     """
@@ -100,7 +107,6 @@ def make_predictions(db, ratings_train, ratings_test):
     This is done by computing the weighted average
     rating for every other dish that the user has rated.
     """
-
     result = []
     x = 0
     for index,row in ratings_test.iterrows():
@@ -111,6 +117,7 @@ def make_predictions(db, ratings_train, ratings_test):
         # mrlist contains scores of dishes rated by the user (dishes in mlist)
         mrlist = list(ratings_train.loc[ratings_train['userId'] == row['userId']]['rating'])
         # computing similarity between dishes user rated and the current dish in the test set
+
         sim = [cosine_sim(c,db.loc[db['dishId'] ==row['dishId']]['features'].values[0]) for c in csrlist]
         # computing similarity times the rating for known dish
         wan = sum([ v*mrlist[i] for i,v in enumerate(sim) if v>0])
@@ -132,7 +139,6 @@ def main(data, db, predict_on):
     db, vocab = featurize(db)
     
     ratings_train, ratings_test = my_train_test_split(data)
-
     predictions = make_predictions(db, ratings_train, ratings_test)
 
     predicted_test_error = mean_squared_error(ratings_test.rating, predictions) ** 0.5
