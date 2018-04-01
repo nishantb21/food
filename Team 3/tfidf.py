@@ -123,7 +123,7 @@ def make_predictions(db, ratings_train, ratings_test):
         wan = sum([ v*mrlist[i] for i,v in enumerate(sim) if v>0])
         wadlist = [i for i in sim if i>0]
         ## check for sum(wadlist) > 1
-        if (len(wadlist)>0):
+        if len(wadlist)>0 and sum(wadlist) >= 1:
             result.append(wan/sum(wadlist))
             x = x + 1
         else:
@@ -184,7 +184,7 @@ def start(predict_on = 100):
     
     time_end = time.time()
 
-    answer = {"user" : predict_on, "predicted_test_error": round(predicted_test_error, 2), "time" : round(time_end - time_start, 2), "predicted_rating_list" : predicted_rating, "original_rating_list" : original_rating}
+    answer = {"user" : predict_on, "predicted_test_error": predicted_test_error, "time" : round(time_end - time_start, 2), "predicted_rating_list" : predicted_rating, "original_rating_list" : original_rating}
     # answer = json.dumps(answer)
     return answer
 

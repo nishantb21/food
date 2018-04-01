@@ -10,7 +10,7 @@ def print_tables(response, method):
 	m = 'Matrix Factorisation' if method == 1 else 'Tf-Idf'
 
 	t = PrettyTable(['USER', 'METHOD','RMSE'])
-	t.add_row([response['user'], m, round(response['predicted_test_error'], 2)])
+	t.add_row([response['user'], m, response['predicted_test_error']])
 	print(t)
 
 	print("\n")
