@@ -102,17 +102,25 @@ def make_predictions(db, ratings_train, ratings_test):
     """
 
     result = []
+    x = 0
     for index,row in ratings_test.iterrows():
+        # mlist contains dishIds rated by the user in the train set
         mlist = list(ratings_train.loc[ratings_train['userId'] == row['userId']]['dishId'])
+        # csr list contains tfidf scores of tags for dishes rated by the user
         csrlist = list(db.loc[db['dishId'].isin(mlist)]['features'])
-        mrlist = list(ratings_train.loc[ratings_train['userId'] ==row['userId']]['rating'])
+        # mrlist contains scores of dishes rated by the user (dishes in mlist)
+        mrlist = list(ratings_train.loc[ratings_train['userId'] == row['userId']]['rating'])
+        # computing similarity between dishes user rated and the current dish in the test set
         sim = [cosine_sim(c,db.loc[db['dishId'] ==row['dishId']]['features'].values[0]) for c in csrlist]
-        wan = sum([ v*mrlist[i] for i,v in enumerate(sim) if v>0 ])
+        # computing similarity times the rating for known dish
+        wan = sum([ v*mrlist[i] for i,v in enumerate(sim) if v>0])
         wadlist = [i for i in sim if i>0]
+        ## check for sum(wadlist) > 1
         if (len(wadlist)>0):
             result.append(wan/sum(wadlist))
+            x = x + 1
         else:
-            result.append(np.mean(mrlist))
+            result.append(np.mean(mrlist)) # if dish did not match with anything approx as average of users rating
     return np.array(result)
 
 def main(data, db, predict_on):

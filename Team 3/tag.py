@@ -117,13 +117,13 @@ def get_difference(all_tags, tags):
 '''
 
 if __name__ == "__main__":
-	result = set_tags()
-	print(len(result))
+	# result = set_tags()
+	# print(len(result))
 
-	print(len(tags), len(tags2))
-	print(len(all_unique_tags()))
+	# print(len(tags), len(tags2))
+	# print(len(all_unique_tags()))
 
-	# final_dict = pickle.load(open(os.path.join(my_path,"../Utilities/Team 3/tagged_dishes.pickle"), "rb" ))
+	final_dict = pickle.load(open(os.path.join(my_path,"../Utilities/Team 3/tagged_dishes.pickle"), "rb" ))
 
-	# x = get_tags_as_dict(final_dict, 1)
-	# print(x)
+	x = get_tags_as_dict(final_dict, 4)
+	print(x)
