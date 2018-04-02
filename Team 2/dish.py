@@ -11,15 +11,15 @@ class Dish:
     '''
     self.data = data
 
-    tastedata = taster.taste(data)
-    print("Taste profile for the dish ", data['dish_name'], "is ", tastedata)
-    for key in tastedata.keys():
-      setattr(self, key, tastedata[key])
+    self.tastedata = taster.taste(data)
+    print("Taste profile for the dish ", data['dish_name'], "is ", self.tastedata)
+    for key in self.tastedata.keys():
+      setattr(self, key, self.tastedata[key])
 
     self.most_significant_flavour = ("default", 0)
 
     # for key, value in data["flavours"].items():
-    for key, value in tastedata.items():
+    for key, value in self.tastedata.items():
       if self.most_significant_flavour[1] < value:
         self.most_significant_flavour = (key, value)
 

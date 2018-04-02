@@ -12,7 +12,7 @@ import sys
 
 class Profile:
   def __init__(self, data=[], dishlistfile='tasteinp.json', history=20):
-    self.flavourlist = ["salt", "sweet", "rich"]
+    # self.flavourlist = ["salt", "sweet", "rich"]
     self.segpercs = [0.5, 0.3, 0.2]
     self.history = history
     self.items = list()
@@ -25,6 +25,7 @@ class Profile:
         self.items.append(Dish(item))
     # Uncomment for testing
     # self.historydata = random.sample(self.items, k=history)
+    self.flavourlist = self.items[0].tastedata.keys()
     self.historydata = copy.deepcopy(self.items)
     self.init_profile(self.historydata)
 
