@@ -161,10 +161,14 @@ def main(data, db, predict_on):
     return (predicted_test_error, predict_on_user(predict_on = predict_on))
     
 
-def start(predict_on = 100):
+def start(type = 'all', predict_on = 100):
     data = pd.read_csv(os.path.join(my_path,'../Utilities/Team 3/review.csv'))
-    data = data[data['userId'].isin(data['userId'].value_counts()[data['userId'].value_counts() >= 5].index)]    
-    db = pd.read_csv(os.path.join(my_path,'../Utilities/Team 3/database.csv'), names = ['dishId', 'tags'])
+    data = data[data['userId'].isin(data['userId'].value_counts()[data['userId'].value_counts() >= 5].index)]
+    if type == 'all':
+        db = pd.read_csv(os.path.join(my_path,'../Utilities/Team 3/meta_cuisine.csv'))
+    elif type == 'meta':
+        db = pd.read_csv(os.path.join(my_path,'../Utilities/Team 3/database.csv'), names = ['dishId', 'tags'])
+
     dishes = pd.read_csv(os.path.join(my_path,'../Utilities/Team 3/id_name_mapping.csv'), names = ['dishId', 'dish_name'])
 
     time_start = time.time()
@@ -201,6 +205,48 @@ def getpipedtags():
         writer = csv.writer(f)
         writer.writerows(objects)
 
+def add_cuisine_tags():
+    a = pd.read_csv(os.path.join(my_path,'../Utilities/Team 3/database.csv'), names = ['dishId', 'tags'])
+    b = pd.read_csv(os.path.join(my_path,'../Utilities/Team 3/cuisine_tags.csv'))
+
+    b = b.drop(['dishName'], axis = 1)
+    b = b.drop_duplicates(subset=['dishId'])
+
+    merged = pd.merge(a, b, on = ['dishId'], how = 'left')
+
+    merged = merged.fillna('')
+
+    newlist = merged['tags'] + "|" + merged['cuisine']
+    newlist = list(newlist)
+
+    x_list = []
+    for i in newlist:
+        if i.endswith('|'):
+            x_list.append(i[:len(i) - 1])
+        else:
+            x_list.append(i)
+
+    merged['all_tags'] = x_list
+    merged = merged.drop(['tags', 'cuisine'], axis = 1)
+    merged.columns = ['dishId', 'tags']
+    merged.to_csv(os.path.join(my_path,'../Utilities/Team 3/meta_cuisine.csv'), index = False)
+
+def correct_tags():
+    df = pd.read_csv(os.path.join(my_path,'../Utilities/Team 3/meta_cuisine.csv'))
+
+    new_tags = []
+
+    current_tags = list(df['tags'])
+
+    for i in current_tags:
+        new_tags.append(i.replace(" ", ""))
+
+    df['tags'] = new_tags
+
+    df.to_csv(os.path.join(my_path,'../Utilities/Team 3/meta_cuisine.csv'), index = False)
+
 if __name__ == '__main__':
     getpipedtags()
+    add_cuisine_tags()
+    correct_tags()
     start()

@@ -36,6 +36,8 @@ ap.add_argument("--tfidf", action = 'store_true')
 ap.add_argument("--retrain", action = 'store_true')
 ap.add_argument("--terminal", action = 'store_true')
 ap.add_argument("--predict")
+ap.add_argument("--type") # all and meta
+
 argvalues = ap.parse_args()
 
 method = 0
@@ -55,7 +57,7 @@ if argvalues.matF:
 
 elif argvalues.tfidf:
 	method = 2
-	response = tfidf.start(predict_on = int(argvalues.predict))
+	response = tfidf.start(type = argvalues.type, predict_on = int(argvalues.predict))
 
 if argvalues.terminal:
 	print_tables(response, method)
