@@ -8,6 +8,7 @@
     "punjab"
   ],
   "keema": [
+    "north indian",
     "punjab"
   ],
   "roti": [
@@ -77,8 +78,7 @@
     "bengal"
   ],
   "red lentil": [
-    "north indian",
-    ""
+    "north indian"
   ],
   "butter chicken": [
     "north indian",
@@ -289,9 +289,6 @@
     "north indian",
     "uttar pradesh"
   ],
-  "Evin's Indian Apricot Chicken": [
-    ""
-  ],
   "Cod Curry": [
     "south indian",
     "tamil nadu"
@@ -442,7 +439,7 @@
   ],
   "Roomali Roti": [
     "south indian",
-    "andhra"
+    "andhra pradesh"
   ],
   "Bengali Chicken Curry with Potatoes": [
     "east indian",
@@ -577,7 +574,7 @@
   ],
   "Chicken Biryani, Hyderabadi Style": [
     "south indian",
-    "andhra"
+    "andhra pradesh"
   ],
   "Slow Cooker Chicken Tikka Masala": [
     "north indian",
@@ -950,7 +947,7 @@
   ],
   "Bangaladumpa (Potato) Upma Koora": [
     "south indian",
-    "andhra"
+    "andhra pradesh"
   ],
   "South Indian Lentil Kootu": [
     "south indian",
