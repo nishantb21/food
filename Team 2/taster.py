@@ -12,6 +12,11 @@ import random
 import utilities
 import itertools
 import user
+import utilities
+import itertools
+import os
+
+
 SWEET_FACTOR_X = 0.9
 SWEET_FACTOR_Y = 0.1
 
@@ -35,7 +40,7 @@ def strip_accents(s):
 
 def sweet(nutrition_data, SWEET_FACTOR_X=0.85, SWEET_FACTOR_Y=0.1):
   try:
-    total_weight = nutrition_data['Weight']
+    total_weight = nutrition_data['weight']
     fibtg = 0
     if 'dietary_fiber' in nutrition_data and nutrition_data['dietary_fiber'] is not None:
       fibtg = nutrition_data['dietary_fiber']
@@ -54,7 +59,7 @@ def rich(nutrition_data,
          RICHNESS_FACTOR_Y=0.7,
          RICHNESS_FACTOR_Z=50):
   try:
-    total_weight = nutrition_data['Weight']
+    total_weight = nutrition_data['weight']
     richness_score_x = 0
     if 'sat_fat' in nutrition_data:
       richness_score_x = nutrition_data['sat_fat'] / \
@@ -77,7 +82,7 @@ def rich(nutrition_data,
 
 
 def salt(dish_nutrition):
-  totalweight = dish_nutrition['Weight']
+  totalweight = dish_nutrition['weight']
   if totalweight == 0:
     return 0
 
@@ -179,27 +184,142 @@ def get_nutrients(food):
         nutrients[nutrient] = float(number[0])
       else:
         nutrients[nutrient] = 0
-  nutrients['Weight'] = totalweight
+  nutrients['weight'] = totalweight
   return nutrients
+
+def match_descriptors(dish_title, descriptor_dict):
+    dish_split = dish_title.split(" ")
+    final_scores = dict()
+    for item in descriptor_dict:
+        for pair in itertools.product(item['items'].items(), dish_split):
+            if pair[0][0].lower() in pair[1].lower().strip():
+                try:
+                    final_scores[item["name"]] += pair[0][1]
+                except KeyError:
+                    final_scores[item["name"]] = pair[0][1]
+    return final_scores
+
+def total_nutrient_weight(dish_nutrition):
+    return dish_nutrition['fat'] + dish_nutrition['carbs'] + dish_nutrition['protein']
+
+def bitter(food, nutrition_data, LEVEL1_MULTIPLIER=0.80, LEVEL2_MULTIPLIER=1.40, MULTI_WORD_MULTIPLIER=2.3):
+    bitter_descriptors = utilities.read_json("bitter_descriptors.json")
+    descriptor_score = match_descriptors(food['ingredient_str'], bitter_descriptors)
+    bitterscore = nutrition_data["iron"] / total_nutrient_weight(nutrition_data)
+    pairings = zip([LEVEL1_MULTIPLIER, LEVEL2_MULTIPLIER, MULTI_WORD_MULTIPLIER], ["bitter_l1", "bitter_l2", "multi_words"])
+    for pair in pairings:
+        if descriptor_score.__contains__(pair[1]):
+            bitterscore += pair[0] * descriptor_score[pair[1]] * 1
+    return round(bitterscore / 1.4571, 3)
+
+def sour(food,
+         nutrition_data,
+         SOURNESS_FACTOR_X=0.1,
+         SOURNESS_FACTOR_Y=0.25,
+         SOURNESS_FACTOR_Z=0.5):
+
+    total_weight = nutrition_data['carbs'] + \
+        nutrition_data['protein'] + nutrition_data['fat']
+    food_words = food['ingredient_str'].upper().split(' ')
+
+    try:
+        vitamin_c = nutrition_data['vitamin_c']
+    except KeyError:
+        vitamin_c = 0.0
+
+    with open('sour.json') as f:
+        sour = json.load(f)
+
+    with open('too_sour.json') as f:
+        too_sour = json.load(f)
+    try:
+        sour_score_x = vitamin_c / total_weight
+    except ZeroDivisionError:
+        sour_score_x = 0
+
+    sour_score_y = 0
+    sour_score_z = 0
+
+    for word in food_words:
+        if word in sour[word[0]]:
+            sour_score_y += 1
+        if word in too_sour[word[0]]:
+            sour_score_z += 1
+    sour_score = round(
+        ((SOURNESS_FACTOR_X * sour_score_x) +
+         (SOURNESS_FACTOR_Y * sour_score_y) +
+         (SOURNESS_FACTOR_Z * sour_score_z)
+         ) / 0.995, 3)
+    if sour_score > 1:
+        sour_score = 1
+    return round(sour_score * 10, 3)
+
+def umami(food,
+          nutrition_data,
+          PROTEIN_SUPPLEMENT_MULTIPLIER=0.80,
+          VEGETABLES_MULTIPLIER=10,
+          MEAT_MULTIPLIER=10,
+          STRING_MULTIPLIER=9.45):
+    for key in nutrition_data.keys():
+        if nutrition_data[key] is None:
+            nutrition_data[key] = 0
+    umami_descriptors = utilities.read_json("umami_descriptors.json")
+    descriptor_score = match_descriptors(food['ingredient_str'], umami_descriptors)
+
+    umamiscore = nutrition_data["protein"] / total_nutrient_weight(nutrition_data)
+    umamiscore *= 10
+
+    pairings = zip([PROTEIN_SUPPLEMENT_MULTIPLIER, VEGETABLES_MULTIPLIER
+                   , MEAT_MULTIPLIER, STRING_MULTIPLIER],
+                   ["protein_supps", "vegetables",
+                   "meat", "savory_strings"])
+    for pair in pairings:
+        if descriptor_score.__contains__(pair[1]):
+            umamiscore += pair[0] * descriptor_score[pair[1]]
+
+    return round(umamiscore, 3) if umamiscore <= 10 else 10
 
 
 def taste(food):
-  taste_scores = dict()
-  nutrients = get_nutrients(food)
-  salt_score = salt(nutrients)
-  taste_scores['salt'] = salt_score
-  sweet_score = sweet(nutrients)
-  taste_scores['sweet'] = sweet_score
-  richness_score = rich(nutrients)
-  taste_scores['rich'] = richness_score
-  umami_score = umami(food,nutrients)
-  taste_scores['umami'] = umami_score
-  sour_score = sour(food,nutrients)
-  taste_scores['sour'] = sour_score
-  tags = get_cuisine_tags(food['dish_name'])
-  cuisine_multipliers = get_cuisine_multipliers(tags)
-  taste_scores = update_scores(taste_scores, cuisine_multipliers)
-  return taste_scores
+# <<<<<<< HEAD
+#   taste_scores = dict()
+#   nutrients = get_nutrients(food)
+#   salt_score = salt(nutrients)
+#   taste_scores['salt'] = salt_score
+#   sweet_score = sweet(nutrients)
+#   taste_scores['sweet'] = sweet_score
+#   richness_score = rich(nutrients)
+#   taste_scores['rich'] = richness_score
+#   umami_score = umami(food,nutrients)
+#   taste_scores['umami'] = umami_score
+#   sour_score = sour(food,nutrients)
+#   taste_scores['sour'] = sour_score
+#   tags = get_cuisine_tags(food['dish_name'])
+#   cuisine_multipliers = get_cuisine_multipliers(tags)
+#   taste_scores = update_scores(taste_scores, cuisine_multipliers)
+#   return taste_scores
+# =======
+    nutrients = get_nutrients(food)
+    tastes = {
+        "salt": salt(nutrients),
+        "sweet": sweet(nutrients),
+        "rich": rich(nutrients),
+        "umami": umami(food, nutrients),
+        "sour": sour(food, nutrients),
+        "bitter": bitter(food, nutrients)
+    }
+    if not os.path.exists("../Utilities/Team 2"):
+        os.mkdir("../Utilities/Team 2")
+    with open("../Utilities/Team 2/tastes.csv", "a") as csvfile:
+        csvfile.write(",".join([str(food['dish_id'])] +
+                               [str(round(tastes[key], 3))
+                                for
+                                key in
+                                sorted(tastes.keys())]
+                               )
+                       + "\n")
+    return tastes
+#>>>>>>> 4900a75db52ee5543bd547efeb95c75359091329
 
 
 def update_scores(taste_scores, cuisine_multipliers):
@@ -233,7 +353,11 @@ def parse_recipe(food):
   for ing in ingredients_list:
     ingredient = identify_measurement(ing)
     parsed_ingredients.append(ingredient)
-  #print(parsed_ingredients)
+# <<<<<<< HEAD
+#   #print(parsed_ingredients)
+# =======
+#   # print(parsed_ingredients)
+# >>>>>>> 4900a75db52ee5543bd547efeb95c75359091329
   return parsed_ingredients
 
 
@@ -488,7 +612,7 @@ def append_parsed(foods_list):
   for food in foods_list:
     parsed_ingredients = parse_recipe(food)
     ingredient_str = ' '.join(
-        line['ingredient'] for line in parsed_ingredients
+        line['ingredient'] for line in parsed_ingredients if len(line['ingredient']) > 0
     )
     all_recipes.append(ingredient_str)
     index = foods_list.index(food)

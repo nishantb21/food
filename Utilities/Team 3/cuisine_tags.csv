@@ -1,0 +1,754 @@
+dishName,cuisine,dishId
+curried green bean salad,south indian|karnataka,1
+curried green bean salad,south indian|karnataka,471
+keema aloo,north indian|punjab,2
+keema aloo,north indian|punjab,67
+keema,punjab,62
+roti,north indian,125
+paratha,north indian|punjab,3
+paratha,north indian|punjab,566
+paratha,north indian|punjab,664
+black chana with potato,north indian|punjab,4
+black chana with potato,north indian|punjab,588
+masoor dal,north indian,6
+masoor dal,north indian,243
+masoor dal,north indian,433
+coconut chutney,south indian|karnataka,7
+coconut chutney,south indian|karnataka,374
+tamarind sauce fish curry,south indian|andhra pradesh,8
+kashmiri lamb,north indian|kashmir,9
+kashmiri lamb,north indian|kashmir,142
+kashmiri lamb,north indian|kashmir,9
+kashmiri lamb,north indian|kashmir,142
+chicken tikka masala,north indian|punjab,10
+chicken tikka masala,north indian|punjab,14
+chicken tikka masala,north indian|punjab,34
+chicken tikka masala,north indian|punjab,45
+chicken tikka masala,north indian|punjab,99
+chicken tikka masala,north indian|punjab,166
+chicken tikka masala,north indian|punjab,577
+chicken tikka masala,north indian|punjab,920
+chicken tikka masala,north indian|punjab,1102
+naan,north indian|punjab,11
+naan,north indian|punjab,53
+naan,north indian|punjab,126
+naan,north indian|punjab,268
+naan,north indian|punjab,287
+naan,north indian|punjab,11
+naan,north indian|punjab,53
+naan,north indian|punjab,126
+naan,north indian|punjab,268
+naan,north indian|punjab,287
+mulligatawny soup,south indian|tamil nadu,12
+mulligatawny soup,south indian|tamil nadu,90
+mulligatawny soup,south indian|tamil nadu,308
+vegetarian korma,north indian|uttar pradesh,13
+butter chicken,north indian|delhi,18
+butter chicken,north indian|delhi,23
+butter chicken,north indian|delhi,80
+butter chicken,north indian|delhi,112
+butter chicken,north indian|delhi,218
+butter chicken,north indian|delhi,358
+butter chicken,north indian|delhi,481
+butter chicken,north indian|delhi,516
+butter chicken,north indian|delhi,560
+butter chicken,north indian|delhi,707
+spicy vegan potato curry,north indian|punjab,19
+carrot rice,south indian|tamil nadu,21
+chickpea curry,north indian|punjab,22
+chickpea curry,north indian|punjab,98
+chickpea curry,north indian|punjab,141
+chickpea curry,north indian|punjab,235
+chickpea curry,north indian|punjab,479
+chana masala,north indian|punjab,72
+chana masala,north indian|punjab,214
+chana masala,north indian|punjab,228
+chana masala,north indian|punjab,389
+baingan bharta,north indian|punjab,24
+baingan bharta,north indian|punjab,39
+baingan bharta,north indian|punjab,209
+aloo phujia,west indian|maharashtra,25
+tandoori chicken,north indian|punjab,64
+tandoori chicken,north indian|punjab,224
+tandoori chicken,north indian|punjab,263
+tandoori chicken,north indian|punjab,361
+basmati rice,north indian|haryana,28
+chicken korma,north indian|uttar pradesh,29
+chicken korma,north indian|uttar pradesh,73
+chicken korma,north indian|uttar pradesh,124
+chicken korma,north indian|uttar pradesh,173
+chicken korma,north indian|uttar pradesh,679
+mango lassi,north indian|punjab,31
+mango lassi,north indian|punjab,183
+mango lassi,north indian|punjab,245
+mango lassi,north indian|punjab,276
+mango lassi,north indian|punjab,355
+mango lassi,north indian|punjab,585
+palak paneer,north indian|punjab,32
+palak paneer,north indian|punjab,115
+palak paneer,north indian|punjab,380
+palak paneer,north indian|punjab,428
+palak paneer,north indian|punjab,472
+palak paneer,north indian|punjab,484
+palak paneer,north indian|punjab,721
+beef samosas,north indian|delhi,35
+samosas,north indian,171
+shrimp curry,west indian|goa,41
+shrimp curry,west indian|goa,70
+aloo gobi,north indian|punjab,42
+aloo gobi,north indian|punjab,46
+aloo gobi,north indian|punjab,144
+aloo gobi,north indian|punjab,152
+aloo gobi,north indian|punjab,175
+aloo gobi,north indian|punjab,257
+tofu keema,north indian|punjab,86
+kheer,north indian,47
+kheer,north indian,562
+kheer,north indian,1268
+fish curry,south indian|kerala,48
+fish curry,south indian|kerala,972
+fish curry,south indian|kerala,973
+fish curry,east indian|bengal,48
+fish curry,east indian|bengal,972
+fish curry,east indian|bengal,973
+chicken stew with coconut milk,south indian|kerala,50
+saffron rice,north indian,54
+saffron rice,north indian,96
+chicken biryani,north indian,55
+chicken biryani,north indian,165
+chicken biryani,north indian,244
+chicken biryani,north indian,432
+chicken biryani,north indian,491
+chicken biryani,north indian,595
+chicken biryani,north indian,615
+aloo matar,north indian|punjab,59
+cucumber raita,north indian|punjab,61
+kulfi,north indian|rajasthan,65
+potato curry,south indian|karnataka,71
+potato curry,south indian|karnataka,353
+potato curry,south indian|karnataka,425
+potato curry,south indian|karnataka,669
+cod curry,south indian|tamil nadu,75
+coconut rice,south indian|kerala,76
+vegetarian chickpea curry with turnips,north indian|punjab,78
+curried cumin potatoes,north indian|punjab,85
+moong dal,north indian,87
+vegetable masala,north indian,88
+mulligatawny,south indian|tamil nadu,379
+mulligatawny,south indian|tamil nadu,474
+mulligatawny,south indian|tamil nadu,550
+sherry chicken curry,american,93
+saag,north indian|punjab,95
+butter lamb gravy,north indian|punjab,102
+chole saag,north indian|punjab,104
+paneer,north indian,106
+paneer,north indian,216
+paneer,north indian,602
+paneer,north indian,726
+tofu vindaloo,west indian|goa,107
+spicy sweet potato salad,american,109
+raita,north indian|punjab,111
+roomali roti,south indian|andhra,117
+tandoori fish,north indian|punjab,120
+roasted curried chicken with couscous,middle east,127
+chicken saag,north indian|punjab,130
+chicken saag,north indian|punjab,200
+cauliflower and tofu masala,north indian,131
+maharaja curry,north indian,133
+potatoes madras,south indian|tamil nadu,134
+spicy peach chutney,american,135
+kashmiri-style kidney beans with turnips,north indian|kashmir,136
+chicken hariyali tikka,north indian|punjab,137
+lamb madras curry,south indian|tamil nadu,140
+vegetable biryani,north indian,147
+vegetable biryani,north indian,205
+vegetable biryani,north indian,561
+garam masala seared salmon with coconut-curry butter,north indian,148
+strawberry lassi,north indian|punjab,150
+strawberry lassi,north indian|punjab,584
+apple chutney,american,153
+shahi paneer,north indian|punjab,154
+shahi paneer,north indian|punjab,638
+green chutney,north indian|punjab,156
+bunjal chicken,foreign,157
+spicy lentil dip,north indian,159
+curried chicken and potatoes,north indian|punjab,160
+sweet and spicy curry with chickpeas,north indian|punjab,162
+gulab jamun,north indian,164
+gulab jamun,north indian,570
+gulab jamun,north indian,1029
+gulab jamun,north indian,1030
+gulab jamun,north indian,1031
+gulab jamun,north indian,164
+gulab jamun,north indian,570
+gulab jamun,north indian,1029
+gulab jamun,north indian,1030
+gulab jamun,north indian,1031
+cilantro jalapeno pesto with lime,italian,167
+okra curry,north indian,51
+okra curry,north indian,177
+okra curry,north indian,248
+sweet tamarind chutney,west indian|maharashtra,178
+pantry curried quinoa with garbanzo beans and roasted peppers,american,179
+jeera fried rice,north indian|punjab,185
+spinach and cauliflower bhaji,west indian|maharashtra,190
+beef vindaloo,west indian|goa,199
+coconut curried tofu with green beans and coconut rice,north indian,202
+chicken vindaloo,west indian|goa,208
+chicken vindaloo,west indian|goa,360
+pav bhaji,west indian|maharashtra,211
+pav bhaji,west indian|maharashtra,1185
+pav bhaji,west indian|maharashtra,1187
+pav bhaji,west indian|maharashtra,211
+pav bhaji,west indian|maharashtra,1185
+pav bhaji,west indian|maharashtra,1187
+peanut rice,south indian|tamil nadu,219
+curried pork chops and cauliflower with basmati rice,north indian,220
+pulao,north indian,206
+sweet lamb curry,north indian|kashmir,239
+quinoa biryani,north indian|punjab,247
+kedgeree,north indian,252
+black pepper goat curry,north indian|kashmir,258
+kale and spinach saag,north indian|punjab,259
+pot roast,american,261
+masala beef with ginger and curry leaf,north indian,265
+turmeric milk,north indian,267
+vendakka paalu,south indian|kerala,275
+ras malai,east indian|bengal,277
+paneer butter masala,north indian|punjab,279
+biriyani,north indian,284
+lamb shank vindaloo,west indian|goa,299
+paneer makhani,north indian|punjab,304
+paneer makhani,north indian|punjab,731
+lamb korma,north indian|uttar pradesh,312
+paneer jalfrazie,east indian|bengal,320
+vegetable koftas,north indian,334
+chaat - dahi batata puri,west indian|maharashtra,338
+sambar,south indian,340
+sambar,south indian,614
+prawn biryani,north indian,342
+moong dal with spinach,north indian,345
+sooji upma,south indian,346
+sooji upma,south indian,1311
+sooji upma,south indian|karnataka,346
+sooji upma,south indian|karnataka,1311
+kheema malai kofta,north indian,347
+bhuna gosht,north indian|kashmir,352
+akki rotti,south indian|karnataka,357
+curried mango chicken,north indian,77
+cucumber peanut salad,west indian|maharashtra,146
+beef and spinach curry,north indian|kashmir,151
+garam masala,north indian,49
+garam masala,north indian,210
+garam masala,north indian,470
+cilantro garlic chicken,north indian,250
+curry sauce,north indian,155
+curry sauce,north indian,288
+curry sauce,north indian,657
+mango coconut sauce,south indian|kerala,313
+cauliflower fritters,indian chinese,339
+saffron rice with raisins and cashews,north indian,341
+cilantro chutney,north indian,343
+tandoori masala spice mix,north indian|punjab,351
+curried lamb,north indian|kashmir,237
+curried stew with lamb,north indian|kashmir,262
+lamb curry,north indian|kashmir,249
+spinach and buttermilk soup,east indian,271
+kebab massalam,middle east,326
+sweet curry pumpkin seeds,cambodian,701
+spinach & green pea patties,middle east,702
+lentil salad,north indian,703
+coconut chicken tikka masala,north indian|punjab,705
+butter chicken chickpeas,north indian|punjab,706
+zucchini & parsnip moghlai,mughlai,711
+almond burfi,south indian,713
+coconut and molasses-filled rice dumplings,south indian|kerala,714
+holige,south indian,715
+madras crab curry,south indian,717
+peanut chaat,north indian,718
+carrot and ginger chutney,south indian,720
+spicy goat curried rice pilaf,north indian,722
+yellow tarka dal,north indian,734
+paneer tikka sandwich,north indian,735
+mangalore mutton curry,south indian|mangalore,737
+pasta alfredo,italian,738
+pasta alfredo,italian,739
+aloo beans,south indian,741
+aloo beans,south indian,742
+aloo beans,south indian,743
+aloo bhindi masala,north indian,744
+aloo bhindi masala,north indian,745
+aloo methi,north indian,747
+aloo methi,north indian,748
+aloo methi paratha,north indian,749
+appam,south indian|kerala,753
+appam,south indian|kerala,754
+appam,south indian|kerala,755
+apple pie,england,756
+apple pie,england,757
+apple pie,england,758
+bacon wraps,american,760
+scallops wrapped in bacon,american,762
+dilled bean salad,north indian,766
+cilantro corn and black bean salad,north indian,767
+cilantro corn and black bean salad,north indian,914
+bisi bele bath,south indian,769
+bisi bele bath,south indian,770
+bisi bele bath,south indian,771
+black forest cake,american,772
+black forest cake,american,773
+black forest cake,american,774
+blueberry cheesecake,american,775
+blueberry cheesecake,american,776
+blueberry cheesecake,american,777
+banana bread,american,82
+banana bread,american,779
+broccoli soup,american,781
+burnt garlic fried rice,north indian,784
+butterscotch cake,american,787
+butterscotch cake,american,788
+cajun skillet pasta,american,790
+cajun pasta,american,791
+cajun pasta,american,792
+tortellini salad,mexican,793
+chakli,south indian,796
+sausage crescent cheese balls,american,799
+chicken cheese ball,american,800
+triple cheese burger,american,802
+bacon cheese venison burgers,american,803
+cheese fondue,swiss,805
+cheese fondue,swiss,806
+cheese fondue,swiss,807
+bacon cheese fries,american,809
+grilled cheese sandwich,american,811
+grilled cheese sandwich,american,812
+chicken biriyani,north indian,817
+chicken biriyani,north indian,818
+chicken biriyani,north indian,819
+bbq chicken burgers,american,820
+bbq chicken burgers,american,821
+buffalo chicken burgers,american,822
+bbq chicken chili,north indian,825
+chicken fried rice,north indian,826
+chicken fried rice,north indian,827
+chicken frittata,italian,829
+chicken and vegetable frittata,italian,830
+chicken alfredo lasagna rolls,italian,832
+chicken lasagne,italian,833
+chicken manchurian,chinese,835
+chicken manchurian,chinese,836
+chicken manchurian,chinese,837
+chicken momo,chinese,838
+chicken momo,chinese,839
+chicken momo,chinese,840
+chicken and noodles,chinese,842
+lemon chicken pasta,italian,844
+chicken pasta,italian,845
+grilled buffalo chicken pizza,italian,847
+bbq chicken pizza,italian,848
+buffalo chicken pizza,italian,849
+chicken shawarma,middle east,853
+chicken shawarma,middle east,854
+chicken shawarma,middle east,855
+chicken spring rolls,chinese,860
+chicken spring rolls,chinese,861
+chickpea burgers,american,865
+chickpeas zucchini burger,american,866
+chilli chicken,north indian,868
+chilli paneer,north indian,871
+chilli paneer,north indian,873
+honey chilli potatoes,north indian,874
+honey chilli potatoes,north indian,875
+honey chilli potatoes,north indian,876
+chipotle white bean salad sandwich,american,877
+choco lava cake,american,880
+choco lava cake,american,881
+choco lava cake,american,882
+chocolate brownie,american,883
+chocolate brownie,american,884
+chocolate cake,american,887
+chocolate cake,american,888
+bhatura,north indian,895
+bhatura,north indian,896
+chopsuey,american,898
+chopsuey,american,899
+chopsuey,american,900
+sundal,south indian,464
+corn palak,north indian,909
+curried capsicum masala,north indian,918
+curried capsicum masala,north indian,919
+dahi batata puri,north indian,921
+dal bhari puri,north indian,923
+dahi vada,south indian,924
+dahi vada,south indian,925
+dal khichdi,north indian,927
+dal khichdi,north indian,928
+dal khichdi,north indian,929
+methi dal,north indian,930
+methi dal,north indian,931
+methi dal,north indian,932
+dal tadka,south indian,933
+dal tadka,south indian,934
+dal tadka,south indian,935
+dhokla,north indian,942
+chilli mushroom,north indian,1133
+creamy mushrooms,north indian,949
+dum aloo,north indian,951
+dum aloo,north indian,952
+dum aloo,north indian,953
+egg sandwich,american,957
+amritsari fish,north indian|punjab,966
+amritsari fish,north indian|punjab,967
+amritsari fish,north indian|punjab,968
+fish & chips,american,969
+fish fingers,south indian|kerala,975
+fish fingers,south indian|kerala,976
+fish fingers,south indian|kerala,977
+french fries,american,984
+french fries,american,985
+french fries,american,986
+french toast,american,987
+french toast,american,988
+french toast,american,989
+korean fried chicken,korean,990
+fried fish,east indian|bengal,978
+fried fish,east indian|bengal,993
+fried fish,east indian|bengal,995
+dragon fruit smoothie,mexican,997
+acai fruit bowl,south american,998
+fruit custard,england,999
+fruit custard,england,1000
+fruit custard,england,1001
+doodhiya gajar matar,north indian|punjab,1008
+aloo gajar matar,north indian|punjab,1009
+gajar matar,north indian|punjab,1010
+garlic bread,italian,1011
+garlic bread,italian,1012
+cheesy garlic bread,italian,1013
+gobi manchurian,chinese,1014
+gobi manchurian,chinese,1015
+gobi manchurian,chinese,1016
+aloo gobi matar,north indian|punjab,1017
+aloo gobi matar,north indian|punjab,1018
+mughlai aloo matar gobi,north indian|punjab,1019
+gobi paratha,north indian|punjab,1020
+gobi paratha,north indian|punjab,1021
+gobi paratha,north indian|punjab,1022
+greek salad,greek,1023
+greek salad,greek,1024
+greek salad,greek,1025
+iced strawberry green tea,american,1026
+strawberry green tea with boba,american,1027
+peach green tea,american,1028
+hashbrowns,american,1032
+hash-brown casserole,american,1033
+cheesy hashbrown casserole,american,1034
+hot and sour soup,chinese,1035
+hot and sour soup,chinese,1036
+hot and sour soup,chinese,1037
+idli,south indian|karnataka,1041
+idli,south indian|karnataka,1043
+masala idli,south indian|karnataka,1042
+jalebi,north indian,1047
+jalebi,north indian,1048
+jalebi,north indian,1049
+kachori,west indian|rajasthan,1050
+kachori,west indian|rajasthan,1052
+mawa kachori,west indian|rajasthan,1051
+kadhai chicken,north indian|punjab,1053
+kadhai chicken,north indian|punjab,1054
+kadhai chicken,north indian|punjab,1055
+kadhai paneer,north indian|punjab,1056
+kadhai paneer,north indian|punjab,1057
+kadhai paneer,north indian|punjab,1058
+kaju katli,north indian,1059
+kaju katli,north indian,1060
+kaju katli,north indian,1061
+karela sabzi,north indian,1062
+bharwan karela,north indian,1063
+bharwa karela,north indian,1064
+kesari bath,south indian|karnataka,1065
+khakhra,west indian|gujarat,1067
+methi khakhra,west indian|gujarat,1068
+bajra khakhra,west indian|gujarat,1069
+kolhapuri usal,west indian|maharashtra,1070
+kolhapuri usal,west indian|maharashtra,1072
+misal pav,west indian|maharashtra,1071
+kulcha,north indian|punjab,1073
+kulcha,north indian|punjab,1074
+kulcha,north indian|punjab,1075
+lamb biriyani,south indian|andhra pradesh,1076
+lamb biriyani,south indian|andhra pradesh,1077
+lamb biriyani,south indian|andhra pradesh,1078
+lamb burger,american,1079
+lamb burger,american,1080
+spiced lamb pita burgers,american,1081
+lemon cheesecake,american,1082
+lemon cheesecake,american,1083
+lemon cheesecake,american,1084
+makki ki roti,north indian|punjab,1085
+makki ki roti,north indian|punjab,1086
+makki di roti,north indian|punjab,1087
+manchow soup,chinese,1088
+chicken manchow soup,chinese,1089
+vegetable manchow soup,chinese,1090
+paneer masala dosa,south indian|karnataka,1094
+paneer masala dosa,south indian|karnataka,1095
+masala dosa with red chutney,south indian|karnataka,1096
+masala papad,south indian|tamil nadu,1097
+masala papad,south indian|tamil nadu,1098
+masala papad,south indian|tamil nadu,1099
+masala papad,south indian|tamil nadu,1182
+masala papad,south indian|tamil nadu,1183
+masala papad,south indian|tamil nadu,1184
+masala puri,south indian|karnataka,1100
+methi moong masala puri,south indian|karnataka,1101
+matar paneer,north indian|punjab,309
+matar paneer,north indian|punjab,382
+matar paneer,north indian|punjab,698
+matar paneer,north indian|punjab,1103
+matar paneer,north indian|punjab,1104
+matar paneer,north indian|punjab,1105
+methi malai matar,north indian,1106
+methi matar malai,north indian,1107
+methi matar malai,north indian,1108
+methi paratha,north indian|punjab,1109
+methi paratha,north indian|punjab,1110
+methi and palak paratha,north indian|punjab,1111
+mexican burgers,mexican,1112
+mexican burgers,mexican,1114
+mexican avocado burgers,mexican,1113
+mexican rice,mexican,1115
+mexican rice,mexican,1116
+mexican rice,mexican,1117
+mixed vegetable curry,north indian,1118
+paneer jalfrezi,east indian|bengal,1119
+stuffed vegetable kulcha,north indian|punjab,1120
+makki mooli methi paratha,north indian|punjab,1121
+mooli ka paratha,north indian|punjab,1122
+mooli ka paratha,north indian|punjab,1123
+motichoor ladoo,north indian,1124
+motichoor ladoo,north indian,1125
+motichoor ladoo,north indian,1126
+mozzarella sticks,french,1127
+mozzarella sticks,french,1128
+mozzarella sticks,french,1129
+portobello mushroom burger,ireland,1130
+mushroom burgers,american,1131
+"mushroom, onion & swiss burger",american,1132
+skillet chili mac with cheese,american,1134
+mushroom and black bean chilli,east asian,1135
+mushroom arugula pizza,italian,1136
+caramelized mushrooms arugula pizza,italian,1137
+portobello mushroom pizzas,italian,1138
+mutton biriyani,south indian|andhra pradesh,1139
+mutton biriyani,south indian|andhra pradesh,1140
+mutton biriyani,south indian|andhra pradesh,1141
+mutton liver masala,south indian|andhra pradesh,1142
+loaded nachos,mexican,1143
+lentil nachos,mexican,1144
+lentil nachos,mexican,1145
+neer dosa,south indian|mangalore,1146
+neer dosa,south indian|mangalore,1147
+neer dosa,south indian|mangalore,1148
+gyeran mari,korean,1152
+omelette,french,1153
+omelette,french,1154
+onion parathas,north indian|punjab,1155
+onion paratha,north indian|punjab,1156
+aloo paratha,north indian|punjab,750
+aloo paratha,north indian|punjab,751
+aloo paratha,north indian|punjab,752
+aloo paratha,north indian|punjab,1157
+cheesy palak paneer paratha,north indian|punjab,1161
+palak paratha,north indian|punjab,1162
+palak paratha,north indian|punjab,1163
+pancake,americ,1164
+pancake,americ,1165
+pancake,americ,1166
+singapore style noodles with paneer,singapore,1171
+paneer paratha,north indian|punjab,1173
+paneer paratha,north indian|punjab,1174
+paneer paratha,north indian|punjab,1175
+puri,north indian,922
+puri,north indian,1176
+paniyaram,south indian|tamil nadu,1179
+masala paniyaram,south indian|tamil nadu,1180
+kuzhi paniyaram,south indian|tamil nadu,1181
+jain pav bhaji,west indian|maharashtra,1186
+broccoli pesto pasta,italian,1188
+arugula pesto pasta,italian,1189
+creamy pesto pasta,italian,1190
+pesto zucchini spaghetti,italian,1191
+spaghetti with pesto,italian,1192
+pesto spaghetti,italian,1193
+pizza,italian,552
+pizza,italian,1194
+pizza,italian,1195
+meatball pizza,italian,1196
+poha,west indian|maharashtra,1197
+poha,west indian|maharashtra,1198
+poha,west indian|maharashtra,1199
+poori,north indian,1200
+poori,north indian,1201
+poori,north indian,1202
+popcorn,american,1203
+popcorn,american,1205
+spiced popcorn,american,1204
+lasagna,italian,1206
+lasagna,italian,1208
+lasagna,italian,1336
+lasagna,italian,1337
+lasagna roll ups,italian,1207
+pork tacos,mexican,1209
+pulled pork tacos,mexican,1210
+bbq pulled pork tacos,mexican,1211
+mashed potatoes,england,1212
+potato wedges,american,1215
+potato wedges,american,1216
+potato wedges,american,1217
+vietnamese prawn soup,vietnam,1223
+garlic pudina paratha,north indian|punjab,1227
+pudina paratha,north indian|punjab,1228
+pudina lachha paratha,north indian|punjab,1229
+puran poli,west indian|maharastrian,1230
+puran poli,west indian|maharastrian,1231
+puran poli,west indian|maharastrian,1232
+ragi balls,south indian|karnataka,1233
+ragi balls,south indian|karnataka,1234
+nachani bhakari,west indian|maharashtra,1235
+ragi dosa,south indian|karnataka,1236
+ragi dosa,south indian|karnataka,1237
+ragi dosa,south indian|karnataka,1238
+ragi roti,south indian|karnataka,1239
+ragi roti,south indian|karnataka,1240
+ragi roti,south indian|karnataka,1241
+rajma chawal,north indian|punjab,1242
+rajma chawal,north indian|punjab,1243
+rajma chawal,north indian|punjab,1244
+rasgulas,east indian|bengal,1245
+rasgulas,east indian|bengal,1246
+rava dosa,south indian|karnataka,1247
+rava dosa,south indian|karnataka,1248
+rava dosa,south indian|karnataka,1249
+rava idli,south indian|karnataka,1250
+rava idli,south indian|karnataka,1251
+rava idli,south indian|karnataka,1252
+nettle ravioli,italian,1253
+toasted ravioli,italian,1254
+fried ravioli,italian,1255
+red sauce pasta,italian,1256
+red sauce pasta,italian,1258
+red brie pasta sauce,italian,1257
+red velvet cake,american,1259
+red velvet cake,american,1260
+red velvet cake,american,1261
+steamed rice,south indian,1262
+steamed rice,south indian,1263
+persian steamed white rice,middle east,1264
+rumali roti,south indian|hyderabad,1265
+rumali roti,south indian|hyderabad,1266
+spicy mutton gravy,east indian|bengal,1267
+set dosa,south indian|tamil nadu,1269
+set dosa,south indian|tamil nadu,1270
+masala dosa,south indian|tamil nadu,1271
+sev puri and papdi chat,north indian|rajasthan,1272
+peanut butter cookies,american,1273
+pork tenderloin with apple jicama slaw,mexican,1274
+spinach sandwich,american,1275
+"tomato, hummus, and spinach sandwich",american,1276
+cheesy ham and spinach sandwiches,american,1277
+brussels sprouts salad,american,1278
+brussels sprouts salad,american,1279
+brussels sprouts salad,american,1280
+vegetable stir-fry,chinese,1281
+vegetable stir-fry,chinese,1282
+vegetable stir-fry,chinese,1283
+strawberry milkshake,american,1284
+strawberry milkshake,american,1285
+strawberry milkshake,american,1286
+stuffed mushrooms,italian,1287
+stuffed mushrooms,italian,1288
+sausage stuffed mushrooms,italian,1289
+sugarcane juice,south indian,1290
+sugarcane pongal,south indian|tamil nadu,1291
+sugarcane shrimp,vietnamese,1292
+sushi,japanese,1293
+sushi,japanese,1294
+sushi,japanese,1295
+tandoori roti,north indian|punjab,1296
+tandoori roti,north indian|punjab,1297
+tandoori roti,north indian|punjab,1298
+tawa pulao,west indian|maharashtra,1299
+tawa pulao,west indian|maharashtra,1300
+tawa pulao,west indian|maharashtra,1301
+thepla,north indian|gujarat,1302
+thepla,north indian|gujarat,1303
+methi thepla,north indian|gujarat,1304
+tiramisu,italian,1305
+tiramisu,italian,1306
+tiramisu,italian,1307
+tuna sandwiches,american,1308
+tuna sandwich,american,1309
+tuna sandwich,american,1310
+upma,south indian|karnataka,1312
+vegetable upma,south indian|karnataka,1313
+pesarattu,south indian|andhra pradesh,506
+pesarattu,south indian|andhra pradesh,1314
+medu vada,south indian|karnataka,1315
+medhu vada,south indian|karnataka,1316
+vada pav,west indian|maharastra,1317
+vada pav,west indian|maharastra,1318
+vada pav,west indian|maharastra,1319
+vada pav,west indian|maharastra,1320
+vangi bath,south indian|karnataka,1321
+vangi bath,south indian|karnataka,1322
+vangi bath,south indian|karnataka,1323
+veg cheese burger,american,1324
+bourbon burger,american,1325
+juicy steakhouse burgers,american,1326
+black bean and guac burritos,mexican,1327
+shredded chicken burritos,mexican,1328
+cheeseburger burritos,mexican,1329
+crock pot chicken fajitas,mexican,1330
+chicken fajitas,mexican,1331
+chicken fajitas,mexican,1332
+fried rice,chinese,1333
+fried rice,chinese,1335
+veg fried rice,chinese,1334
+lasagna stuffed meatloaf,italian,1338
+veg manchurian,chinese,1339
+veg manchurian,chinese,1340
+veg manchurian,chinese,1341
+veg momos,chinese,1342
+veg momos,chinese,1343
+veg momos,chinese,1344
+spicy veg noodles,chinese,1345
+veg hakka noodles,chinese,1346
+veg hakka noodles,chinese,1347
+chicken quesadilla,mexican,1351
+chicken quesadillas,mexican,1352
+chicken quesadillas,mexican,1353
+grilled chicken sandwich with avocado and tomato,american,1354
+chicken salad sandwiches,american,1355
+cheese steak sandwiches,american,1356
+pork schnitzel,austrian,1357
+pork schnitzel,austrian,1358
+pork schnitzel,austrian,1359
+veg spring roll,chinese,1360
+veg spring roll,chinese,1361
+veg spring roll,chinese,1362
+spicy ethiopian lentil stew,ethiopian,1364
+shredded chicken tacos,mexican,1366
+tacos with roasted pineapple salsa,mexican,1367
+spicy chicken tacos,mexican,1368
+hummus wraps,middle east,1369
+chicken caesar salad wraps,mexican,1370
+chicken parmesan wraps,italian,1371
+waffles,american,1372
+waffles,american,1373
+waffles,american,1374
+white sauce for pasta,italian,1378
+white sauce for pasta,italian,1379
+white sauce recipe for pasta,italian,1380
+rice,south indian,1381
