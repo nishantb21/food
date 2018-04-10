@@ -49,7 +49,7 @@ def sweet(nutrition_data, SWEET_FACTOR_X=0.85, SWEET_FACTOR_Y=0.1):
     sweet_score_1 = (SWEET_FACTOR_X * sweet_score_x1) + \
                     (SWEET_FACTOR_Y * sweet_score_y)
 
-  except KeyError:
+  except Exception:
     sweet_score_1 = 0
   return round(sweet_score_1 / 0.998, 3) * 10
 
@@ -70,11 +70,11 @@ def rich(nutrition_data,
     if 'cholesterol' in nutrition_data and nutrition_data['cholesterol'] is not None:
       richness_score_z = nutrition_data['cholesterol'] / (total_weight * 1000)
     else:
-      richness_score_z = 0 
+      richness_score_z = 0
     richness_score_1 = (RICHNESS_FACTOR_X * richness_score_x) + \
         (RICHNESS_FACTOR_Y * richness_score_y) + \
         (RICHNESS_FACTOR_Z * richness_score_z)
-  except KeyError:
+  except Exception:
     richness_score_1 = 0
 
     # Normalize to butter which has highest score
@@ -139,13 +139,17 @@ def total_nutrient_weight(dish_nutrition):
     return dish_nutrition['fat'] + dish_nutrition['carbs'] + dish_nutrition['protein'] + dish_nutrition['calcium'] + dish_nutrition['iron']
 
 def bitter(food, nutrition_data, LEVEL1_MULTIPLIER=0.80, LEVEL2_MULTIPLIER=1.40, MULTI_WORD_MULTIPLIER=2.3):
-    bitter_descriptors = utilities.read_json("bitter_descriptors.json")
-    descriptor_score = match_descriptors(food['ingredient_str'], bitter_descriptors)
-    bitterscore = nutrition_data["iron"] / total_nutrient_weight(nutrition_data)
-    pairings = zip([LEVEL1_MULTIPLIER, LEVEL2_MULTIPLIER, MULTI_WORD_MULTIPLIER], ["bitter_l1", "bitter_l2", "multi_words"])
-    for pair in pairings:
-        if descriptor_score.__contains__(pair[1]):
-            bitterscore += pair[0] * descriptor_score[pair[1]] * 1
+    try:
+        bitter_descriptors = utilities.read_json("bitter_descriptors.json")
+        descriptor_score = match_descriptors(food['ingredient_str'], bitter_descriptors)
+        bitterscore = nutrition_data["iron"] / total_nutrient_weight(nutrition_data)
+        pairings = zip([LEVEL1_MULTIPLIER, LEVEL2_MULTIPLIER, MULTI_WORD_MULTIPLIER], ["bitter_l1", "bitter_l2", "multi_words"])
+        for pair in pairings:
+            if descriptor_score.__contains__(pair[1]):
+                bitterscore += pair[0] * descriptor_score[pair[1]] * 1
+    except Exception:
+        bitterscore = 0
+
     return round(bitterscore / 1.4571, 3)
 
 def sour(food,
@@ -201,40 +205,26 @@ def umami(food,
             nutrition_data[key] = 0
     umami_descriptors = utilities.read_json("umami_descriptors.json")
     descriptor_score = match_descriptors(food['ingredient_str'], umami_descriptors)
+    try:
+        umamiscore = nutrition_data["protein"] / total_nutrient_weight(nutrition_data)
+        umamiscore *= 10
 
-    umamiscore = nutrition_data["protein"] / total_nutrient_weight(nutrition_data)
-    umamiscore *= 10
-
-    pairings = zip([PROTEIN_SUPPLEMENT_MULTIPLIER, VEGETABLES_MULTIPLIER
-                   , MEAT_MULTIPLIER, STRING_MULTIPLIER],
-                   ["protein_supps", "vegetables",
-                   "meat", "savory_strings"])
-    for pair in pairings:
-        if descriptor_score.__contains__(pair[1]):
-            umamiscore += pair[0] * descriptor_score[pair[1]]
+        pairings = zip([PROTEIN_SUPPLEMENT_MULTIPLIER, VEGETABLES_MULTIPLIER
+                       , MEAT_MULTIPLIER, STRING_MULTIPLIER],
+                       ["protein_supps", "vegetables",
+                       "meat", "savory_strings"])
+        for pair in pairings:
+            if descriptor_score.__contains__(pair[1]):
+                umamiscore += pair[0] * descriptor_score[pair[1]]
+    except Exception:
+        umamiscore = 0
 
     return round(umamiscore, 3) if umamiscore <= 10 else 10
 
 
 def taste(food):
-# <<<<<<< HEAD
-#   taste_scores = dict()
-#   nutrients = get_nutrients(food)
-#   salt_score = salt(nutrients)
-#   taste_scores['salt'] = salt_score
-#   sweet_score = sweet(nutrients)
-#   taste_scores['sweet'] = sweet_score
-#   richness_score = rich(nutrients)
-#   taste_scores['rich'] = richness_score
-#   umami_score = umami(food,nutrients)
-#   taste_scores['umami'] = umami_score
-#   sour_score = sour(food,nutrients)
-#   taste_scores['sour'] = sour_score
-#   tags = get_cuisine_tags(food['dish_name'])
-#   cuisine_multipliers = get_cuisine_multipliers(tags)
-#   taste_scores = update_scores(taste_scores, cuisine_multipliers)
-#   return taste_scores
-# =======
+    print(food['dish_id'])
+    food = append_parsed(food)
     nutrients = get_nutrients(food)
     tastes = {
         "salt": salt(nutrients),
@@ -255,7 +245,6 @@ def taste(food):
                                )
                        + "\n")
     return tastes
-#>>>>>>> 4900a75db52ee5543bd547efeb95c75359091329
 
 
 def update_scores(taste_scores, cuisine_multipliers):
@@ -284,17 +273,12 @@ def get_cuisine_multipliers(tags):
 
 
 def parse_recipe(food):
-  ingredients_list = list(set(food['ingredients']))
-  parsed_ingredients = list()
-  for ing in ingredients_list:
-    ingredient = identify_measurement(ing)
-    parsed_ingredients.append(ingredient)
-# <<<<<<< HEAD
-#   #print(parsed_ingredients)
-# =======
-#   # print(parsed_ingredients)
-# >>>>>>> 4900a75db52ee5543bd547efeb95c75359091329
-  return parsed_ingredients
+    ingredients_list = list(set(food['ingredients']))
+    parsed_ingredients = list()
+    for ing in ingredients_list:
+        ingredient = identify_measurement(ing)
+        parsed_ingredients.append(ingredient)
+    return parsed_ingredients
 
 
 measurements = [
@@ -544,17 +528,17 @@ def load_test_dishes(test_file):
   with open(test_file) as json_file:
     return json.load(json_file)
 
-def append_parsed(foods_list):
-  for food in foods_list:
+
+def append_parsed(food):
     parsed_ingredients = parse_recipe(food)
     ingredient_str = ' '.join(
         line['ingredient'] for line in parsed_ingredients if len(line['ingredient']) > 0
     )
     all_recipes.append(ingredient_str)
-    index = foods_list.index(food)
-    foods_list[index]['parsed_ingredients'] = parsed_ingredients
-    foods_list[index]['ingredient_str'] = ingredient_str
-  return foods_list
+
+    food['parsed_ingredients'] = parsed_ingredients
+    food['ingredient_str'] = ingredient_str
+    return food
 
 
 def knn(neighbors_cuisines):
@@ -593,39 +577,42 @@ all_recipes = list()
 vectorizer = CountVectorizer()
 
 def main():
-  foods_list = get_dishes()
-  foods_list = append_parsed(foods_list)
-  copy_foods_list = copy.deepcopy(foods_list)
-  test_dishes = load_test_dishes('sample_five.json')
-  test_dishes = append_parsed(test_dishes)
-  #print(list(test_dishes[0]['ingredient_str']))
-  uprofile = user.Profile(data=test_dishes, history=5)
-  training_set = create_training_set(copy_foods_list,test_dishes)
-  test_indices = [i['dish_id'] for i in training_set if 'cuisine' not in i]
-  all_recipes = [i['ingredient'] for i in training_set]
-  #vector = vectorizer.fit_transform(all_recipes)
-  # for index in test_indices:
-  #   test_dish = training_set[test_indices[index]]
-  #   print(test_dish['dish_name'])
-  #   neighbors = identify_cuisine(test_dish,
-  #                              training_set,
-  #                              vector,
-  #                              cosine_similarity)
-  #   #print(json.dumps(neighbors))
-  #   #print(type(neighbors))
-  #   neighbors_cuisines = [(get_cuisine_tags(dish_name[0]), dish_name[1])
-  #                       for dish_name
-  #                       in neighbors
-  #                       ][:7]
-  #   #print(json.dumps(neighbors_cuisines))
-  #   #print(foods_list[dish_id]['dish_name'])
-  #   d = knn(neighbors_cuisines)
-  #   # print("The taste profile for the dish", test_dish['dish_name'],"is")
+    foods_list = list()
+    for food in get_dishes():
+        foods_list.append(append_parsed(food))
+    # copy_foods_list = copy.deepcopy(foods_list)
+    test_dishes = list()
+
+    for item in load_test_dishes('sample_five.json'):
+        test_dishes.append(append_parsed(item))
+    #print(list(test_dishes[0]['ingredient_str']))
+    uprofile = user.Profile(data=test_dishes, history=5)
+    # training_set = create_training_set(copy_foods_list, test_dishes)
+    # test_indices = [i['dish_id'] for i in training_set if 'cuisine' not in i]
+    # all_recipes = [i['ingredient'] for i in training_set]
+    #vector = vectorizer.fit_transform(all_recipes)
+    # for index in test_indices:
+    #   test_dish = training_set[test_indices[index]]
+    #   print(test_dish['dish_name'])
+    #   neighbors = identify_cuisine(test_dish,
+    #                              training_set,
+    #                              vector,
+    #                              cosine_similarity)
+    #   #print(json.dumps(neighbors))
+    #   #print(type(neighbors))
+    #   neighbors_cuisines = [(get_cuisine_tags(dish_name[0]), dish_name[1])
+    #                       for dish_name
+    #                       in neighbors
+    #                       ][:7]
+    #   #print(json.dumps(neighbors_cuisines))
+    #   #print(foods_list[dish_id]['dish_name'])
+    #   d = knn(neighbors_cuisines)
+    #   # print("The taste profile for the dish", test_dish['dish_name'],"is")
     # print(taste(test_dish))
-  #  print("Probable classes are ")
-   # print(json.dumps(d, indent='  '))
-  print("User profile for the specifie")
-  print(uprofile)
+    #  print("Probable classes are ")
+    # print(json.dumps(d, indent='  '))
+    print("User profile")
+    print(uprofile)
 
 
 
