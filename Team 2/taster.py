@@ -87,69 +87,6 @@ def salt(dish_nutrition):
     return 0
 
   return ((1000 * dish_nutrition['sodium'] / totalweight)) / 3.8758
-def match_descriptors(dish_title, descriptor_dict):
-  dish_split = dish_title.split(" ")
-  final_scores = dict()
-  for item in descriptor_dict:
-    for pair in itertools.product(item['items'].items(),dish_split):
-    #format ((descriptor, score), dish_word)
-      if pair[0][0].lower() in pair[1].lower():
-        try:
-          final_scores[item["name"]] += pair[0][1]
-        except KeyError:
-          final_scores[item["name"]] = pair[0][1]
-  return final_scores
-
-
-def umami(food, nutrition_data, PROTEIN_SUPPLEMENT_MULTIPLIER = 0.80, VEGETABLES_MULTIPLIER = 2.40, MEAT_MULTIPLIER = 1.75):
-  umami_descriptors = utilities.read_json("umami_descriptors.json") 
-  descriptor_score = match_descriptors(food['ingredient_str'], umami_descriptors)
-  #print(PROTEIN_SUPPLEMENT_MULTIPLIER, VEGETABLES_MULTIPLIER, MEAT_MULTIPLIER, end=': ')
-  #print(list(nutrition_data))
-  protein_score = nutrition_data['protein'] / nutrition_data['Weight']
-  umamiscore = protein_score
-  pairings = zip([PROTEIN_SUPPLEMENT_MULTIPLIER, VEGETABLES_MULTIPLIER, MEAT_MULTIPLIER], ["protein_supps", "vegetables", "meat"])
-  for pair in pairings:
-    #print(pair)
-    #umamiscore = 1.5meat + 2veggies + 1protein_supps
-    if descriptor_score.__contains__(pair[1]):
-      umamiscore += pair[0] * descriptor_score[pair[1]] * 1
-  return round(umamiscore, 3)
-
-def sour(food, nutrition_data, SOURNESS_FACTOR_X=0.1, SOURNESS_FACTOR_Y=0.25, SOURNESS_FACTOR_Z=0.5):
-  #total_weight = nutrition_data['total_carb'] + nutrition_data['protein'] + nutrition_data['total_fat']
-  total_weight = nutrition_data['Weight']
-  food_words = [word for word in food['ingredient_str'].upper().split(' ') if len(word) > 0]
-  #print(food_words)
-  try:
-    vitamin_c = nutrition_data['vitamin_c']
-  except KeyError as ke:
-    vitamin_c = 0.0
-  #print(vitamin_c)
-  with open('sour.json') as f:
-    sour = json.load(f)
-    #print(sour)
-  with open('too_sour.json') as f:
-    too_sour = json.load(f)
-  try:
-    sour_score_x = vitamin_c / total_weight
-  except ZeroDivisionError as zde:
-    sour_score_x = 0
-
-  sour_score_y = 0
-  sour_score_z = 0
-
-  for word in food_words:
-    if word in sour[word[0]]:
-      #print("found s", word)
-      sour_score_y += 1
-    if word in too_sour[word[0]]:
-      sour_score_z += 1
-  sour_score = round(((SOURNESS_FACTOR_X * sour_score_x) + (SOURNESS_FACTOR_Y * sour_score_y) + (SOURNESS_FACTOR_Z * sour_score_z)) / 0.995,3)
-  #print(sour_score)
-  if sour_score > 1 :
-    sour_score = 1
-  return sour_score * 10
 
 def get_dishes():
   #with open('../Utilities/Database/database.json') as json_file:
@@ -171,7 +108,6 @@ def total_weight(dish_nutrition):
       totalweight += numeric_value
 
   return totalweight
-
 
 def get_nutrients(food):
   nutrients = food['nutrients']
@@ -200,7 +136,7 @@ def match_descriptors(dish_title, descriptor_dict):
     return final_scores
 
 def total_nutrient_weight(dish_nutrition):
-    return dish_nutrition['fat'] + dish_nutrition['carbs'] + dish_nutrition['protein']
+    return dish_nutrition['fat'] + dish_nutrition['carbs'] + dish_nutrition['protein'] + dish_nutrition['calcium'] + dish_nutrition['iron']
 
 def bitter(food, nutrition_data, LEVEL1_MULTIPLIER=0.80, LEVEL2_MULTIPLIER=1.40, MULTI_WORD_MULTIPLIER=2.3):
     bitter_descriptors = utilities.read_json("bitter_descriptors.json")
