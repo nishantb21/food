@@ -15,6 +15,18 @@ import csv
 
 my_path = os.path.abspath(os.path.dirname(__file__))
 
+def append_to_data(data, profile, predict_on):
+    profile = json.loads(profile)
+    dish_ids = list(map(int, profile.keys()))
+    ratings = list(map(int, profile.values()))
+
+    d = pd.DataFrame(columns = ['dishId', 'userId', 'rating'])
+    d['dishId'] = dish_ids
+    d['rating'] = ratings
+    d['userId'] = predict_on
+
+    data = data.append(d)
+    return data
 
 def tokenize_string(my_string):
     return re.findall('[\w\-]+', my_string.lower())
@@ -161,9 +173,13 @@ def main(data, db, predict_on):
     return (predicted_test_error, predict_on_user(predict_on = predict_on))
     
 
-def start(type = 'all', predict_on = 100):
+def start(profile = None, type = 'all', predict_on = 100):
     data = pd.read_csv(os.path.join(my_path,'../Utilities/Team 3/review.csv'))
     data = data[data['userId'].isin(data['userId'].value_counts()[data['userId'].value_counts() >= 5].index)]
+
+    if profile:
+        data = append_to_data(data, profile, predict_on)
+
     if type == 'all':
         db = pd.read_csv(os.path.join(my_path,'../Utilities/Team 3/meta_cuisine.csv'))
     elif type == 'meta':

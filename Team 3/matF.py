@@ -129,8 +129,9 @@ def predict(final_scores, dishes, userId):
 	predictions = predictions.merge(dishes, on = 'dishId', how = 'left')
 	return predictions
 
-def original(final_scores, dishes, df, userId):
-	actualRatings = df[df.userId == userId]
+def original(final_scores, dishes, df, test_set, userId):
+	full_df = df.append(test_set)
+	actualRatings = full_df[full_df.userId == userId]
 	totalActualRating = len(actualRatings)
 	rowUser = final_scores[userId, :]
 	originalReformed = [rowUser[i] for i in actualRatings.dishId]
@@ -144,11 +145,27 @@ def df_to_list(dataframe, columns):
 	result = dataframe.values.tolist()
 	return result
 
+def append_to_data(data, profile, predict_on):
+	profile = json.loads(profile)
+	dish_ids = list(map(int, profile.keys()))
+	ratings = list(map(int, profile.values()))
 
-def start(retrain = False, predict_on = 100):
+	d = pd.DataFrame(columns = ['dishId', 'userId', 'rating'])
+	d['dishId'] = dish_ids
+	d['rating'] = ratings
+	d['userId'] = predict_on
+
+	data = data.append(d)
+	print(data.tail())
+	return data
+
+def start(profile = None, retrain = False, predict_on = 100):
 	dishes = pd.read_csv(os.path.join(my_path,'../Utilities/Team 3/id_name_mapping.csv'), names = ['dishId', 'dishName'])
 	df = pd.read_csv(os.path.join(my_path,'../Utilities/Team 3/review.csv'))
 	df = df[df['userId'].isin(df['userId'].value_counts()[df['userId'].value_counts()>=5].index)]
+
+	if profile:
+		df = append_to_data(df, profile, predict_on)
 
 	n_users = df.userId.unique().max()
 	n_dishes = df.dishId.unique().max()
@@ -182,7 +199,7 @@ def start(retrain = False, predict_on = 100):
 	time_end = time.time()
 
 	predicted_rating = predict(final_scores, dishes, predict_on)
-	original_rating = original(final_scores, dishes, df, predict_on)
+	original_rating = original(final_scores, dishes, df, test_set, predict_on)
 
 	predicted_rating = df_to_list(predicted_rating, ['dishName', 'rating'])
 	original_rating = df_to_list(original_rating, ['dishName', 'rating', 'reformed'])
