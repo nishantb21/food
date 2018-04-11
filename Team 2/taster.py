@@ -12,9 +12,8 @@ import random
 import utilities
 import itertools
 import user
-import utilities
-import itertools
 import os
+import sys
 
 
 SWEET_FACTOR_X = 0.9
@@ -158,12 +157,12 @@ def sour(food,
          SOURNESS_FACTOR_Y=0.25,
          SOURNESS_FACTOR_Z=0.5):
 
-    total_weight = nutrition_data['carbs'] + \
-        nutrition_data['protein'] + nutrition_data['fat']
+    #total_weight = nutrition_data['carbs'] + \
+    #    nutrition_data['protein'] + nutrition_data['fat']
     food_words = food['ingredient_str'].upper().split(' ')
 
     try:
-        vitamin_c = nutrition_data['vitamin_c']
+        vitamin_c = nutrition_data['vitamin_c'] * 1000
     except KeyError:
         vitamin_c = 0.0
 
@@ -173,7 +172,7 @@ def sour(food,
     with open('too_sour.json') as f:
         too_sour = json.load(f)
     try:
-        sour_score_x = vitamin_c / total_weight
+        sour_score_x = vitamin_c / nutrition_data['weight']
     except ZeroDivisionError:
         sour_score_x = 0
 
@@ -223,7 +222,6 @@ def umami(food,
 
 
 def taste(food):
-    print(food['dish_id'])
     food = append_parsed(food)
     nutrients = get_nutrients(food)
     tastes = {
@@ -397,13 +395,6 @@ def identify_measurement(ingredient):
   ingredient_tokens = [i.strip()
                        for i
                        in ingredient.lower().split(' ')
-                       if
-                       i not in
-                       stop_words
-                       ]
-  ingredient_tokens = [i.strip()
-                       for i
-                       in ingredient.lower().split(' ')
                        if i not in
                        adjectives
                        ]
@@ -427,9 +418,9 @@ def identify_measurement(ingredient):
   ingredient_tokens = [i.strip() for i in ingredient_tokens]
   ingredient = ' '.join(ingredient_tokens).strip()
   ingredient = ingredient.replace(measurement, '')
-  ingredient = rejector.process(ingredient.upper())
+  ingredient = rejector.process(ingredient)
   ingredient_dict['measurement'] = measurement
-  ingredient_dict['ingredient'] = rejector.process(ingredient.lower())
+  ingredient_dict['ingredient'] = rejector.process(ingredient)
   return ingredient_dict
 
 
@@ -577,16 +568,16 @@ all_recipes = list()
 vectorizer = CountVectorizer()
 
 def main():
-    foods_list = list()
-    for food in get_dishes():
-        foods_list.append(append_parsed(food))
+    #foods_list = list()
+    #for food in get_dishes():
+    #    foods_list.append(append_parsed(food))
     # copy_foods_list = copy.deepcopy(foods_list)
-    test_dishes = list()
-
-    for item in load_test_dishes('sample_five.json'):
-        test_dishes.append(append_parsed(item))
+    #test_dishes = list()
+    for datafile in sys.argv[1:]:
+      for item in load_test_dishes(datafile):
+          taste(item)
     #print(list(test_dishes[0]['ingredient_str']))
-    uprofile = user.Profile(data=test_dishes, history=5)
+    #uprofile = user.Profile(data=test_dishes, history=5)
     # training_set = create_training_set(copy_foods_list, test_dishes)
     # test_indices = [i['dish_id'] for i in training_set if 'cuisine' not in i]
     # all_recipes = [i['ingredient'] for i in training_set]
@@ -611,8 +602,8 @@ def main():
     # print(taste(test_dish))
     #  print("Probable classes are ")
     # print(json.dumps(d, indent='  '))
-    print("User profile")
-    print(uprofile)
+    #print("User profile")
+    #print(uprofile)
 
 
 

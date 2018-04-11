@@ -10,19 +10,19 @@ class Rejector:
 	def __init__(self, kb='rejects.json'):
 		self.kb_file = kb
 		self.rejects = open(self.kb_file)
-		self.alphabets = json.load(self.rejects) or dict()		
+		self.alphabets = json.load(self.rejects) or dict()
 
 	def add(self, words):
 		'''
-		Add word to the reject list. All words are indexed 
+		Add word to the reject list. All words are indexed
 		by their first character.
 		'''
 		for word in words.strip().split(' '):
 			self.alphabets[word.strip()[0]].extend(word.strip().split(' '))
-			self.alphabets[word.strip()[0]] = list(set(self.alphabets[word.strip()[0]]))		
+			self.alphabets[word.strip()[0]] = list(set(self.alphabets[word.strip()[0]]))
 
 	def close(self):
-		with open(self.kb_file, 'w') as kb_file:			
+		with open(self.kb_file, 'w') as kb_file:
 			json.dump(self.alphabets, kb_file, indent='\t')
 
 	def process(self, dirty_string):
@@ -43,22 +43,22 @@ class Rejector:
 			if word == '':
 				return ''
 			rejected_words.extend(self.alphabets[word[0].upper()])
-			
+
 		for product in itertools.product(rejected_words, input_words):
 			#match any of the rejected words selected in the input string
-			if product[0].upper() in product[1].upper():
+			if product[0].upper() == product[1].upper():
 				rejector.add(product[0])
 				try:
 					input_words.remove(product[1])
 				except ValueError:
 					pass #Exact word was not found
-		
+
 		if len(input_words) == 0: #Input was completely rejected, return empty string
 			return ''
 
 		#clean_string = functools.reduce(lambda s,a: s+ ' ' + a, input_words)
 		#Rebuild string from clean word list
-		
+
 		clean_string = " ".join(input_words)
 		return clean_string
 
@@ -78,7 +78,7 @@ class Acceptor:
 
 	def close(self):
 		with open(self.kb_file, 'w') as kb_file:
-			json.dump(self.alphabets, kb_file, indent='\t')		
+			json.dump(self.alphabets, kb_file, indent='\t')
 
 	def process(self, dirty_string):
 		clean_string = rejector.process(dirty_string)
@@ -92,7 +92,7 @@ class Acceptor:
 			else:
 				rejector.add(word)
 
-		if parts_matched / len(parts) > ACCEPT_THRESHOLD: 
+		if parts_matched / len(parts) > ACCEPT_THRESHOLD:
 			acceptor.add(clean_string)
 
 class Matcher:
@@ -110,14 +110,14 @@ class Matcher:
 		try:
 			if title.upper()[0] == match[0].upper():
 				list(set(main_key[title.upper()]["matches"])).append(match.upper())
-				
+
 		except KeyError:
-			main_key[title.upper()] = dict({"matches": [match.upper()]})	
-			
+			main_key[title.upper()] = dict({"matches": [match.upper()]})
+
 
 	def match(self, match_query):
 		keys = self.hashes[match_query[0]]
-		
+
 		for key in keys.keys():
 			if match_query.upper() in keys[key].get("matches"):
 				return key
