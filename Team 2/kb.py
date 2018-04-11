@@ -46,7 +46,7 @@ class Rejector:
 			
 		for product in itertools.product(rejected_words, input_words):
 			#match any of the rejected words selected in the input string
-			if product[0] in product[1]:
+			if product[0].upper() in product[1].upper():
 				rejector.add(product[0])
 				try:
 					input_words.remove(product[1])
