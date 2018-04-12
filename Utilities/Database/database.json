@@ -64301,6 +64301,10 @@
             "\u00c2\u00bd cup + 3 tablespoons plain yogurt (dahi, curd) may require more or less"
         ],
         "nutrients": {
+            "calcium": [
+                "0.00g",
+                "0.0%"
+            ],
             "calories": [
                 "30.87kcal",
                 "0%"
@@ -64321,6 +64325,10 @@
                 "3.0g",
                 "5%"
             ],
+            "iron": [
+                "0.0g",
+                "0.0%"
+            ],
             "protein": [
                 "0.46g",
                 "0%"
@@ -64336,6 +64344,14 @@
             "sugar": [
                 "4 g",
                 "0%"
+            ],
+            "vitamin_a": [
+                "0.0IU",
+                "0.0%"
+            ],
+            "vitamin_c": [
+                "0.0g",
+                "0.0%"
             ]
         },
         "overall_rating": 4.0,
@@ -98170,6 +98186,10 @@
             "1/2 teaspoon pepper"
         ],
         "nutrients": {
+            "calcium": [
+                "0.02g",
+                "2.0%"
+            ],
             "calories": [
                 "149.75kcal",
                 "0%"
@@ -98190,6 +98210,10 @@
                 "2.57g",
                 "4%"
             ],
+            "iron": [
+                "0.000609g",
+                "7.0%"
+            ],
             "protein": [
                 "3.25g",
                 "0%"
@@ -98205,6 +98229,14 @@
             "sugar": [
                 "0 g",
                 "0%"
+            ],
+            "vitamin_a": [
+                "0.0IU",
+                "0%%"
+            ],
+            "vitamin_c": [
+                "0.0288g",
+                "36.0%"
             ]
         },
         "overall_rating": 4.0,
