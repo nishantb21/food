@@ -43,7 +43,7 @@ def tokenize(db):
     db['tokens']=tokenlist
     return db
 
-def featurize(db):
+def featurize(db, include_flavours):
     """
     Each row will contain a csr_matrix of shape (1, num_features).
     Each entry in this matrix will contain the tf-idf value of the term
@@ -64,20 +64,33 @@ def featurize(db):
     def tfidf(word, doc, dfdict, N):
         return tf(word, doc) * math.log10((N / dfdict[word]))
 
-    def getcsrmatrix(tokens,dfdict,N,vocab):
+    def getcsrmatrix(tokens,dfdict,N,vocab, dish_flavours, max_vocab):
         matrixRow_list = []
-        matrixRow_list = np.zeros((1,len(vocab)),dtype='float')
+        if include_flavours:
+            matrixRow_list = np.zeros((1,len(vocab) + len(dish_flavours) - 1),dtype='float')
+        else:
+            matrixRow_list = np.zeros((1,len(vocab)),dtype='float')
         for t in tokens:
             if t in vocab:
                 matrixRow_list[0][vocab[t]] = tfidf(t,tokens,dfdict,N)
 
-        # to matrixRow_list[0][max(vocab) + ...] = flavour scores
+        if include_flavours:
+            matrixRow_list[0][max_vocab] = dish_flavours['bitter']
+            matrixRow_list[0][max_vocab] = dish_flavours['rich']
+            matrixRow_list[0][max_vocab + 1] = dish_flavours['salt']
+            matrixRow_list[0][max_vocab + 3] = dish_flavours['spicy']
+            matrixRow_list[0][max_vocab + 2] = dish_flavours['sweet']
+            matrixRow_list[0][max_vocab + 5] = dish_flavours['umami']
+
         return csr_matrix(matrixRow_list)
+
+    flavour = pd.read_csv('tastes.csv', names = ['dishId', 'bitter', 'rich', 'salt', 'spicy', 'sweet', 'umami'])
 
     N=len(db)
 
     doclist = db['tokens'].tolist()
     vocab = { i:x for x,i in enumerate(sorted(list(set(i for s in doclist for i in s)))) }
+    max_vocab = max(vocab.values()) + 1
 
     dfdict = {}
     for v in vocab.items():
@@ -85,7 +98,8 @@ def featurize(db):
 
     csrlist = []
     for index, row in db.iterrows():
-         csrlist.append(getcsrmatrix(row['tokens'],dfdict,N,vocab)) # row['dishId'] and df with flavour scores
+        dish_flavours = flavour[flavour.dishId == row['dishId']].to_dict(orient = 'record')[0]
+        csrlist.append(getcsrmatrix(row['tokens'],dfdict,N,vocab, dish_flavours, max_vocab)) # row['dishId'] and df with flavour scores
 
     db['features'] =  csrlist
     return (db,vocab)
@@ -104,15 +118,28 @@ def my_train_test_split(ratings):
     return ratings.iloc[train], ratings.iloc[test]
     '''
 
-def cosine_sim(a, b):
+def cosine_sim(a, b, include_flavours):
     """
     """
 
     v1 = a.toarray()[0]
     v2  = b.toarray()[0]
-    return sum(i[0] * i[1] for i in zip(v1, v2))/(math.sqrt(sum([i*i for i in v1]))*math.sqrt(sum([i*i for i in v2])))
+    def cos_sim(v1, v2):
+        x = (math.sqrt(sum([i*i for i in v1]))*math.sqrt(sum([i*i for i in v2])))
+        if x:
+            return sum(i[0] * i[1] for i in zip(v1, v2)) / x
+        else:
+            return 0
+    # s1 = cos_sim(v1, v2)
+    # return s1
+    s1 = cos_sim(v1[:-6], v2[:-6])
+    if include_flavours:
+        s2 = cos_sim(v1[-6:], v2[-6:])
+        return s1 * 0.5 + s2 * 0.5
+    else:
+        return s1
 
-def make_predictions(db, ratings_train, ratings_test):
+def make_predictions(db, ratings_train, ratings_test, include_flavours):
     """
     Using the ratings in ratings_train, prediction is made on the ratings for each
     row in ratings_test.
@@ -130,7 +157,7 @@ def make_predictions(db, ratings_train, ratings_test):
         mrlist = list(ratings_train.loc[ratings_train['userId'] == row['userId']]['rating'])
         # computing similarity between dishes user rated and the current dish in the test set
 
-        sim = [cosine_sim(c,db.loc[db['dishId'] ==row['dishId']]['features'].values[0]) for c in csrlist]
+        sim = [cosine_sim(c,db.loc[db['dishId'] ==row['dishId']]['features'].values[0], include_flavours) for c in csrlist]
         # computing similarity times the rating for known dish
         wan = sum([ v*mrlist[i] for i,v in enumerate(sim) if v>0])
         wadlist = [i for i in sim if i>0]
@@ -142,16 +169,16 @@ def make_predictions(db, ratings_train, ratings_test):
             result.append(np.mean(mrlist)) # if dish did not match with anything approx as average of users rating
     return np.array(result)
 
-def main(data, db, predict_on):
+def main(data, db, predict_on, include_flavours):
     """
     """
     total_dishes = db.shape[0]
 
     db = tokenize(db)
-    db, vocab = featurize(db)
+    db, vocab = featurize(db, include_flavours)
     
     ratings_train, ratings_test = my_train_test_split(data)
-    predictions = make_predictions(db, ratings_train, ratings_test)
+    predictions = make_predictions(db, ratings_train, ratings_test, include_flavours)
 
     predicted_test_error = mean_squared_error(ratings_test.rating, predictions) ** 0.5
 
@@ -160,7 +187,7 @@ def main(data, db, predict_on):
         ratings_test['userId'] = [predict_on] * total_dishes
         ratings_test.dishId = range(1, total_dishes + 1)
            
-        predictions_uid = make_predictions(db, ratings_train, ratings_test)
+        predictions_uid = make_predictions(db, ratings_train, ratings_test, include_flavours)
 
         predictions_uid = list(enumerate(predictions_uid))
 
@@ -173,7 +200,7 @@ def main(data, db, predict_on):
     return (predicted_test_error, predict_on_user(predict_on = predict_on))
     
 
-def start(profile = None, type = 'all', predict_on = 100):
+def start(profile = None, type = 'all', predict_on = 100, flavours = False):
     data = pd.read_csv(os.path.join(my_path,'../Utilities/Team 3/review.csv'))
     data = data[data['userId'].isin(data['userId'].value_counts()[data['userId'].value_counts() >= 5].index)]
 
@@ -189,23 +216,19 @@ def start(profile = None, type = 'all', predict_on = 100):
 
     time_start = time.time()
 
-    predicted_test_error, predictions = main(data, db, predict_on = predict_on)
+    predicted_test_error, predictions = main(data, db, predict_on = predict_on, include_flavours = flavours)
     
     predictions = pd.DataFrame(predictions, columns = ['dishId', 'rating'])
     predictions = predictions.merge(dishes, on = 'dishId', how = 'left')
-    prediction = predictions[['dish_name', 'rating']]
-    predicted_rating = prediction.to_dict(orient = 'records')[:10]
+    predictions.columns = ['dishId', 'rating', 'dishName']
 
     data = data[data.userId == predict_on]
     original_rating = data.merge(predictions, how = 'left', on = 'dishId')
-    original_rating.columns = ['userId', 'dishId', 'original_rating', 'predicted_rating', 'dish_name']
-    original_rating = original_rating[['dish_name', 'original_rating', 'predicted_rating']]
-    original_rating = original_rating.to_dict(orient = 'records')
+    original_rating.columns = ['dishId', 'userId', 'rating', 'reformed', 'dishName']
     
     time_end = time.time()
 
-    answer = {"user" : predict_on, "predicted_test_error": predicted_test_error, "time" : round(time_end - time_start, 2), "predicted_rating_list" : predicted_rating, "original_rating_list" : original_rating}
-    # answer = json.dumps(answer)
+    answer = {"user" : predict_on, "predicted_test_error": predicted_test_error, "time" : round(time_end - time_start, 2), "predicted_rating" : predictions, "original_rating" : original_rating}
     return answer
 
 def getpipedtags():

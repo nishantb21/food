@@ -124,7 +124,7 @@ class MF():
 def predict(final_scores, dishes, userId):
 	rowUser = final_scores[userId, :]
 	rowSort = sorted(np.ndenumerate(rowUser), key = lambda x: x[1], reverse = True)
-	predictions = [(i[0][0], i[1]) for i in rowSort[:10]]
+	predictions = [(i[0][0], i[1]) for i in rowSort]
 	predictions = pd.DataFrame(predictions, columns = ['dishId', 'rating'])
 	predictions = predictions.merge(dishes, on = 'dishId', how = 'left')
 	return predictions
@@ -156,7 +156,6 @@ def append_to_data(data, profile, predict_on):
 	d['userId'] = predict_on
 
 	data = data.append(d)
-	print(data.tail())
 	return data
 
 def start(profile = None, retrain = False, predict_on = 100):
@@ -201,24 +200,6 @@ def start(profile = None, retrain = False, predict_on = 100):
 	predicted_rating = predict(final_scores, dishes, predict_on)
 	original_rating = original(final_scores, dishes, df, test_set, predict_on)
 
-	predicted_rating = df_to_list(predicted_rating, ['dishName', 'rating'])
-	original_rating = df_to_list(original_rating, ['dishName', 'rating', 'reformed'])
-	predicted_final = []
-	original_final = []
-
-	for i in predicted_rating:
-		predicted_final_temp = {}
-		predicted_final_temp['dish_name'] = i[0]
-		predicted_final_temp['rating'] = round(i[1], 2)
-		predicted_final.append(predicted_final_temp)
-
-	for i in original_rating:
-		original_rating_temp = {}
-		original_rating_temp['dish_name'] = i[0]
-		original_rating_temp['original_rating'] = round(i[1], 4)
-		original_rating_temp['predicted_rating'] = round(i[2], 4)
-		original_final.append(original_rating_temp)
-
 	test_data = np.zeros((n_users + 1, n_dishes + 1))
 	for line in test_set.iterrows():
 			d = line[1]
@@ -231,12 +212,10 @@ def start(profile = None, retrain = False, predict_on = 100):
 
 	predicted_test_error = mean_squared_error(test_data[test_data.nonzero()].flatten(), final_scores[test_data.nonzero()].flatten()) ** 0.5
 
-	answer = {'predicted_rating_list': predicted_final, 'original_rating_list': original_final, "user" : predict_on, 'time' : time_end - time_start, 'predicted_test_error' : predicted_test_error}
+	answer = {'predicted_rating': predicted_rating, 'original_rating': original_rating, "user" : predict_on, 'time' : time_end - time_start, 'predicted_test_error' : predicted_test_error}
 	if retrain:
 		answer['sum_square_error'] = training_process[-1][1]
 	else:
 		answer['sum_square_error'] = None
-
-	# answer = json.dumps(answer)
 
 	return answer
