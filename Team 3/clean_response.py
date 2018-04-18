@@ -11,7 +11,7 @@ def clean_dish_scores(response, health_scores, user_profile, predict_on = 100):
 
 	predicted_scores = predicted_scores[~predicted_scores.dishId.isin(original_scores.dishId)]
 
-	nonveg = int(user_profile['nonveg'][0])
+	nonveg = int(user_profile['nonveg'].iloc[0])
 
 	if not nonveg:
 		tagged_dishes = pickle.load(open(os.path.join(my_path,"../Utilities/Team 3/tagged_dishes.pickle"), "rb" ))
