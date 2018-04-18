@@ -2,6 +2,8 @@
 		"name": "bitter_l1",
 		"items": {
 			"arugula": 0.45,
+			"carrot": 0.12,
+			"carrots": 0.12,
 			"asparagus": 0.425,
 			"cabbage": 0.3,
 			"cauliflower": 0.3,
@@ -69,12 +71,14 @@
 			"soy": 0.57,
 			"tuna": 0.61,
 			"pinto": 0.64,
-			"cacao": 1
+			"cacao": 1,
+			"acai": 0.88
 	}
 	},
 		{
 			"name": "multi_words",
 			"items": {
+				"monterey jack": 0.21,
 				"curry leaves": 0.8,
 				"bitter gourd": 1,
 				"bitter melon": 1,

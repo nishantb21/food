@@ -168,9 +168,3 @@ def main(user_profile, steps, floors, predict_on = 100):
 	score = elixir(allowed, weights, type = condition)
 	
 	return score
-
-
-user_data = pd.read_csv(os.path.join(my_path,'../Utilities/Team 3/user_profile.csv'))
-user_profile = user_data[user_data.userId == 22625]
-
-main(user_profile, 10000, 10, predict_on = 22625)
