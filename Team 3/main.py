@@ -43,51 +43,51 @@ def print_tables(response, method):
 
 	print(t)
 
-def start(matf, retrain, tfidf, tfidf_type, flavour, health_bool, steps, floors, profile, nonveg, predict, pretty):
+def start(matf, retrain, tfidf, tfidf_type, flavour, health_bool, steps, floors, profile, nonveg, predict, pretty, include_bottom = False):
+	predict = int(predict)
 	method = 0
 	if matf:
 		method = 1
 		if retrain:
 			if predict:
-				response = matF.start(profile = profile, retrain = True, predict_on = int(predict))
+				response = matF.start(profile = profile, retrain = True, predict_on = predict)
 			else:
 				response = matF.start(profile = profile, retrain  = True)
 
 		else:
 			if predict:
-				response = matF.start(profile = profile, retrain = False, predict_on = int(predict))
+				response = matF.start(profile = profile, retrain = False, predict_on = predict)
 			else:
 				response = matF.start(profile = profile, retrain = False)
 
 	elif tfidf:
 		method = 2
 		if tfidf_type:
-			response = tfidf_flavour.start(profile = profile, type = tfidf_type, predict_on = int(predict), flavours = flavour)
+			response = tfidf_flavour.start(profile = profile, type = tfidf_type, predict_on = predict, flavours = flavour)
 		else:
-			response = tfidf_flavour.start(profile = profile, predict_on = int(predict), flavours = flavour)
+			response = tfidf_flavour.start(profile = profile, predict_on = predict, flavours = flavour)
 
 	response['predicted_rating'].dropna(axis = 0, inplace = True)
 
 	user_data = pd.read_csv(os.path.join(my_path,'../Utilities/Team 3/user_profile.csv'))
-	user_profile = user_data[user_data.userId == int(predict)]
+	user_profile = user_data[user_data.userId == predict]
+
 	if profile:
-		if nonveg:
-			user_profile = pd.DataFrame({'userId' : [predict], 'nonveg' : [nonveg]})
+		user_profile = pd.DataFrame({'userId' : [predict], 'nonveg' : [nonveg]})
 
 	if health_bool:
-		health_scores = health.main(user_profile, int(steps), int(floors), predict_on = int(predict))
+		health_scores = health.main(user_profile, int(steps), int(floors), predict_on = predict)
 		health_scores = clean_response.scale_health_scores(health_scores)
 	else:
 		health_scores = None
 
-	response['predicted_rating'] = clean_response.clean_dish_scores(response, health_scores, user_profile, predict_on = int(predict))
+	response['predicted_rating'] = clean_response.clean_dish_scores(response, health_scores, user_profile, include_bottom, predict_on = predict)
 	response['original_rating'] = response['original_rating'].to_dict(orient = "records")
 
 	if pretty:
 		print_tables(response, method)
 
 	else:
-		response = json.dumps(response)
 		return response
 
 if __name__ == '__main__':
@@ -144,4 +144,5 @@ if __name__ == '__main__':
 		predict = 100
 
 	response = start(argvalues.matF, argvalues.retrain, argvalues.tfidf, type_tfidf, argvalues.flavour, argvalues.health, steps, floors, profile, nonveg, predict, argvalues.pretty)
+	response = json.dumps(response)
 	print(response)

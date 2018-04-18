@@ -84,7 +84,7 @@ def featurize(db, include_flavours):
 
         return csr_matrix(matrixRow_list)
 
-    flavour = pd.read_csv('tastes.csv', names = ['dishId', 'bitter', 'rich', 'salt', 'spicy', 'sweet', 'umami'])
+    flavour = pd.read_csv(os.path.join(my_path,'../Utilities/Team 2/tastes.csv'), names = ['dishId', 'bitter', 'rich', 'salt', 'spicy', 'sweet', 'umami'])
 
     N=len(db)
 

@@ -5,7 +5,7 @@ import os
 
 my_path = os.path.abspath(os.path.dirname(__file__))
 
-def clean_dish_scores(response, health_scores, user_profile, predict_on = 100):
+def clean_dish_scores(response, health_scores, user_profile, include_bottom, predict_on = 100):
 	predicted_scores = response['predicted_rating']
 	original_scores = response['original_rating']
 
@@ -41,7 +41,10 @@ def clean_dish_scores(response, health_scores, user_profile, predict_on = 100):
 
 		# sort by health score
 
-	answer = predicted_scores.to_dict(orient = "records")[:10]
+	ans = predicted_scores.to_dict(orient = "records")
+	answer = ans[:10]
+	if include_bottom:
+		answer.extend(ans[-5:])
 	return answer
 
 def scale_health_scores(scores):
