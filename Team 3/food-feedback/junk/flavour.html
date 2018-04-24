@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<script type="text/javascript" src="assets/js/jquery.min.js"></script>
+	<script>
+        function callphp()
+        {
+            xhr = new XMLHttpRequest();
+            xhr.onreadystatechange = checkResponse;
+            xhr.open("GET", "userflavour.php", true);
+            xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+            xhr.send();
+        }
+
+        function checkResponse()
+        {
+            if(xhr.readyState == 4 && xhr.status == 200)
+            {
+                data = JSON.parse(xhr.responseText);
+
+                description = document.createElement('p');
+                p.innerHTML = data[0][2];
+                document.getElementById("flavourform").appendChild(description);
+
+                for(i = 0;i<data.length;i++)
+                {
+                    console.log(data[i]);
+                    main_div = document.createElement("div");
+                    main_div.className = "form-group";
+
+                    dishname = document.createElement("p");
+                    dishname.innerHTML = data[i][1];
+
+                    main_div.appendChild(dishname);
+
+                    rating =
+                }
+            }
+        }
+	</script>
+    <style>
+        .back{
+        font-size:16px;
+        }
+
+        .back:hover{
+        text-decoration: none;
+        color: white;
+        }
+    </style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'> 
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link href="assets/css/animate.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+
+</head>
+
+<body class="" onload = "callphp()">
+
+    <div class="loginColumns animated fadeInDown">
+        <div class="row">
+
+            <div class="col-md-12">
+                <p class = "logintext2">Food Preference Scores</p>
+            </div>
+
+            <div class="col-md-12" id = "showonload">
+                <div class="wrappingbox">
+                    <form action = "appendflavour.php" method = "post" id = "flavourform">
+                        <!-- <center><h4>Please Enter Your EmailID</h4></center>
+                        <p>Use the same EmailID you used to fill the previous form</p>
+                        <div class="form-group">
+                            <input type="email" name = "email" class="form-control" placeholder="Email ID" id = "email" required>
+                        </div>
+                        
+                        <div class = "form-group">
+                            <button type="submit" class="btn btn-primary btn-block" onclick = "process()">Submit</button>
+                        </div> -->
+                    </form>
+                </div>
+            </div>
+
+        </div>
+        <br>
+    </div>
+
+</body>
+
+</html>

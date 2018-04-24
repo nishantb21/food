@@ -1,14 +1,17 @@
 import pandas as pd
 import json
 import csv
+import os
 
 import main
 
-ratings = pd.read_csv('ratings.csv')
+my_path = os.path.abspath(os.path.dirname(__file__))
 
-meta = pd.read_csv('meta.csv')
+ratings = pd.read_csv(os.path.join(my_path,"../Utilities/Team 3/ratings.csv"))
 
-fh = csv.writer(open('final.csv', 'a+'))
+meta = pd.read_csv(os.path.join(my_path,"../Utilities/Team 3/meta.csv"))
+
+fh = csv.writer(open(os.path.join(my_path,"../Utilities/Team 3/final.csv"), 'a+'))
 
 for row in meta.iterrows():
 	row = row [1]

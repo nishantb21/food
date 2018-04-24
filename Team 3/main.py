@@ -28,7 +28,7 @@ def print_tables(response, method):
 
 	for i in response['predicted_rating']:
 		if health_score:
-			t.add_row([i['dishName'], round(i['rating'], 2), i['health_score']])
+			t.add_row([i['dishName'], round(i['rating'], 2), round(i['health_score'], 2)])
 		else:	
 			t.add_row([i['dishName'], round(i['rating'], 2)])
 
@@ -86,7 +86,6 @@ def start(matf, retrain, tfidf, tfidf_type, flavour, health_bool, steps, floors,
 
 	if pretty:
 		print_tables(response, method)
-
 	else:
 		return response
 
@@ -144,5 +143,7 @@ if __name__ == '__main__':
 		predict = 100
 
 	response = start(argvalues.matF, argvalues.retrain, argvalues.tfidf, type_tfidf, argvalues.flavour, argvalues.health, steps, floors, profile, nonveg, predict, argvalues.pretty)
-	response = json.dumps(response)
-	print(response)
+	
+	if response:
+		response = json.dumps(response)
+		print(response)
