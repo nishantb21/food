@@ -46,7 +46,7 @@ def adaptive_daily_value(weight, height, gender, age, steps, height_travelled, b
 	allowed = {'calories' : 2079.35, 'protein' : 50, 'fat' : 70, 'sat_fat' : 24, 'carbs' : 310, 'sugar' : 30, 'dietary_fiber' : 30, 'sodium' : 2.3, 'cholesterol' : 300, 'vitamin_a' : 0.0008, 'vitamin_c' : 0.08, 'iron' : 0.0087, 'calcium' : 1}
 	
 	work = 9.8 * weight * height_travelled * 0.000239006 + weight * steps / 6000
-
+	
 	bmr = weight * 10 + 6.25 * height - 5 * age
 	if gender == 'm':
 		bmr += 5
@@ -54,16 +54,15 @@ def adaptive_daily_value(weight, height, gender, age, steps, height_travelled, b
 		bmr -= 161
 
 	daily_cal = round(bmratio * bmr + work, 2)
-
 	if temp != None:
-		daily_cal = daily_cal * (1 + (85 - temp) / 8000)
+		daily_cal = daily_cal * (1 + (85 - temp) / 800)
 
 		for i in allowed:
 			allowed[i] = allowed[i] * daily_cal / 2079.35
 
 	na_multi = 1 + 0.015 * (((temp - 32) * 0.56) - 23)
 	allowed['sodium'] = na_multi * allowed['sodium'] + (altitude / 1000) ** 2.5
-	
+
 	return allowed
 
 
@@ -156,12 +155,12 @@ weights = {
 	}
 
 def main(user_profile, steps, floors, predict_on = 100):
-	height = float(user_profile['height'][0])
-	weight = float(user_profile['weight'][0])
-	age = float(user_profile['age'][0])
-	gender = user_profile['gender'][0]
-	condition = user_profile['condition'][0]
-	bmratio = float(user_profile['bmratio'][0])
+	height = float(user_profile['height'].iloc[0])
+	weight = float(user_profile['weight'].iloc[0])
+	age = float(user_profile['age'].iloc[0])
+	gender = user_profile['gender'].iloc[0]
+	condition = user_profile['condition'].iloc[0]
+	bmratio = float(user_profile['bmratio'].iloc[0])
 
 	floors = floors * 10 * 3.28084
 
