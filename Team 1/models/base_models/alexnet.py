@@ -35,7 +35,7 @@ class alexnet:
     def get_model(self):
         return self.model
 
-
 if __name__ == '__main__':
-    obj = alexnet().get_model()
-    obj.summary()
+    dimensions = [224, 224, 3]
+    obj = alexnet(dimensions)
+    print(obj.get_model().summary())

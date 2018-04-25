@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Log In</title>
+    <title>Dashboard</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
@@ -15,16 +15,96 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.4/socket.io.js"></script>
 	<script src="https://code.highcharts.com/highcharts.js"></script>
 	<script src="https://code.highcharts.com/highcharts-more.js"></script>
-    <script src="dashboard.js"></script>
+    <script src="dashboard_new.js"></script>
 </head>
-<body class="bg-light">
-	<% if (choice == 'select') { %>
+	<body class="bg-light" onload="setup()">
 		<div class="container">
 			<div class="row align-items-center justify-content-center">
-				<div class="col-md-4 custom-card">
-					<h1 class="text-center">User ID: <%= userID %></h1>
+				<div class="col-md-5">
+					<div class="custom-card">
+						<h2 class="text-center">User ID: <span id="userID"><%= userID %></span></h1>
+						<br>
+						<table class="table table-hover text-center">
+							<thead>
+								<th>Age</th>
+								<th>Weight</th>
+								<th>Height</th>
+								<th>BM Ratio</th>
+							</thead>
+							<tbody>
+								<tr>
+									<td><%= userData['age'] %></td>
+									<td><%= userData['weight'] %> kgs</td>
+									<td><%= userData['height'] %></td>
+									<td><%= userData['bmratio'] %></td>
+								</tr>
+							</tbody>
+						</table>
+						<br>
+						<center>
+							<span class="badge badge-light"><%= userData['condition'] %></span>
+							<span class="badge badge-danger"><%= userData['vegnonveg'] %></span>
+							<span class="badge badge-info"><%= userData['gender'] %></span> 
+						</center>
+						<br>
+					</div>
+					<div class="custom-card padding-all">
+						<form action='/workflow' method="POST">
+							<div class="row">
+								<div class="col-md-12">
+									<div class="row">
+										<div class="col-md-9">
+											<div class="custom-control custom-radio custom-control-inline">
+												<input type="radio" id="searchRadio" name="choiceRadio" class="custom-control-input" value="search" checked="True" onclick="switch_cases(0)">
+												<label class="custom-control-label" for="searchRadio">Search</label>
+											</div>
+											<div class="custom-control custom-radio custom-control-inline">
+												<input type="radio" id="uploadRadio" name="choiceRadio" class="custom-control-input" value="upload"  onclick="switch_cases(1)">
+												<label class="custom-control-label" for="uploadRadio">Upload image</label>
+											</div>
+										</div>
+										<div class="col-md-3">
+											<button class="custom-btn-round-small custom-btn-round-outline-dark" onclick="addToMealBody()" style="float:right">+</button>	
+										</div>
+									</div>									
+								</div>
+								<div class="col-md-12 padding-all" id="searchContainer">
+									<div class="row align-items-center justify-content-center">
+										<div class="col-7">
+											<div class="form-group" >
+												<label for="dishName">Dish Name</label>
+												<input type="search" class="form-control text-capitalize" id="dishName" name="dishName">								
+												<small class="form-text text-muted">Eating something? Tell us what it is!</small>
+											</div>
+										</div>	
+										<div class="col-5">
+											<div class="form-group" >
+												<label for="rating">Rating</label>
+												<input type="number" class="form-control text-capitalize" id="rating" name="rating">								
+												<small class="form-text text-muted">Do you like it?</small>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-12" style="display: none" id="uploadContainer">
+									<div class="form-group padding-all">
+										<label for="uploadDish">Upload image</label>
+										<input type="file" class="form-control-file" id="uploadDish" name="uploadDish">
+										<small id="emailHelp" class="form-text text-muted">Eating something? Show us what it is!</small>
+									</div>
+								</div>
+								<div class="col-md-12">
+									<table class="table table-hover text-center">
+										<tbody id="mealBody">
+										</tbody>
+									</table>
+								</div>
+							</div>
+							<center><button type="button" class="custom-btn custom-btn-outline-dark rounded-button" id="submitMeal">Done</button></center>
+						</form>
+					</div>
 				</div>
-				<div class="col-md-6 custom-card">
+				<div class="col-md-5 custom-card">
 					<h6	class="text-center">Table 1. User History</h6>
 					<table class="table table-hover text-center">
 						<thead class="thead-dark">
@@ -35,80 +115,73 @@
 							</tr>
 						</thead>
 						<tbody>
-						<% var count = 1; %>
-						<% Object.keys(historyData).forEach(function(key){ %>
-							<tr>
-								<td><%= count %></td>	
-								<td><%= key %></td>
-								<td><%= historyData[key] %></td>
-							</tr>
-						<% count += 1 %>
-						<%})%>
+							<% var count = 1; %>
+							<% Object.keys(historyData).forEach(function(key){ %>
+								<tr>
+									<td><%= count %></td>	
+									<td class="text-capitalize"><%= key %></td>
+									<td><%= historyData[key] %></td>
+								</tr>
+							<% count += 1 %>
+							<%})%>
 						</tbody>
 					</table>
 				</div>
 			</div>
-			<div class="row align-items-center justify-content-center">
-				<div class="col-md-3 custom-card">
-					<h6>Dish name</h6>
-					<small>Showing statistics for the selected dish.</small>
-					<h1 class="text-center padding-all"> <%= dishName %> </h1>
-				</div>
-				<div class="col-md-3 custom-card">
-					<h6	class="text-center">Table 2. Nutrient Information</h6>
-					<table class="table table-hover text-center">
-						<thead class="thead-dark">
-							<tr>
-								<th>Nutrient</th>
-								<th>Amount</th>
-							</tr>
-						</thead>
-						<tbody>
-						<% Object.keys(nutrientData).forEach(function(key){ %>
-							<% if (key != 'Cholesterol'){ %>
-							<tr>
-								<td><%= key %></td>
-								<td><%= nutrientData[key][0] %></td>
-							</tr>
-							<% } %>
-						<%})%>
-						</tbody>
-
-					</table>
-				</div>
-				<div class="col-md-4 custom-card">
-					<div id="flavourChart">
-						
-					</div>
-				</div>
-			</div>
-			<div class="row align-items-center justify-content-center">
+			<div class="row align-items-center justify-content-center" id="predictionsContainer">
 				<div class="col-md-6 padding-all" id="progressbarContainer">
 					<div class="progress" style="height: 1px;">
 						<div class="progress-bar bg-dark" id="progressbar" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
 					</div>
 				</div>
-					
-				<div class="col-md-6 custom-card" id="predictionsContainer" style="display:none">
-					<h6	class="text-center">Table 3. Predicting what the user might like</h6>
-					<table class="table table-hover text-center">
-						<thead class="thead-dark">
-							<tr>
-								<th>#</th>
-								<th>Dish name</th>
-								<th>Predicted ratings</th>
-							</tr>
-						</thead>
-						<tbody id="predictionsBody">
+				<div id="predictionsWrapper" class="row align-items-center justify-content-center"  style="display:none">	
+					<div class="col-md-3 custom-card" id="predictionsContainermatf">
+						<h6	class="text-center">Table 3. Predicting what the user might like MatF</h6>
+						<table class="table table-hover text-center">
+							<thead class="thead-dark">
+								<tr>
+									<th>#</th>
+									<th>Dish name</th>
+								</tr>
+							</thead>
+							<tbody id="predictionsBodymatf">
 
-						</tbody>
-					</table>
+							</tbody>
+						</table>
+					</div>
+					<div class="col-md-3 custom-card" id="predictionsContainertfidf">
+						<h6	class="text-center">Table 3. Predicting what the user might like Tf-idf</h6>
+						<table class="table table-hover text-center">
+							<thead class="thead-dark">
+								<tr>
+									<th>#</th>
+									<th>Dish name</th>
+								</tr>
+							</thead>
+							<tbody id="predictionsBodytfidf">
+
+							</tbody>
+						</table>
+					</div>
+					<div class="col-md-3 custom-card" id="predictionsContainertfidfflavour">
+						<h6	class="text-center">Table 3. Predicting what the user might like Tf-idf + flavour</h6>
+						<table class="table table-hover text-center">
+							<thead class="thead-dark">
+								<tr>
+									<th>#</th>
+									<th>Dish name</th>
+								</tr>
+							</thead>
+							<tbody id="predictionsBodytfidfflavour">
+
+							</tbody>
+						</table>
+					</div>
 				</div>
 			</div>
 
 		</div>
-	<% } else { %>
-		<div id="information" style="display:none"><%= userID %>,<%= rating %></div>
+		<!-- <div id="information" style="display:none"></div>
 		<div class="container">
 			<div class="row align-items-center justify-content-center">
 				<div class="col-md-4 custom-card">
@@ -125,15 +198,12 @@
 							</tr>
 						</thead>
 						<tbody>
-						<% var count = 1; %>
-						<% Object.keys(historyData).forEach(function(key){ %>
 							<tr>
-								<td><%= count %></td>	
-								<td><%= key %></td>
-								<td><%= historyData[key] %></td>
+								<td></td>	
+								<td></td>
+								<td></td>
 							</tr>
-						<% count += 1 %>
-						<%})%>
+						
 						</tbody>
 					</table>
 				</div>
@@ -196,23 +266,21 @@
 					</div>
 				</div>
 				<div class="col-md-6 custom-card" id="predictionsContainer">
-						<h6	class="text-center">Table 3. Predicting what the user might like</h6>
-						<table class="table table-hover text-center">
-							<thead class="thead-dark">
-								<tr>
-									<th>#</th>
-									<th>Dish name</th>
-									<th>Predicted ratings</th>
-								</tr>
-							</thead>
-							<tbody id="predictionsBody">
-	
-							</tbody>
-						</table>
-					</div>
+					<h6	class="text-center">Table 3. Predicting what the user might like</h6>
+					<table class="table table-hover text-center">
+						<thead class="thead-dark">
+							<tr>
+								<th>#</th>
+								<th>Dish name</th>
+								<th>Predicted ratings</th>
+							</tr>
+						</thead>
+						<tbody id="predictionsBody">
+
+						</tbody>
+					</table>
+				</div>
 			</div>
-		</div>
-	<% } %>
-    
-</body>
+		</div> -->
+	</body>
 </html>

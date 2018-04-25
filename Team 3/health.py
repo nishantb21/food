@@ -68,7 +68,7 @@ def adaptive_daily_value(weight, height, gender, age, steps, height_travelled, b
 
 def elixir(allowed, weights, type = 'normal'):
 	weights = weights[type]
-	database = json.load(open('database.json', 'rb'))
+	database = json.load(open(os.path.join(my_path,"../Utilities/Database/database.json")))
 	x = {}
 	for dish in database:
 		dishId = dish['dish_id']

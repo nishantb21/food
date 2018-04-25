@@ -88,6 +88,7 @@ class dataset_loader:
                     img = cv2.imread(path, cv2.IMREAD_COLOR)
                 else:
                     img = cv2.imread(path, cv2.IMREAD_GRAYSCALE)
+                img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
                 img = cv2.resize(img, (self.dimensions[0], self.dimensions[1]))
                 ret_val.append(np.reshape(img, self.dimensions))
             except Exception as e:
