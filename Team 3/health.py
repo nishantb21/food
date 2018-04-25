@@ -4,6 +4,7 @@ import json
 import requests
 import pandas as pd
 import os
+
 my_path = os.path.abspath(os.path.dirname(__file__))
 
 def get_lat_long(ip_addr = 'me'):
@@ -66,9 +67,9 @@ def adaptive_daily_value(weight, height, gender, age, steps, height_travelled, b
 	return allowed
 
 
-def elixir(allowed, weights, type = 'normal'):
+def elixir(allowed, weights, bmratio, type = 'normal'):
 	weights = weights[type]
-	database = json.load(open(os.path.join(my_path,"../Utilities/Database/database.json")))
+	database = json.load(open(os.path.join(my_path,"../Utilities/Database/database.json"), 'rb'))
 	x = {}
 	for dish in database:
 		dishId = dish['dish_id']
@@ -136,7 +137,7 @@ def elixir(allowed, weights, type = 'normal'):
 				recadd += weights[i] * nutrients[i] / allowed[i]
 			#################################
 
-			mult = 10
+			mult = bmratio
 			div = ((1 + mult) * restbase)
 			if div:
 				score = recbase + (mult * recadd) / div
@@ -165,6 +166,6 @@ def main(user_profile, steps, floors, predict_on = 100):
 	floors = floors * 10 * 3.28084
 
 	allowed = adaptive_daily_value(weight, height, gender, age, steps, floors, bmratio)
-	score = elixir(allowed, weights, type = condition)
+	score = elixir(allowed, weights, bmratio, type = condition)
 	
 	return score

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<script type="text/javascript" src="assets/js/jquery.min.js"></script>
+	<script>
+
+    function toTitleCase(str)
+    {
+        return str.replace(/\w\S*/g, function(txt){return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();});
+    }
+
+    function process()
+    {   
+        email = document.getElementById('email').value;
+        xhr = new XMLHttpRequest();
+        xhr.onreadystatechange = checkResponse;
+        xhr.open("POST", "verifyemail.php", true);
+        xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+        xhr.send("email="+email);
+    }
+    function checkResponse()
+    {
+        if(xhr.readyState == 4 && xhr.status == 200)
+        {
+            if(xhr.responseText == "user_not_found")
+            {
+                alert("EmailId not found, please you the same EmailId, with which you filled up the previous form");
+                window.location.reload();
+            }
+            else
+            {
+                document.getElementById("showonload").style = "display:none";
+                document.getElementById("showonentry").style = "display:block";
+
+                data = JSON.parse(xhr.responseText);
+                
+                flavour_desc = data[0][2];
+
+                details = document.createElement("p");
+
+                details.innerHTML = "Provide a rating for the follwing dishes out of 5, 5 being the highest. Also Rate the dish on how " + flavour_desc + " it is out of 10, 10 being the highest. If you see a dish repeated multiple times, give it the same score.";
+
+                document.getElementById('showdata').appendChild(details); 
+
+                for(i = 0;i<data.length;i++)
+                {
+                    console.log(data[i]);
+                    main_div = document.createElement("div");
+                    main_div.className = "form-group";
+
+                    dishname = document.createElement("p");
+                    dishname.innerHTML = toTitleCase(data[i][1]);
+                    dishname.style.fontWeight = "bold";
+
+                    main_div.appendChild(dishname);
+
+                    for(var j = 1;j<=5;j++)
+                    {
+                        lb = document.createElement("label");
+                        lb.className = "radio-inline";
+
+                        ip = document.createElement("input");
+                        ip.type = "radio";
+                        ip.name = "dish-"+data[i][0];
+                        ip.setAttribute("required", "");
+
+                        score = document.createElement("label");
+                        score.innerHTML = j;
+
+                        ip.value = j;
+
+                        lb.appendChild(ip);
+                        lb.appendChild(score);
+
+                        main_div.appendChild(lb);
+                    }
+
+                    main_div.appendChild(document.createElement("br"));
+                    main_div.appendChild(document.createElement("br"));
+
+                    line = toTitleCase(flavour_desc + " score") + "(Out of 10)";
+                    desc = document.createElement("p");
+                    desc.innerHTML = line;
+
+                    main_div.appendChild(desc);
+
+                    flavour = document.createElement('input');
+                    flavour.type = "number";
+                    flavour.setAttribute("min", 0);
+                    flavour.setAttribute("max", 10);
+                    flavour.style.width = "120px";
+                    flavour.style.border = "thin solid #3a3a3a";
+                    flavour.setAttribute("required", "");
+                    flavour.name = "flavour-"+data[i][0];
+
+                    main_div.appendChild(flavour);
+
+                    main_div.appendChild(document.createElement("hr"));
+
+                    document.getElementById('showdata').appendChild(main_div);  
+                }
+
+                submit_div = document.createElement("div");
+                submit_div.className = "form-group";
+
+                sub = document.createElement("button");
+                sub.type = "submit";
+                sub.className = "btn btn-primary btn-block";
+                sub.innerHTML = "Submit";
+
+                submit_div.appendChild(sub);
+
+                document.getElementById('showdata').appendChild(submit_div);
+
+                userid = document.createElement("input");
+                userid.type = "hidden";
+                userid.name = "email";
+                userid.value = email;
+
+                document.getElementById('showdata').appendChild(userid);
+            }
+        }
+    }
+
+	</script>
+    <style>
+        .back{
+        font-size:16px;
+        }
+
+        .back:hover{
+        text-decoration: none;
+        color: white;
+        }
+    </style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'> 
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link href="assets/css/animate.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+
+</head>
+
+<body class="">
+
+    <div class="loginColumns animated fadeInDown">
+        <div class="row">
+
+            <div class="col-md-12">
+                <p class = "logintext2">Food Preference Scores</p>
+            </div>
+
+            <div class="col-md-12" id = "showonload">
+                <div class="wrappingbox">
+                        <center><h4>Please Enter Your EmailID</h4></center>
+                        <p>Use the same EmailID you used to fill the previous form</p>
+                        <div class="form-group">
+                            <input type="email" name = "email" class="form-control" placeholder="Email ID" id = "email" required>
+                        </div>
+                        
+                        <div class = "form-group">
+                            <button type="submit" class="btn btn-primary btn-block" onclick = "process()">Submit</button>
+                        </div>
+                </div>
+            </div>
+
+            <div class="col-md-12" id = "showonentry" style = "display:none">
+                <div class="wrappingbox">
+                    <form id = "showdata" action = "addtodb.php" method = "post">
+                        <center><h4>Please enter a rating for the following dishes</h4></center>
+                        <br>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <br>
+    </div>
+
+</body>
+
+</html>
