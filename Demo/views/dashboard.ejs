@@ -34,7 +34,7 @@
 							<tbody>
 								<tr>
 									<td><%= userData['age'] %></td>
-									<td><%= userData['weight'] %> kgs</td>
+									<td><%= userData['weight'] %></td>
 									<td><%= userData['height'] %></td>
 									<td><%= userData['bmratio'] %></td>
 								</tr>
@@ -42,15 +42,36 @@
 						</table>
 						<br>
 						<center>
-							<span class="badge badge-light"><%= userData['condition'] %></span>
+							<span class="badge badge-light text-capitalize"><%= userData['condition'] %></span>
 							<span class="badge badge-danger"><%= userData['vegnonveg'] %></span>
 							<span class="badge badge-info"><%= userData['gender'] %></span> 
+							<% for (var i = 0; i < userData["allergies"].length; i++) { %>
+								<span class="badge badge-warning text-capitalize"><%= userData["allergies"][i] %></span>
+							<% } %>
 						</center>
 						<br>
 					</div>
 					<div class="custom-card padding-all">
 						<form action='/workflow' method="POST">
 							<div class="row">
+								<div class="col-md-12 padding-all">
+									<div class="row align-items-center justify-content-center">
+										<div class="col-6">
+											<div class="form-group" >
+												<label for="steps">Steps</label>
+												<input type="number" class="form-control text-capitalize" id="steps" name="steps" value="7000">								
+												<small class="form-text text-muted">How much did you walk today?</small>
+											</div>
+										</div>	
+										<div class="col-6">
+											<div class="form-group" >
+												<label for="floors">Floors</label>
+												<input type="number" class="form-control text-capitalize" id="floors" name="floors" value="2">								
+												<small class="form-text text-muted">How many floors did you climb?</small>
+											</div>
+										</div>
+									</div>
+								</div>
 								<div class="col-md-12">
 									<div class="row">
 										<div class="col-md-9">
@@ -127,6 +148,26 @@
 						</tbody>
 					</table>
 				</div>
+			</div>
+			<div class="row align-items-center justify-content-center" id="imageWrapper" style="display: none">
+				<div class="col-12">
+					<div class="row align-items-center justify-content-center custom-card" id="imageWrapperInner">
+						<div class="col-4 offset-1">
+							<form id="mealForm">
+								
+								<center><button type="button" class="custom-btn custom-btn-outline-dark rounded-button" id="submitMealImage">Done</button></center>
+							</form>
+						</div>
+						<div class="col-6 offset-1">
+							<h6	class="text-center">Image 1. Supplied Image</h6>
+							<div class="canvas-wrapper">
+								<canvas width="400px" height="400px" id="imageContainer" style="margin-left:auto; margin-right:auto">
+								</canvas>
+							</div>
+						</div>
+					</div>
+				</div>
+
 			</div>
 			<div class="row align-items-center justify-content-center" id="predictionsContainer">
 				<div class="col-md-6 padding-all" id="progressbarContainer">

@@ -1,4 +1,5 @@
 var countMeal = 1;
+var imgElement;
 
 function switch_cases(flag) {
     if (flag == 0){
@@ -134,6 +135,8 @@ function getrecommendations(){
     var userID = parseInt(document.getElementById('userID').innerHTML);
     var form_data = new FormData();
     form_data.append('userID', userID);
+    form_data.append('steps', parseInt($('input[name="steps"]').val()))
+    form_data.append('floors', parseInt($('input[name="floors"]').val()))
     var currentProgress = 0;
     var progressbarID = 'progressbar';
     var speed = 200;
@@ -168,6 +171,15 @@ function getrecommendations(){
     });
 }
 
+function resetImageContainer(){
+    var formBody = document.getElementById('mealForm');
+    formBody.innerHTML = '<center><button type="button" class="custom-btn custom-btn-outline-dark rounded-button" id="submitMealImage">Done</button></center>'
+    var canvasElement = document.getElementById('imageContainer');
+    var context = canvasElement.getContext('2d');
+    context.clearRect(0, 0, canvasElement.width, canvasElement.height);
+    $('#imageWrapper').hide();
+}
+
 function resetProgressBar(id, speed){
     updateProgressbar(0, id);
     $('#progressbarContainer').fadeIn(speed);
@@ -185,14 +197,10 @@ function resetPredictions(speed){
 
 function resetFlavourContainers(){
     try {
-        var elements = document.getElementsByClassName('flavourContainer');
-        for (index in elements){
-            var element = elements[index];
-            element.parentNode.removeChild(element);
-        }
+        $('.flavourContainer').remove();
     }
     catch(err){
-        
+        console.log(err);
     }
 }
 
@@ -204,6 +212,8 @@ function resetForm(){
 function getRetrainedPredictions(){
     var form_data = new FormData();
     form_data.append('userID', parseInt(document.getElementById('userID').innerHTML));
+    form_data.append('steps', parseInt($('input[name="steps"]').val()))
+    form_data.append('floors', parseInt($('input[name="floors"]').val()))
     var progressbarID = 'progressbar';
     var speed = 200;
     var currentProgress = 0;
@@ -303,14 +313,85 @@ function autocomplete(inp, arr) {
                 x[i].parentNode.removeChild(x[i]);
             }
         }
-  }
-  document.addEventListener("click", function (e) {
-        closeAllLists(e.target);
-  });
+    }
+    document.addEventListener("click", function (e) {
+            closeAllLists(e.target);
+    });
+}
+
+function drawImageOnCanvas(){
+    var canvasElement = document.getElementById('imageContainer');
+    var context = canvasElement.getContext('2d');
+    context.lineWidth = 5;
+    context.strokeStyle = "#FFFFFF"
+    context.drawImage(this, 0, 0, 400, 400);
+}
+
+function drawBoundingBox(xmin, ymin, xmax, ymax){
+    var canvasElement = document.getElementById('imageContainer');
+    var context = canvasElement.getContext('2d');
+    context.beginPath();
+    context.moveTo(xmin, ymin);
+    context.lineTo(xmin, ymax);
+    context.lineTo(xmax, ymax);
+    context.lineTo(xmax, ymin);
+    context.lineTo(xmin, ymin);
+    context.stroke();
+}
+
+function removeBoundingBox(){
+    var canvasElement = document.getElementById('imageContainer');
+    var context = canvasElement.getContext('2d');
+    context.clearRect(0, 0, canvasElement.width, canvasElement.height);
+    context.drawImage(imgElement, 0, 0, 400, 400);
+}
+
+function sendMeal(counter){
+    var form_data = new FormData();
+    var dishNames = [];
+    var ratings = [];
+    var choice = 'search';
+
+    for(var i = 1; i < counter; i++){
+        if ($("select[name='dish-" + i + "']").val() != 'none'){
+            dishNames.push($("select[name='dish-" + i + "']").val());
+            ratings.push(parseInt($("input[name='rating-" + i + "']").val()));
+        }
+    }
+
+    form_data.append('choiceRadio', choice);
+    form_data.append('userID', parseInt(document.getElementById('userID').innerHTML));
+    form_data.append('dishNames', dishNames.toString());
+    form_data.append('ratings', ratings.toString());
+
+    $.ajax({
+        type        : 'POST',
+        url         : '/workflow',
+        data        : form_data,
+        dataType    : 'json',
+        processData : false,
+        contentType : false
+    }).done(function(data){
+        var predictionsContainer = document.getElementById('predictionsContainer');
+        count = 1
+        resetForm();
+        resetFlavourContainers();
+        resetProgressBar();
+        resetPredictions();
+
+        Object.keys(data).forEach(function(key){
+                
+            var newDiv = createFNTemplate(key, data[key]['nutrientsData'], count);
+            predictionsContainer.parentNode.insertBefore(newDiv, predictionsContainer);
+            initiliazeChart(count, data[key]['flavourData']);
+            count += 1;
+        });
+        getRetrainedPredictions();
+    });
 }
 
 function setup(){
-    console.log("Setting up...")
+    console.log("Setting up...");
     var dishes =  ["curried green bean salad", "keema aloo", "paratha", "black chana with potato", "tomato cucumber kachumbar"];
     autocomplete(document.getElementById("dishName"), dishes);
     getrecommendations();
@@ -318,14 +399,14 @@ function setup(){
     $('form').submit(function(event) {
         event.preventDefault();
     });
-
-
+    
     $('#submitMeal').on('click', function() {
 
         var form_data = new FormData();
         var file_data = $('#uploadDish').prop('files')[0]; 
         var retVal = getMealData();
-        form_data.append('choiceRadio', $("input[name='choiceRadio']:checked").val());
+        var choice = $("input[name='choiceRadio']:checked").val();
+        form_data.append('choiceRadio', choice);
         form_data.append('userID', parseInt(document.getElementById('userID').innerHTML));
         form_data.append('dishNames', retVal[0].toString());
         form_data.append('ratings', retVal[1].toString());
@@ -339,20 +420,59 @@ function setup(){
             processData : false,
             contentType : false
         }).done(function(data) {
-            console.log(data);
             var predictionsContainer = document.getElementById('predictionsContainer');
-            count = 1
-            resetForm();
-            resetFlavourContainers();
-            resetProgressBar();
-            resetPredictions();
-            Object.keys(data).forEach(function(key){
-                var newDiv = createFNTemplate(key, data[key]['nutrientsData'], count);
-                predictionsContainer.parentNode.insertBefore(newDiv, predictionsContainer);
-                initiliazeChart(count, data[key]['flavourData'])
-                count += 1
-            });
-            getRetrainedPredictions();
+            count = 1;
+            if (choice=='search'){
+                resetForm();
+                resetFlavourContainers();
+                resetImageContainer();
+                resetProgressBar();
+                resetPredictions();
+                Object.keys(data).forEach(function(key){
+                
+                    var newDiv = createFNTemplate(key, data[key]['nutrientsData'], count);
+                    predictionsContainer.parentNode.insertBefore(newDiv, predictionsContainer);
+                    initiliazeChart(count, data[key]['flavourData']);
+                    count += 1;
+                });
+                getRetrainedPredictions();
+            }
+            else {
+                resetForm();
+                resetImageContainer();
+                resetFlavourContainers();
+                resetPredictions();
+                x = data['predictions'];
+                imgElement = new Image();
+                imgElement.onload = drawImageOnCanvas;
+                imgElement.src = data['filename'];
+                var mealBodyButton = document.getElementById('submitMealImage');
+                var counter = 1;
+                for(i in data['predictions']){
+                    key = Object.keys(data['predictions'][i])[0]
+                    lst = data['predictions'][i][key];
+                    option_text = '';
+                    for(i in lst){
+                        option_text += '<option class="text-capitalize" value="' + Object.keys(lst[i])[0] + '">' + Object.keys(lst[i])[0] + '</option>';
+                    }
+                    option_text += '<option class="text-capitalize">none</option>';
+                    div = document.createElement('div');
+                    div.className = "form-group";
+                    coordinates = key.split(',');
+                    for(i in coordinates){
+                        coordinates[i] = parseInt(coordinates[i]);
+                    }
+                    form_group_text = '<div class="row align-items-center" onmouseover=drawBoundingBox(' + coordinates[0]/2 + ',' + coordinates[1]/2 + ',' + coordinates[2]/2 + ','+ coordinates[3]/2 +  ') onmouseout="removeBoundingBox()"><div class="col-6"><label for="dish-' + counter + '">Dish ' + counter + '</label><select class="form-control text-capitalize" name="dish-' + counter + '" id="dish-' + counter + '">' + option_text + '</select></div><div class="col-6"><label for="rating-' + counter + '">Rating</label><input type="number" class="form-control text-capitalize" id="rating-' + counter + '" name="rating-' + counter + '"></div></div>';
+                    div.innerHTML = form_group_text;
+                    mealBodyButton.parentNode.parentNode.insertBefore(div, mealBodyButton.parentNode);
+                    counter += 1;
+                }
+                mealBodyButton.onclick = function() {
+                    sendMeal(counter);
+                }
+                $('#imageWrapper').show();
+            }
+            
         });
     });
 }

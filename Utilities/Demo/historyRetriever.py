@@ -20,14 +20,31 @@ def main(userID):
         if int(i[1]) == userID:
             document = collection.find_one({'dish_id':int(i[0])})
             history[document['dish_name']] = int(i[2])
+
+    userDataList = list(csv.reader(open(os.path.join(os.path.join(my_path, os.pardir),'Team 3/user_profile.csv'))))
     
-    userData['age'] = 21
-    userData['gender'] = 'Male'
-    userData['weight'] = 67
-    userData['height'] = '6ft 1 inch'
-    userData['condition'] = 'Diabetic'
-    userData['bmratio'] = 1.32
-    userData['vegnonveg'] = 'Non-Veg'
+    for i in userDataList[1:]:
+        if int(i[0]) == userID:
+            if i[1] == 'm':
+                userData['gender'] = 'Male'
+            else:
+                userData['gender'] = 'Female'
+            userData['age'] = int(i[2])
+            userData['height'] = i[3] + ' cms'
+            userData['weight'] = i[4] + ' kgs'
+            userData['condition'] = i[5]
+            userData['bmratio'] = float(i[6])
+            if i[7] == '0':
+                userData['vegnonveg'] = 'Veg'
+            else:
+                userData['vegnonveg'] = 'Non-Veg'
+            break
+
+    userData["allergies"] = []
+    userAllergiesList = list(csv.reader(open(os.path.join(os.path.join(my_path, os.pardir),'Team 3/user_allergies.csv'))))
+    for i in userAllergiesList[1:]:
+        if int(i[0]) == userID:
+            userData["allergies"].append(i[1])
 
     data['history'] = history
     data['userData'] = userData

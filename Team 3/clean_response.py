@@ -51,7 +51,6 @@ def clean_dish_scores(response, health_scores, user_profile, include_bottom, pre
 		predicted_scores = predicted_scores.merge(health_df, how = 'left', on = 'dishId')
 
 		# sort by health score
-		print(predicted_scores.columns)
 		predicted_scores.sort_values(['health_score', 'rating'], ascending = [False, False], inplace = True)
 
 	ans = predicted_scores.to_dict(orient = "records")
