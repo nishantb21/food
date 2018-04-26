@@ -22,15 +22,15 @@ def print_tables(response, method):
 	print("RECOMMENDED DISHES...")
 	health_score = 'health_score' in response['predicted_rating'][0]
 	if health_score:
-		t = PrettyTable(['DISH NAME', 'PREDICTED RATING', 'HEALTH SCORE'])			
+		t = PrettyTable(['DISH NAME', 'PREDICTED RATING', 'HEALTH SCORE', 'FABRIC SCORE'])			
 	else:
-		t = PrettyTable(['DISH NAME', 'PREDICTED RATING'])
+		t = PrettyTable(['DISH NAME', 'PREDICTED RATING', 'FABRIC SCORE'])
 
 	for i in response['predicted_rating']:
 		if health_score:
-			t.add_row([i['dishName'], round(i['rating'], 2), round(i['health_score'], 2)])
+			t.add_row([i['dishName'], round(i['rating'], 2), round(i['health_score'], 2), round(i['final_score'], 2)])
 		else:	
-			t.add_row([i['dishName'], round(i['rating'], 2)])
+			t.add_row([i['dishName'], round(i['rating'], 2), round(i['final_score'], 2)])
 
 	print(t)
 
@@ -77,7 +77,6 @@ def start(matf, retrain, tfidf, tfidf_type, flavour, health_bool, steps, floors,
 
 	if health_bool:
 		health_scores = health.main(user_profile, int(steps), int(floors), predict_on = predict)
-		health_scores = clean_response.scale_health_scores(health_scores)
 	else:
 		health_scores = None
 

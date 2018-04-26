@@ -50,25 +50,38 @@ def clean_dish_scores(response, health_scores, user_profile, include_bottom, pre
 
 		predicted_scores = predicted_scores.merge(health_df, how = 'left', on = 'dishId')
 
-		# sort by health score
-		predicted_scores.sort_values(['health_score', 'rating'], ascending = [False, False], inplace = True)
+		predicted_scores = predicted_scores[predicted_scores.health_score > 1]
+		predicted_scores.health_score = scale(predicted_scores.health_score)
+
+		predicted_scores['final_score'] = 0.7 * predicted_scores.rating + 0.3 * predicted_scores.health_score
+
+	else:
+		predicted_scores['final_score'] = predicted_scores.rating
 
 	ans = predicted_scores.to_dict(orient = "records")
-	answer = ans[:10]
+
+	answer = [ans[0]]
+	dishes = [ans[0]['dishName']]
+
+	i = 0
+	while len(answer) <= 10:
+		i += 1
+		if ans[i]['dishName'] not in dishes:
+			answer.append(ans[i])
+			dishes.append(ans[i]['dishName'])
+
 	if include_bottom:
 		answer.extend(ans[-5:])
+
+	answer = sorted(answer, key = lambda x: x['final_score'], reverse = True)
+
 	return answer
 
-def scale_health_scores(scores):
-	values = scores.values()
-	min_value = min(values)
-	max_value = max(values)
-	new_values = {}
+def scale(scores):
+	old_max = max(scores)
+	final = []
 
-	for j in scores:
-		i = scores[j]
-		new_value = ((i - min_value) / (max_value - min_value)) * 100
+	for i in scores:
+		final.append((i / old_max) * 5)
 
-		new_values[j] = new_value
-
-	return new_values
+	return final
