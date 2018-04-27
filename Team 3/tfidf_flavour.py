@@ -12,6 +12,7 @@ from scipy.sparse import csr_matrix
 import time
 import pickle
 import csv
+import os.path
 
 my_path = os.path.abspath(os.path.dirname(__file__))
 
@@ -200,27 +201,59 @@ def main(data, db, predict_on, include_flavours):
     return (predicted_test_error, predict_on_user(predict_on = predict_on))
     
 
-def start(profile = None, type = 'all', predict_on = 100, flavours = False):
+def start(profile = None, type = 'all', predict_on = 100, flavours = False, retrain = False):
+    time_start = time.time()
     data = pd.read_csv(os.path.join(my_path,'../Utilities/Team 3/review.csv'))
     data = data[data['userId'].isin(data['userId'].value_counts()[data['userId'].value_counts() >= 5].index)]
 
-    if profile:
-        data = append_to_data(data, profile, predict_on)
+    if not retrain:
+        if flavours:
+            final_scores = pickle.load(open(os.path.join(my_path,"../Utilities/Team 3/tfidf_final_flavour_scores.pickle"), "rb" ))
+            predictions = final_scores[predict_on]
 
-    if type == 'all':
-        db = pd.read_csv(os.path.join(my_path,'../Utilities/Team 3/meta_cuisine.csv'))
-    elif type == 'meta':
-        db = pd.read_csv(os.path.join(my_path,'../Utilities/Team 3/database.csv'), names = ['dishId', 'tags'])
+        else:
+            final_scores = pickle.load(open(os.path.join(my_path,"../Utilities/Team 3/tfidf_final_scores.pickle"), "rb" ))
+            predictions = final_scores[predict_on]
 
-    dishes = pd.read_csv(os.path.join(my_path,'../Utilities/Team 3/id_name_mapping.csv'), names = ['dishId', 'dish_name'])
+        predicted_test_error = None
 
-    time_start = time.time()
+    else:
+        if profile:
+            data = append_to_data(data, profile, predict_on)
 
-    predicted_test_error, predictions = main(data, db, predict_on = predict_on, include_flavours = flavours)
-    
-    predictions = pd.DataFrame(predictions, columns = ['dishId', 'rating'])
-    predictions = predictions.merge(dishes, on = 'dishId', how = 'left')
-    predictions.columns = ['dishId', 'rating', 'dishName']
+        if type == 'all':
+            db = pd.read_csv(os.path.join(my_path,'../Utilities/Team 3/meta_cuisine.csv'))
+        elif type == 'meta':
+            db = pd.read_csv(os.path.join(my_path,'../Utilities/Team 3/database.csv'), names = ['dishId', 'tags'])
+
+        dishes = pd.read_csv(os.path.join(my_path,'../Utilities/Team 3/id_name_mapping.csv'), names = ['dishId', 'dish_name'])
+
+        predicted_test_error, predictions = main(data, db, predict_on = predict_on, include_flavours = flavours)
+        
+        predictions = pd.DataFrame(predictions, columns = ['dishId', 'rating'])
+        predictions = predictions.merge(dishes, on = 'dishId', how = 'left')
+        predictions.columns = ['dishId', 'rating', 'dishName']
+
+        if flavours:
+            if os.path.exists(os.path.join(my_path,"../Utilities/Team 3/tfidf_final_flavour_scores.pickle")):
+                final_scores = pickle.load(open(os.path.join(my_path,"../Utilities/Team 3/tfidf_final_flavour_scores.pickle"), "rb" ))
+                final_scores[predict_on] = predictions
+            else:
+                final_scores = {}
+                final_scores[predict_on] = predictions
+
+            pickle.dump(final_scores, open(os.path.join(my_path,'../Utilities/Team 3/tfidf_final_flavour_scores.pickle'), 'wb'))
+
+        else:
+            if os.path.exists(os.path.join(my_path,"../Utilities/Team 3/tfidf_final_scores.pickle")):
+                final_scores = pickle.load(open(os.path.join(my_path,"../Utilities/Team 3/tfidf_final_scores.pickle"), "rb" ))
+                final_scores[predict_on] = predictions
+
+            else:
+                final_scores = {}
+                final_scores[predict_on] = predictions
+
+            pickle.dump(final_scores, open(os.path.join(my_path,'../Utilities/Team 3/tfidf_final_scores.pickle'), 'wb'))
 
     data = data[data.userId == predict_on]
     original_rating = data.merge(predictions, how = 'left', on = 'dishId')

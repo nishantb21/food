@@ -66,9 +66,9 @@ def start(matf, retrain, tfidf, tfidf_type, flavour, health_bool, steps, floors,
 		if flavour:
 			method = 3
 		if tfidf_type:
-			response = tfidf_flavour.start(profile = profile, type = tfidf_type, predict_on = predict, flavours = flavour)
+			response = tfidf_flavour.start(profile = profile, type = tfidf_type, predict_on = predict, flavours = flavour, retrain = retrain)
 		else:
-			response = tfidf_flavour.start(profile = profile, predict_on = predict, flavours = flavour)
+			response = tfidf_flavour.start(profile = profile, predict_on = predict, flavours = flavour, retrain = retrain)
 
 	response['predicted_rating'].dropna(axis = 0, inplace = True)
 
