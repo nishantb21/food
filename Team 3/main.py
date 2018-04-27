@@ -22,16 +22,11 @@ def print_tables(response, method):
 	print("\n")
 	print("RECOMMENDED DISHES...")
 	health_score = 'health_score' in response['predicted_rating'][0]
-	if health_score:
-		t = PrettyTable(['DISH NAME', 'FABRIC SCORE'])			
-	else:
-		t = PrettyTable(['DISH NAME', 'FABRIC SCORE'])
+
+	t = PrettyTable(['DISH NAME', 'FABRIC SCORE'])
 
 	for i in response['predicted_rating']:
-		if health_score:
-			t.add_row([i['dishName'], round(i['final_score'], 2)])
-		else:	
-			t.add_row([i['dishName'], round(i['final_score'], 2)])
+		t.add_row([i['dishName'], round(i['final_score'], 2)])
 
 	print(t)
 
