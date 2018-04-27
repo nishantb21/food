@@ -1,0 +1,2131 @@
+emailId,dishId,dishName,predictedrating,method,flavour,actualrating,actualflavour
+13aditya13@gmail.com,195,jeera rice,2.09627116,3,sweet,1,1
+13aditya13@gmail.com,409,besan ladoo,3.349735534,3,sweet,4,7
+13aditya13@gmail.com,528,vegan yogurt sundae,3.47457132,3,sweet,5,8
+13aditya13@gmail.com,713,almond burfi,3.34347446,3,sweet,4,9
+13aditya13@gmail.com,714,coconut and molasses-filled rice dumplings,3.373393127,3,sweet,1,7
+13aditya13@gmail.com,720,carrot and ginger chutney,1.99787145,3,sweet,1,5
+13aditya13@gmail.com,757,apple pie,3.352216367,3,sweet,4,8
+13aditya13@gmail.com,937,vegetable daliya khichdi,2.17343681,3,sweet,4,4
+13aditya13@gmail.com,1028,peach green tea,3.34999221,3,sweet,4,6
+13aditya13@gmail.com,1069,bajra khakhra,3.342687062,3,sweet,4,4
+13aditya13@gmail.com,1155,onion parathas,1.832616136,3,sweet,5,2
+13aditya13@gmail.com,1198,poha,2.067000826,3,sweet,4,4
+13aditya13@gmail.com,1225,coffee protein shake,3.508674251,3,sweet,4,6
+13aditya13@gmail.com,1343,veg momos,3.365056772,3,sweet,3,5
+13aditya13@gmail.com,1344,veg momos,3.365056772,3,sweet,3,5
+aakanshavatsa94@gmail.com,137,chicken hariyali tikka,2.925802367,3,sweet,5,0
+aakanshavatsa94@gmail.com,195,jeera rice,2.55760112,3,sweet,3,1
+aakanshavatsa94@gmail.com,273,curry rice,2.657309146,3,sweet,4,2
+aakanshavatsa94@gmail.com,814,spinach and feta cheese stuffed chicken,2.879075837,3,sweet,3,0
+aakanshavatsa94@gmail.com,840,chicken momo,2.885224191,3,sweet,4,0
+aakanshavatsa94@gmail.com,1217,potato wedges,2.911748603,3,sweet,4,0
+aakanshavatsa94@gmail.com,1223,vietnamese prawn soup,2.605117051,3,sweet,2,1
+aakanshavatsa94@gmail.com,1226,strawberry protein shake,2.672535781,3,sweet,2,10
+aakanshavatsa94@gmail.com,1270,set dosa,2.895731206,3,sweet,1,1
+aakanshavatsa94@gmail.com,1294,sushi,2.662155302,3,sweet,3,1
+aakanshavatsa94@gmail.com,1342,veg momos,2.884043556,3,sweet,1,0
+aakanshavatsa94@gmail.com,1343,veg momos,2.89223183,3,sweet,1,0
+aakanshavatsa94@gmail.com,1344,veg momos,2.89223183,3,sweet,1,0
+aakanshavatsa94@gmail.com,1345,spicy veg noodles,2.878215079,3,sweet,4,0
+aakanshavatsa94@gmail.com,1362,veg spring roll,2.875990509,3,sweet,4,0
+aakashsangwan99@gmail.com,49,garam masala,4.160217007,3,rich,4,5
+aakashsangwan99@gmail.com,76,coconut rice,4.148981035,3,rich,3,5
+aakashsangwan99@gmail.com,176,nariyal burfi,4.159757547,3,rich,5,9
+aakashsangwan99@gmail.com,202,coconut curried tofu with green beans and coconut rice,4.189224747,3,rich,3,6
+aakashsangwan99@gmail.com,273,curry rice,4.165835449,3,rich,3,6
+aakashsangwan99@gmail.com,570,gulab jamun,4.173088523,3,rich,5,10
+aakashsangwan99@gmail.com,583,milk with turmeric paste,4.199127271,3,rich,2,2
+aakashsangwan99@gmail.com,597,pumpkin curry,4.15959324,3,rich,2,2
+aakashsangwan99@gmail.com,639,shahi tukri,4.24824943,3,rich,4,9
+aakashsangwan99@gmail.com,650,mousse,4.237187077,3,rich,4,9
+aakashsangwan99@gmail.com,1027,strawberry green tea with boba,3.41861281,3,rich,3,1
+aakashsangwan99@gmail.com,1155,onion parathas,3.36948821,3,rich,4,8
+aakashsangwan99@gmail.com,1198,poha,3.372124621,3,rich,4,3
+aakashsangwan99@gmail.com,1302,thepla,2.930176411,3,rich,2,8
+aakashsangwan99@gmail.com,1303,thepla,3.086977771,3,rich,2,8
+aashikadutt7@gmail.com,53,naan,4.462232457,2,salty,3,7
+aashikadutt7@gmail.com,116,sweet bread,4.604770156,2,salty,3,5
+aashikadutt7@gmail.com,121,channa masala,4.456014129,2,salty,4,8
+aashikadutt7@gmail.com,126,naan,4.568798368,2,salty,3,7
+aashikadutt7@gmail.com,164,gulab jamun,3.783753583,2,salty,4,0
+aashikadutt7@gmail.com,287,naan,4.602284341,2,salty,3,7
+aashikadutt7@gmail.com,526,eggless mango bread,4.553500815,2,salty,3,5
+aashikadutt7@gmail.com,562,kheer,3.665131243,2,salty,4,0
+aashikadutt7@gmail.com,588,black chana with potato,4.45256467,2,salty,4,8
+aashikadutt7@gmail.com,643,kobbari louz,3.724328554,2,salty,1,0
+aashikadutt7@gmail.com,759,babycorn manchurian,4.657994434,2,salty,4,8
+aashikadutt7@gmail.com,945,snickerdoodle donuts,4.455764461,2,salty,4,5
+aashikadutt7@gmail.com,1015,gobi manchurian,4.477311071,2,salty,4,8
+aashikadutt7@gmail.com,1029,gulab jamun,3.783753583,2,salty,4,0
+aashikadutt7@gmail.com,1268,kheer,3.775453827,2,salty,4,0
+Abhinand.po@gmail.com,56,dal,4.218489833,2,savoury,4,8
+Abhinand.po@gmail.com,196,spiced rice treats,4.399871498,2,savoury,4,8
+Abhinand.po@gmail.com,275,vendakka paalu,4.134084934,2,savoury,2,6
+Abhinand.po@gmail.com,281,tomato chutney,4.179371415,2,savoury,3,5
+Abhinand.po@gmail.com,419,vegetable rice,4.25437707,2,savoury,5,8
+Abhinand.po@gmail.com,435,daal makhani,4.194335889,2,savoury,4,8
+Abhinand.po@gmail.com,482,dal makhani,4.137310894,2,savoury,4,8
+Abhinand.po@gmail.com,647,shakkara pongal,4.131352995,2,savoury,3,5
+Abhinand.po@gmail.com,650,mousse,4.195604541,2,savoury,5,2
+Abhinand.po@gmail.com,664,paratha,2.073670962,2,savoury,5,6
+Abhinand.po@gmail.com,752,aloo paratha,1.956547916,2,savoury,5,8
+Abhinand.po@gmail.com,1020,gobi paratha,2.150261343,2,savoury,5,8
+Abhinand.po@gmail.com,1155,onion parathas,1.950419533,2,savoury,5,8
+Abhinand.po@gmail.com,1162,palak paratha,2.112511336,2,savoury,5,8
+Abhinand.po@gmail.com,1343,veg momos,4.128350465,2,savoury,5,10
+abhishek.vijeev@gmail.com,53,naan,2.611248393,2,savoury,5,9
+abhishek.vijeev@gmail.com,126,naan,2.247454198,2,savoury,5,9
+abhishek.vijeev@gmail.com,150,strawberry lassi,2.723322944,2,savoury,3,6
+abhishek.vijeev@gmail.com,287,naan,2.674993701,2,savoury,5,9
+abhishek.vijeev@gmail.com,329,prawns,4.754088333,2,savoury,5,10
+abhishek.vijeev@gmail.com,412,spicy onions,4.46272258,2,savoury,1,1
+abhishek.vijeev@gmail.com,506,pesarattu,4.522294335,2,savoury,4,7
+abhishek.vijeev@gmail.com,525,awadi dahi murg,4.479928953,2,savoury,3,5
+abhishek.vijeev@gmail.com,543,bengali fish curry,4.434701486,2,savoury,3,6
+abhishek.vijeev@gmail.com,582,spicy egg & minced lamb roll,2.478768225,2,savoury,3,7
+abhishek.vijeev@gmail.com,649,curry powder,4.503792011,2,savoury,3,6
+abhishek.vijeev@gmail.com,660,chicken phaal,4.414912369,2,savoury,4,8
+abhishek.vijeev@gmail.com,662,dosa,4.721878826,2,savoury,4,8
+abhishek.vijeev@gmail.com,663,dosa,4.721878826,2,savoury,4,8
+abhishek.vijeev@gmail.com,695,vegetable pulao,4.427453511,2,savoury,4,7
+abhishekdutt79@yahoo.com,126,naan,3.631068096,3,sour,4,2
+abhishekdutt79@yahoo.com,137,chicken hariyali tikka,3.688929369,3,sour,3,4
+abhishekdutt79@yahoo.com,195,jeera rice,3.058159817,3,sour,4,3
+abhishekdutt79@yahoo.com,260,besan halwa,3.60623292,3,sour,3,7
+abhishekdutt79@yahoo.com,329,prawns,3.201032877,3,sour,3,7
+abhishekdutt79@yahoo.com,528,vegan yogurt sundae,3.645340449,3,sour,2,8
+abhishekdutt79@yahoo.com,570,gulab jamun,3.601218272,3,sour,5,1
+abhishekdutt79@yahoo.com,757,apple pie,3.650298446,3,sour,5,1
+abhishekdutt79@yahoo.com,770,bisi bele bath,3.199759608,3,sour,4,4
+abhishekdutt79@yahoo.com,947,glazed donuts,3.607018031,3,sour,3,3
+abhishekdutt79@yahoo.com,1217,potato wedges,3.640366685,3,sour,5,2
+abhishekdutt79@yahoo.com,1223,vietnamese prawn soup,3.117016601,3,sour,3,5
+abhishekdutt79@yahoo.com,1225,coffee protein shake,3.690869651,3,sour,2,8
+abhishekdutt79@yahoo.com,1295,sushi,3.192934225,3,sour,1,9
+abhishekdutt79@yahoo.com,1296,tandoori roti,3.620729437,3,sour,5,2
+adijayashree@gmail.com,176,nariyal burfi,1.405956118,1,sour,5,0
+adijayashree@gmail.com,188,spiced rice,4.365058169,1,sour,5,1
+adijayashree@gmail.com,196,spiced rice treats,4.383615652,1,sour,5,1
+adijayashree@gmail.com,412,spicy onions,1.440769168,1,sour,5,0
+adijayashree@gmail.com,622,cumin lassi,0.855416617,1,sour,5,0
+adijayashree@gmail.com,663,dosa,4.798778585,1,sour,5,0
+adijayashree@gmail.com,721,palak paneer,4.476404751,1,sour,1,0
+adijayashree@gmail.com,787,butterscotch cake,4.472028063,1,sour,5,0
+adijayashree@gmail.com,883,chocolate brownie,4.398475327,1,sour,5,0
+adijayashree@gmail.com,945,snickerdoodle donuts,4.429667697,1,sour,4,0
+adijayashree@gmail.com,1062,karela sabzi,1.412264548,1,sour,2,0
+adijayashree@gmail.com,1194,pizza,4.788832455,1,sour,4,0
+adijayashree@gmail.com,1233,ragi balls,1.519673724,1,sour,4,0
+adijayashree@gmail.com,1242,rajma chawal,4.543658321,1,sour,3,0
+adijayashree@gmail.com,1259,red velvet cake,4.388854025,1,sour,5,0
+aditya21nov@gmail.com,33,dal with spinach,3.297245505,3,sour,4,5
+aditya21nov@gmail.com,134,potatoes madras,3.305692663,3,sour,4,5
+aditya21nov@gmail.com,260,besan halwa,3.939421887,3,sour,4,1
+aditya21nov@gmail.com,409,besan ladoo,3.853284297,3,sour,3,1
+aditya21nov@gmail.com,453,sweet and sour chutney,3.895480586,3,sour,4,7
+aditya21nov@gmail.com,528,vegan yogurt sundae,4.069416415,3,sour,4,2
+aditya21nov@gmail.com,748,aloo methi,3.262646474,3,sour,4,4
+aditya21nov@gmail.com,757,apple pie,3.831439604,3,sour,5,1
+aditya21nov@gmail.com,1027,strawberry green tea with boba,3.828140651,3,sour,3,5
+aditya21nov@gmail.com,1092,mango pickle,3.277955417,3,sour,4,8
+aditya21nov@gmail.com,1124,motichoor ladoo,3.870464899,3,sour,3,1
+aditya21nov@gmail.com,1125,motichoor ladoo,3.880168519,3,sour,3,1
+aditya21nov@gmail.com,1126,motichoor ladoo,3.87837151,3,sour,3,1
+aditya21nov@gmail.com,1225,coffee protein shake,3.985209142,3,sour,4,3
+aditya21nov@gmail.com,1321,vangi bath,3.302062524,3,sour,4,6
+afowl211@gmail.com,68,relish,4.911603902,1,bitter,-1,-1
+afowl211@gmail.com,156,green chutney,4.70879903,1,bitter,-1,-1
+afowl211@gmail.com,176,nariyal burfi,1.547219065,1,bitter,-1,-1
+afowl211@gmail.com,188,spiced rice,4.721931662,1,bitter,-1,-1
+afowl211@gmail.com,243,masoor dal,1.984500955,1,bitter,-1,-1
+afowl211@gmail.com,412,spicy onions,1.473322646,1,bitter,-1,-1
+afowl211@gmail.com,453,sweet and sour chutney,4.764913961,1,bitter,-1,-1
+afowl211@gmail.com,622,cumin lassi,1.282915248,1,bitter,-1,-1
+afowl211@gmail.com,663,dosa,4.885117382,1,bitter,-1,-1
+afowl211@gmail.com,787,butterscotch cake,4.871847064,1,bitter,-1,-1
+afowl211@gmail.com,883,chocolate brownie,4.843712561,1,bitter,-1,-1
+afowl211@gmail.com,945,snickerdoodle donuts,4.788701842,1,bitter,-1,-1
+afowl211@gmail.com,1233,ragi balls,1.641119946,1,bitter,-1,-1
+afowl211@gmail.com,1242,rajma chawal,5.080459057,1,bitter,-1,-1
+afowl211@gmail.com,1259,red velvet cake,4.733328543,1,bitter,-1,-1
+aishwarya.javvadi@gmail.com,126,naan,3.15729499,3,rich,2,8
+aishwarya.javvadi@gmail.com,264,spicy chicken with green masala,3.918512971,3,rich,5,5
+aishwarya.javvadi@gmail.com,519,mint chutney,3.907096571,3,rich,5,4
+aishwarya.javvadi@gmail.com,527,kesari bhat,3.152604043,3,rich,1,10
+aishwarya.javvadi@gmail.com,529,rava laddu,3.113385354,3,rich,1,10
+aishwarya.javvadi@gmail.com,627,nuvvu podi,4.022740464,3,rich,3,7
+aishwarya.javvadi@gmail.com,633,paalu mithai,3.117657472,3,rich,1,10
+aishwarya.javvadi@gmail.com,687,vegetarian keema matar with cucumber raita,3.917873546,3,rich,3,5
+aishwarya.javvadi@gmail.com,778,bread,3.075083671,3,rich,4,1
+aishwarya.javvadi@gmail.com,937,vegetable daliya khichdi,3.8985383,3,rich,3,7
+aishwarya.javvadi@gmail.com,1006,rainbow fruit salad,3.925894499,3,rich,5,0
+aishwarya.javvadi@gmail.com,1155,onion parathas,3.94873092,3,rich,5,7
+aishwarya.javvadi@gmail.com,1223,vietnamese prawn soup,3.967917505,3,rich,4,5
+aishwarya.javvadi@gmail.com,1328,shredded chicken burritos,3.919305208,3,rich,4,7
+aishwarya.javvadi@gmail.com,1377,watermelon juice,4.090121264,3,rich,5,0
+ajit.bhat.100@gmail.com,37,masoor daal,3.511762696,3,savoury,3,5
+ajit.bhat.100@gmail.com,197,mango-pineapple chutney,3.939649113,3,savoury,3,5
+ajit.bhat.100@gmail.com,453,sweet and sour chutney,4.001121841,3,savoury,4,7
+ajit.bhat.100@gmail.com,583,milk with turmeric paste,3.532725622,3,savoury,3,3
+ajit.bhat.100@gmail.com,597,pumpkin curry,3.538319079,3,savoury,3,6
+ajit.bhat.100@gmail.com,606,green apple and coconut chutney,3.931078185,3,savoury,3,4
+ajit.bhat.100@gmail.com,639,shahi tukri,3.494526219,3,savoury,3,6
+ajit.bhat.100@gmail.com,720,carrot and ginger chutney,3.932658117,3,savoury,3,6
+ajit.bhat.100@gmail.com,798,murukku,3.538345636,3,savoury,3,6
+ajit.bhat.100@gmail.com,1026,iced strawberry green tea,3.952537644,3,savoury,4,3
+ajit.bhat.100@gmail.com,1027,strawberry green tea with boba,4.004325989,3,savoury,4,3
+ajit.bhat.100@gmail.com,1198,poha,4.000748439,3,savoury,3,5
+ajit.bhat.100@gmail.com,1260,red velvet cake,3.946777684,3,savoury,5,2
+ajit.bhat.100@gmail.com,1302,thepla,4.086028507,3,savoury,3,5
+ajit.bhat.100@gmail.com,1303,thepla,4.011782084,3,savoury,3,5
+akash.kulhalli@gmail.com,25,aloo phujia,3.947107514,2,sweet,5,2
+akash.kulhalli@gmail.com,126,naan,1.873953618,2,sweet,3,1
+akash.kulhalli@gmail.com,287,naan,2.088763604,2,sweet,3,1
+akash.kulhalli@gmail.com,345,moong dal with spinach,3.925698829,2,sweet,3,3
+akash.kulhalli@gmail.com,664,paratha,2.251549948,2,sweet,5,4
+akash.kulhalli@gmail.com,695,vegetable pulao,3.983654574,2,sweet,3,3
+akash.kulhalli@gmail.com,733,pesaru pappu,4.261875188,2,sweet,3,5
+akash.kulhalli@gmail.com,734,yellow tarka dal,3.999499169,2,sweet,3,4
+akash.kulhalli@gmail.com,770,bisi bele bath,4.103566927,2,sweet,4,4
+akash.kulhalli@gmail.com,934,dal tadka,4.049625771,2,sweet,4,4
+akash.kulhalli@gmail.com,935,dal tadka,4.050147574,2,sweet,4,4
+akash.kulhalli@gmail.com,1068,methi khakhra,4.611781903,2,sweet,5,4
+akash.kulhalli@gmail.com,1069,bajra khakhra,4.450077158,2,sweet,5,3
+akash.kulhalli@gmail.com,1173,paneer paratha,2.191399114,2,sweet,5,4
+akash.kulhalli@gmail.com,1227,garlic pudina paratha,2.246444355,2,sweet,5,5
+akashshegde11@gmail.com,195,jeera rice,2.253948978,3,sweet,4,7
+akashshegde11@gmail.com,260,besan halwa,4.177812465,3,sweet,5,10
+akashshegde11@gmail.com,409,besan ladoo,4.126808042,3,sweet,5,10
+akashshegde11@gmail.com,527,kesari bhat,4.132098038,3,sweet,5,10
+akashshegde11@gmail.com,528,vegan yogurt sundae,4.155594239,3,sweet,5,10
+akashshegde11@gmail.com,529,rava laddu,4.104619367,3,sweet,5,9
+akashshegde11@gmail.com,536,besan laddu,4.048557628,3,sweet,5,10
+akashshegde11@gmail.com,633,paalu mithai,4.119684793,3,sweet,5,9
+akashshegde11@gmail.com,713,almond burfi,4.158613657,3,sweet,5,9
+akashshegde11@gmail.com,720,carrot and ginger chutney,2.391208813,3,sweet,4,6
+akashshegde11@gmail.com,757,apple pie,4.057478876,3,sweet,4,9
+akashshegde11@gmail.com,937,vegetable daliya khichdi,2.475881822,3,sweet,4,7
+akashshegde11@gmail.com,1155,onion parathas,2.223832753,3,sweet,4,7
+akashshegde11@gmail.com,1198,poha,2.506161469,3,sweet,4,8
+akashshegde11@gmail.com,1225,coffee protein shake,4.240838127,3,sweet,3,5
+amith.ganesh1284@gmail.com,53,naan,3.00517016,2,sweet,3,2
+amith.ganesh1284@gmail.com,116,sweet bread,3.069662916,2,sweet,4,6
+amith.ganesh1284@gmail.com,126,naan,2.768089604,2,sweet,3,2
+amith.ganesh1284@gmail.com,158,vegetable bhaji,4.328869983,2,sweet,4,0
+amith.ganesh1284@gmail.com,287,naan,2.834841301,2,sweet,3,2
+amith.ganesh1284@gmail.com,419,vegetable rice,4.36650572,2,sweet,4,1
+amith.ganesh1284@gmail.com,1088,manchow soup,4.313741576,2,sweet,3,4
+amith.ganesh1284@gmail.com,1227,garlic pudina paratha,3.072661504,2,sweet,3,0
+amith.ganesh1284@gmail.com,1281,vegetable stir-fry,4.498018357,2,sweet,3,1
+amith.ganesh1284@gmail.com,1333,fried rice,4.432831012,2,sweet,4,1
+amith.ganesh1284@gmail.com,1343,veg momos,4.441389208,2,sweet,4,3
+amith.ganesh1284@gmail.com,1344,veg momos,4.441389208,2,sweet,4,3
+amith.ganesh1284@gmail.com,1346,veg hakka noodles,4.523588137,2,sweet,5,1
+amith.ganesh1284@gmail.com,1360,veg spring roll,4.33436432,2,sweet,3,3
+amith.ganesh1284@gmail.com,1362,veg spring roll,4.312642128,2,sweet,3,3
+amrit1609@gmail.com,126,naan,1.977605562,2,bitter,-1,-1
+amrit1609@gmail.com,196,spiced rice treats,4.678652278,2,bitter,-1,-1
+amrit1609@gmail.com,664,paratha,2.034131827,2,bitter,-1,-1
+amrit1609@gmail.com,752,aloo paratha,2.033105603,2,bitter,-1,-1
+amrit1609@gmail.com,770,bisi bele bath,4.668032517,2,bitter,-1,-1
+amrit1609@gmail.com,1155,onion parathas,1.924773007,2,bitter,-1,-1
+amrit1609@gmail.com,1227,garlic pudina paratha,2.029368182,2,bitter,-1,-1
+amrit1609@gmail.com,1281,vegetable stir-fry,4.837523038,2,bitter,-1,-1
+amrit1609@gmail.com,1283,vegetable stir-fry,4.7289197,2,bitter,-1,-1
+amrit1609@gmail.com,1321,vangi bath,4.659530715,2,bitter,-1,-1
+amrit1609@gmail.com,1333,fried rice,4.876240314,2,bitter,-1,-1
+amrit1609@gmail.com,1343,veg momos,4.682214469,2,bitter,-1,-1
+amrit1609@gmail.com,1344,veg momos,4.682214469,2,bitter,-1,-1
+amrit1609@gmail.com,1345,spicy veg noodles,4.824386617,2,bitter,-1,-1
+amrit1609@gmail.com,1346,veg hakka noodles,4.704706318,2,bitter,-1,-1
+aniket.udaykumar@gmail.com,24,baingan bharta,5,2,sweet,1,1
+aniket.udaykumar@gmail.com,43,coconut tofu keema,5,2,sweet,1,10
+aniket.udaykumar@gmail.com,50,chicken stew with coconut milk,5,2,sweet,1,10
+aniket.udaykumar@gmail.com,116,sweet bread,5,2,sweet,2,1
+aniket.udaykumar@gmail.com,218,butter chicken,5,2,sweet,4,5
+aniket.udaykumar@gmail.com,330,pumpkin butter bean and spinach curry,5,2,sweet,3,0
+aniket.udaykumar@gmail.com,369,lassi,5,2,sweet,4,1
+aniket.udaykumar@gmail.com,428,palak paneer,5,2,sweet,4,3
+aniket.udaykumar@gmail.com,510,egg kulambu,5,2,sweet,2,1
+aniket.udaykumar@gmail.com,582,spicy egg & minced lamb roll,5,2,sweet,2,0
+aniket.udaykumar@gmail.com,622,cumin lassi,5,2,sweet,2,1
+aniket.udaykumar@gmail.com,693,bhindi subzi,5,2,sweet,2,0
+aniket.udaykumar@gmail.com,705,coconut chicken tikka masala,5,2,sweet,2,0
+aniket.udaykumar@gmail.com,723,tomato chutney,5,2,sweet,3,0
+aniket.udaykumar@gmail.com,1170,paneer curry noodles,5,2,sweet,4,0
+ansujanani@gmail.com,260,besan halwa,4.361641593,3,rich,-1,-1
+ansujanani@gmail.com,386,banana lassi,4.319273384,3,rich,-1,-1
+ansujanani@gmail.com,519,mint chutney,3.536385953,3,rich,-1,-1
+ansujanani@gmail.com,528,vegan yogurt sundae,4.389809521,3,rich,-1,-1
+ansujanani@gmail.com,569,baked gulab jamun,4.341224803,3,rich,-1,-1
+ansujanani@gmail.com,570,gulab jamun,4.31011257,3,rich,-1,-1
+ansujanani@gmail.com,627,nuvvu podi,3.512015362,3,rich,-1,-1
+ansujanani@gmail.com,639,shahi tukri,4.335251662,3,rich,-1,-1
+ansujanani@gmail.com,643,kobbari louz,4.344338166,3,rich,-1,-1
+ansujanani@gmail.com,757,apple pie,4.35436432,3,rich,-1,-1
+ansujanani@gmail.com,1002,fruit ice cream,4.305179248,3,rich,-1,-1
+ansujanani@gmail.com,1197,poha,3.527142828,3,rich,-1,-1
+ansujanani@gmail.com,1225,coffee protein shake,4.333008322,3,rich,-1,-1
+ansujanani@gmail.com,1376,watermelon juice,3.550111876,3,rich,-1,-1
+ansujanani@gmail.com,1377,watermelon juice,3.451850333,3,rich,-1,-1
+anuragdas1996@gmail.com,511,rabri,4.698764324,3,rich,4,9
+anuragdas1996@gmail.com,659,phaal,4.097869691,3,rich,3,6
+anuragdas1996@gmail.com,662,dosa,4.099691726,3,rich,5,10
+anuragdas1996@gmail.com,663,dosa,4.099691726,3,rich,5,10
+anuragdas1996@gmail.com,748,aloo methi,4.085757522,3,rich,5,10
+anuragdas1996@gmail.com,960,falooda,4.671987609,3,rich,4,8
+anuragdas1996@gmail.com,998,acai fruit bowl,4.683941472,3,rich,4,8
+anuragdas1996@gmail.com,1006,rainbow fruit salad,4.693850256,3,rich,5,10
+anuragdas1996@gmail.com,1052,kachori,4.688121786,3,rich,3,6
+anuragdas1996@gmail.com,1091,mango pickle,4.697165543,3,rich,1,2
+anuragdas1996@gmail.com,1223,vietnamese prawn soup,4.678236822,3,rich,3,6
+anuragdas1996@gmail.com,1270,set dosa,4.065183946,3,rich,4,8
+anuragdas1996@gmail.com,1294,sushi,4.676323361,3,rich,2,4
+anuragdas1996@gmail.com,1328,shredded chicken burritos,4.665282437,3,rich,3,6
+anuragdas1996@gmail.com,1377,watermelon juice,4.673433518,3,rich,3,6
+anushkabaid.1698@gmail.com,156,green chutney,2.322669696,3,rich,2,4
+anushkabaid.1698@gmail.com,164,gulab jamun,3.172948526,3,rich,4,8
+anushkabaid.1698@gmail.com,176,nariyal burfi,3.091566996,3,rich,1,2
+anushkabaid.1698@gmail.com,260,besan halwa,3.136876565,3,rich,1,2
+anushkabaid.1698@gmail.com,529,rava laddu,3.085682835,3,rich,2,4
+anushkabaid.1698@gmail.com,569,baked gulab jamun,3.182061612,3,rich,3,6
+anushkabaid.1698@gmail.com,570,gulab jamun,3.11812364,3,rich,5,10
+anushkabaid.1698@gmail.com,639,shahi tukri,3.10515002,3,rich,2,4
+anushkabaid.1698@gmail.com,643,kobbari louz,3.20600465,3,rich,1,2
+anushkabaid.1698@gmail.com,937,vegetable daliya khichdi,2.312496399,3,rich,1,1
+anushkabaid.1698@gmail.com,1029,gulab jamun,3.172948526,3,rich,5,10
+anushkabaid.1698@gmail.com,1030,gulab jamun,3.116955612,3,rich,5,10
+anushkabaid.1698@gmail.com,1155,onion parathas,2.262158448,3,rich,2,4
+anushkabaid.1698@gmail.com,1302,thepla,2.063179997,3,rich,2,4
+anushkabaid.1698@gmail.com,1303,thepla,2.030769993,3,rich,2,4
+asanglikar@gmail.com,31,mango lassi,4.43677522,2,salty,4,7
+asanglikar@gmail.com,183,mango lassi,4.492137745,2,salty,4,7
+asanglikar@gmail.com,245,mango lassi,4.422508953,2,salty,4,7
+asanglikar@gmail.com,276,mango lassi,4.384019559,2,salty,4,7
+asanglikar@gmail.com,329,prawns,2.426153806,2,salty,3,6
+asanglikar@gmail.com,369,lassi,4.380816279,2,salty,3,7
+asanglikar@gmail.com,585,mango lassi,4.216832189,2,salty,4,7
+asanglikar@gmail.com,622,cumin lassi,4.380816279,2,salty,2,5
+asanglikar@gmail.com,645,aaku pappu,2.552686496,2,salty,2,5
+asanglikar@gmail.com,704,dal,2.729772553,2,salty,4,8
+asanglikar@gmail.com,752,aloo paratha,4.099278641,2,salty,4,8
+asanglikar@gmail.com,770,bisi bele bath,2.595226341,2,salty,5,9
+asanglikar@gmail.com,771,bisi bele bath,2.619702978,2,salty,5,9
+asanglikar@gmail.com,1123,mooli ka paratha,4.097780568,2,salty,3,6
+asanglikar@gmail.com,1228,pudina paratha,4.207033854,2,salty,2,5
+asavari.limaye@yahoo.com,137,chicken hariyali tikka,3.036453814,3,rich,3,5
+asavari.limaye@yahoo.com,148,garam masala seared salmon with coconut-curry butter,2.985208403,3,rich,2,5
+asavari.limaye@yahoo.com,241,spiced eggplant,2.335918732,3,rich,4,6
+asavari.limaye@yahoo.com,569,baked gulab jamun,2.989639862,3,rich,4,7
+asavari.limaye@yahoo.com,570,gulab jamun,2.963999354,3,rich,5,8
+asavari.limaye@yahoo.com,583,milk with turmeric paste,2.981013599,3,rich,1,1
+asavari.limaye@yahoo.com,639,shahi tukri,3.01853198,3,rich,4,8
+asavari.limaye@yahoo.com,757,apple pie,2.982120722,3,rich,5,3
+asavari.limaye@yahoo.com,1109,methi paratha,3.007605977,3,rich,4,2
+asavari.limaye@yahoo.com,1155,onion parathas,3.023006409,3,rich,4,3
+asavari.limaye@yahoo.com,1217,potato wedges,3.064709967,3,rich,5,9
+asavari.limaye@yahoo.com,1321,vangi bath,2.342246923,3,rich,1,1
+asavari.limaye@yahoo.com,1323,vangi bath,2.350794124,3,rich,1,1
+asavari.limaye@yahoo.com,1342,veg momos,2.32490313,3,rich,5,8
+asavari.limaye@yahoo.com,1344,veg momos,2.354611969,3,rich,5,8
+ash.lokkur@gmail.com,170,rajma,2.470353086,2,rich,2,4
+ash.lokkur@gmail.com,270,chicken curry,4.102651932,2,rich,5,10
+ash.lokkur@gmail.com,330,pumpkin butter bean and spinach curry,2.497820705,2,rich,2,2
+ash.lokkur@gmail.com,435,daal makhani,2.408427643,2,rich,4,10
+ash.lokkur@gmail.com,556,onion dipping sauce,4.130307688,2,rich,5,10
+ash.lokkur@gmail.com,557,spicy sesame potatoes,4.076634204,2,rich,5,10
+ash.lokkur@gmail.com,591,rajma,2.460665253,2,rich,2,4
+ash.lokkur@gmail.com,837,chicken manchurian,4.106872104,2,rich,5,9
+ash.lokkur@gmail.com,839,chicken momo,4.286396745,2,rich,5,10
+ash.lokkur@gmail.com,875,honey chilli potatoes,4.183418719,2,rich,5,10
+ash.lokkur@gmail.com,922,puri,4.229749139,2,rich,2,2
+ash.lokkur@gmail.com,1015,gobi manchurian,4.224090608,2,rich,3,8
+ash.lokkur@gmail.com,1176,puri,4.229749139,2,rich,2,2
+ash.lokkur@gmail.com,1242,rajma chawal,2.453267588,2,rich,3,7
+ash.lokkur@gmail.com,1342,veg momos,4.111997008,2,rich,4,10
+ashu431996@gmail.com,68,relish,4.495132127,1,rich,-1,-1
+ashu431996@gmail.com,156,green chutney,4.405299759,1,rich,-1,-1
+ashu431996@gmail.com,176,nariyal burfi,1.275019996,1,rich,-1,-1
+ashu431996@gmail.com,412,spicy onions,1.18738991,1,rich,-1,-1
+ashu431996@gmail.com,453,sweet and sour chutney,4.37679244,1,rich,-1,-1
+ashu431996@gmail.com,475,zucchini soup with curry spices,1.734746337,1,rich,-1,-1
+ashu431996@gmail.com,622,cumin lassi,1.130160835,1,rich,-1,-1
+ashu431996@gmail.com,663,dosa,4.457135892,1,rich,-1,-1
+ashu431996@gmail.com,787,butterscotch cake,4.541169117,1,rich,-1,-1
+ashu431996@gmail.com,883,chocolate brownie,4.345989611,1,rich,-1,-1
+ashu431996@gmail.com,945,snickerdoodle donuts,4.46339762,1,rich,-1,-1
+ashu431996@gmail.com,1002,fruit ice cream,4.380186652,1,rich,-1,-1
+ashu431996@gmail.com,1233,ragi balls,1.57213453,1,rich,-1,-1
+ashu431996@gmail.com,1242,rajma chawal,4.442914865,1,rich,-1,-1
+ashu431996@gmail.com,1259,red velvet cake,4.371023125,1,rich,-1,-1
+ashutosh.9014@gmail.com,472,palak paneer,2.749679525,3,savoury,-1,-1
+ashutosh.9014@gmail.com,484,palak paneer,2.75318346,3,savoury,-1,-1
+ashutosh.9014@gmail.com,533,pudina chutney,3.256122488,3,savoury,-1,-1
+ashutosh.9014@gmail.com,753,appam,2.749553344,3,savoury,-1,-1
+ashutosh.9014@gmail.com,754,appam,2.750733802,3,savoury,-1,-1
+ashutosh.9014@gmail.com,755,appam,2.749553344,3,savoury,-1,-1
+ashutosh.9014@gmail.com,998,acai fruit bowl,3.238305801,3,savoury,-1,-1
+ashutosh.9014@gmail.com,1006,rainbow fruit salad,3.261652626,3,savoury,-1,-1
+ashutosh.9014@gmail.com,1045,lemon pickle,3.26702989,3,savoury,-1,-1
+ashutosh.9014@gmail.com,1052,kachori,3.256638178,3,savoury,-1,-1
+ashutosh.9014@gmail.com,1250,rava idli,3.292521511,3,savoury,-1,-1
+ashutosh.9014@gmail.com,1290,sugarcane juice,3.233688699,3,savoury,-1,-1
+ashutosh.9014@gmail.com,1294,sushi,3.24717145,3,savoury,-1,-1
+ashutosh.9014@gmail.com,1376,watermelon juice,3.279498363,3,savoury,-1,-1
+ashutosh.9014@gmail.com,1377,watermelon juice,3.326803659,3,savoury,-1,-1
+ashwink96@gmail.com,3,paratha,4.029797792,2,sour,5,0
+ashwink96@gmail.com,31,mango lassi,4.33277116,2,sour,5,0
+ashwink96@gmail.com,183,mango lassi,4.271768479,2,sour,5,0
+ashwink96@gmail.com,245,mango lassi,4.31921231,2,sour,5,0
+ashwink96@gmail.com,276,mango lassi,4.233714377,2,sour,5,0
+ashwink96@gmail.com,329,prawns,2.017749518,2,sour,3,2
+ashwink96@gmail.com,369,lassi,4.258143151,2,sour,5,0
+ashwink96@gmail.com,566,paratha,4.029797792,2,sour,5,0
+ashwink96@gmail.com,582,spicy egg & minced lamb roll,2.458027809,2,sour,1,0
+ashwink96@gmail.com,585,mango lassi,4.161202924,2,sour,5,0
+ashwink96@gmail.com,622,cumin lassi,4.258143151,2,sour,1,0
+ashwink96@gmail.com,771,bisi bele bath,2.419637792,2,sour,4,1
+ashwink96@gmail.com,1109,methi paratha,4.133475125,2,sour,5,0
+ashwink96@gmail.com,1221,spicy prawn soup,2.307338656,2,sour,2,0
+ashwink96@gmail.com,1222,prawn laksa soup,2.467417501,2,sour,1,0
+bhargavabodas13@gmail.com,53,naan,3.642089302,2,sour,3,0
+bhargavabodas13@gmail.com,126,naan,3.457926227,2,sour,3,0
+bhargavabodas13@gmail.com,168,curry powder,4.550458915,2,sour,3,5
+bhargavabodas13@gmail.com,255,paneer curry,4.5947014,2,sour,4,6
+bhargavabodas13@gmail.com,346,sooji upma,4.570114305,2,sour,5,2
+bhargavabodas13@gmail.com,550,mulligatawny,4.556890283,2,sour,3,2
+bhargavabodas13@gmail.com,600,shahi tukray,3.639227409,2,sour,3,2
+bhargavabodas13@gmail.com,631,dosa podi with garlic,4.614034573,2,sour,5,4
+bhargavabodas13@gmail.com,649,curry powder,4.551982298,2,sour,3,5
+bhargavabodas13@gmail.com,784,burnt garlic fried rice,3.620217053,2,sour,5,4
+bhargavabodas13@gmail.com,918,curried capsicum masala,4.570321869,2,sour,4,4
+bhargavabodas13@gmail.com,1094,paneer masala dosa,4.563114656,2,sour,4,6
+bhargavabodas13@gmail.com,1095,paneer masala dosa,4.612560572,2,sour,4,6
+bhargavabodas13@gmail.com,1096,masala dosa with red chutney,4.606679268,2,sour,5,5
+bhargavabodas13@gmail.com,1333,fried rice,3.662903789,2,sour,4,2
+bishesh24170307@gmail.com,12,mulligatawny soup,4.79628836,1,sweet,1,0
+bishesh24170307@gmail.com,68,relish,4.803171466,1,sweet,3,0
+bishesh24170307@gmail.com,116,sweet bread,4.789891181,1,sweet,3,4
+bishesh24170307@gmail.com,176,nariyal burfi,1.565261439,1,sweet,4,10
+bishesh24170307@gmail.com,412,spicy onions,1.68595597,1,sweet,5,0
+bishesh24170307@gmail.com,622,cumin lassi,1.209337404,1,sweet,5,7
+bishesh24170307@gmail.com,805,cheese fondue,4.830123155,1,sweet,5,0
+bishesh24170307@gmail.com,808,texas cheese fries,5.086131789,1,sweet,5,0
+bishesh24170307@gmail.com,883,chocolate brownie,4.756894305,1,sweet,5,9
+bishesh24170307@gmail.com,892,chocolate milkshake,4.867349296,1,sweet,5,7
+bishesh24170307@gmail.com,954,egg rolls,1.667158348,1,sweet,4,0
+bishesh24170307@gmail.com,1047,jalebi,4.761610103,1,sweet,5,10
+bishesh24170307@gmail.com,1149,oats,1.696400029,1,sweet,1,0
+bishesh24170307@gmail.com,1221,spicy prawn soup,4.973325939,1,sweet,5,0
+bishesh24170307@gmail.com,1284,strawberry milkshake,4.857216562,1,sweet,5,7
+cheeya94@gmail.com,37,masoor daal,4.088373945,3,savoury,-1,-1
+cheeya94@gmail.com,243,masoor dal,4.106974365,3,savoury,-1,-1
+cheeya94@gmail.com,274,sukha urad dal,4.104815085,3,savoury,-1,-1
+cheeya94@gmail.com,511,rabri,4.592029159,3,savoury,-1,-1
+cheeya94@gmail.com,533,pudina chutney,4.579999249,3,savoury,-1,-1
+cheeya94@gmail.com,627,nuvvu podi,4.61558653,3,savoury,-1,-1
+cheeya94@gmail.com,662,dosa,4.111340086,3,savoury,-1,-1
+cheeya94@gmail.com,663,dosa,4.111340086,3,savoury,-1,-1
+cheeya94@gmail.com,998,acai fruit bowl,4.6020126,3,savoury,-1,-1
+cheeya94@gmail.com,1006,rainbow fruit salad,4.581243978,3,savoury,-1,-1
+cheeya94@gmail.com,1045,lemon pickle,4.580630051,3,savoury,-1,-1
+cheeya94@gmail.com,1052,kachori,4.56706915,3,savoury,-1,-1
+cheeya94@gmail.com,1091,mango pickle,4.633424285,3,savoury,-1,-1
+cheeya94@gmail.com,1226,strawberry protein shake,4.570540977,3,savoury,-1,-1
+cheeya94@gmail.com,1294,sushi,4.602598846,3,savoury,-1,-1
+ckap22@gmail.com,31,mango lassi,4.772756849,2,sweet,4,5
+ckap22@gmail.com,245,mango lassi,4.767729619,2,sweet,4,5
+ckap22@gmail.com,329,prawns,4.791660503,2,sweet,5,10
+ckap22@gmail.com,369,lassi,4.86600916,2,sweet,5,10
+ckap22@gmail.com,526,eggless mango bread,4.883531418,2,sweet,1,1
+ckap22@gmail.com,552,pizza,4.827609117,2,sweet,5,10
+ckap22@gmail.com,582,spicy egg & minced lamb roll,4.789924142,2,sweet,5,10
+ckap22@gmail.com,622,cumin lassi,4.86600916,2,sweet,1,1
+ckap22@gmail.com,645,aaku pappu,3.389679676,2,sweet,3,1
+ckap22@gmail.com,770,bisi bele bath,3.437961929,2,sweet,3,1
+ckap22@gmail.com,771,bisi bele bath,3.417335303,2,sweet,3,1
+ckap22@gmail.com,837,chicken manchurian,4.749942067,2,sweet,5,10
+ckap22@gmail.com,930,methi dal,3.776302744,2,sweet,1,1
+ckap22@gmail.com,947,glazed donuts,4.788990738,2,sweet,3,5
+ckap22@gmail.com,1322,vangi bath,3.703894834,2,sweet,1,1
+daganisha26@gmail.com,176,nariyal burfi,3.827166557,3,sweet,2,9
+daganisha26@gmail.com,202,coconut curried tofu with green beans and coconut rice,3.832040411,3,sweet,2,8
+daganisha26@gmail.com,569,baked gulab jamun,3.85589558,3,sweet,4,6
+daganisha26@gmail.com,583,milk with turmeric paste,3.826398535,3,sweet,2,10
+daganisha26@gmail.com,639,shahi tukri,3.890418408,3,sweet,3,5
+daganisha26@gmail.com,643,kobbari louz,3.845266159,3,sweet,3,5
+daganisha26@gmail.com,888,chocolate cake,3.825290467,3,sweet,5,10
+daganisha26@gmail.com,907,coffee ice cream,3.852880249,3,sweet,4,9
+daganisha26@gmail.com,937,vegetable daliya khichdi,2.362478815,3,sweet,2,1
+daganisha26@gmail.com,947,glazed donuts,3.896042142,3,sweet,5,9
+daganisha26@gmail.com,1040,nutella ice cream,3.822934048,3,sweet,5,10
+daganisha26@gmail.com,1155,onion parathas,2.16683734,3,sweet,3,0
+daganisha26@gmail.com,1198,poha,2.299137873,3,sweet,4,1
+daganisha26@gmail.com,1302,thepla,2.249068409,3,sweet,2,1
+daganisha26@gmail.com,1303,thepla,2.309026934,3,sweet,2,1
+dhruman96@gmail.com,149,roasted grapes and carrots,3.288443691,3,bitter,-1,-1
+dhruman96@gmail.com,156,green chutney,2.14893658,3,bitter,-1,-1
+dhruman96@gmail.com,195,jeera rice,2.256162587,3,bitter,-1,-1
+dhruman96@gmail.com,523,carrot soup,3.279559178,3,bitter,-1,-1
+dhruman96@gmail.com,528,vegan yogurt sundae,3.345925742,3,bitter,-1,-1
+dhruman96@gmail.com,713,almond burfi,3.297668634,3,bitter,-1,-1
+dhruman96@gmail.com,937,vegetable daliya khichdi,2.270595413,3,bitter,-1,-1
+dhruman96@gmail.com,1028,peach green tea,3.333663306,3,bitter,-1,-1
+dhruman96@gmail.com,1069,bajra khakhra,3.327878802,3,bitter,-1,-1
+dhruman96@gmail.com,1155,onion parathas,1.880235108,3,bitter,-1,-1
+dhruman96@gmail.com,1198,poha,2.284554818,3,bitter,-1,-1
+dhruman96@gmail.com,1225,coffee protein shake,3.419123995,3,bitter,-1,-1
+dhruman96@gmail.com,1270,set dosa,3.339979395,3,bitter,-1,-1
+dhruman96@gmail.com,1343,veg momos,3.281082493,3,bitter,-1,-1
+dhruman96@gmail.com,1344,veg momos,3.281082493,3,bitter,-1,-1
+dhruvsb90@gmail.com,116,sweet bread,5.109749579,1,bitter,-1,-1
+dhruvsb90@gmail.com,176,nariyal burfi,1.667163616,1,bitter,-1,-1
+dhruvsb90@gmail.com,235,chickpea curry,4.946525465,1,bitter,-1,-1
+dhruvsb90@gmail.com,405,mediterranean yellow rice and vegetables,2.022725857,1,bitter,-1,-1
+dhruvsb90@gmail.com,412,spicy onions,2.073558603,1,bitter,-1,-1
+dhruvsb90@gmail.com,622,cumin lassi,1.680516154,1,bitter,-1,-1
+dhruvsb90@gmail.com,805,cheese fondue,4.888538486,1,bitter,-1,-1
+dhruvsb90@gmail.com,808,texas cheese fries,5.163926017,1,bitter,-1,-1
+dhruvsb90@gmail.com,817,chicken biriyani,4.904107469,1,bitter,-1,-1
+dhruvsb90@gmail.com,883,chocolate brownie,4.944251241,1,bitter,-1,-1
+dhruvsb90@gmail.com,892,chocolate milkshake,4.90645798,1,bitter,-1,-1
+dhruvsb90@gmail.com,1029,gulab jamun,4.882835547,1,bitter,-1,-1
+dhruvsb90@gmail.com,1149,oats,2.074627177,1,bitter,-1,-1
+dhruvsb90@gmail.com,1221,spicy prawn soup,5.117199538,1,bitter,-1,-1
+dhruvsb90@gmail.com,1284,strawberry milkshake,4.909246835,1,bitter,-1,-1
+dnaveen356@gmail.com,31,mango lassi,4.546419665,2,sour,5,1
+dnaveen356@gmail.com,183,mango lassi,4.531907103,2,sour,5,1
+dnaveen356@gmail.com,245,mango lassi,4.531229469,2,sour,5,1
+dnaveen356@gmail.com,276,mango lassi,4.444387512,2,sour,5,1
+dnaveen356@gmail.com,327,spinach and tomato dal,2.64663447,2,sour,3,5
+dnaveen356@gmail.com,369,lassi,4.500009812,2,sour,4,3
+dnaveen356@gmail.com,526,eggless mango bread,4.455111371,2,sour,3,5
+dnaveen356@gmail.com,622,cumin lassi,4.500009812,2,sour,3,6
+dnaveen356@gmail.com,636,tomato raita,2.588797363,2,sour,3,1
+dnaveen356@gmail.com,704,dal,2.579362314,2,sour,4,2
+dnaveen356@gmail.com,922,puri,4.339053873,2,sour,5,2
+dnaveen356@gmail.com,1176,puri,4.339053873,2,sour,5,2
+dnaveen356@gmail.com,1228,pudina paratha,4.349588142,2,sour,2,7
+dnaveen356@gmail.com,1343,veg momos,2.612211533,2,sour,3,5
+dnaveen356@gmail.com,1344,veg momos,2.612211533,2,sour,3,5
+dograaakash301092@gmail.com,13,vegetarian korma,5.486530922,1,bitter,-1,-1
+dograaakash301092@gmail.com,116,sweet bread,5.380793639,1,bitter,-1,-1
+dograaakash301092@gmail.com,172,punjabi chicken gravy,2.377020703,1,bitter,-1,-1
+dograaakash301092@gmail.com,176,nariyal burfi,2.276547815,1,bitter,-1,-1
+dograaakash301092@gmail.com,235,chickpea curry,5.328681598,1,bitter,-1,-1
+dograaakash301092@gmail.com,405,mediterranean yellow rice and vegetables,2.146598855,1,bitter,-1,-1
+dograaakash301092@gmail.com,412,spicy onions,2.301732725,1,bitter,-1,-1
+dograaakash301092@gmail.com,622,cumin lassi,1.750924685,1,bitter,-1,-1
+dograaakash301092@gmail.com,790,cajun skillet pasta,5.172792068,1,bitter,-1,-1
+dograaakash301092@gmail.com,808,texas cheese fries,5.319821106,1,bitter,-1,-1
+dograaakash301092@gmail.com,817,chicken biriyani,5.175354419,1,bitter,-1,-1
+dograaakash301092@gmail.com,883,chocolate brownie,5.369972063,1,bitter,-1,-1
+dograaakash301092@gmail.com,1029,gulab jamun,5.172712696,1,bitter,-1,-1
+dograaakash301092@gmail.com,1221,spicy prawn soup,5.483832392,1,bitter,-1,-1
+dograaakash301092@gmail.com,1284,strawberry milkshake,5.182227393,1,bitter,-1,-1
+dpsrkp.sid@gmail.com,37,masoor daal,4.437729464,2,sour,3,2
+dpsrkp.sid@gmail.com,329,prawns,4.79538633,2,sour,4,8
+dpsrkp.sid@gmail.com,342,prawn biryani,4.427276607,2,sour,3,7
+dpsrkp.sid@gmail.com,506,pesarattu,4.502658076,2,sour,2,1
+dpsrkp.sid@gmail.com,525,awadi dahi murg,4.488215846,2,sour,4,7
+dpsrkp.sid@gmail.com,543,bengali fish curry,4.432854193,2,sour,5,6
+dpsrkp.sid@gmail.com,636,tomato raita,3.732797805,2,sour,2,10
+dpsrkp.sid@gmail.com,662,dosa,4.727873149,2,sour,4,2
+dpsrkp.sid@gmail.com,663,dosa,4.727873149,2,sour,4,2
+dpsrkp.sid@gmail.com,695,vegetable pulao,4.486316466,2,sour,4,3
+dpsrkp.sid@gmail.com,839,chicken momo,3.603996671,2,sour,5,3
+dpsrkp.sid@gmail.com,1106,methi malai matar,4.570732761,2,sour,4,6
+dpsrkp.sid@gmail.com,1342,veg momos,3.645734742,2,sour,5,3
+dpsrkp.sid@gmail.com,1343,veg momos,3.709349957,2,sour,5,3
+dpsrkp.sid@gmail.com,1344,veg momos,3.709349957,2,sour,5,3
+er.agarwalgaurav@gmail.com,126,naan,1.68551474,2,bitter,-1,-1
+er.agarwalgaurav@gmail.com,287,naan,1.667991556,2,bitter,-1,-1
+er.agarwalgaurav@gmail.com,409,besan ladoo,3.706707444,2,bitter,-1,-1
+er.agarwalgaurav@gmail.com,536,besan laddu,3.706707444,2,bitter,-1,-1
+er.agarwalgaurav@gmail.com,544,atta halwa,3.789918407,2,bitter,-1,-1
+er.agarwalgaurav@gmail.com,562,kheer,3.848475678,2,bitter,-1,-1
+er.agarwalgaurav@gmail.com,643,kobbari louz,3.902525468,2,bitter,-1,-1
+er.agarwalgaurav@gmail.com,664,paratha,1.577700024,2,bitter,-1,-1
+er.agarwalgaurav@gmail.com,733,pesaru pappu,3.899844015,2,bitter,-1,-1
+er.agarwalgaurav@gmail.com,752,aloo paratha,1.711515066,2,bitter,-1,-1
+er.agarwalgaurav@gmail.com,935,dal tadka,3.743049616,2,bitter,-1,-1
+er.agarwalgaurav@gmail.com,1068,methi khakhra,4.40164813,2,bitter,-1,-1
+er.agarwalgaurav@gmail.com,1069,bajra khakhra,4.347045704,2,bitter,-1,-1
+er.agarwalgaurav@gmail.com,1155,onion parathas,1.695016685,2,bitter,-1,-1
+er.agarwalgaurav@gmail.com,1268,kheer,3.769191509,2,bitter,-1,-1
+findshreyaa@gmail.com,116,sweet bread,5.220120672,1,rich,-1,-1
+findshreyaa@gmail.com,176,nariyal burfi,2.034145147,1,rich,-1,-1
+findshreyaa@gmail.com,193,barbeque chicken,4.972716094,1,rich,-1,-1
+findshreyaa@gmail.com,235,chickpea curry,5.031160448,1,rich,-1,-1
+findshreyaa@gmail.com,405,mediterranean yellow rice and vegetables,1.94548028,1,rich,-1,-1
+findshreyaa@gmail.com,412,spicy onions,1.927163996,1,rich,-1,-1
+findshreyaa@gmail.com,622,cumin lassi,1.709819528,1,rich,-1,-1
+findshreyaa@gmail.com,790,cajun skillet pasta,4.953996442,1,rich,-1,-1
+findshreyaa@gmail.com,805,cheese fondue,4.9964117,1,rich,-1,-1
+findshreyaa@gmail.com,808,texas cheese fries,5.411623975,1,rich,-1,-1
+findshreyaa@gmail.com,883,chocolate brownie,5.070884147,1,rich,-1,-1
+findshreyaa@gmail.com,1029,gulab jamun,4.966154904,1,rich,-1,-1
+findshreyaa@gmail.com,1047,jalebi,4.985715018,1,rich,-1,-1
+findshreyaa@gmail.com,1221,spicy prawn soup,5.038986977,1,rich,-1,-1
+findshreyaa@gmail.com,1233,ragi balls,2.132089731,1,rich,-1,-1
+forammehta1995@gmail.com,156,green chutney,2.231227157,3,bitter,-1,-1
+forammehta1995@gmail.com,195,jeera rice,2.073742279,3,bitter,-1,-1
+forammehta1995@gmail.com,260,besan halwa,3.509841551,3,bitter,-1,-1
+forammehta1995@gmail.com,409,besan ladoo,3.429925897,3,bitter,-1,-1
+forammehta1995@gmail.com,445,besan laddu,3.371777622,3,bitter,-1,-1
+forammehta1995@gmail.com,527,kesari bhat,3.49359549,3,bitter,-1,-1
+forammehta1995@gmail.com,528,vegan yogurt sundae,3.39483938,3,bitter,-1,-1
+forammehta1995@gmail.com,529,rava laddu,3.438020077,3,bitter,-1,-1
+forammehta1995@gmail.com,536,besan laddu,3.353434178,3,bitter,-1,-1
+forammehta1995@gmail.com,633,paalu mithai,3.446984097,3,bitter,-1,-1
+forammehta1995@gmail.com,713,almond burfi,3.487855976,3,bitter,-1,-1
+forammehta1995@gmail.com,937,vegetable daliya khichdi,2.196454375,3,bitter,-1,-1
+forammehta1995@gmail.com,1155,onion parathas,2.031985908,3,bitter,-1,-1
+forammehta1995@gmail.com,1198,poha,2.338265776,3,bitter,-1,-1
+forammehta1995@gmail.com,1225,coffee protein shake,3.503272847,3,bitter,-1,-1
+gaganshtt7@gmail.com,183,mango lassi,3.592449714,3,salty,5,0
+gaganshtt7@gmail.com,241,spiced eggplant,3.02127741,3,salty,4,7
+gaganshtt7@gmail.com,260,besan halwa,3.68436101,3,salty,4,0
+gaganshtt7@gmail.com,276,mango lassi,3.593488214,3,salty,5,0
+gaganshtt7@gmail.com,329,prawns,3.040489543,3,salty,1,3
+gaganshtt7@gmail.com,386,banana lassi,3.612444542,3,salty,4,0
+gaganshtt7@gmail.com,528,vegan yogurt sundae,3.744909953,3,salty,4,0
+gaganshtt7@gmail.com,585,mango lassi,3.578149157,3,salty,5,0
+gaganshtt7@gmail.com,643,kobbari louz,3.591547012,3,salty,4,0
+gaganshtt7@gmail.com,713,almond burfi,3.61301868,3,salty,5,0
+gaganshtt7@gmail.com,757,apple pie,3.68015531,3,salty,4,0
+gaganshtt7@gmail.com,771,bisi bele bath,3.035691438,3,salty,2,3
+gaganshtt7@gmail.com,911,palak soup,3.039594323,3,salty,2,2
+gaganshtt7@gmail.com,1225,coffee protein shake,3.731751439,3,salty,3,0
+gaganshtt7@gmail.com,1322,vangi bath,3.04143302,3,salty,1,1
+gayatri1996@gmail.com,105,green beans,3.788968059,2,rich,2,2
+gayatri1996@gmail.com,752,aloo paratha,2.122007817,2,rich,4,8
+gayatri1996@gmail.com,759,babycorn manchurian,3.885278231,2,rich,4,7
+gayatri1996@gmail.com,945,snickerdoodle donuts,3.705714146,2,rich,4,8
+gayatri1996@gmail.com,1068,methi khakhra,3.81039014,2,rich,4,5
+gayatri1996@gmail.com,1069,bajra khakhra,3.732028948,2,rich,3,5
+gayatri1996@gmail.com,1155,onion parathas,1.964565508,2,rich,3,5
+gayatri1996@gmail.com,1156,onion paratha,2.245623079,2,rich,3,5
+gayatri1996@gmail.com,1173,paneer paratha,2.026351608,2,rich,4,7
+gayatri1996@gmail.com,1175,paneer paratha,2.204045083,2,rich,4,7
+gayatri1996@gmail.com,1341,veg manchurian,3.712854046,2,rich,5,8
+gayatri1996@gmail.com,1343,veg momos,3.976390008,2,rich,4,6
+gayatri1996@gmail.com,1344,veg momos,3.976390008,2,rich,4,6
+gayatri1996@gmail.com,1361,veg spring roll,3.729274851,2,rich,4,7
+gayatri1996@gmail.com,1362,veg spring roll,3.72501407,2,rich,4,7
+happypoorna@gmail.com,196,spiced rice treats,4.442099777,2,sweet,3,1
+happypoorna@gmail.com,454,egg halwa,4.687975869,2,sweet,1,7
+happypoorna@gmail.com,465,rasgullas,4.423656812,2,sweet,5,10
+happypoorna@gmail.com,527,kesari bhat,4.433309573,2,sweet,2,4
+happypoorna@gmail.com,574,masala chai,4.321318954,2,sweet,5,10
+happypoorna@gmail.com,600,shahi tukray,4.383185098,2,sweet,3,10
+happypoorna@gmail.com,616,bread pudding,4.439289425,2,sweet,2,8
+happypoorna@gmail.com,643,kobbari louz,4.335111701,2,sweet,1,1
+happypoorna@gmail.com,650,mousse,4.37765494,2,sweet,5,10
+happypoorna@gmail.com,713,almond burfi,4.437207666,2,sweet,5,10
+happypoorna@gmail.com,752,aloo paratha,2.646905505,2,sweet,4,1
+happypoorna@gmail.com,1068,methi khakhra,2.442668798,2,sweet,3,0
+happypoorna@gmail.com,1069,bajra khakhra,2.533553885,2,sweet,3,1
+happypoorna@gmail.com,1155,onion parathas,2.782265809,2,sweet,3,1
+happypoorna@gmail.com,1344,veg momos,2.792021668,2,sweet,4,2
+haridaspoornima@yahoo.com,68,relish,4.899432062,1,salty,-1,-1
+haridaspoornima@yahoo.com,98,chickpea curry,4.749869571,1,salty,-1,-1
+haridaspoornima@yahoo.com,117,roomali roti,4.592959374,1,salty,-1,-1
+haridaspoornima@yahoo.com,136,kashmiri-style kidney beans with turnips,4.642499118,1,salty,-1,-1
+haridaspoornima@yahoo.com,156,green chutney,4.768383006,1,salty,-1,-1
+haridaspoornima@yahoo.com,176,nariyal burfi,1.366574996,1,salty,-1,-1
+haridaspoornima@yahoo.com,412,spicy onions,1.141731505,1,salty,-1,-1
+haridaspoornima@yahoo.com,453,sweet and sour chutney,4.930679208,1,salty,-1,-1
+haridaspoornima@yahoo.com,622,cumin lassi,1.056393712,1,salty,-1,-1
+haridaspoornima@yahoo.com,625,nimakayya pulihora,4.624234876,1,salty,-1,-1
+haridaspoornima@yahoo.com,663,dosa,4.75692711,1,salty,-1,-1
+haridaspoornima@yahoo.com,787,butterscotch cake,4.683354461,1,salty,-1,-1
+haridaspoornima@yahoo.com,1062,karela sabzi,1.819140149,1,salty,-1,-1
+haridaspoornima@yahoo.com,1233,ragi balls,1.628813049,1,salty,-1,-1
+haridaspoornima@yahoo.com,1242,rajma chawal,4.733136337,1,salty,-1,-1
+harishreddy50552@gmail.com,380,palak paneer,3.219602836,3,sour,3,2
+harishreddy50552@gmail.com,383,lentils and spinach,3.22478163,3,sour,2,7
+harishreddy50552@gmail.com,472,palak paneer,3.200241816,3,sour,3,2
+harishreddy50552@gmail.com,484,palak paneer,3.206789281,3,sour,3,2
+harishreddy50552@gmail.com,511,rabri,3.815144358,3,sour,2,4
+harishreddy50552@gmail.com,519,mint chutney,3.819213629,3,sour,3,8
+harishreddy50552@gmail.com,533,pudina chutney,3.792755996,3,sour,3,6
+harishreddy50552@gmail.com,627,nuvvu podi,3.883883759,3,sour,2,5
+harishreddy50552@gmail.com,911,palak soup,3.173266166,3,sour,2,6
+harishreddy50552@gmail.com,970,fish and chips,3.806797661,3,sour,3,5
+harishreddy50552@gmail.com,998,acai fruit bowl,3.810986552,3,sour,3,8
+harishreddy50552@gmail.com,1006,rainbow fruit salad,3.820962189,3,sour,4,3
+harishreddy50552@gmail.com,1052,kachori,3.789433836,3,sour,4,2
+harishreddy50552@gmail.com,1376,watermelon juice,3.922537963,3,sour,4,1
+harishreddy50552@gmail.com,1377,watermelon juice,4.010093351,3,sour,4,1
+hemkeshv@gmail.com,196,spiced rice treats,4.914756359,2,rich,3,2
+hemkeshv@gmail.com,410,matar pulao with nuts,4.813935033,2,rich,3,4
+hemkeshv@gmail.com,454,egg halwa,4.854264958,2,rich,1,8
+hemkeshv@gmail.com,527,kesari bhat,4.756131078,2,rich,5,10
+hemkeshv@gmail.com,550,mulligatawny,3.667672497,2,rich,3,2
+hemkeshv@gmail.com,647,shakkara pongal,4.763393378,2,rich,5,5
+hemkeshv@gmail.com,650,mousse,4.878168731,2,rich,5,9
+hemkeshv@gmail.com,751,aloo paratha,3.665100237,2,rich,5,10
+hemkeshv@gmail.com,752,aloo paratha,3.563432273,2,rich,5,10
+hemkeshv@gmail.com,759,babycorn manchurian,4.810882596,2,rich,5,8
+hemkeshv@gmail.com,1088,manchow soup,4.77811991,2,rich,5,7
+hemkeshv@gmail.com,1155,onion parathas,3.604830929,2,rich,5,8
+hemkeshv@gmail.com,1157,aloo paratha,3.665100237,2,rich,5,10
+hemkeshv@gmail.com,1345,spicy veg noodles,4.766135949,2,rich,5,6
+hemkeshv@gmail.com,1360,veg spring roll,4.778880926,2,rich,5,5
+honnesh.pahuja81@gmail.com,56,dal,4.25402987,2,bitter,-1,-1
+honnesh.pahuja81@gmail.com,126,naan,2.581619794,2,bitter,-1,-1
+honnesh.pahuja81@gmail.com,196,spiced rice treats,4.399271491,2,bitter,-1,-1
+honnesh.pahuja81@gmail.com,482,dal makhani,4.311450386,2,bitter,-1,-1
+honnesh.pahuja81@gmail.com,643,kobbari louz,4.258408615,2,bitter,-1,-1
+honnesh.pahuja81@gmail.com,650,mousse,4.358496475,2,bitter,-1,-1
+honnesh.pahuja81@gmail.com,664,paratha,2.553507986,2,bitter,-1,-1
+honnesh.pahuja81@gmail.com,713,almond burfi,4.268291759,2,bitter,-1,-1
+honnesh.pahuja81@gmail.com,733,pesaru pappu,4.363534672,2,bitter,-1,-1
+honnesh.pahuja81@gmail.com,752,aloo paratha,2.572470854,2,bitter,-1,-1
+honnesh.pahuja81@gmail.com,770,bisi bele bath,4.302330327,2,bitter,-1,-1
+honnesh.pahuja81@gmail.com,934,dal tadka,4.25902884,2,bitter,-1,-1
+honnesh.pahuja81@gmail.com,935,dal tadka,4.278991147,2,bitter,-1,-1
+honnesh.pahuja81@gmail.com,1155,onion parathas,2.607872659,2,bitter,-1,-1
+honnesh.pahuja81@gmail.com,1227,garlic pudina paratha,2.62031895,2,bitter,-1,-1
+hrgupta21@gmail.com,116,sweet bread,4.927117188,1,savoury,-1,-1
+hrgupta21@gmail.com,176,nariyal burfi,1.918108449,1,savoury,-1,-1
+hrgupta21@gmail.com,243,masoor dal,2.292978246,1,savoury,-1,-1
+hrgupta21@gmail.com,279,paneer butter masala,4.971701471,1,savoury,-1,-1
+hrgupta21@gmail.com,412,spicy onions,1.862016992,1,savoury,-1,-1
+hrgupta21@gmail.com,622,cumin lassi,1.652435928,1,savoury,-1,-1
+hrgupta21@gmail.com,663,dosa,5.222497636,1,savoury,-1,-1
+hrgupta21@gmail.com,787,butterscotch cake,5.098365587,1,savoury,-1,-1
+hrgupta21@gmail.com,945,snickerdoodle donuts,4.995962055,1,savoury,-1,-1
+hrgupta21@gmail.com,1194,pizza,4.884592567,1,savoury,-1,-1
+hrgupta21@gmail.com,1233,ragi balls,2.05444048,1,savoury,-1,-1
+hrgupta21@gmail.com,1242,rajma chawal,4.992224646,1,savoury,-1,-1
+hrgupta21@gmail.com,1245,rasgulas,4.926913097,1,savoury,-1,-1
+hrgupta21@gmail.com,1259,red velvet cake,4.880682225,1,savoury,-1,-1
+hrgupta21@gmail.com,1278,brussels sprouts salad,4.952941971,1,savoury,-1,-1
+hrshbhardwaj27@gmail.com,33,dal with spinach,3.910942418,3,savoury,2,2
+hrshbhardwaj27@gmail.com,195,jeera rice,2.461884058,3,savoury,4,6
+hrshbhardwaj27@gmail.com,274,sukha urad dal,3.902146672,3,savoury,2,2
+hrshbhardwaj27@gmail.com,574,masala chai,3.906203608,3,savoury,4,7
+hrshbhardwaj27@gmail.com,696,split black lentil curry,3.928723648,3,savoury,2,2
+hrshbhardwaj27@gmail.com,720,carrot and ginger chutney,2.364684552,3,savoury,2,2
+hrshbhardwaj27@gmail.com,935,dal tadka,3.90132832,3,savoury,5,8
+hrshbhardwaj27@gmail.com,937,vegetable daliya khichdi,2.518623281,3,savoury,2,2
+hrshbhardwaj27@gmail.com,1028,peach green tea,3.899926093,3,savoury,4,6
+hrshbhardwaj27@gmail.com,1069,bajra khakhra,3.913053796,3,savoury,2,2
+hrshbhardwaj27@gmail.com,1092,mango pickle,3.910780251,3,savoury,4,6
+hrshbhardwaj27@gmail.com,1155,onion parathas,2.293502633,3,savoury,5,8
+hrshbhardwaj27@gmail.com,1198,poha,2.55394685,3,savoury,5,8
+hrshbhardwaj27@gmail.com,1321,vangi bath,3.952365981,3,savoury,2,2
+hrshbhardwaj27@gmail.com,1323,vangi bath,3.917767352,3,savoury,2,2
+jeevannagaraj@gmail.com,3,paratha,4.108519639,2,savoury,4,7
+jeevannagaraj@gmail.com,566,paratha,4.108519639,2,savoury,4,7
+jeevannagaraj@gmail.com,664,paratha,4.021574805,2,savoury,4,7
+jeevannagaraj@gmail.com,749,aloo methi paratha,4.013527741,2,savoury,3,7
+jeevannagaraj@gmail.com,752,aloo paratha,4.021787362,2,savoury,4,8
+jeevannagaraj@gmail.com,839,chicken momo,2.734869493,2,savoury,3,6
+jeevannagaraj@gmail.com,1015,gobi manchurian,2.947171031,2,savoury,5,8
+jeevannagaraj@gmail.com,1022,gobi paratha,4.017873326,2,savoury,3,8
+jeevannagaraj@gmail.com,1109,methi paratha,4.04116946,2,savoury,3,7
+jeevannagaraj@gmail.com,1122,mooli ka paratha,3.998373476,2,savoury,2,3
+jeevannagaraj@gmail.com,1228,pudina paratha,4.113240783,2,savoury,3,5
+jeevannagaraj@gmail.com,1242,rajma chawal,3.991438873,2,savoury,3,6
+jeevannagaraj@gmail.com,1342,veg momos,2.831377002,2,savoury,2,5
+jeevannagaraj@gmail.com,1343,veg momos,2.908782631,2,savoury,2,5
+jeevannagaraj@gmail.com,1344,veg momos,2.908782631,2,savoury,2,5
+joelkiran45@gmail.com,13,vegetarian korma,5.413492179,1,sweet,3,4
+joelkiran45@gmail.com,116,sweet bread,5.390292895,1,sweet,4,7
+joelkiran45@gmail.com,172,punjabi chicken gravy,2.355984184,1,sweet,4,5
+joelkiran45@gmail.com,176,nariyal burfi,2.202129817,1,sweet,5,8
+joelkiran45@gmail.com,234,tofu curry salad,5.206944475,1,sweet,4,6
+joelkiran45@gmail.com,235,chickpea curry,5.316384943,1,sweet,4,6
+joelkiran45@gmail.com,387,wheat chapati,5.174761167,1,sweet,4,2
+joelkiran45@gmail.com,405,mediterranean yellow rice and vegetables,2.222517599,1,sweet,3,3
+joelkiran45@gmail.com,622,cumin lassi,1.694144031,1,sweet,4,8
+joelkiran45@gmail.com,760,bacon wraps,2.371881355,1,sweet,4,6
+joelkiran45@gmail.com,790,cajun skillet pasta,5.174678381,1,sweet,4,6
+joelkiran45@gmail.com,808,texas cheese fries,5.37638583,1,sweet,4,7
+joelkiran45@gmail.com,883,chocolate brownie,5.343722581,1,sweet,5,9
+joelkiran45@gmail.com,1221,spicy prawn soup,5.509768357,1,sweet,5,6
+joelkiran45@gmail.com,1284,strawberry milkshake,5.196108505,1,sweet,4,8
+joshihemin@gmail.com,13,vegetarian korma,5.089787347,1,sour,-1,-1
+joshihemin@gmail.com,116,sweet bread,5.225603066,1,sour,-1,-1
+joshihemin@gmail.com,176,nariyal burfi,2.19516271,1,sour,-1,-1
+joshihemin@gmail.com,391,frizzled onions,2.452848198,1,sour,-1,-1
+joshihemin@gmail.com,412,spicy onions,1.80288972,1,sour,-1,-1
+joshihemin@gmail.com,622,cumin lassi,1.830746237,1,sour,-1,-1
+joshihemin@gmail.com,663,dosa,5.462091757,1,sour,-1,-1
+joshihemin@gmail.com,787,butterscotch cake,5.29455017,1,sour,-1,-1
+joshihemin@gmail.com,892,chocolate milkshake,5.194296945,1,sour,-1,-1
+joshihemin@gmail.com,945,snickerdoodle donuts,5.147776522,1,sour,-1,-1
+joshihemin@gmail.com,1164,pancake,5.185019417,1,sour,-1,-1
+joshihemin@gmail.com,1233,ragi balls,2.469349269,1,sour,-1,-1
+joshihemin@gmail.com,1242,rajma chawal,5.092485682,1,sour,-1,-1
+joshihemin@gmail.com,1245,rasgulas,5.12957235,1,sour,-1,-1
+joshihemin@gmail.com,1278,brussels sprouts salad,5.411086985,1,sour,-1,-1
+jyotsna.prasad3@gmail.com,195,jeera rice,3.718290798,3,sweet,2,2
+jyotsna.prasad3@gmail.com,260,besan halwa,4.763201151,3,sweet,5,10
+jyotsna.prasad3@gmail.com,409,besan ladoo,4.711081898,3,sweet,5,10
+jyotsna.prasad3@gmail.com,527,kesari bhat,4.70380143,3,sweet,3,4
+jyotsna.prasad3@gmail.com,529,rava laddu,4.730729207,3,sweet,3,10
+jyotsna.prasad3@gmail.com,536,besan laddu,4.676207846,3,sweet,4,10
+jyotsna.prasad3@gmail.com,633,paalu mithai,4.708243662,3,sweet,5,10
+jyotsna.prasad3@gmail.com,643,kobbari louz,4.724447202,3,sweet,1,10
+jyotsna.prasad3@gmail.com,713,almond burfi,4.741507279,3,sweet,1,10
+jyotsna.prasad3@gmail.com,720,carrot and ginger chutney,3.798305246,3,sweet,2,1
+jyotsna.prasad3@gmail.com,757,apple pie,4.687826522,3,sweet,5,8
+jyotsna.prasad3@gmail.com,937,vegetable daliya khichdi,3.877088789,3,sweet,3,8
+jyotsna.prasad3@gmail.com,1155,onion parathas,3.786999414,3,sweet,5,1
+jyotsna.prasad3@gmail.com,1198,poha,3.912225271,3,sweet,3,2
+jyotsna.prasad3@gmail.com,1225,coffee protein shake,4.726385753,3,sweet,1,5
+kaalasureshan@gmail.com,116,sweet bread,4.866201852,1,sweet,1,10
+kaalasureshan@gmail.com,176,nariyal burfi,2.179579745,1,sweet,1,8
+kaalasureshan@gmail.com,412,spicy onions,1.692592189,1,sweet,5,2
+kaalasureshan@gmail.com,622,cumin lassi,1.445782278,1,sweet,2,5
+kaalasureshan@gmail.com,663,dosa,4.938626597,1,sweet,5,1
+kaalasureshan@gmail.com,759,babycorn manchurian,4.853952875,1,sweet,5,1
+kaalasureshan@gmail.com,766,dilled bean salad,2.285485756,1,sweet,1,1
+kaalasureshan@gmail.com,787,butterscotch cake,5.134584257,1,sweet,1,1
+kaalasureshan@gmail.com,883,chocolate brownie,5.334841362,1,sweet,3,8
+kaalasureshan@gmail.com,892,chocolate milkshake,4.968838225,1,sweet,1,7
+kaalasureshan@gmail.com,1191,pesto zucchini spaghetti,4.853460304,1,sweet,5,1
+kaalasureshan@gmail.com,1233,ragi balls,2.191240238,1,sweet,1,1
+kaalasureshan@gmail.com,1242,rajma chawal,4.996778597,1,sweet,1,1
+kaalasureshan@gmail.com,1245,rasgulas,5.047865838,1,sweet,1,1
+kaalasureshan@gmail.com,1278,brussels sprouts salad,4.966263965,1,sweet,1,1
+kaavya.desai12@gmail.com,116,sweet bread,4.078655544,1,sour,1,0
+kaavya.desai12@gmail.com,176,nariyal burfi,1.414854565,1,sour,1,0
+kaavya.desai12@gmail.com,188,spiced rice,4.187088371,1,sour,4,2
+kaavya.desai12@gmail.com,412,spicy onions,1.096183177,1,sour,4,2
+kaavya.desai12@gmail.com,622,cumin lassi,0.841119753,1,sour,2,2
+kaavya.desai12@gmail.com,663,dosa,4.331053542,1,sour,3,2
+kaavya.desai12@gmail.com,766,dilled bean salad,1.515708601,1,sour,1,2
+kaavya.desai12@gmail.com,787,butterscotch cake,4.322142599,1,sour,5,1
+kaavya.desai12@gmail.com,883,chocolate brownie,4.507525963,1,sour,5,1
+kaavya.desai12@gmail.com,945,snickerdoodle donuts,4.22325931,1,sour,5,1
+kaavya.desai12@gmail.com,1191,pesto zucchini spaghetti,4.075933857,1,sour,5,1
+kaavya.desai12@gmail.com,1233,ragi balls,1.258829043,1,sour,1,3
+kaavya.desai12@gmail.com,1242,rajma chawal,4.305976829,1,sour,3,2
+kaavya.desai12@gmail.com,1245,rasgulas,4.414105792,1,sour,5,1
+kaavya.desai12@gmail.com,1278,brussels sprouts salad,4.242927251,1,sour,1,2
+kabeer.pesu@gmail.com,105,green beans,1.262343936,2,savoury,2,5
+kabeer.pesu@gmail.com,170,rajma,1.258777803,2,savoury,4,6
+kabeer.pesu@gmail.com,195,jeera rice,2.110782616,2,savoury,3,7
+kabeer.pesu@gmail.com,270,chicken curry,2.169079726,2,savoury,4,8
+kabeer.pesu@gmail.com,329,prawns,2.350676719,2,savoury,3,8
+kabeer.pesu@gmail.com,532,adipoli parathas,2.293437567,2,savoury,1,1
+kabeer.pesu@gmail.com,542,pudina pacchadi,1.268221257,2,savoury,1,1
+kabeer.pesu@gmail.com,574,masala chai,1.247878816,2,savoury,4,8
+kabeer.pesu@gmail.com,650,mousse,1.268320026,2,savoury,3,4
+kabeer.pesu@gmail.com,664,paratha,2.106159371,2,savoury,4,9
+kabeer.pesu@gmail.com,752,aloo paratha,2.232889035,2,savoury,3,8
+kabeer.pesu@gmail.com,1021,gobi paratha,2.113827414,2,savoury,3,8
+kabeer.pesu@gmail.com,1156,onion paratha,2.093125342,2,savoury,4,8
+kabeer.pesu@gmail.com,1228,pudina paratha,2.259138485,2,savoury,2,3
+kabeer.pesu@gmail.com,1229,pudina lachha paratha,2.121172206,2,savoury,2,1
+kavrulz@gmail.com,164,gulab jamun,4.368102047,3,rich,4,10
+kavrulz@gmail.com,195,jeera rice,3.502702161,3,rich,2,2
+kavrulz@gmail.com,527,kesari bhat,4.367312539,3,rich,3,3
+kavrulz@gmail.com,529,rava laddu,4.401981831,3,rich,5,5
+kavrulz@gmail.com,569,baked gulab jamun,4.380209958,3,rich,4,8
+kavrulz@gmail.com,570,gulab jamun,4.368058679,3,rich,4,10
+kavrulz@gmail.com,633,paalu mithai,4.385841832,3,rich,4,10
+kavrulz@gmail.com,643,kobbari louz,4.378661618,3,rich,4,7
+kavrulz@gmail.com,713,almond burfi,4.377060807,3,rich,2,4
+kavrulz@gmail.com,947,glazed donuts,4.370819068,3,rich,4,10
+kavrulz@gmail.com,1029,gulab jamun,4.368102047,3,rich,4,10
+kavrulz@gmail.com,1155,onion parathas,3.691750112,3,rich,4,4
+kavrulz@gmail.com,1198,poha,3.694064851,3,rich,3,2
+kavrulz@gmail.com,1302,thepla,3.621005293,3,rich,2,2
+kavrulz@gmail.com,1303,thepla,3.665188418,3,rich,2,2
+krishnaraoofficial@gmail.com,68,relish,4.318609751,1,savoury,-1,-1
+krishnaraoofficial@gmail.com,176,nariyal burfi,1.211408719,1,savoury,-1,-1
+krishnaraoofficial@gmail.com,188,spiced rice,4.196853289,1,savoury,-1,-1
+krishnaraoofficial@gmail.com,243,masoor dal,1.538729411,1,savoury,-1,-1
+krishnaraoofficial@gmail.com,412,spicy onions,0.960901503,1,savoury,-1,-1
+krishnaraoofficial@gmail.com,413,tomato soup,4.247466542,1,savoury,-1,-1
+krishnaraoofficial@gmail.com,622,cumin lassi,0.788436468,1,savoury,-1,-1
+krishnaraoofficial@gmail.com,663,dosa,4.465170304,1,savoury,-1,-1
+krishnaraoofficial@gmail.com,787,butterscotch cake,4.375149019,1,savoury,-1,-1
+krishnaraoofficial@gmail.com,883,chocolate brownie,4.415108978,1,savoury,-1,-1
+krishnaraoofficial@gmail.com,945,snickerdoodle donuts,4.317354674,1,savoury,-1,-1
+krishnaraoofficial@gmail.com,1233,ragi balls,1.248689752,1,savoury,-1,-1
+krishnaraoofficial@gmail.com,1242,rajma chawal,4.371918154,1,savoury,-1,-1
+krishnaraoofficial@gmail.com,1259,red velvet cake,4.278165015,1,savoury,-1,-1
+krishnaraoofficial@gmail.com,1278,brussels sprouts salad,4.341191065,1,savoury,-1,-1
+kshitimudnur@gmail.com,24,baingan bharta,4.516440976,1,savoury,2,4
+kshitimudnur@gmail.com,68,relish,4.692619442,1,savoury,2,4
+kshitimudnur@gmail.com,98,chickpea curry,4.846967089,1,savoury,5,8
+kshitimudnur@gmail.com,156,green chutney,4.631157063,1,savoury,4,7
+kshitimudnur@gmail.com,176,nariyal burfi,1.093026071,1,savoury,1,2
+kshitimudnur@gmail.com,412,spicy onions,1.145502074,1,savoury,1,1
+kshitimudnur@gmail.com,453,sweet and sour chutney,4.92397947,1,savoury,5,9
+kshitimudnur@gmail.com,494,scrambled eggs,1.594265974,1,savoury,1,1
+kshitimudnur@gmail.com,622,cumin lassi,0.611244357,1,savoury,3,5
+kshitimudnur@gmail.com,625,nimakayya pulihora,4.648387883,1,savoury,1,1
+kshitimudnur@gmail.com,663,dosa,4.563724028,1,savoury,5,10
+kshitimudnur@gmail.com,883,chocolate brownie,4.939547583,1,savoury,5,10
+kshitimudnur@gmail.com,1038,cinnamon ice cream,4.684651374,1,savoury,1,1
+kshitimudnur@gmail.com,1233,ragi balls,1.255433106,1,savoury,5,8
+kshitimudnur@gmail.com,1242,rajma chawal,4.637130756,1,savoury,4,8
+kushalmehta13@gmail.com,7,coconut chutney,3.926373583,3,sweet,4,2
+kushalmehta13@gmail.com,485,butternut squash coconut curry,3.909933982,3,sweet,3,2
+kushalmehta13@gmail.com,583,milk with turmeric paste,3.93294332,3,sweet,2,1
+kushalmehta13@gmail.com,639,shahi tukri,3.989804105,3,sweet,3,2
+kushalmehta13@gmail.com,643,kobbari louz,3.923388828,3,sweet,3,8
+kushalmehta13@gmail.com,650,mousse,3.912281405,3,sweet,5,7
+kushalmehta13@gmail.com,753,appam,3.969614757,3,sweet,3,2
+kushalmehta13@gmail.com,754,appam,3.96708103,3,sweet,3,2
+kushalmehta13@gmail.com,755,appam,3.969614757,3,sweet,3,2
+kushalmehta13@gmail.com,937,vegetable daliya khichdi,2.409505225,3,sweet,2,3
+kushalmehta13@gmail.com,947,glazed donuts,3.954528305,3,sweet,5,9
+kushalmehta13@gmail.com,1155,onion parathas,2.227731381,3,sweet,4,2
+kushalmehta13@gmail.com,1198,poha,2.387784546,3,sweet,4,3
+kushalmehta13@gmail.com,1302,thepla,2.343626977,3,sweet,5,2
+kushalmehta13@gmail.com,1303,thepla,2.389901801,3,sweet,5,2
+lakshidaa.s@gmail.com,116,sweet bread,4.048397934,1,rich,2,3
+lakshidaa.s@gmail.com,193,barbeque chicken,3.826516436,1,rich,5,10
+lakshidaa.s@gmail.com,234,tofu curry salad,3.849190571,1,rich,1,1
+lakshidaa.s@gmail.com,235,chickpea curry,3.92362545,1,rich,2,4
+lakshidaa.s@gmail.com,622,cumin lassi,0.273993782,1,rich,2,3
+lakshidaa.s@gmail.com,760,bacon wraps,0.935125385,1,rich,5,10
+lakshidaa.s@gmail.com,805,cheese fondue,3.87899943,1,rich,5,8
+lakshidaa.s@gmail.com,808,texas cheese fries,3.964672618,1,rich,5,9
+lakshidaa.s@gmail.com,817,chicken biriyani,3.909695425,1,rich,5,9
+lakshidaa.s@gmail.com,883,chocolate brownie,3.989681219,1,rich,5,10
+lakshidaa.s@gmail.com,1047,jalebi,3.845651698,1,rich,1,3
+lakshidaa.s@gmail.com,1062,karela sabzi,0.901997025,1,rich,1,1
+lakshidaa.s@gmail.com,1161,cheesy palak paneer paratha,0.975087932,1,rich,5,8
+lakshidaa.s@gmail.com,1221,spicy prawn soup,4.176336406,1,rich,4,6
+lakshidaa.s@gmail.com,1233,ragi balls,0.935803695,1,rich,1,1
+maatangi.krishna@ashoka.edu.in,68,relish,4.632600701,1,bitter,3,1
+maatangi.krishna@ashoka.edu.in,176,nariyal burfi,1.300415491,1,bitter,3,1
+maatangi.krishna@ashoka.edu.in,188,spiced rice,4.469351158,1,bitter,4,3
+maatangi.krishna@ashoka.edu.in,243,masoor dal,1.836985578,1,bitter,3,3
+maatangi.krishna@ashoka.edu.in,412,spicy onions,1.262398466,1,bitter,4,2
+maatangi.krishna@ashoka.edu.in,453,sweet and sour chutney,4.441894533,1,bitter,4,4
+maatangi.krishna@ashoka.edu.in,622,cumin lassi,1.074568224,1,bitter,3,4
+maatangi.krishna@ashoka.edu.in,663,dosa,4.665938584,1,bitter,5,2
+maatangi.krishna@ashoka.edu.in,787,butterscotch cake,4.640140142,1,bitter,5,1
+maatangi.krishna@ashoka.edu.in,883,chocolate brownie,4.554168913,1,bitter,5,1
+maatangi.krishna@ashoka.edu.in,945,snickerdoodle donuts,4.549409407,1,bitter,5,1
+maatangi.krishna@ashoka.edu.in,1002,fruit ice cream,4.463402396,1,bitter,4,1
+maatangi.krishna@ashoka.edu.in,1233,ragi balls,1.480412707,1,bitter,1,4
+maatangi.krishna@ashoka.edu.in,1242,rajma chawal,4.758828289,1,bitter,3,1
+maatangi.krishna@ashoka.edu.in,1259,red velvet cake,4.474104732,1,bitter,5,1
+mahajan.manik@yahoo.co.in,84,chicken curry,3.970523453,2,rich,4,8
+mahajan.manik@yahoo.co.in,115,palak paneer,3.87267923,2,rich,1,5
+mahajan.manik@yahoo.co.in,274,sukha urad dal,2.790051183,2,rich,3,4
+mahajan.manik@yahoo.co.in,397,aloo palak,3.911064637,2,rich,2,5
+mahajan.manik@yahoo.co.in,472,palak paneer,3.928848607,2,rich,1,5
+mahajan.manik@yahoo.co.in,484,palak paneer,3.86108045,2,rich,1,5
+mahajan.manik@yahoo.co.in,542,pudina pacchadi,2.62233036,2,rich,3,7
+mahajan.manik@yahoo.co.in,552,pizza,3.921936605,2,rich,4,8
+mahajan.manik@yahoo.co.in,582,spicy egg & minced lamb roll,3.869067879,2,rich,4,8
+mahajan.manik@yahoo.co.in,590,palak rice,3.979154384,2,rich,2,6
+mahajan.manik@yahoo.co.in,645,aaku pappu,2.787452823,2,rich,3,5
+mahajan.manik@yahoo.co.in,823,turkey chili,3.840136746,2,rich,4,7
+mahajan.manik@yahoo.co.in,824,turkey chili,3.840136746,2,rich,4,7
+mahajan.manik@yahoo.co.in,930,methi dal,2.78002551,2,rich,3,6
+mahajan.manik@yahoo.co.in,1101,methi moong masala puri,2.7848168,2,rich,4,8
+maheshp2812@gmail.com,31,mango lassi,4.196049394,2,savoury,3,7
+maheshp2812@gmail.com,150,strawberry lassi,3.674850356,2,savoury,2,8
+maheshp2812@gmail.com,181,hot curried mangos with tofu,3.538079403,2,savoury,2,3
+maheshp2812@gmail.com,183,mango lassi,4.189011008,2,savoury,4,7
+maheshp2812@gmail.com,195,jeera rice,2.1874955,2,savoury,4,3
+maheshp2812@gmail.com,245,mango lassi,4.179970106,2,savoury,4,7
+maheshp2812@gmail.com,276,mango lassi,4.084105921,2,savoury,4,7
+maheshp2812@gmail.com,329,prawns,1.800328074,2,savoury,1,6
+maheshp2812@gmail.com,369,lassi,4.287483355,2,savoury,5,5
+maheshp2812@gmail.com,584,strawberry lassi,3.649459197,2,savoury,4,8
+maheshp2812@gmail.com,585,mango lassi,3.897714109,2,savoury,4,7
+maheshp2812@gmail.com,622,cumin lassi,4.287483355,2,savoury,4,7
+maheshp2812@gmail.com,771,bisi bele bath,2.173179978,2,savoury,2,5
+maheshp2812@gmail.com,1221,spicy prawn soup,2.334999828,2,savoury,1,6
+maheshp2812@gmail.com,1322,vangi bath,2.3234507,2,savoury,1,4
+manasa.nallabotula@gmail.com,202,coconut curried tofu with green beans and coconut rice,1.472672845,3,sour,-1,-1
+manasa.nallabotula@gmail.com,330,pumpkin butter bean and spinach curry,1.4827299,3,sour,-1,-1
+manasa.nallabotula@gmail.com,519,mint chutney,1.948364304,3,sour,-1,-1
+manasa.nallabotula@gmail.com,533,pudina chutney,1.944825433,3,sour,-1,-1
+manasa.nallabotula@gmail.com,597,pumpkin curry,1.478137718,3,sour,-1,-1
+manasa.nallabotula@gmail.com,639,shahi tukri,1.480042621,3,sour,-1,-1
+manasa.nallabotula@gmail.com,907,coffee ice cream,1.479109547,3,sour,-1,-1
+manasa.nallabotula@gmail.com,970,fish and chips,1.936465632,3,sour,-1,-1
+manasa.nallabotula@gmail.com,998,acai fruit bowl,1.936043259,3,sour,-1,-1
+manasa.nallabotula@gmail.com,1006,rainbow fruit salad,1.960799169,3,sour,-1,-1
+manasa.nallabotula@gmail.com,1052,kachori,1.935196884,3,sour,-1,-1
+manasa.nallabotula@gmail.com,1155,onion parathas,1.944066791,3,sour,-1,-1
+manasa.nallabotula@gmail.com,1197,poha,1.946154124,3,sour,-1,-1
+manasa.nallabotula@gmail.com,1376,watermelon juice,2.009398275,3,sour,-1,-1
+manasa.nallabotula@gmail.com,1377,watermelon juice,2.065242871,3,sour,-1,-1
+mansitripathi1994@gmail.com,195,jeera rice,3.685400661,3,bitter,-1,-1
+mansitripathi1994@gmail.com,260,besan halwa,2.888477735,3,bitter,-1,-1
+mansitripathi1994@gmail.com,627,nuvvu podi,3.731475248,3,bitter,-1,-1
+mansitripathi1994@gmail.com,643,kobbari louz,2.912470668,3,bitter,-1,-1
+mansitripathi1994@gmail.com,998,acai fruit bowl,3.605674167,3,bitter,-1,-1
+mansitripathi1994@gmail.com,1006,rainbow fruit salad,3.622669814,3,bitter,-1,-1
+mansitripathi1994@gmail.com,1045,lemon pickle,3.702564155,3,bitter,-1,-1
+mansitripathi1994@gmail.com,1052,kachori,3.636466761,3,bitter,-1,-1
+mansitripathi1994@gmail.com,1109,methi paratha,2.917957538,3,bitter,-1,-1
+mansitripathi1994@gmail.com,1223,vietnamese prawn soup,3.706741682,3,bitter,-1,-1
+mansitripathi1994@gmail.com,1225,coffee protein shake,2.905878136,3,bitter,-1,-1
+mansitripathi1994@gmail.com,1242,rajma chawal,2.918460434,3,bitter,-1,-1
+mansitripathi1994@gmail.com,1250,rava idli,3.648574153,3,bitter,-1,-1
+mansitripathi1994@gmail.com,1294,sushi,3.635453108,3,bitter,-1,-1
+mansitripathi1994@gmail.com,1377,watermelon juice,3.685278485,3,bitter,-1,-1
+mayankguptak56@gmail.com,195,jeera rice,4.597302014,3,savoury,3,7
+mayankguptak56@gmail.com,260,besan halwa,3.891228802,3,savoury,3,6
+mayankguptak56@gmail.com,371,mustard fish,4.584175987,3,savoury,4,8
+mayankguptak56@gmail.com,386,banana lassi,3.920432752,3,savoury,5,9
+mayankguptak56@gmail.com,528,vegan yogurt sundae,3.793232081,3,savoury,4,8
+mayankguptak56@gmail.com,720,carrot and ginger chutney,4.632189002,3,savoury,4,7
+mayankguptak56@gmail.com,757,apple pie,3.880335879,3,savoury,3,6
+mayankguptak56@gmail.com,970,fish and chips,4.58887879,3,savoury,5,10
+mayankguptak56@gmail.com,1045,lemon pickle,4.611576272,3,savoury,5,10
+mayankguptak56@gmail.com,1052,kachori,4.594261094,3,savoury,3,6
+mayankguptak56@gmail.com,1197,poha,4.597567395,3,savoury,5,10
+mayankguptak56@gmail.com,1223,vietnamese prawn soup,4.597019942,3,savoury,4,8
+mayankguptak56@gmail.com,1225,coffee protein shake,3.818064111,3,savoury,3,6
+mayankguptak56@gmail.com,1294,sushi,4.565972364,3,savoury,1,3
+mayankguptak56@gmail.com,1377,watermelon juice,4.596380768,3,savoury,5,10
+meghana10krishnan@gmail.com,68,relish,4.337354898,1,salty,3,9
+meghana10krishnan@gmail.com,98,chickpea curry,4.550131539,1,salty,2,8
+meghana10krishnan@gmail.com,117,roomali roti,4.214972601,1,salty,3,7
+meghana10krishnan@gmail.com,172,punjabi chicken gravy,1.124573817,1,salty,4,8
+meghana10krishnan@gmail.com,235,chickpea curry,4.207925685,1,salty,2,8
+meghana10krishnan@gmail.com,412,spicy onions,1.085767657,1,salty,1,8
+meghana10krishnan@gmail.com,453,sweet and sour chutney,4.489691904,1,salty,3,6
+meghana10krishnan@gmail.com,622,cumin lassi,0.152458506,1,salty,4,5
+meghana10krishnan@gmail.com,760,bacon wraps,0.805434318,1,salty,5,8
+meghana10krishnan@gmail.com,808,texas cheese fries,4.491540084,1,salty,3,8
+meghana10krishnan@gmail.com,883,chocolate brownie,4.38333007,1,salty,5,1
+meghana10krishnan@gmail.com,892,chocolate milkshake,4.266657349,1,salty,5,1
+meghana10krishnan@gmail.com,978,fried fish,1.065505386,1,salty,5,8
+meghana10krishnan@gmail.com,1221,spicy prawn soup,4.509899487,1,salty,5,7
+meghana10krishnan@gmail.com,1284,strawberry milkshake,4.275994583,1,salty,4,1
+mihir1296@gmail.com,116,sweet bread,5.119764521,1,bitter,-1,-1
+mihir1296@gmail.com,172,punjabi chicken gravy,2.083372529,1,bitter,-1,-1
+mihir1296@gmail.com,176,nariyal burfi,2.044435671,1,bitter,-1,-1
+mihir1296@gmail.com,235,chickpea curry,5.127929898,1,bitter,-1,-1
+mihir1296@gmail.com,387,wheat chapati,4.970898767,1,bitter,-1,-1
+mihir1296@gmail.com,405,mediterranean yellow rice and vegetables,2.062127413,1,bitter,-1,-1
+mihir1296@gmail.com,622,cumin lassi,1.286237118,1,bitter,-1,-1
+mihir1296@gmail.com,760,bacon wraps,2.075266291,1,bitter,-1,-1
+mihir1296@gmail.com,790,cajun skillet pasta,4.97225501,1,bitter,-1,-1
+mihir1296@gmail.com,808,texas cheese fries,5.197016568,1,bitter,-1,-1
+mihir1296@gmail.com,883,chocolate brownie,5.187549881,1,bitter,-1,-1
+mihir1296@gmail.com,892,chocolate milkshake,4.985534628,1,bitter,-1,-1
+mihir1296@gmail.com,1164,pancake,4.989565053,1,bitter,-1,-1
+mihir1296@gmail.com,1221,spicy prawn soup,5.338052264,1,bitter,-1,-1
+mihir1296@gmail.com,1284,strawberry milkshake,5.012237775,1,bitter,-1,-1
+mokshgaur95@gmail.com,116,sweet bread,4.894650822,1,sour,3,2
+mokshgaur95@gmail.com,176,nariyal burfi,1.862781857,1,sour,3,1
+mokshgaur95@gmail.com,279,paneer butter masala,4.99024875,1,sour,4,3
+mokshgaur95@gmail.com,412,spicy onions,1.70509094,1,sour,4,5
+mokshgaur95@gmail.com,475,zucchini soup with curry spices,2.23060761,1,sour,3,5
+mokshgaur95@gmail.com,622,cumin lassi,1.653611316,1,sour,4,6
+mokshgaur95@gmail.com,663,dosa,5.141634651,1,sour,5,5
+mokshgaur95@gmail.com,787,butterscotch cake,5.025184471,1,sour,5,1
+mokshgaur95@gmail.com,892,chocolate milkshake,4.821572967,1,sour,5,1
+mokshgaur95@gmail.com,945,snickerdoodle donuts,4.89355086,1,sour,5,1
+mokshgaur95@gmail.com,1164,pancake,4.929447398,1,sour,4,1
+mokshgaur95@gmail.com,1233,ragi balls,2.140398505,1,sour,2,3
+mokshgaur95@gmail.com,1242,rajma chawal,4.795752544,1,sour,4,4
+mokshgaur95@gmail.com,1245,rasgulas,4.89054561,1,sour,5,9
+mokshgaur95@gmail.com,1278,brussels sprouts salad,5.026099012,1,sour,3,2
+natasha.jeppu@gmail.com,116,sweet bread,5.296137958,1,rich,1,5
+natasha.jeppu@gmail.com,176,nariyal burfi,2.109804955,1,rich,2,3
+natasha.jeppu@gmail.com,235,chickpea curry,5.091353718,1,rich,5,10
+natasha.jeppu@gmail.com,412,spicy onions,1.852824962,1,rich,5,5
+natasha.jeppu@gmail.com,622,cumin lassi,1.623182111,1,rich,3,3
+natasha.jeppu@gmail.com,805,cheese fondue,5.203918422,1,rich,3,7
+natasha.jeppu@gmail.com,808,texas cheese fries,5.637309261,1,rich,1,6
+natasha.jeppu@gmail.com,883,chocolate brownie,5.194757114,1,rich,5,10
+natasha.jeppu@gmail.com,892,chocolate milkshake,5.185358942,1,rich,5,10
+natasha.jeppu@gmail.com,978,fried fish,2.200758565,1,rich,2,5
+natasha.jeppu@gmail.com,1002,fruit ice cream,5.154717379,1,rich,3,6
+natasha.jeppu@gmail.com,1047,jalebi,5.142196842,1,rich,5,10
+natasha.jeppu@gmail.com,1221,spicy prawn soup,5.248985963,1,rich,3,4
+natasha.jeppu@gmail.com,1233,ragi balls,2.15990065,1,rich,1,2
+natasha.jeppu@gmail.com,1284,strawberry milkshake,5.181113949,1,rich,5,10
+naveenpatil26@gmail.com,116,sweet bread,4.921737598,1,salty,4,3
+naveenpatil26@gmail.com,176,nariyal burfi,1.978981371,1,salty,5,2
+naveenpatil26@gmail.com,188,spiced rice,4.923038871,1,salty,4,6
+naveenpatil26@gmail.com,412,spicy onions,1.737115565,1,salty,4,7
+naveenpatil26@gmail.com,563,green curry with sweet potato and aubergine,2.231038064,1,salty,4,2
+naveenpatil26@gmail.com,622,cumin lassi,1.50746934,1,salty,2,5
+naveenpatil26@gmail.com,663,dosa,5.202444909,1,salty,5,3
+naveenpatil26@gmail.com,787,butterscotch cake,5.019000792,1,salty,5,1
+naveenpatil26@gmail.com,883,chocolate brownie,5.017469993,1,salty,5,1
+naveenpatil26@gmail.com,945,snickerdoodle donuts,4.968610008,1,salty,5,1
+naveenpatil26@gmail.com,1233,ragi balls,1.869833027,1,salty,4,4
+naveenpatil26@gmail.com,1242,rajma chawal,5.037479345,1,salty,4,5
+naveenpatil26@gmail.com,1245,rasgulas,4.926377614,1,salty,5,1
+naveenpatil26@gmail.com,1259,red velvet cake,4.869321599,1,salty,5,1
+naveenpatil26@gmail.com,1278,brussels sprouts salad,5.139727016,1,salty,5,7
+nikhil.kamichetty@gmail.com,31,mango lassi,3.594372522,3,rich,4,1
+nikhil.kamichetty@gmail.com,183,mango lassi,3.60134303,3,rich,4,1
+nikhil.kamichetty@gmail.com,195,jeera rice,3.025381594,3,rich,3,5
+nikhil.kamichetty@gmail.com,245,mango lassi,3.593096718,3,rich,4,1
+nikhil.kamichetty@gmail.com,260,besan halwa,3.630669057,3,rich,3,8
+nikhil.kamichetty@gmail.com,276,mango lassi,3.591012577,3,rich,4,1
+nikhil.kamichetty@gmail.com,329,prawns,3.066650565,3,rich,1,4
+nikhil.kamichetty@gmail.com,386,banana lassi,3.603393447,3,rich,4,1
+nikhil.kamichetty@gmail.com,528,vegan yogurt sundae,3.783568891,3,rich,3,1
+nikhil.kamichetty@gmail.com,713,almond burfi,3.606141695,3,rich,3,8
+nikhil.kamichetty@gmail.com,757,apple pie,3.631621207,3,rich,3,4
+nikhil.kamichetty@gmail.com,771,bisi bele bath,3.070119048,3,rich,4,4
+nikhil.kamichetty@gmail.com,1225,coffee protein shake,3.762861562,3,rich,4,1
+nikhil.kamichetty@gmail.com,1263,steamed rice,3.08187643,3,rich,2,2
+nikhil.kamichetty@gmail.com,1322,vangi bath,3.081163433,3,rich,3,4
+niksluthra@gmail.com,53,naan,3.614182808,3,salty,-1,-1
+niksluthra@gmail.com,126,naan,3.630332796,3,salty,-1,-1
+niksluthra@gmail.com,137,chicken hariyali tikka,3.684929104,3,salty,-1,-1
+niksluthra@gmail.com,195,jeera rice,2.933951168,3,salty,-1,-1
+niksluthra@gmail.com,268,naan,3.597241666,3,salty,-1,-1
+niksluthra@gmail.com,287,naan,3.605583893,3,salty,-1,-1
+niksluthra@gmail.com,778,bread,3.639744678,3,salty,-1,-1
+niksluthra@gmail.com,1045,lemon pickle,3.063146774,3,salty,-1,-1
+niksluthra@gmail.com,1091,mango pickle,3.043159339,3,salty,-1,-1
+niksluthra@gmail.com,1203,popcorn,3.592182188,3,salty,-1,-1
+niksluthra@gmail.com,1217,potato wedges,3.723105177,3,salty,-1,-1
+niksluthra@gmail.com,1223,vietnamese prawn soup,2.961766871,3,salty,-1,-1
+niksluthra@gmail.com,1294,sushi,3.051890652,3,salty,-1,-1
+niksluthra@gmail.com,1296,tandoori roti,3.660753167,3,salty,-1,-1
+niksluthra@gmail.com,1298,tandoori roti,3.59342757,3,salty,-1,-1
+nilishamaheshwari18@gmail.com,156,green chutney,1.922056977,3,sweet,4,1
+nilishamaheshwari18@gmail.com,195,jeera rice,1.966092716,3,sweet,3,2
+nilishamaheshwari18@gmail.com,260,besan halwa,3.038328467,3,sweet,4,8
+nilishamaheshwari18@gmail.com,409,besan ladoo,3.022489131,3,sweet,5,9
+nilishamaheshwari18@gmail.com,527,kesari bhat,3.031679458,3,sweet,4,7
+nilishamaheshwari18@gmail.com,528,vegan yogurt sundae,3.110405633,3,sweet,4,6
+nilishamaheshwari18@gmail.com,529,rava laddu,2.948500904,3,sweet,3,7
+nilishamaheshwari18@gmail.com,536,besan laddu,2.956718077,3,sweet,5,9
+nilishamaheshwari18@gmail.com,633,paalu mithai,2.975502278,3,sweet,3,7
+nilishamaheshwari18@gmail.com,713,almond burfi,3.028850188,3,sweet,3,7
+nilishamaheshwari18@gmail.com,714,coconut and molasses-filled rice dumplings,2.95450686,3,sweet,3,8
+nilishamaheshwari18@gmail.com,937,vegetable daliya khichdi,1.94640561,3,sweet,3,4
+nilishamaheshwari18@gmail.com,1155,onion parathas,1.677826706,3,sweet,3,3
+nilishamaheshwari18@gmail.com,1198,poha,1.978033642,3,sweet,5,5
+nilishamaheshwari18@gmail.com,1225,coffee protein shake,3.133567435,3,sweet,3,6
+nishaahlawat13@gmail.com,68,relish,5.283726468,1,salty,-1,-1
+nishaahlawat13@gmail.com,116,sweet bread,5.170022747,1,salty,-1,-1
+nishaahlawat13@gmail.com,176,nariyal burfi,2.147810335,1,salty,-1,-1
+nishaahlawat13@gmail.com,188,spiced rice,5.142083884,1,salty,-1,-1
+nishaahlawat13@gmail.com,391,frizzled onions,2.444321079,1,salty,-1,-1
+nishaahlawat13@gmail.com,412,spicy onions,1.901344653,1,salty,-1,-1
+nishaahlawat13@gmail.com,622,cumin lassi,1.739669117,1,salty,-1,-1
+nishaahlawat13@gmail.com,663,dosa,5.318428938,1,salty,-1,-1
+nishaahlawat13@gmail.com,787,butterscotch cake,5.383002881,1,salty,-1,-1
+nishaahlawat13@gmail.com,883,chocolate brownie,5.343352428,1,salty,-1,-1
+nishaahlawat13@gmail.com,945,snickerdoodle donuts,5.198479841,1,salty,-1,-1
+nishaahlawat13@gmail.com,1233,ragi balls,2.300982659,1,salty,-1,-1
+nishaahlawat13@gmail.com,1242,rajma chawal,5.371531769,1,salty,-1,-1
+nishaahlawat13@gmail.com,1245,rasgulas,5.11329788,1,salty,-1,-1
+nishaahlawat13@gmail.com,1278,brussels sprouts salad,5.192271067,1,salty,-1,-1
+nishantb21@gmail.com,116,sweet bread,4.780137462,1,sweet,4,8
+nishantb21@gmail.com,176,nariyal burfi,1.633942835,1,sweet,4,10
+nishantb21@gmail.com,235,chickpea curry,4.746937864,1,sweet,4,0
+nishantb21@gmail.com,405,mediterranean yellow rice and vegetables,1.730954377,1,sweet,3,0
+nishantb21@gmail.com,412,spicy onions,1.733865249,1,sweet,2,2
+nishantb21@gmail.com,622,cumin lassi,1.203332906,1,sweet,2,6
+nishantb21@gmail.com,760,bacon wraps,1.755312048,1,sweet,4,0
+nishantb21@gmail.com,805,cheese fondue,4.624887581,1,sweet,2,5
+nishantb21@gmail.com,808,texas cheese fries,4.85400713,1,sweet,4,0
+nishantb21@gmail.com,817,chicken biriyani,4.631477853,1,sweet,5,0
+nishantb21@gmail.com,883,chocolate brownie,4.753989227,1,sweet,5,9
+nishantb21@gmail.com,1029,gulab jamun,4.610481874,1,sweet,4,8
+nishantb21@gmail.com,1047,jalebi,4.602587227,1,sweet,5,10
+nishantb21@gmail.com,1221,spicy prawn soup,4.857207099,1,sweet,2,0
+nishantb21@gmail.com,1284,strawberry milkshake,4.598731338,1,sweet,3,8
+nishim1210@gmail.com,53,naan,1.812165355,2,bitter,-1,-1
+nishim1210@gmail.com,116,sweet bread,1.909422276,2,bitter,-1,-1
+nishim1210@gmail.com,126,naan,1.621888458,2,bitter,-1,-1
+nishim1210@gmail.com,158,vegetable bhaji,3.192119278,2,bitter,-1,-1
+nishim1210@gmail.com,268,naan,1.869811111,2,bitter,-1,-1
+nishim1210@gmail.com,287,naan,1.693286805,2,bitter,-1,-1
+nishim1210@gmail.com,419,vegetable rice,3.212055992,2,bitter,-1,-1
+nishim1210@gmail.com,1088,manchow soup,3.238479709,2,bitter,-1,-1
+nishim1210@gmail.com,1281,vegetable stir-fry,3.363621577,2,bitter,-1,-1
+nishim1210@gmail.com,1333,fried rice,3.330460171,2,bitter,-1,-1
+nishim1210@gmail.com,1341,veg manchurian,3.209171692,2,bitter,-1,-1
+nishim1210@gmail.com,1343,veg momos,3.30732792,2,bitter,-1,-1
+nishim1210@gmail.com,1344,veg momos,3.30732792,2,bitter,-1,-1
+nishim1210@gmail.com,1346,veg hakka noodles,3.411920581,2,bitter,-1,-1
+nishim1210@gmail.com,1360,veg spring roll,3.26284243,2,bitter,-1,-1
+nlramya96@gmail.com,156,green chutney,2.080540075,3,savoury,4,9
+nlramya96@gmail.com,260,besan halwa,3.31936123,3,savoury,1,2
+nlramya96@gmail.com,409,besan ladoo,3.295270655,3,savoury,2,3
+nlramya96@gmail.com,528,vegan yogurt sundae,3.371790471,3,savoury,1,2
+nlramya96@gmail.com,536,besan laddu,3.253791565,3,savoury,1,3
+nlramya96@gmail.com,643,kobbari louz,3.310903913,3,savoury,1,2
+nlramya96@gmail.com,713,almond burfi,3.291628114,3,savoury,1,2
+nlramya96@gmail.com,714,coconut and molasses-filled rice dumplings,3.261631419,3,savoury,1,2
+nlramya96@gmail.com,937,vegetable daliya khichdi,2.135438741,3,savoury,1,3
+nlramya96@gmail.com,1002,fruit ice cream,3.255664953,3,savoury,3,5
+nlramya96@gmail.com,1003,fruit ice cream,3.253699191,3,savoury,3,5
+nlramya96@gmail.com,1155,onion parathas,1.800373643,3,savoury,4,6
+nlramya96@gmail.com,1198,poha,2.114536522,3,savoury,4,6
+nlramya96@gmail.com,1225,coffee protein shake,3.361438143,3,savoury,3,5
+nlramya96@gmail.com,1303,thepla,2.098939577,3,savoury,1,2
+nupurnag1990@gmail.com,31,mango lassi,2.212390319,2,savoury,-1,-1
+nupurnag1990@gmail.com,126,naan,2.008781511,2,savoury,-1,-1
+nupurnag1990@gmail.com,241,spiced eggplant,4.073377284,2,savoury,-1,-1
+nupurnag1990@gmail.com,245,mango lassi,2.226033676,2,savoury,-1,-1
+nupurnag1990@gmail.com,369,lassi,2.204608094,2,savoury,-1,-1
+nupurnag1990@gmail.com,557,spicy sesame potatoes,4.182957762,2,savoury,-1,-1
+nupurnag1990@gmail.com,622,cumin lassi,2.204608094,2,savoury,-1,-1
+nupurnag1990@gmail.com,630,kobbari annam,3.978520507,2,savoury,-1,-1
+nupurnag1990@gmail.com,677,lemon rice,3.966582525,2,savoury,-1,-1
+nupurnag1990@gmail.com,771,bisi bele bath,4.118345479,2,savoury,-1,-1
+nupurnag1990@gmail.com,839,chicken momo,4.157823031,2,savoury,-1,-1
+nupurnag1990@gmail.com,1322,vangi bath,3.984838422,2,savoury,-1,-1
+nupurnag1990@gmail.com,1342,veg momos,4.06810291,2,savoury,-1,-1
+nupurnag1990@gmail.com,1343,veg momos,4.238762604,2,savoury,-1,-1
+nupurnag1990@gmail.com,1344,veg momos,4.238762604,2,savoury,-1,-1
+orangeyash@gmail.com,3,paratha,4.823180226,2,rich,4,8
+orangeyash@gmail.com,126,naan,4.896995052,2,rich,4,8
+orangeyash@gmail.com,255,paneer curry,3.624487095,2,rich,5,10
+orangeyash@gmail.com,492,yogurt soup,3.773756426,2,rich,3,6
+orangeyash@gmail.com,569,baked gulab jamun,4.830644973,2,rich,4,9
+orangeyash@gmail.com,600,shahi tukray,4.891678816,2,rich,3,7
+orangeyash@gmail.com,649,curry powder,3.765376769,2,rich,4,8
+orangeyash@gmail.com,784,burnt garlic fried rice,4.82775522,2,rich,2,7
+orangeyash@gmail.com,918,curried capsicum masala,3.781190609,2,rich,5,10
+orangeyash@gmail.com,1162,palak paratha,4.841092192,2,rich,4,9
+orangeyash@gmail.com,1227,garlic pudina paratha,4.837790374,2,rich,2,6
+orangeyash@gmail.com,1281,vegetable stir-fry,4.84046975,2,rich,1,8
+orangeyash@gmail.com,1321,vangi bath,3.78950197,2,rich,3,5
+orangeyash@gmail.com,1333,fried rice,4.878484843,2,rich,2,8
+orangeyash@gmail.com,1341,veg manchurian,4.830409871,2,rich,5,10
+patternpatronus@gmail.com,196,spiced rice treats,4.505249805,2,rich,-1,-1
+patternpatronus@gmail.com,203,carrot,4.479034082,2,rich,-1,-1
+patternpatronus@gmail.com,482,dal makhani,3.695933046,2,rich,-1,-1
+patternpatronus@gmail.com,527,kesari bhat,4.528720805,2,rich,-1,-1
+patternpatronus@gmail.com,544,atta halwa,4.469865001,2,rich,-1,-1
+patternpatronus@gmail.com,562,kheer,4.502226117,2,rich,-1,-1
+patternpatronus@gmail.com,569,baked gulab jamun,4.464703308,2,rich,-1,-1
+patternpatronus@gmail.com,626,annam-kobbari parvanam,4.474580492,2,rich,-1,-1
+patternpatronus@gmail.com,733,pesaru pappu,3.758957548,2,rich,-1,-1
+patternpatronus@gmail.com,930,methi dal,3.680526914,2,rich,-1,-1
+patternpatronus@gmail.com,932,methi dal,3.765884119,2,rich,-1,-1
+patternpatronus@gmail.com,1059,kaju katli,4.504074987,2,rich,-1,-1
+patternpatronus@gmail.com,1060,kaju katli,4.500788816,2,rich,-1,-1
+patternpatronus@gmail.com,1101,methi moong masala puri,3.733257843,2,rich,-1,-1
+patternpatronus@gmail.com,1268,kheer,4.577123461,2,rich,-1,-1
+peeyusha.rathi@yahoo.com,68,relish,4.176016466,1,bitter,-1,-1
+peeyusha.rathi@yahoo.com,156,green chutney,4.012090285,1,bitter,-1,-1
+peeyusha.rathi@yahoo.com,176,nariyal burfi,0.882228159,1,bitter,-1,-1
+peeyusha.rathi@yahoo.com,188,spiced rice,3.970138512,1,bitter,-1,-1
+peeyusha.rathi@yahoo.com,412,spicy onions,0.689628921,1,bitter,-1,-1
+peeyusha.rathi@yahoo.com,453,sweet and sour chutney,4.107635951,1,bitter,-1,-1
+peeyusha.rathi@yahoo.com,622,cumin lassi,0.413872932,1,bitter,-1,-1
+peeyusha.rathi@yahoo.com,625,nimakayya pulihora,4.059508967,1,bitter,-1,-1
+peeyusha.rathi@yahoo.com,663,dosa,4.169411267,1,bitter,-1,-1
+peeyusha.rathi@yahoo.com,787,butterscotch cake,4.127745017,1,bitter,-1,-1
+peeyusha.rathi@yahoo.com,883,chocolate brownie,4.29742658,1,bitter,-1,-1
+peeyusha.rathi@yahoo.com,1038,cinnamon ice cream,4.064983497,1,bitter,-1,-1
+peeyusha.rathi@yahoo.com,1062,karela sabzi,1.341203575,1,bitter,-1,-1
+peeyusha.rathi@yahoo.com,1233,ragi balls,0.993579475,1,bitter,-1,-1
+peeyusha.rathi@yahoo.com,1242,rajma chawal,4.154470228,1,bitter,-1,-1
+pkabber@gmail.com,12,mulligatawny soup,4.620697887,1,sweet,1,2
+pkabber@gmail.com,116,sweet bread,4.77227586,1,sweet,4,7
+pkabber@gmail.com,176,nariyal burfi,1.363068938,1,sweet,1,9
+pkabber@gmail.com,234,tofu curry salad,4.544132682,1,sweet,3,2
+pkabber@gmail.com,405,mediterranean yellow rice and vegetables,1.729210402,1,sweet,3,2
+pkabber@gmail.com,622,cumin lassi,1.476476163,1,sweet,1,6
+pkabber@gmail.com,805,cheese fondue,4.596713426,1,sweet,3,1
+pkabber@gmail.com,808,texas cheese fries,4.722068434,1,sweet,1,1
+pkabber@gmail.com,817,chicken biriyani,4.642762373,1,sweet,5,1
+pkabber@gmail.com,883,chocolate brownie,4.588090569,1,sweet,5,8
+pkabber@gmail.com,1029,gulab jamun,4.74273291,1,sweet,5,9
+pkabber@gmail.com,1047,jalebi,4.585394337,1,sweet,4,9
+pkabber@gmail.com,1062,karela sabzi,1.714360721,1,sweet,1,2
+pkabber@gmail.com,1221,spicy prawn soup,4.831132462,1,sweet,1,2
+pkabber@gmail.com,1233,ragi balls,1.74650528,1,sweet,3,2
+poojabalusani145@gmail.com,137,chicken hariyali tikka,3.677114446,3,sour,5,3
+poojabalusani145@gmail.com,146,cucumber peanut salad,3.531391323,3,sour,5,6
+poojabalusani145@gmail.com,273,curry rice,3.053543367,3,sour,3,5
+poojabalusani145@gmail.com,329,prawns,3.040637512,3,sour,1,5
+poojabalusani145@gmail.com,519,mint chutney,3.570970199,3,sour,5,8
+poojabalusani145@gmail.com,528,vegan yogurt sundae,3.044078989,3,sour,5,10
+poojabalusani145@gmail.com,627,nuvvu podi,3.60192407,3,sour,4,7
+poojabalusani145@gmail.com,714,coconut and molasses-filled rice dumplings,3.040010559,3,sour,3,5
+poojabalusani145@gmail.com,752,aloo paratha,3.538957512,3,sour,5,5
+poojabalusani145@gmail.com,1002,fruit ice cream,3.055949291,3,sour,5,5
+poojabalusani145@gmail.com,1155,onion parathas,3.615042514,3,sour,5,2
+poojabalusani145@gmail.com,1217,potato wedges,3.590053355,3,sour,5,5
+poojabalusani145@gmail.com,1290,sugarcane juice,3.529968888,3,sour,5,1
+poojabalusani145@gmail.com,1376,watermelon juice,3.715585951,3,sour,5,1
+poojabalusani145@gmail.com,1377,watermelon juice,3.75037554,3,sour,5,1
+pprashant0309@gmail.com,13,vegetarian korma,4.861352546,1,salty,3,5
+pprashant0309@gmail.com,116,sweet bread,5.01409673,1,salty,4,2
+pprashant0309@gmail.com,176,nariyal burfi,1.984084253,1,salty,1,0
+pprashant0309@gmail.com,234,tofu curry salad,4.831897557,1,salty,2,5
+pprashant0309@gmail.com,235,chickpea curry,4.973081456,1,salty,3,7
+pprashant0309@gmail.com,387,wheat chapati,4.833231647,1,salty,3,4
+pprashant0309@gmail.com,405,mediterranean yellow rice and vegetables,1.699946428,1,salty,4,8
+pprashant0309@gmail.com,622,cumin lassi,1.353942641,1,salty,3,4
+pprashant0309@gmail.com,760,bacon wraps,1.968189066,1,salty,4,7
+pprashant0309@gmail.com,790,cajun skillet pasta,4.843251831,1,salty,3,6
+pprashant0309@gmail.com,808,texas cheese fries,5.159152547,1,salty,5,6
+pprashant0309@gmail.com,883,chocolate brownie,4.9954011,1,salty,5,3
+pprashant0309@gmail.com,915,cream of broccoli,2.010761849,1,salty,5,5
+pprashant0309@gmail.com,1164,pancake,4.906898744,1,salty,5,3
+pprashant0309@gmail.com,1221,spicy prawn soup,5.013765271,1,salty,4,7
+prachi.misc29@gmail.com,31,mango lassi,2.499260677,2,rich,4,6
+prachi.misc29@gmail.com,150,strawberry lassi,2.589589002,2,rich,4,6
+prachi.misc29@gmail.com,245,mango lassi,2.516844825,2,rich,4,6
+prachi.misc29@gmail.com,329,prawns,4.660988656,2,rich,5,7
+prachi.misc29@gmail.com,369,lassi,2.482302371,2,rich,3,6
+prachi.misc29@gmail.com,378,spiced chickpeas,4.493834598,2,rich,3,6
+prachi.misc29@gmail.com,400,lemon lentil rice,4.484030387,2,rich,3,4
+prachi.misc29@gmail.com,426,tandoori chicken skewers,4.455313366,2,rich,4,5
+prachi.misc29@gmail.com,532,adipoli parathas,4.459096679,2,rich,3,5
+prachi.misc29@gmail.com,557,spicy sesame potatoes,4.569111102,2,rich,3,6
+prachi.misc29@gmail.com,622,cumin lassi,2.482302371,2,rich,2,4
+prachi.misc29@gmail.com,632,milagai podi,4.499788068,2,rich,3,5
+prachi.misc29@gmail.com,839,chicken momo,4.524240239,2,rich,4,4
+prachi.misc29@gmail.com,1343,veg momos,4.526751549,2,rich,4,4
+prachi.misc29@gmail.com,1344,veg momos,4.526751549,2,rich,4,4
+praji.1996@gmail.com,156,green chutney,2.334078916,3,salty,1,8
+praji.1996@gmail.com,195,jeera rice,2.408129827,3,salty,3,2
+praji.1996@gmail.com,260,besan halwa,3.819343073,3,salty,1,0
+praji.1996@gmail.com,409,besan ladoo,3.778463634,3,salty,1,0
+praji.1996@gmail.com,445,besan laddu,3.695027079,3,salty,1,0
+praji.1996@gmail.com,527,kesari bhat,3.833468789,3,salty,1,0
+praji.1996@gmail.com,528,vegan yogurt sundae,3.840197192,3,salty,5,0
+praji.1996@gmail.com,529,rava laddu,3.788342648,3,salty,4,1
+praji.1996@gmail.com,536,besan laddu,3.686311362,3,salty,4,10
+praji.1996@gmail.com,633,paalu mithai,3.793859684,3,salty,1,7
+praji.1996@gmail.com,713,almond burfi,3.802065783,3,salty,5,0
+praji.1996@gmail.com,720,carrot and ginger chutney,2.451462671,3,salty,2,10
+praji.1996@gmail.com,937,vegetable daliya khichdi,2.444395609,3,salty,3,4
+praji.1996@gmail.com,1155,onion parathas,2.126323776,3,salty,4,6
+praji.1996@gmail.com,1225,coffee protein shake,3.856061407,3,salty,3,2
+prasadvp96@gmail.com,33,dal with spinach,2.524311065,3,bitter,-1,-1
+prasadvp96@gmail.com,241,spiced eggplant,2.508019749,3,bitter,-1,-1
+prasadvp96@gmail.com,511,rabri,3.32789179,3,bitter,-1,-1
+prasadvp96@gmail.com,519,mint chutney,3.325532533,3,bitter,-1,-1
+prasadvp96@gmail.com,627,nuvvu podi,3.443882416,3,bitter,-1,-1
+prasadvp96@gmail.com,662,dosa,2.532310278,3,bitter,-1,-1
+prasadvp96@gmail.com,663,dosa,2.532310278,3,bitter,-1,-1
+prasadvp96@gmail.com,935,dal tadka,2.501763801,3,bitter,-1,-1
+prasadvp96@gmail.com,961,falooda,3.308254091,3,bitter,-1,-1
+prasadvp96@gmail.com,1006,rainbow fruit salad,3.36854647,3,bitter,-1,-1
+prasadvp96@gmail.com,1091,mango pickle,3.359909732,3,bitter,-1,-1
+prasadvp96@gmail.com,1155,onion parathas,3.339414645,3,bitter,-1,-1
+prasadvp96@gmail.com,1223,vietnamese prawn soup,3.376190436,3,bitter,-1,-1
+prasadvp96@gmail.com,1376,watermelon juice,3.466882856,3,bitter,-1,-1
+prasadvp96@gmail.com,1377,watermelon juice,3.576701925,3,bitter,-1,-1
+pratul.ramkumar@gmail.com,176,nariyal burfi,1.357019967,1,sweet,2,7
+pratul.ramkumar@gmail.com,188,spiced rice,4.203202035,1,sweet,3,2
+pratul.ramkumar@gmail.com,412,spicy onions,1.152533278,1,sweet,3,4
+pratul.ramkumar@gmail.com,622,cumin lassi,0.868680863,1,sweet,1,6
+pratul.ramkumar@gmail.com,663,dosa,4.246386495,1,sweet,5,3
+pratul.ramkumar@gmail.com,787,butterscotch cake,4.381221833,1,sweet,4,7
+pratul.ramkumar@gmail.com,883,chocolate brownie,4.495319496,1,sweet,4,8
+pratul.ramkumar@gmail.com,945,snickerdoodle donuts,4.274316567,1,sweet,5,9
+pratul.ramkumar@gmail.com,1161,cheesy palak paneer paratha,1.540323332,1,sweet,3,5
+pratul.ramkumar@gmail.com,1191,pesto zucchini spaghetti,4.120194169,1,sweet,4,4
+pratul.ramkumar@gmail.com,1233,ragi balls,1.313827423,1,sweet,1,4
+pratul.ramkumar@gmail.com,1242,rajma chawal,4.410954959,1,sweet,4,2
+pratul.ramkumar@gmail.com,1245,rasgulas,4.293731074,1,sweet,4,10
+pratul.ramkumar@gmail.com,1259,red velvet cake,4.114656118,1,sweet,3,7
+pratul.ramkumar@gmail.com,1278,brussels sprouts salad,4.108751681,1,sweet,3,4
+priyabalgi2012@gmail.com,232,curry,4.057101819,3,bitter,-1,-1
+priyabalgi2012@gmail.com,260,besan halwa,4.672806369,3,bitter,-1,-1
+priyabalgi2012@gmail.com,528,vegan yogurt sundae,4.674687801,3,bitter,-1,-1
+priyabalgi2012@gmail.com,529,rava laddu,4.650022543,3,bitter,-1,-1
+priyabalgi2012@gmail.com,569,baked gulab jamun,4.66836359,3,bitter,-1,-1
+priyabalgi2012@gmail.com,570,gulab jamun,4.67271597,3,bitter,-1,-1
+priyabalgi2012@gmail.com,583,milk with turmeric paste,4.627994431,3,bitter,-1,-1
+priyabalgi2012@gmail.com,639,shahi tukri,4.682849813,3,bitter,-1,-1
+priyabalgi2012@gmail.com,643,kobbari louz,4.64560389,3,bitter,-1,-1
+priyabalgi2012@gmail.com,748,aloo methi,4.063414068,3,bitter,-1,-1
+priyabalgi2012@gmail.com,757,apple pie,4.716964576,3,bitter,-1,-1
+priyabalgi2012@gmail.com,945,snickerdoodle donuts,4.632852581,3,bitter,-1,-1
+priyabalgi2012@gmail.com,1092,mango pickle,4.06684839,3,bitter,-1,-1
+priyabalgi2012@gmail.com,1270,set dosa,4.063764211,3,bitter,-1,-1
+priyabalgi2012@gmail.com,1342,veg momos,4.058520917,3,bitter,-1,-1
+priyansha.pathak@hpe.com,156,green chutney,4.331953358,3,sour,4,6
+priyansha.pathak@hpe.com,195,jeera rice,4.349228087,3,sour,4,3
+priyansha.pathak@hpe.com,662,dosa,3.703400183,3,sour,5,4
+priyansha.pathak@hpe.com,663,dosa,3.703400183,3,sour,5,4
+priyansha.pathak@hpe.com,720,carrot and ginger chutney,4.38288484,3,sour,3,6
+priyansha.pathak@hpe.com,937,vegetable daliya khichdi,4.31398854,3,sour,3,4
+priyansha.pathak@hpe.com,1026,iced strawberry green tea,4.343080221,3,sour,4,5
+priyansha.pathak@hpe.com,1047,jalebi,4.385006913,3,sour,5,4
+priyansha.pathak@hpe.com,1092,mango pickle,3.688186551,3,sour,4,7
+priyansha.pathak@hpe.com,1124,motichoor ladoo,4.325086108,3,sour,5,2
+priyansha.pathak@hpe.com,1155,onion parathas,4.46743278,3,sour,4,4
+priyansha.pathak@hpe.com,1198,poha,4.304940278,3,sour,4,6
+priyansha.pathak@hpe.com,1246,rasgulas,4.336025777,3,sour,5,2
+priyansha.pathak@hpe.com,1321,vangi bath,3.671501379,3,sour,4,5
+priyansha.pathak@hpe.com,1323,vangi bath,3.70329417,3,sour,4,5
+protyushat@gmail.com,25,aloo phujia,3.737794705,2,sweet,5,3
+protyushat@gmail.com,33,dal with spinach,3.761633818,2,sweet,4,4
+protyushat@gmail.com,56,dal,3.746254436,2,sweet,3,3
+protyushat@gmail.com,103,saag paneer,3.724693273,2,sweet,4,4
+protyushat@gmail.com,741,aloo beans,3.756289977,2,sweet,3,3
+protyushat@gmail.com,759,babycorn manchurian,2.785914555,2,sweet,2,5
+protyushat@gmail.com,770,bisi bele bath,3.730866768,2,sweet,3,2
+protyushat@gmail.com,934,dal tadka,3.739349056,2,sweet,3,2
+protyushat@gmail.com,935,dal tadka,3.74727087,2,sweet,3,3
+protyushat@gmail.com,1068,methi khakhra,3.90090992,2,sweet,5,4
+protyushat@gmail.com,1069,bajra khakhra,3.791069974,2,sweet,5,4
+protyushat@gmail.com,1341,veg manchurian,2.845686934,2,sweet,3,3
+protyushat@gmail.com,1343,veg momos,2.845668846,2,sweet,2,3
+protyushat@gmail.com,1344,veg momos,2.845668846,2,sweet,2,3
+protyushat@gmail.com,1360,veg spring roll,2.852819311,2,sweet,2,3
+prtkchatterjee@gmail.com,3,paratha,3.120429276,3,sweet,2,2
+prtkchatterjee@gmail.com,56,dal,2.678660646,3,sweet,2,2
+prtkchatterjee@gmail.com,137,chicken hariyali tikka,3.238868935,3,sweet,3,3
+prtkchatterjee@gmail.com,146,cucumber peanut salad,3.104475996,3,sweet,1,3
+prtkchatterjee@gmail.com,286,green pea poulourie,3.117226156,3,sweet,1,6
+prtkchatterjee@gmail.com,566,paratha,3.10072377,3,sweet,2,2
+prtkchatterjee@gmail.com,597,pumpkin curry,2.68086526,3,sweet,1,1
+prtkchatterjee@gmail.com,704,dal,2.679831325,3,sweet,2,2
+prtkchatterjee@gmail.com,752,aloo paratha,3.145996237,3,sweet,5,4
+prtkchatterjee@gmail.com,1155,onion parathas,3.175941833,3,sweet,1,1
+prtkchatterjee@gmail.com,1217,potato wedges,3.129848905,3,sweet,3,4
+prtkchatterjee@gmail.com,1296,tandoori roti,3.101688056,3,sweet,2,2
+prtkchatterjee@gmail.com,1343,veg momos,2.689175569,3,sweet,1,1
+prtkchatterjee@gmail.com,1344,veg momos,2.689175569,3,sweet,1,1
+prtkchatterjee@gmail.com,1376,watermelon juice,3.128369865,3,sweet,1,8
+ptprad877@gmail.com,170,rajma,4.338833742,3,salty,3,6
+ptprad877@gmail.com,435,daal makhani,4.320996624,3,salty,4,4
+ptprad877@gmail.com,511,rabri,4.750372066,3,salty,3,1
+ptprad877@gmail.com,528,vegan yogurt sundae,4.318166933,3,salty,3,2
+ptprad877@gmail.com,533,pudina chutney,4.740654319,3,salty,4,3
+ptprad877@gmail.com,627,nuvvu podi,4.750276979,3,salty,4,2
+ptprad877@gmail.com,970,fish and chips,4.749225016,3,salty,3,2
+ptprad877@gmail.com,998,acai fruit bowl,4.758249622,3,salty,3,2
+ptprad877@gmail.com,1045,lemon pickle,4.764082094,3,salty,2,3
+ptprad877@gmail.com,1052,kachori,4.770743032,3,salty,5,4
+ptprad877@gmail.com,1223,vietnamese prawn soup,4.749965707,3,salty,4,4
+ptprad877@gmail.com,1225,coffee protein shake,4.304110986,3,salty,5,1
+ptprad877@gmail.com,1242,rajma chawal,4.33126418,3,salty,3,5
+ptprad877@gmail.com,1294,sushi,4.741294219,3,salty,4,5
+ptprad877@gmail.com,1377,watermelon juice,4.811458297,3,salty,3,2
+radha.anu.b30@gmail.com,156,green chutney,2.040280483,3,savoury,2,2
+radha.anu.b30@gmail.com,260,besan halwa,3.119974076,3,savoury,4,5
+radha.anu.b30@gmail.com,409,besan ladoo,3.13831337,3,savoury,3,5
+radha.anu.b30@gmail.com,528,vegan yogurt sundae,3.321908486,3,savoury,1,3
+radha.anu.b30@gmail.com,608,cranberry chutney,3.1281691,3,savoury,1,3
+radha.anu.b30@gmail.com,713,almond burfi,3.120517731,3,savoury,1,3
+radha.anu.b30@gmail.com,714,coconut and molasses-filled rice dumplings,3.157205862,3,savoury,3,5
+radha.anu.b30@gmail.com,720,carrot and ginger chutney,1.974213412,3,savoury,3,5
+radha.anu.b30@gmail.com,747,aloo methi,2.076352237,3,savoury,2,4
+radha.anu.b30@gmail.com,1001,fruit custard,3.117578269,3,savoury,2,4
+radha.anu.b30@gmail.com,1028,peach green tea,3.120287501,3,savoury,2,5
+radha.anu.b30@gmail.com,1069,bajra khakhra,3.134610905,3,savoury,1,1
+radha.anu.b30@gmail.com,1155,onion parathas,1.759862484,3,savoury,4,4
+radha.anu.b30@gmail.com,1198,poha,2.035589522,3,savoury,2,2
+radha.anu.b30@gmail.com,1225,coffee protein shake,3.307454961,3,savoury,3,5
+rahul.bhatia242@gmail.com,116,sweet bread,5.312201307,1,salty,1,1
+rahul.bhatia242@gmail.com,176,nariyal burfi,2.143234521,1,salty,1,1
+rahul.bhatia242@gmail.com,193,barbeque chicken,5.038942801,1,salty,4,8
+rahul.bhatia242@gmail.com,234,tofu curry salad,5.030258442,1,salty,3,6
+rahul.bhatia242@gmail.com,235,chickpea curry,5.155820507,1,salty,4,8
+rahul.bhatia242@gmail.com,405,mediterranean yellow rice and vegetables,2.068846038,1,salty,3,5
+rahul.bhatia242@gmail.com,622,cumin lassi,1.588376746,1,salty,4,7
+rahul.bhatia242@gmail.com,760,bacon wraps,2.203701283,1,salty,4,8
+rahul.bhatia242@gmail.com,790,cajun skillet pasta,5.045379747,1,salty,4,8
+rahul.bhatia242@gmail.com,808,texas cheese fries,5.44295383,1,salty,5,10
+rahul.bhatia242@gmail.com,883,chocolate brownie,5.224616492,1,salty,5,10
+rahul.bhatia242@gmail.com,978,fried fish,2.199487963,1,salty,5,10
+rahul.bhatia242@gmail.com,1029,gulab jamun,5.026009813,1,salty,5,10
+rahul.bhatia242@gmail.com,1047,jalebi,5.053744535,1,salty,5,10
+rahul.bhatia242@gmail.com,1221,spicy prawn soup,5.254701927,1,salty,4,7
+rahul.srinivasan.kunji@gmail.com,195,jeera rice,4.266037679,3,bitter,-1,-1
+rahul.srinivasan.kunji@gmail.com,519,mint chutney,4.252441518,3,bitter,-1,-1
+rahul.srinivasan.kunji@gmail.com,528,vegan yogurt sundae,3.172979,3,bitter,-1,-1
+rahul.srinivasan.kunji@gmail.com,627,nuvvu podi,4.349136177,3,bitter,-1,-1
+rahul.srinivasan.kunji@gmail.com,639,shahi tukri,3.18511036,3,bitter,-1,-1
+rahul.srinivasan.kunji@gmail.com,643,kobbari louz,3.188502631,3,bitter,-1,-1
+rahul.srinivasan.kunji@gmail.com,1003,fruit ice cream,3.221141452,3,bitter,-1,-1
+rahul.srinivasan.kunji@gmail.com,1045,lemon pickle,4.307697432,3,bitter,-1,-1
+rahul.srinivasan.kunji@gmail.com,1052,kachori,4.255890668,3,bitter,-1,-1
+rahul.srinivasan.kunji@gmail.com,1197,poha,4.245428055,3,bitter,-1,-1
+rahul.srinivasan.kunji@gmail.com,1223,vietnamese prawn soup,4.289904675,3,bitter,-1,-1
+rahul.srinivasan.kunji@gmail.com,1225,coffee protein shake,3.201472676,3,bitter,-1,-1
+rahul.srinivasan.kunji@gmail.com,1294,sushi,4.243971163,3,bitter,-1,-1
+rahul.srinivasan.kunji@gmail.com,1376,watermelon juice,4.283733637,3,bitter,-1,-1
+rahul.srinivasan.kunji@gmail.com,1377,watermelon juice,4.405255122,3,bitter,-1,-1
+rahulchoudhary258@gmail.com,195,jeera rice,2.825977071,2,salty,4,6
+rahulchoudhary258@gmail.com,329,prawns,2.261963193,2,salty,3,5
+rahulchoudhary258@gmail.com,351,tandoori masala spice mix,4.398243024,2,salty,4,4
+rahulchoudhary258@gmail.com,412,spicy onions,4.419675687,2,salty,5,6
+rahulchoudhary258@gmail.com,749,aloo methi paratha,4.412087481,2,salty,4,3
+rahulchoudhary258@gmail.com,771,bisi bele bath,2.638566048,2,salty,5,5
+rahulchoudhary258@gmail.com,1022,gobi paratha,4.476256323,2,salty,5,5
+rahulchoudhary258@gmail.com,1109,methi paratha,4.56552191,2,salty,3,3
+rahulchoudhary258@gmail.com,1111,methi and palak paratha,4.425591898,2,salty,2,3
+rahulchoudhary258@gmail.com,1162,palak paratha,4.486535535,2,salty,1,2
+rahulchoudhary258@gmail.com,1163,palak paratha,4.403066543,2,salty,1,2
+rahulchoudhary258@gmail.com,1175,paneer paratha,4.391590299,2,salty,4,5
+rahulchoudhary258@gmail.com,1221,spicy prawn soup,2.71011376,2,salty,1,3
+rahulchoudhary258@gmail.com,1222,prawn laksa soup,2.676103735,2,salty,1,1
+rahulchoudhary258@gmail.com,1228,pudina paratha,4.45953842,2,salty,1,3
+rahuljosephite1798@gmail.com,116,sweet bread,4.613723621,1,savoury,3,6
+rahuljosephite1798@gmail.com,193,barbeque chicken,4.413340421,1,savoury,4,8
+rahuljosephite1798@gmail.com,235,chickpea curry,4.529398687,1,savoury,3,6
+rahuljosephite1798@gmail.com,405,mediterranean yellow rice and vegetables,1.402959996,1,savoury,2,5
+rahuljosephite1798@gmail.com,412,spicy onions,1.45998699,1,savoury,3,7
+rahuljosephite1798@gmail.com,622,cumin lassi,0.992040579,1,savoury,2,5
+rahuljosephite1798@gmail.com,760,bacon wraps,1.510619215,1,savoury,2,5
+rahuljosephite1798@gmail.com,790,cajun skillet pasta,4.396968129,1,savoury,3,6
+rahuljosephite1798@gmail.com,805,cheese fondue,4.397214917,1,savoury,3,7
+rahuljosephite1798@gmail.com,808,texas cheese fries,4.770240429,1,savoury,4,8
+rahuljosephite1798@gmail.com,883,chocolate brownie,4.574833194,1,savoury,4,8
+rahuljosephite1798@gmail.com,978,fried fish,1.526288792,1,savoury,3,7
+rahuljosephite1798@gmail.com,1029,gulab jamun,4.411727467,1,savoury,4,9
+rahuljosephite1798@gmail.com,1047,jalebi,4.417017939,1,savoury,4,8
+rahuljosephite1798@gmail.com,1221,spicy prawn soup,4.575285089,1,savoury,4,8
+rajkumargosai6891@gmail.com,170,rajma,3.467712426,3,bitter,-1,-1
+rajkumargosai6891@gmail.com,511,rabri,4.04582619,3,bitter,-1,-1
+rajkumargosai6891@gmail.com,533,pudina chutney,4.036790108,3,bitter,-1,-1
+rajkumargosai6891@gmail.com,574,masala chai,3.459896209,3,bitter,-1,-1
+rajkumargosai6891@gmail.com,660,chicken phaal,3.458044826,3,bitter,-1,-1
+rajkumargosai6891@gmail.com,718,peanut chaat,4.03529174,3,bitter,-1,-1
+rajkumargosai6891@gmail.com,926,bread dahi vada,4.033256825,3,bitter,-1,-1
+rajkumargosai6891@gmail.com,970,fish and chips,4.065185511,3,bitter,-1,-1
+rajkumargosai6891@gmail.com,998,acai fruit bowl,4.072937126,3,bitter,-1,-1
+rajkumargosai6891@gmail.com,1006,rainbow fruit salad,4.032383013,3,bitter,-1,-1
+rajkumargosai6891@gmail.com,1052,kachori,4.071794683,3,bitter,-1,-1
+rajkumargosai6891@gmail.com,1092,mango pickle,3.468114234,3,bitter,-1,-1
+rajkumargosai6891@gmail.com,1294,sushi,4.028647782,3,bitter,-1,-1
+rajkumargosai6891@gmail.com,1321,vangi bath,3.457222255,3,bitter,-1,-1
+rajkumargosai6891@gmail.com,1377,watermelon juice,4.096263208,3,bitter,-1,-1
+ramya9411@gmail.com,116,sweet bread,5.024632469,1,rich,4,6
+ramya9411@gmail.com,176,nariyal burfi,1.857983395,1,rich,2,7
+ramya9411@gmail.com,193,barbeque chicken,4.856906021,1,rich,4,7
+ramya9411@gmail.com,234,tofu curry salad,4.783856986,1,rich,1,3
+ramya9411@gmail.com,235,chickpea curry,4.830977803,1,rich,3,5
+ramya9411@gmail.com,405,mediterranean yellow rice and vegetables,1.864566809,1,rich,3,4
+ramya9411@gmail.com,622,cumin lassi,1.23689366,1,rich,1,6
+ramya9411@gmail.com,663,dosa,4.811102601,1,rich,5,6
+ramya9411@gmail.com,760,bacon wraps,1.918030488,1,rich,1,8
+ramya9411@gmail.com,790,cajun skillet pasta,4.784297028,1,rich,3,7
+ramya9411@gmail.com,808,texas cheese fries,5.283295879,1,rich,5,9
+ramya9411@gmail.com,883,chocolate brownie,4.882048936,1,rich,5,9
+ramya9411@gmail.com,978,fried fish,1.850868875,1,rich,4,7
+ramya9411@gmail.com,1047,jalebi,4.888584115,1,rich,4,9
+ramya9411@gmail.com,1221,spicy prawn soup,4.986544201,1,rich,5,7
+randrew.1996@gmail.com,116,sweet bread,4.367747648,1,sour,3,0
+randrew.1996@gmail.com,176,nariyal burfi,1.369454251,1,sour,4,0
+randrew.1996@gmail.com,193,barbeque chicken,4.296751225,1,sour,5,5
+randrew.1996@gmail.com,235,chickpea curry,4.368633287,1,sour,2,6
+randrew.1996@gmail.com,622,cumin lassi,0.581252702,1,sour,2,4
+randrew.1996@gmail.com,760,bacon wraps,1.234279483,1,sour,5,2
+randrew.1996@gmail.com,805,cheese fondue,4.28992502,1,sour,5,4
+randrew.1996@gmail.com,808,texas cheese fries,4.536670872,1,sour,5,0
+randrew.1996@gmail.com,883,chocolate brownie,4.426809399,1,sour,4,0
+randrew.1996@gmail.com,892,chocolate milkshake,4.266603324,1,sour,5,0
+randrew.1996@gmail.com,978,fried fish,1.328554144,1,sour,4,2
+randrew.1996@gmail.com,1047,jalebi,4.276295743,1,sour,5,0
+randrew.1996@gmail.com,1221,spicy prawn soup,4.578247793,1,sour,2,6
+randrew.1996@gmail.com,1233,ragi balls,1.407176251,1,sour,1,0
+randrew.1996@gmail.com,1284,strawberry milkshake,4.2792469,1,sour,3,0
+rashisharma6495@gmail.com,12,mulligatawny soup,4.544090548,1,savoury,-1,-1
+rashisharma6495@gmail.com,68,relish,4.644377187,1,savoury,-1,-1
+rashisharma6495@gmail.com,98,chickpea curry,4.701877405,1,savoury,-1,-1
+rashisharma6495@gmail.com,412,spicy onions,1.359552125,1,savoury,-1,-1
+rashisharma6495@gmail.com,453,sweet and sour chutney,4.584743771,1,savoury,-1,-1
+rashisharma6495@gmail.com,622,cumin lassi,0.931347325,1,savoury,-1,-1
+rashisharma6495@gmail.com,805,cheese fondue,4.649885048,1,savoury,-1,-1
+rashisharma6495@gmail.com,808,texas cheese fries,4.774873178,1,savoury,-1,-1
+rashisharma6495@gmail.com,892,chocolate milkshake,4.722987386,1,savoury,-1,-1
+rashisharma6495@gmail.com,954,egg rolls,1.236078736,1,savoury,-1,-1
+rashisharma6495@gmail.com,1038,cinnamon ice cream,4.63035657,1,savoury,-1,-1
+rashisharma6495@gmail.com,1149,oats,1.139759845,1,savoury,-1,-1
+rashisharma6495@gmail.com,1221,spicy prawn soup,4.776259686,1,savoury,-1,-1
+rashisharma6495@gmail.com,1233,ragi balls,1.392218674,1,savoury,-1,-1
+rashisharma6495@gmail.com,1284,strawberry milkshake,4.71618333,1,savoury,-1,-1
+rheaanand96@gmail.com,752,aloo paratha,2.28624861,2,sour,3,6
+rheaanand96@gmail.com,1020,gobi paratha,2.488692526,2,sour,3,7
+rheaanand96@gmail.com,1021,gobi paratha,2.486190939,2,sour,3,7
+rheaanand96@gmail.com,1068,methi khakhra,4.579614765,2,sour,2,3
+rheaanand96@gmail.com,1069,bajra khakhra,4.590074529,2,sour,1,2
+rheaanand96@gmail.com,1088,manchow soup,4.650760666,2,sour,2,4
+rheaanand96@gmail.com,1155,onion parathas,2.158241154,2,sour,3,7
+rheaanand96@gmail.com,1156,onion paratha,2.441948883,2,sour,3,7
+rheaanand96@gmail.com,1281,vegetable stir-fry,4.699339419,2,sour,2,3
+rheaanand96@gmail.com,1333,fried rice,4.717497601,2,sour,1,1
+rheaanand96@gmail.com,1341,veg manchurian,4.59605167,2,sour,4,7
+rheaanand96@gmail.com,1343,veg momos,4.547993093,2,sour,4,8
+rheaanand96@gmail.com,1344,veg momos,4.547993093,2,sour,4,8
+rheaanand96@gmail.com,1346,veg hakka noodles,4.723249505,2,sour,3,6
+rheaanand96@gmail.com,1360,veg spring roll,4.667218941,2,sour,3,6
+rishabhxtreem@gmail.com,12,mulligatawny soup,4.859593846,1,sour,-1,-1
+rishabhxtreem@gmail.com,116,sweet bread,5.121261621,1,sour,-1,-1
+rishabhxtreem@gmail.com,176,nariyal burfi,1.679296267,1,sour,-1,-1
+rishabhxtreem@gmail.com,279,paneer butter masala,4.89274476,1,sour,-1,-1
+rishabhxtreem@gmail.com,412,spicy onions,2.026282607,1,sour,-1,-1
+rishabhxtreem@gmail.com,622,cumin lassi,1.657477419,1,sour,-1,-1
+rishabhxtreem@gmail.com,805,cheese fondue,4.944066679,1,sour,-1,-1
+rishabhxtreem@gmail.com,808,texas cheese fries,5.253179688,1,sour,-1,-1
+rishabhxtreem@gmail.com,817,chicken biriyani,4.837704108,1,sour,-1,-1
+rishabhxtreem@gmail.com,883,chocolate brownie,4.873429682,1,sour,-1,-1
+rishabhxtreem@gmail.com,978,fried fish,2.025158312,1,sour,-1,-1
+rishabhxtreem@gmail.com,1029,gulab jamun,4.856587525,1,sour,-1,-1
+rishabhxtreem@gmail.com,1047,jalebi,4.966272477,1,sour,-1,-1
+rishabhxtreem@gmail.com,1221,spicy prawn soup,5.060679226,1,sour,-1,-1
+rishabhxtreem@gmail.com,1233,ragi balls,2.002651325,1,sour,-1,-1
+saachi1208@gmail.com,158,vegetable bhaji,4.407469606,2,salty,4,8
+saachi1208@gmail.com,389,chana masala,4.96074989,2,salty,4,8
+saachi1208@gmail.com,562,kheer,4.362912507,2,salty,3,8
+saachi1208@gmail.com,643,kobbari louz,4.394512304,2,salty,2,1
+saachi1208@gmail.com,664,paratha,4.942792251,2,salty,3,8
+saachi1208@gmail.com,713,almond burfi,4.389992823,2,salty,4,1
+saachi1208@gmail.com,759,babycorn manchurian,4.967674479,2,salty,5,7
+saachi1208@gmail.com,1020,gobi paratha,4.964551842,2,salty,4,9
+saachi1208@gmail.com,1110,methi paratha,4.966120327,2,salty,4,8
+saachi1208@gmail.com,1111,methi and palak paratha,4.956901169,2,salty,4,8
+saachi1208@gmail.com,1133,chilli mushroom,4.977648223,2,salty,5,9
+saachi1208@gmail.com,1155,onion parathas,4.961502372,2,salty,4,8
+saachi1208@gmail.com,1156,onion paratha,4.975230322,2,salty,4,8
+saachi1208@gmail.com,1173,paneer paratha,4.987925365,2,salty,5,7
+saachi1208@gmail.com,1268,kheer,4.447150918,2,salty,3,8
+sahebsingharora@gmail.com,196,spiced rice treats,4.74364491,2,sweet,5,1
+sahebsingharora@gmail.com,203,carrot,4.545856989,2,sweet,4,7
+sahebsingharora@gmail.com,346,sooji upma,4.548760402,2,sweet,4,9
+sahebsingharora@gmail.com,413,tomato soup,4.589776246,2,sweet,2,2
+sahebsingharora@gmail.com,419,vegetable rice,4.600713002,2,sweet,4,6
+sahebsingharora@gmail.com,527,kesari bhat,4.652742749,2,sweet,3,5
+sahebsingharora@gmail.com,544,atta halwa,4.552598967,2,sweet,4,5
+sahebsingharora@gmail.com,664,paratha,2.228053289,2,sweet,5,1
+sahebsingharora@gmail.com,715,holige,4.617427866,2,sweet,2,1
+sahebsingharora@gmail.com,752,aloo paratha,2.214170711,2,sweet,5,10
+sahebsingharora@gmail.com,1155,onion parathas,2.126075368,2,sweet,5,3
+sahebsingharora@gmail.com,1156,onion paratha,2.304554934,2,sweet,5,3
+sahebsingharora@gmail.com,1227,garlic pudina paratha,2.251117249,2,sweet,4,1
+sahebsingharora@gmail.com,1251,rava idli,4.609207765,2,sweet,5,4
+sahebsingharora@gmail.com,1321,vangi bath,4.5819193,2,sweet,4,4
+sahiti.n@stjohns.in,56,dal,3.815414699,2,salty,-1,-1
+sahiti.n@stjohns.in,255,paneer curry,3.817091032,2,salty,-1,-1
+sahiti.n@stjohns.in,454,egg halwa,3.854264958,2,salty,-1,-1
+sahiti.n@stjohns.in,482,dal makhani,3.8256859,2,salty,-1,-1
+sahiti.n@stjohns.in,523,carrot soup,3.034498314,2,salty,-1,-1
+sahiti.n@stjohns.in,527,kesari bhat,3.812335567,2,salty,-1,-1
+sahiti.n@stjohns.in,544,atta halwa,3.84702164,2,salty,-1,-1
+sahiti.n@stjohns.in,650,mousse,3.878168731,2,salty,-1,-1
+sahiti.n@stjohns.in,784,burnt garlic fried rice,2.920028035,2,salty,-1,-1
+sahiti.n@stjohns.in,1061,kaju katli,3.811803053,2,salty,-1,-1
+sahiti.n@stjohns.in,1068,methi khakhra,3.827515427,2,salty,-1,-1
+sahiti.n@stjohns.in,1069,bajra khakhra,3.851188725,2,salty,-1,-1
+sahiti.n@stjohns.in,1133,chilli mushroom,3.012835958,2,salty,-1,-1
+sahiti.n@stjohns.in,1333,fried rice,2.891571945,2,salty,-1,-1
+sahiti.n@stjohns.in,1363,vegetable stew,2.964698971,2,salty,-1,-1
+samarthjaidev97@gmail.com,68,relish,4.374680803,1,savoury,4,8
+samarthjaidev97@gmail.com,98,chickpea curry,4.243197364,1,savoury,5,9
+samarthjaidev97@gmail.com,156,green chutney,4.261981087,1,savoury,4,9
+samarthjaidev97@gmail.com,176,nariyal burfi,0.918263368,1,savoury,3,7
+samarthjaidev97@gmail.com,188,spiced rice,4.205313926,1,savoury,5,10
+samarthjaidev97@gmail.com,243,masoor dal,1.521688327,1,savoury,3,6
+samarthjaidev97@gmail.com,412,spicy onions,1.057260669,1,savoury,4,7
+samarthjaidev97@gmail.com,453,sweet and sour chutney,4.377828607,1,savoury,3,6
+samarthjaidev97@gmail.com,622,cumin lassi,0.71269208,1,savoury,4,8
+samarthjaidev97@gmail.com,663,dosa,4.205796296,1,savoury,5,9
+samarthjaidev97@gmail.com,787,butterscotch cake,4.290700059,1,savoury,5,10
+samarthjaidev97@gmail.com,883,chocolate brownie,4.567865127,1,savoury,5,10
+samarthjaidev97@gmail.com,1002,fruit ice cream,4.210538891,1,savoury,3,6
+samarthjaidev97@gmail.com,1233,ragi balls,1.056886139,1,savoury,1,4
+samarthjaidev97@gmail.com,1242,rajma chawal,4.609692157,1,savoury,4,9
+sandeeppvn@gmail.com,196,spiced rice treats,3.858620841,2,bitter,-1,-1
+sandeeppvn@gmail.com,454,egg halwa,3.957324788,2,bitter,-1,-1
+sandeeppvn@gmail.com,527,kesari bhat,3.97764272,2,bitter,-1,-1
+sandeeppvn@gmail.com,529,rava laddu,3.831430532,2,bitter,-1,-1
+sandeeppvn@gmail.com,626,annam-kobbari parvanam,3.769906355,2,bitter,-1,-1
+sandeeppvn@gmail.com,633,paalu mithai,3.831430532,2,bitter,-1,-1
+sandeeppvn@gmail.com,715,holige,3.813338834,2,bitter,-1,-1
+sandeeppvn@gmail.com,752,aloo paratha,2.571737256,2,bitter,-1,-1
+sandeeppvn@gmail.com,930,methi dal,2.59604214,2,bitter,-1,-1
+sandeeppvn@gmail.com,945,snickerdoodle donuts,3.808849638,2,bitter,-1,-1
+sandeeppvn@gmail.com,1021,gobi paratha,2.613348571,2,bitter,-1,-1
+sandeeppvn@gmail.com,1049,jalebi,3.771366185,2,bitter,-1,-1
+sandeeppvn@gmail.com,1065,kesari bath,3.778398173,2,bitter,-1,-1
+sandeeppvn@gmail.com,1155,onion parathas,2.478110505,2,bitter,-1,-1
+sandeeppvn@gmail.com,1173,paneer paratha,2.626989121,2,bitter,-1,-1
+sanjana0796@gmail.com,56,dal,4.05570242,2,sour,-1,-1
+sanjana0796@gmail.com,71,potato curry,4.040184479,2,sour,-1,-1
+sanjana0796@gmail.com,103,saag paneer,4.062796083,2,sour,-1,-1
+sanjana0796@gmail.com,126,naan,2.41438403,2,sour,-1,-1
+sanjana0796@gmail.com,287,naan,2.531378104,2,sour,-1,-1
+sanjana0796@gmail.com,631,dosa podi with garlic,4.090470847,2,sour,-1,-1
+sanjana0796@gmail.com,664,paratha,2.428932593,2,sour,-1,-1
+sanjana0796@gmail.com,770,bisi bele bath,4.051048548,2,sour,-1,-1
+sanjana0796@gmail.com,934,dal tadka,4.026768267,2,sour,-1,-1
+sanjana0796@gmail.com,935,dal tadka,4.064854604,2,sour,-1,-1
+sanjana0796@gmail.com,1094,paneer masala dosa,4.179844121,2,sour,-1,-1
+sanjana0796@gmail.com,1095,paneer masala dosa,4.104006917,2,sour,-1,-1
+sanjana0796@gmail.com,1096,masala dosa with red chutney,4.146104502,2,sour,-1,-1
+sanjana0796@gmail.com,1155,onion parathas,2.564743644,2,sour,-1,-1
+sanjana0796@gmail.com,1227,garlic pudina paratha,2.448022627,2,sour,-1,-1
+sarahmteekay@gmail.com,329,prawns,4.365863785,2,sour,5,0
+sarahmteekay@gmail.com,438,spicy chicken,3.946433688,2,sour,4,1
+sarahmteekay@gmail.com,837,chicken manchurian,3.986345165,2,sour,4,2
+sarahmteekay@gmail.com,839,chicken momo,4.161766617,2,sour,5,2
+sarahmteekay@gmail.com,1015,gobi manchurian,3.945541076,2,sour,2,2
+sarahmteekay@gmail.com,1022,gobi paratha,2.346630761,2,sour,2,1
+sarahmteekay@gmail.com,1162,palak paratha,2.372133108,2,sour,1,1
+sarahmteekay@gmail.com,1173,paneer paratha,2.428502495,2,sour,3,1
+sarahmteekay@gmail.com,1175,paneer paratha,2.457759731,2,sour,3,1
+sarahmteekay@gmail.com,1221,spicy prawn soup,4.056799115,2,sour,3,1
+sarahmteekay@gmail.com,1228,pudina paratha,2.21167377,2,sour,1,1
+sarahmteekay@gmail.com,1340,veg manchurian,3.908536768,2,sour,1,1
+sarahmteekay@gmail.com,1342,veg momos,4.170094785,2,sour,3,1
+sarahmteekay@gmail.com,1343,veg momos,4.068717968,2,sour,3,1
+sarahmteekay@gmail.com,1344,veg momos,4.068717968,2,sour,3,1
+Saurabhsachar745@gmail.com,116,sweet bread,4.602145763,2,sour,3,6
+Saurabhsachar745@gmail.com,126,naan,4.501558116,2,sour,4,7
+Saurabhsachar745@gmail.com,270,chicken curry,4.509480833,2,sour,4,8
+Saurabhsachar745@gmail.com,287,naan,4.53060691,2,sour,4,8
+Saurabhsachar745@gmail.com,369,lassi,3.500913845,2,sour,5,10
+Saurabhsachar745@gmail.com,556,onion dipping sauce,4.504012724,2,sour,3,7
+Saurabhsachar745@gmail.com,582,spicy egg & minced lamb roll,4.553098451,2,sour,4,9
+Saurabhsachar745@gmail.com,622,cumin lassi,3.500913845,2,sour,3,5
+Saurabhsachar745@gmail.com,645,aaku pappu,3.536642265,2,sour,3,6
+Saurabhsachar745@gmail.com,752,aloo paratha,4.527246608,2,sour,4,8
+Saurabhsachar745@gmail.com,770,bisi bele bath,3.611703287,2,sour,4,6
+Saurabhsachar745@gmail.com,771,bisi bele bath,3.647155365,2,sour,3,6
+Saurabhsachar745@gmail.com,922,puri,4.645747357,2,sour,4,9
+Saurabhsachar745@gmail.com,1176,puri,4.645747357,2,sour,4,9
+Saurabhsachar745@gmail.com,1228,pudina paratha,4.566547994,2,sour,4,8
+shahsalonee68@gmail.com,68,relish,4.214416689,1,bitter,-1,-1
+shahsalonee68@gmail.com,98,chickpea curry,4.017549464,1,bitter,-1,-1
+shahsalonee68@gmail.com,116,sweet bread,3.917912094,1,bitter,-1,-1
+shahsalonee68@gmail.com,176,nariyal burfi,0.790948651,1,bitter,-1,-1
+shahsalonee68@gmail.com,188,spiced rice,3.967844285,1,bitter,-1,-1
+shahsalonee68@gmail.com,391,frizzled onions,1.221413831,1,bitter,-1,-1
+shahsalonee68@gmail.com,412,spicy onions,0.643017251,1,bitter,-1,-1
+shahsalonee68@gmail.com,453,sweet and sour chutney,4.113335658,1,bitter,-1,-1
+shahsalonee68@gmail.com,622,cumin lassi,0.453124857,1,bitter,-1,-1
+shahsalonee68@gmail.com,663,dosa,4.225189494,1,bitter,-1,-1
+shahsalonee68@gmail.com,787,butterscotch cake,4.090403064,1,bitter,-1,-1
+shahsalonee68@gmail.com,945,snickerdoodle donuts,3.936769164,1,bitter,-1,-1
+shahsalonee68@gmail.com,1002,fruit ice cream,3.935825072,1,bitter,-1,-1
+shahsalonee68@gmail.com,1233,ragi balls,1.047190621,1,bitter,-1,-1
+shahsalonee68@gmail.com,1242,rajma chawal,4.193011693,1,bitter,-1,-1
+shankarnanditha96@gmail.com,71,potato curry,3.120251636,2,savoury,-1,-1
+shankarnanditha96@gmail.com,121,channa masala,3.910352516,2,savoury,-1,-1
+shankarnanditha96@gmail.com,287,naan,3.890006866,2,savoury,-1,-1
+shankarnanditha96@gmail.com,389,chana masala,3.89193957,2,savoury,-1,-1
+shankarnanditha96@gmail.com,550,mulligatawny,3.004135396,2,savoury,-1,-1
+shankarnanditha96@gmail.com,631,dosa podi with garlic,3.113085943,2,savoury,-1,-1
+shankarnanditha96@gmail.com,664,paratha,3.924690285,2,savoury,-1,-1
+shankarnanditha96@gmail.com,733,pesaru pappu,3.085632202,2,savoury,-1,-1
+shankarnanditha96@gmail.com,759,babycorn manchurian,3.942669944,2,savoury,-1,-1
+shankarnanditha96@gmail.com,873,chilli paneer,3.902044063,2,savoury,-1,-1
+shankarnanditha96@gmail.com,1015,gobi manchurian,3.929762562,2,savoury,-1,-1
+shankarnanditha96@gmail.com,1096,masala dosa with red chutney,3.000682187,2,savoury,-1,-1
+shankarnanditha96@gmail.com,1133,chilli mushroom,3.918825347,2,savoury,-1,-1
+shankarnanditha96@gmail.com,1156,onion paratha,3.919004246,2,savoury,-1,-1
+shankarnanditha96@gmail.com,1173,paneer paratha,3.949859072,2,savoury,-1,-1
+shenoy.aditya796@gmail.com,31,mango lassi,4.445798478,2,savoury,-1,-1
+shenoy.aditya796@gmail.com,183,mango lassi,4.434432289,2,savoury,-1,-1
+shenoy.aditya796@gmail.com,245,mango lassi,4.434826589,2,savoury,-1,-1
+shenoy.aditya796@gmail.com,276,mango lassi,4.411495107,2,savoury,-1,-1
+shenoy.aditya796@gmail.com,369,lassi,4.444724158,2,savoury,-1,-1
+shenoy.aditya796@gmail.com,381,chutney,4.193684668,2,savoury,-1,-1
+shenoy.aditya796@gmail.com,584,strawberry lassi,4.172056606,2,savoury,-1,-1
+shenoy.aditya796@gmail.com,585,mango lassi,4.362503905,2,savoury,-1,-1
+shenoy.aditya796@gmail.com,622,cumin lassi,4.444724158,2,savoury,-1,-1
+shenoy.aditya796@gmail.com,721,palak paneer,4.184789543,2,savoury,-1,-1
+shenoy.aditya796@gmail.com,839,chicken momo,2.786305423,2,savoury,-1,-1
+shenoy.aditya796@gmail.com,1342,veg momos,2.854404862,2,savoury,-1,-1
+shenoy.aditya796@gmail.com,1343,veg momos,2.762962842,2,savoury,-1,-1
+shenoy.aditya796@gmail.com,1344,veg momos,2.762962842,2,savoury,-1,-1
+shenoy.aditya796@gmail.com,1362,veg spring roll,2.956584759,2,savoury,-1,-1
+Shoaib.addu@gmail.com,66,chilli coconut curry,4.897215565,1,sour,3,8
+Shoaib.addu@gmail.com,116,sweet bread,5.190941115,1,sour,1,0
+Shoaib.addu@gmail.com,176,nariyal burfi,1.875703771,1,sour,1,0
+Shoaib.addu@gmail.com,235,chickpea curry,4.995942997,1,sour,3,8
+Shoaib.addu@gmail.com,405,mediterranean yellow rice and vegetables,1.977655188,1,sour,1,6
+Shoaib.addu@gmail.com,412,spicy onions,1.963076017,1,sour,1,6
+Shoaib.addu@gmail.com,622,cumin lassi,1.682171208,1,sour,3,6
+Shoaib.addu@gmail.com,805,cheese fondue,4.928404669,1,sour,1,0
+Shoaib.addu@gmail.com,808,texas cheese fries,5.13825091,1,sour,5,10
+Shoaib.addu@gmail.com,817,chicken biriyani,4.901297685,1,sour,5,10
+Shoaib.addu@gmail.com,883,chocolate brownie,5.065716488,1,sour,3,3
+Shoaib.addu@gmail.com,1029,gulab jamun,4.969524103,1,sour,1,0
+Shoaib.addu@gmail.com,1062,karela sabzi,2.15083591,1,sour,1,0
+Shoaib.addu@gmail.com,1221,spicy prawn soup,5.163562105,1,sour,5,10
+Shoaib.addu@gmail.com,1284,strawberry milkshake,4.894331898,1,sour,5,3
+shradhaaparkar@gmail.com,12,mulligatawny soup,4.845324903,1,bitter,-1,-1
+shradhaaparkar@gmail.com,116,sweet bread,4.574703853,1,bitter,-1,-1
+shradhaaparkar@gmail.com,176,nariyal burfi,1.122277253,1,bitter,-1,-1
+shradhaaparkar@gmail.com,279,paneer butter masala,4.423438976,1,bitter,-1,-1
+shradhaaparkar@gmail.com,412,spicy onions,1.382499769,1,bitter,-1,-1
+shradhaaparkar@gmail.com,622,cumin lassi,1.370631023,1,bitter,-1,-1
+shradhaaparkar@gmail.com,805,cheese fondue,4.491713618,1,bitter,-1,-1
+shradhaaparkar@gmail.com,808,texas cheese fries,4.843793142,1,bitter,-1,-1
+shradhaaparkar@gmail.com,892,chocolate milkshake,4.457556989,1,bitter,-1,-1
+shradhaaparkar@gmail.com,954,egg rolls,1.422862362,1,bitter,-1,-1
+shradhaaparkar@gmail.com,1029,gulab jamun,4.590387575,1,bitter,-1,-1
+shradhaaparkar@gmail.com,1047,jalebi,4.474796189,1,bitter,-1,-1
+shradhaaparkar@gmail.com,1149,oats,1.156911704,1,bitter,-1,-1
+shradhaaparkar@gmail.com,1221,spicy prawn soup,4.520931692,1,bitter,-1,-1
+shradhaaparkar@gmail.com,1284,strawberry milkshake,4.440758464,1,bitter,-1,-1
+shravya11.kadur@gmail.com,31,mango lassi,3.792370728,3,sour,4,4
+shravya11.kadur@gmail.com,183,mango lassi,3.797883456,3,sour,4,4
+shravya11.kadur@gmail.com,195,jeera rice,3.418293301,3,sour,4,0
+shravya11.kadur@gmail.com,245,mango lassi,3.791200994,3,sour,4,4
+shravya11.kadur@gmail.com,260,besan halwa,3.80729443,3,sour,1,1
+shravya11.kadur@gmail.com,276,mango lassi,3.790089615,3,sour,4,4
+shravya11.kadur@gmail.com,286,green pea poulourie,3.374119451,3,sour,1,0
+shravya11.kadur@gmail.com,329,prawns,3.415004139,3,sour,3,0
+shravya11.kadur@gmail.com,386,banana lassi,3.820795635,3,sour,2,0
+shravya11.kadur@gmail.com,528,vegan yogurt sundae,3.971300762,3,sour,4,7
+shravya11.kadur@gmail.com,713,almond burfi,3.84061504,3,sour,2,1
+shravya11.kadur@gmail.com,757,apple pie,3.787792411,3,sour,2,1
+shravya11.kadur@gmail.com,1225,coffee protein shake,3.961641304,3,sour,1,0
+shravya11.kadur@gmail.com,1262,steamed rice,3.414785717,3,sour,3,0
+shravya11.kadur@gmail.com,1263,steamed rice,3.414248486,3,sour,3,0
+siddhantdutta991@gmail.com,137,chicken hariyali tikka,4.57201991,3,salty,4,5
+siddhantdutta991@gmail.com,146,cucumber peanut salad,4.475118279,3,salty,1,2
+siddhantdutta991@gmail.com,286,green pea poulourie,4.487670968,3,salty,3,7
+siddhantdutta991@gmail.com,450,tamarind-date chutney,4.228464152,3,salty,2,3
+siddhantdutta991@gmail.com,453,sweet and sour chutney,4.218826369,3,salty,5,2
+siddhantdutta991@gmail.com,528,vegan yogurt sundae,4.18518156,3,salty,1,2
+siddhantdutta991@gmail.com,608,cranberry chutney,4.227340703,3,salty,4,5
+siddhantdutta991@gmail.com,752,aloo paratha,4.457167255,3,salty,4,2
+siddhantdutta991@gmail.com,778,bread,4.46498088,3,salty,4,2
+siddhantdutta991@gmail.com,896,bhatura,4.469800748,3,salty,4,6
+siddhantdutta991@gmail.com,1217,potato wedges,4.584274477,3,salty,4,5
+siddhantdutta991@gmail.com,1225,coffee protein shake,4.218770483,3,salty,4,2
+siddhantdutta991@gmail.com,1296,tandoori roti,4.474655957,3,salty,4,2
+siddhantdutta991@gmail.com,1345,spicy veg noodles,4.468584693,3,salty,3,5
+siddhantdutta991@gmail.com,1346,veg hakka noodles,4.46245228,3,salty,3,5
+siddhi.kawle96@gmail.com,25,aloo phujia,4.0401673,2,bitter,-1,-1
+siddhi.kawle96@gmail.com,126,naan,2.563202723,2,bitter,-1,-1
+siddhi.kawle96@gmail.com,346,sooji upma,4.065918139,2,bitter,-1,-1
+siddhi.kawle96@gmail.com,475,zucchini soup with curry spices,4.049500273,2,bitter,-1,-1
+siddhi.kawle96@gmail.com,649,curry powder,4.077517917,2,bitter,-1,-1
+siddhi.kawle96@gmail.com,650,mousse,4.133251897,2,bitter,-1,-1
+siddhi.kawle96@gmail.com,664,paratha,2.614088052,2,bitter,-1,-1
+siddhi.kawle96@gmail.com,715,holige,4.078709334,2,bitter,-1,-1
+siddhi.kawle96@gmail.com,1068,methi khakhra,4.571157614,2,bitter,-1,-1
+siddhi.kawle96@gmail.com,1069,bajra khakhra,4.545079405,2,bitter,-1,-1
+siddhi.kawle96@gmail.com,1155,onion parathas,2.55581215,2,bitter,-1,-1
+siddhi.kawle96@gmail.com,1173,paneer paratha,2.596712888,2,bitter,-1,-1
+siddhi.kawle96@gmail.com,1227,garlic pudina paratha,2.598303315,2,bitter,-1,-1
+siddhi.kawle96@gmail.com,1251,rava idli,4.117484902,2,bitter,-1,-1
+siddhi.kawle96@gmail.com,1321,vangi bath,4.133950874,2,bitter,-1,-1
+soodsaurabh95@gmail.com,329,prawns,4.01499615,3,sour,5,0
+soodsaurabh95@gmail.com,533,pudina chutney,3.709757187,3,sour,2,5
+soodsaurabh95@gmail.com,718,peanut chaat,3.714864454,3,sour,4,3
+soodsaurabh95@gmail.com,840,chicken momo,4.005133387,3,sour,5,0
+soodsaurabh95@gmail.com,937,vegetable daliya khichdi,3.704970182,3,sour,1,0
+soodsaurabh95@gmail.com,1155,onion parathas,3.657810095,3,sour,3,0
+soodsaurabh95@gmail.com,1262,steamed rice,4.018476256,3,sour,1,0
+soodsaurabh95@gmail.com,1263,steamed rice,4.023507376,3,sour,1,0
+soodsaurabh95@gmail.com,1270,set dosa,4.019163115,3,sour,1,0
+soodsaurabh95@gmail.com,1328,shredded chicken burritos,3.661410131,3,sour,5,0
+soodsaurabh95@gmail.com,1333,fried rice,4.01882845,3,sour,3,0
+soodsaurabh95@gmail.com,1335,fried rice,3.993249189,3,sour,3,0
+soodsaurabh95@gmail.com,1342,veg momos,4.016331855,3,sour,1,0
+soodsaurabh95@gmail.com,1343,veg momos,3.993014342,3,sour,1,0
+soodsaurabh95@gmail.com,1381,rice,4.011201707,3,sour,2,0
+soundaryaramani96@gmail.com,84,chicken curry,4.6521352,2,bitter,-1,-1
+soundaryaramani96@gmail.com,381,chutney,4.551477362,2,bitter,-1,-1
+soundaryaramani96@gmail.com,506,pesarattu,3.211122722,2,bitter,-1,-1
+soundaryaramani96@gmail.com,571,kadai chicken,4.503072056,2,bitter,-1,-1
+soundaryaramani96@gmail.com,662,dosa,2.43926831,2,bitter,-1,-1
+soundaryaramani96@gmail.com,663,dosa,2.43926831,2,bitter,-1,-1
+soundaryaramani96@gmail.com,823,turkey chili,4.462175982,2,bitter,-1,-1
+soundaryaramani96@gmail.com,824,turkey chili,4.462175982,2,bitter,-1,-1
+soundaryaramani96@gmail.com,837,chicken manchurian,4.445532405,2,bitter,-1,-1
+soundaryaramani96@gmail.com,839,chicken momo,4.494552214,2,bitter,-1,-1
+soundaryaramani96@gmail.com,869,turkey chili,4.462175982,2,bitter,-1,-1
+soundaryaramani96@gmail.com,870,turkey chili,4.462175982,2,bitter,-1,-1
+soundaryaramani96@gmail.com,1015,gobi manchurian,4.458120092,2,bitter,-1,-1
+soundaryaramani96@gmail.com,1181,kuzhi paniyaram,3.235893481,2,bitter,-1,-1
+soundaryaramani96@gmail.com,1314,pesarattu,3.088252233,2,bitter,-1,-1
+sourabhcfc@gmail.com,409,besan ladoo,4.401741387,2,sweet,4,8
+sourabhcfc@gmail.com,454,egg halwa,4.542240827,2,sweet,2,5
+sourabhcfc@gmail.com,527,kesari bhat,4.498949071,2,sweet,5,10
+sourabhcfc@gmail.com,536,besan laddu,4.401741387,2,sweet,4,8
+sourabhcfc@gmail.com,544,atta halwa,4.420794718,2,sweet,2,5
+sourabhcfc@gmail.com,562,kheer,4.507646725,2,sweet,4,8
+sourabhcfc@gmail.com,643,kobbari louz,4.494233816,2,sweet,3,6
+sourabhcfc@gmail.com,715,holige,4.447650806,2,sweet,5,9
+sourabhcfc@gmail.com,1068,methi khakhra,4.597293336,2,sweet,4,3
+sourabhcfc@gmail.com,1069,bajra khakhra,4.624284963,2,sweet,3,4
+sourabhcfc@gmail.com,1088,manchow soup,2.950796164,2,sweet,3,5
+sourabhcfc@gmail.com,1341,veg manchurian,2.99735171,2,sweet,5,2
+sourabhcfc@gmail.com,1343,veg momos,2.968378415,2,sweet,4,3
+sourabhcfc@gmail.com,1344,veg momos,2.968378415,2,sweet,5,3
+sourabhcfc@gmail.com,1360,veg spring roll,2.939285126,2,sweet,4,2
+sp.1990@gmail.com,24,baingan bharta,2.333467216,2,bitter,2,2
+sp.1990@gmail.com,25,aloo phujia,1.361239984,2,bitter,5,1
+sp.1990@gmail.com,53,naan,2.638025244,2,bitter,3,1
+sp.1990@gmail.com,116,sweet bread,2.473324291,2,bitter,1,1
+sp.1990@gmail.com,126,naan,2.90064099,2,bitter,3,1
+sp.1990@gmail.com,216,paneer,2.565696237,2,bitter,5,1
+sp.1990@gmail.com,268,naan,2.513348881,2,bitter,3,1
+sp.1990@gmail.com,279,paneer butter masala,2.375260588,2,bitter,5,1
+sp.1990@gmail.com,287,naan,2.590413981,2,bitter,3,1
+sp.1990@gmail.com,400,lemon lentil rice,1.393456617,2,bitter,4,2
+sp.1990@gmail.com,518,vegetable pulao,1.400556257,2,bitter,4,1
+sp.1990@gmail.com,600,shahi tukray,2.700958746,2,bitter,3,2
+sp.1990@gmail.com,616,bread pudding,2.331237332,2,bitter,2,2
+sp.1990@gmail.com,1068,methi khakhra,1.18701263,2,bitter,1,2
+sp.1990@gmail.com,1069,bajra khakhra,1.260683644,2,bitter,1,2
+spoorti22596@gmail.com,195,jeera rice,3.932850787,3,salty,5,5
+spoorti22596@gmail.com,260,besan halwa,4.889323018,3,salty,3,2
+spoorti22596@gmail.com,409,besan ladoo,4.881128233,3,salty,4,2
+spoorti22596@gmail.com,527,kesari bhat,4.895183273,3,salty,3,1
+spoorti22596@gmail.com,529,rava laddu,4.884068354,3,salty,3,1
+spoorti22596@gmail.com,536,besan laddu,4.871776549,3,salty,4,0
+spoorti22596@gmail.com,633,paalu mithai,4.886700006,3,salty,2,1
+spoorti22596@gmail.com,643,kobbari louz,4.882378518,3,salty,2,2
+spoorti22596@gmail.com,713,almond burfi,4.908719769,3,salty,3,1
+spoorti22596@gmail.com,720,carrot and ginger chutney,4.001485482,3,salty,3,3
+spoorti22596@gmail.com,937,vegetable daliya khichdi,3.995500079,3,salty,3,5
+spoorti22596@gmail.com,1028,peach green tea,4.873122583,3,salty,2,1
+spoorti22596@gmail.com,1155,onion parathas,3.851513224,3,salty,3,5
+spoorti22596@gmail.com,1198,poha,3.998929175,3,salty,4,5
+spoorti22596@gmail.com,1225,coffee protein shake,4.897315343,3,salty,3,2
+sragvinik@gmail.com,116,sweet bread,4.335890568,1,savoury,4,9
+sragvinik@gmail.com,176,nariyal burfi,1.103641307,1,savoury,1,4
+sragvinik@gmail.com,234,tofu curry salad,4.222997063,1,savoury,3,6
+sragvinik@gmail.com,235,chickpea curry,4.208544692,1,savoury,4,6
+sragvinik@gmail.com,405,mediterranean yellow rice and vegetables,1.290642397,1,savoury,1,9
+sragvinik@gmail.com,622,cumin lassi,0.835180783,1,savoury,1,6
+sragvinik@gmail.com,760,bacon wraps,1.229992765,1,savoury,1,4
+sragvinik@gmail.com,790,cajun skillet pasta,4.149083996,1,savoury,4,8
+sragvinik@gmail.com,805,cheese fondue,4.158223331,1,savoury,4,2
+sragvinik@gmail.com,808,texas cheese fries,4.407179433,1,savoury,4,6
+sragvinik@gmail.com,817,chicken biriyani,4.165365735,1,savoury,5,5
+sragvinik@gmail.com,883,chocolate brownie,4.211958194,1,savoury,5,1
+sragvinik@gmail.com,1029,gulab jamun,4.201548923,1,savoury,5,3
+sragvinik@gmail.com,1149,oats,1.179334064,1,savoury,5,3
+sragvinik@gmail.com,1221,spicy prawn soup,4.410782988,1,savoury,2,8
+sricharantalanki@gmail.com,88,vegetable masala,2.997532135,2,rich,3,5
+sricharantalanki@gmail.com,105,green beans,3.054422712,2,rich,2,3
+sricharantalanki@gmail.com,158,vegetable bhaji,3.017283255,2,rich,3,7
+sricharantalanki@gmail.com,205,vegetable biryani,2.991317646,2,rich,4,8
+sricharantalanki@gmail.com,445,besan laddu,3.831155507,2,rich,4,5
+sricharantalanki@gmail.com,544,atta halwa,3.829194424,2,rich,3,4
+sricharantalanki@gmail.com,656,paneer tikka,3.816034501,2,rich,4,10
+sricharantalanki@gmail.com,759,babycorn manchurian,3.865537257,2,rich,4,7
+sricharantalanki@gmail.com,1060,kaju katli,3.816282487,2,rich,4,10
+sricharantalanki@gmail.com,1069,bajra khakhra,3.864798085,2,rich,3,5
+sricharantalanki@gmail.com,1088,manchow soup,3.826856925,2,rich,4,5
+sricharantalanki@gmail.com,1118,mixed vegetable curry,3.027273007,2,rich,4,6
+sricharantalanki@gmail.com,1133,chilli mushroom,3.824335742,2,rich,4,6
+sricharantalanki@gmail.com,1341,veg manchurian,3.801885527,2,rich,4,8
+sricharantalanki@gmail.com,1360,veg spring roll,3.83442758,2,rich,4,7
+srinidhi.nps@gmail.com,13,vegetarian korma,4.288362068,1,sour,4,2
+srinidhi.nps@gmail.com,20,chicken curry,4.280043291,1,sour,3,2
+srinidhi.nps@gmail.com,21,carrot rice,4.380629397,1,sour,2,1
+srinidhi.nps@gmail.com,116,sweet bread,4.364131898,1,sour,2,1
+srinidhi.nps@gmail.com,172,punjabi chicken gravy,1.373023022,1,sour,3,1
+srinidhi.nps@gmail.com,234,tofu curry salad,4.287257529,1,sour,2,4
+srinidhi.nps@gmail.com,235,chickpea curry,4.411470411,1,sour,1,4
+srinidhi.nps@gmail.com,387,wheat chapati,4.286958467,1,sour,3,2
+srinidhi.nps@gmail.com,405,mediterranean yellow rice and vegetables,1.240994986,1,sour,3,4
+srinidhi.nps@gmail.com,622,cumin lassi,0.540453968,1,sour,2,4
+srinidhi.nps@gmail.com,760,bacon wraps,1.132115732,1,sour,1,1
+srinidhi.nps@gmail.com,808,texas cheese fries,4.547859292,1,sour,5,2
+srinidhi.nps@gmail.com,883,chocolate brownie,4.456913148,1,sour,5,2
+srinidhi.nps@gmail.com,1062,karela sabzi,1.4509992,1,sour,1,9
+srinidhi.nps@gmail.com,1221,spicy prawn soup,4.602716532,1,sour,5,3
+sruthivenkat96@yahoo.in,176,nariyal burfi,2.390117999,1,sweet,1,10
+sruthivenkat96@yahoo.in,188,spiced rice,5.201985449,1,sweet,4,1
+sruthivenkat96@yahoo.in,243,masoor dal,2.592967128,1,sweet,3,1
+sruthivenkat96@yahoo.in,412,spicy onions,2.154178575,1,sweet,4,1
+sruthivenkat96@yahoo.in,459,potatoes with fresh ginger and chilies,5.1085909,1,sweet,5,1
+sruthivenkat96@yahoo.in,622,cumin lassi,1.685467322,1,sweet,1,5
+sruthivenkat96@yahoo.in,663,dosa,5.204999403,1,sweet,5,1
+sruthivenkat96@yahoo.in,787,butterscotch cake,5.401174343,1,sweet,4,9
+sruthivenkat96@yahoo.in,883,chocolate brownie,5.644956186,1,sweet,5,8
+sruthivenkat96@yahoo.in,945,snickerdoodle donuts,5.207436855,1,sweet,4,9
+sruthivenkat96@yahoo.in,1047,jalebi,5.12654795,1,sweet,5,10
+sruthivenkat96@yahoo.in,1191,pesto zucchini spaghetti,5.124742194,1,sweet,5,1
+sruthivenkat96@yahoo.in,1233,ragi balls,2.186162372,1,sweet,1,4
+sruthivenkat96@yahoo.in,1242,rajma chawal,5.468546843,1,sweet,4,1
+sruthivenkat96@yahoo.in,1245,rasgulas,5.325679267,1,sweet,5,9
+sry1995@gmail.com,68,relish,5.072749401,1,salty,4,7
+sry1995@gmail.com,116,sweet bread,4.972367679,1,salty,4,5
+sry1995@gmail.com,176,nariyal burfi,1.895499562,1,salty,3,5
+sry1995@gmail.com,188,spiced rice,4.956863163,1,salty,3,5
+sry1995@gmail.com,243,masoor dal,2.25498612,1,salty,3,5
+sry1995@gmail.com,412,spicy onions,1.865573115,1,salty,4,7
+sry1995@gmail.com,622,cumin lassi,1.685184906,1,salty,3,8
+sry1995@gmail.com,663,dosa,5.218914522,1,salty,5,8
+sry1995@gmail.com,787,butterscotch cake,5.16812495,1,salty,4,7
+sry1995@gmail.com,883,chocolate brownie,4.93497028,1,salty,5,9
+sry1995@gmail.com,945,snickerdoodle donuts,5.129068344,1,salty,4,7
+sry1995@gmail.com,1233,ragi balls,1.998731013,1,salty,2,6
+sry1995@gmail.com,1242,rajma chawal,5.23713982,1,salty,4,6
+sry1995@gmail.com,1259,red velvet cake,5.088069529,1,salty,2,7
+sry1995@gmail.com,1278,brussels sprouts salad,4.989513895,1,salty,3,6
+starsubi@gmail.com,164,gulab jamun,4.594670912,2,salty,5,1
+starsubi@gmail.com,454,egg halwa,4.716261493,2,salty,1,1
+starsubi@gmail.com,465,rasgullas,4.59915213,2,salty,5,1
+starsubi@gmail.com,527,kesari bhat,4.64553168,2,salty,3,5
+starsubi@gmail.com,562,kheer,4.702891022,2,salty,5,1
+starsubi@gmail.com,643,kobbari louz,4.65548049,2,salty,5,1
+starsubi@gmail.com,656,paneer tikka,3.636082057,2,salty,5,1
+starsubi@gmail.com,759,babycorn manchurian,3.679675065,2,salty,5,1
+starsubi@gmail.com,1029,gulab jamun,4.594670912,2,salty,5,1
+starsubi@gmail.com,1068,methi khakhra,4.686419385,2,salty,3,6
+starsubi@gmail.com,1069,bajra khakhra,4.737744585,2,salty,2,6
+starsubi@gmail.com,1088,manchow soup,3.750885783,2,salty,5,7
+starsubi@gmail.com,1125,motichoor ladoo,4.600916262,2,salty,5,1
+starsubi@gmail.com,1344,veg momos,3.751324893,2,salty,5,8
+starsubi@gmail.com,1360,veg spring roll,3.74893444,2,salty,5,7
+sumedh0803@gmail.com,195,jeera rice,2.057674052,3,savoury,-1,-1
+sumedh0803@gmail.com,527,kesari bhat,3.217539371,3,savoury,-1,-1
+sumedh0803@gmail.com,528,vegan yogurt sundae,3.236655958,3,savoury,-1,-1
+sumedh0803@gmail.com,622,cumin lassi,3.188149239,3,savoury,-1,-1
+sumedh0803@gmail.com,633,paalu mithai,3.168150781,3,savoury,-1,-1
+sumedh0803@gmail.com,713,almond burfi,3.218755854,3,savoury,-1,-1
+sumedh0803@gmail.com,970,fish and chips,2.09542578,3,savoury,-1,-1
+sumedh0803@gmail.com,1052,kachori,2.034388139,3,savoury,-1,-1
+sumedh0803@gmail.com,1223,vietnamese prawn soup,2.054132393,3,savoury,-1,-1
+sumedh0803@gmail.com,1225,coffee protein shake,3.33906735,3,savoury,-1,-1
+sumedh0803@gmail.com,1270,set dosa,3.165247591,3,savoury,-1,-1
+sumedh0803@gmail.com,1328,shredded chicken burritos,2.06518952,3,savoury,-1,-1
+sumedh0803@gmail.com,1342,veg momos,3.179043573,3,savoury,-1,-1
+sumedh0803@gmail.com,1343,veg momos,3.171249517,3,savoury,-1,-1
+sumedh0803@gmail.com,1344,veg momos,3.171249517,3,savoury,-1,-1
+syedtaha18.96@gmail.com,12,mulligatawny soup,4.381517628,1,salty,-1,-1
+syedtaha18.96@gmail.com,116,sweet bread,4.419024386,1,salty,-1,-1
+syedtaha18.96@gmail.com,176,nariyal burfi,1.012135448,1,salty,-1,-1
+syedtaha18.96@gmail.com,405,mediterranean yellow rice and vegetables,1.39825692,1,salty,-1,-1
+syedtaha18.96@gmail.com,622,cumin lassi,0.940204878,1,salty,-1,-1
+syedtaha18.96@gmail.com,805,cheese fondue,4.236113443,1,salty,-1,-1
+syedtaha18.96@gmail.com,808,texas cheese fries,4.574436879,1,salty,-1,-1
+syedtaha18.96@gmail.com,883,chocolate brownie,4.281422273,1,salty,-1,-1
+syedtaha18.96@gmail.com,892,chocolate milkshake,4.21116037,1,salty,-1,-1
+syedtaha18.96@gmail.com,978,fried fish,1.359684794,1,salty,-1,-1
+syedtaha18.96@gmail.com,1029,gulab jamun,4.295617056,1,salty,-1,-1
+syedtaha18.96@gmail.com,1047,jalebi,4.257353657,1,salty,-1,-1
+syedtaha18.96@gmail.com,1221,spicy prawn soup,4.433674039,1,salty,-1,-1
+syedtaha18.96@gmail.com,1233,ragi balls,1.425973193,1,salty,-1,-1
+syedtaha18.96@gmail.com,1284,strawberry milkshake,4.214886332,1,salty,-1,-1
+tanyaahmed12@yahoo.in,14,chicken tikka masala,4.625065488,1,rich,-1,-1
+tanyaahmed12@yahoo.in,116,sweet bread,4.871030413,1,rich,-1,-1
+tanyaahmed12@yahoo.in,176,nariyal burfi,1.671255841,1,rich,-1,-1
+tanyaahmed12@yahoo.in,193,barbeque chicken,4.579876474,1,rich,-1,-1
+tanyaahmed12@yahoo.in,412,spicy onions,1.619174728,1,rich,-1,-1
+tanyaahmed12@yahoo.in,622,cumin lassi,1.09328887,1,rich,-1,-1
+tanyaahmed12@yahoo.in,663,dosa,4.566055402,1,rich,-1,-1
+tanyaahmed12@yahoo.in,760,bacon wraps,1.677296198,1,rich,-1,-1
+tanyaahmed12@yahoo.in,805,cheese fondue,4.636461082,1,rich,-1,-1
+tanyaahmed12@yahoo.in,808,texas cheese fries,5.164424497,1,rich,-1,-1
+tanyaahmed12@yahoo.in,883,chocolate brownie,4.687761295,1,rich,-1,-1
+tanyaahmed12@yahoo.in,892,chocolate milkshake,4.555491542,1,rich,-1,-1
+tanyaahmed12@yahoo.in,978,fried fish,1.606454841,1,rich,-1,-1
+tanyaahmed12@yahoo.in,1047,jalebi,4.67850918,1,rich,-1,-1
+tanyaahmed12@yahoo.in,1221,spicy prawn soup,4.76735627,1,rich,-1,-1
+thesinghs23@gmail.com,137,chicken hariyali tikka,3.515905332,3,salty,-1,-1
+thesinghs23@gmail.com,195,jeera rice,2.964559138,3,salty,-1,-1
+thesinghs23@gmail.com,260,besan halwa,3.47482096,3,salty,-1,-1
+thesinghs23@gmail.com,528,vegan yogurt sundae,3.49042897,3,salty,-1,-1
+thesinghs23@gmail.com,529,rava laddu,3.473569523,3,salty,-1,-1
+thesinghs23@gmail.com,633,paalu mithai,3.48246963,3,salty,-1,-1
+thesinghs23@gmail.com,713,almond burfi,3.473699951,3,salty,-1,-1
+thesinghs23@gmail.com,757,apple pie,3.506287272,3,salty,-1,-1
+thesinghs23@gmail.com,945,snickerdoodle donuts,3.505591858,3,salty,-1,-1
+thesinghs23@gmail.com,1045,lemon pickle,3.101957542,3,salty,-1,-1
+thesinghs23@gmail.com,1217,potato wedges,3.474843879,3,salty,-1,-1
+thesinghs23@gmail.com,1223,vietnamese prawn soup,3.003544656,3,salty,-1,-1
+thesinghs23@gmail.com,1225,coffee protein shake,3.526903832,3,salty,-1,-1
+thesinghs23@gmail.com,1226,strawberry protein shake,3.090875248,3,salty,-1,-1
+thesinghs23@gmail.com,1294,sushi,3.076877591,3,salty,-1,-1
+tintinjoshi10@gmail.com,68,relish,4.628845649,1,savoury,-1,-1
+tintinjoshi10@gmail.com,98,chickpea curry,4.521268088,1,savoury,-1,-1
+tintinjoshi10@gmail.com,156,green chutney,4.385110353,1,savoury,-1,-1
+tintinjoshi10@gmail.com,176,nariyal burfi,1.159453772,1,savoury,-1,-1
+tintinjoshi10@gmail.com,412,spicy onions,1.143264631,1,savoury,-1,-1
+tintinjoshi10@gmail.com,453,sweet and sour chutney,4.602369815,1,savoury,-1,-1
+tintinjoshi10@gmail.com,622,cumin lassi,0.785088912,1,savoury,-1,-1
+tintinjoshi10@gmail.com,663,dosa,4.511794201,1,savoury,-1,-1
+tintinjoshi10@gmail.com,787,butterscotch cake,4.4375331,1,savoury,-1,-1
+tintinjoshi10@gmail.com,945,snickerdoodle donuts,4.394591633,1,savoury,-1,-1
+tintinjoshi10@gmail.com,1062,karela sabzi,1.393538194,1,savoury,-1,-1
+tintinjoshi10@gmail.com,1194,pizza,4.329505771,1,savoury,-1,-1
+tintinjoshi10@gmail.com,1233,ragi balls,1.427855441,1,savoury,-1,-1
+tintinjoshi10@gmail.com,1242,rajma chawal,4.552971738,1,savoury,-1,-1
+tintinjoshi10@gmail.com,1259,red velvet cake,4.427931718,1,savoury,-1,-1
+varshasswamy@gmail.com,68,relish,5.001153497,1,rich,-1,-1
+varshasswamy@gmail.com,176,nariyal burfi,2.079540496,1,rich,-1,-1
+varshasswamy@gmail.com,188,spiced rice,4.976147248,1,rich,-1,-1
+varshasswamy@gmail.com,243,masoor dal,2.210589168,1,rich,-1,-1
+varshasswamy@gmail.com,412,spicy onions,1.745908299,1,rich,-1,-1
+varshasswamy@gmail.com,459,potatoes with fresh ginger and chilies,4.895237914,1,rich,-1,-1
+varshasswamy@gmail.com,622,cumin lassi,1.364423474,1,rich,-1,-1
+varshasswamy@gmail.com,663,dosa,5.050456315,1,rich,-1,-1
+varshasswamy@gmail.com,787,butterscotch cake,5.091363188,1,rich,-1,-1
+varshasswamy@gmail.com,883,chocolate brownie,5.299155784,1,rich,-1,-1
+varshasswamy@gmail.com,945,snickerdoodle donuts,5.038460537,1,rich,-1,-1
+varshasswamy@gmail.com,1233,ragi balls,1.940517696,1,rich,-1,-1
+varshasswamy@gmail.com,1242,rajma chawal,5.296150653,1,rich,-1,-1
+varshasswamy@gmail.com,1245,rasgulas,4.859491069,1,rich,-1,-1
+varshasswamy@gmail.com,1259,red velvet cake,4.964946468,1,rich,-1,-1
+veenakadkol@gmail.com,68,relish,4.194957517,1,rich,-1,-1
+veenakadkol@gmail.com,116,sweet bread,4.124647758,1,rich,-1,-1
+veenakadkol@gmail.com,176,nariyal burfi,0.930062962,1,rich,-1,-1
+veenakadkol@gmail.com,188,spiced rice,4.179231078,1,rich,-1,-1
+veenakadkol@gmail.com,412,spicy onions,0.79105742,1,rich,-1,-1
+veenakadkol@gmail.com,622,cumin lassi,0.878051181,1,rich,-1,-1
+veenakadkol@gmail.com,663,dosa,4.601194724,1,rich,-1,-1
+veenakadkol@gmail.com,787,butterscotch cake,4.225242543,1,rich,-1,-1
+veenakadkol@gmail.com,892,chocolate milkshake,4.211609442,1,rich,-1,-1
+veenakadkol@gmail.com,1002,fruit ice cream,4.127202123,1,rich,-1,-1
+veenakadkol@gmail.com,1149,oats,1.464791416,1,rich,-1,-1
+veenakadkol@gmail.com,1164,pancake,4.408650397,1,rich,-1,-1
+veenakadkol@gmail.com,1233,ragi balls,1.220435441,1,rich,-1,-1
+veenakadkol@gmail.com,1242,rajma chawal,4.198923195,1,rich,-1,-1
+veenakadkol@gmail.com,1278,brussels sprouts salad,4.309833009,1,rich,-1,-1
+vidhigohil840@gmail.com,53,naan,3.791247269,3,bitter,-1,-1
+vidhigohil840@gmail.com,88,vegetable masala,3.985136789,3,bitter,-1,-1
+vidhigohil840@gmail.com,113,carrots peas and potatoes,3.979155361,3,bitter,-1,-1
+vidhigohil840@gmail.com,126,naan,3.770782945,3,bitter,-1,-1
+vidhigohil840@gmail.com,158,vegetable bhaji,3.972284299,3,bitter,-1,-1
+vidhigohil840@gmail.com,195,jeera rice,4.034776067,3,bitter,-1,-1
+vidhigohil840@gmail.com,232,curry,3.976151016,3,bitter,-1,-1
+vidhigohil840@gmail.com,400,lemon lentil rice,3.978411652,3,bitter,-1,-1
+vidhigohil840@gmail.com,720,carrot and ginger chutney,4.005883889,3,bitter,-1,-1
+vidhigohil840@gmail.com,937,vegetable daliya khichdi,3.979922341,3,bitter,-1,-1
+vidhigohil840@gmail.com,947,glazed donuts,3.782800913,3,bitter,-1,-1
+vidhigohil840@gmail.com,1118,mixed vegetable curry,3.985909306,3,bitter,-1,-1
+vidhigohil840@gmail.com,1158,orange juice,3.969015288,3,bitter,-1,-1
+vidhigohil840@gmail.com,1203,popcorn,3.791963129,3,bitter,-1,-1
+vidhigohil840@gmail.com,1296,tandoori roti,3.783911818,3,bitter,-1,-1
+vishalkks@gmail.com,389,chana masala,3.748117794,2,salty,5,0
+vishalkks@gmail.com,550,mulligatawny,3.554876992,2,salty,1,0
+vishalkks@gmail.com,600,shahi tukray,4.872520697,2,salty,1,0
+vishalkks@gmail.com,752,aloo paratha,3.647956039,2,salty,5,5
+vishalkks@gmail.com,1088,manchow soup,4.802265464,2,salty,4,7
+vishalkks@gmail.com,1096,masala dosa with red chutney,3.664341969,2,salty,4,6
+vishalkks@gmail.com,1155,onion parathas,3.608670838,2,salty,4,6
+vishalkks@gmail.com,1333,fried rice,4.796218749,2,salty,5,5
+vishalkks@gmail.com,1339,veg manchurian,4.757352423,2,salty,5,5
+vishalkks@gmail.com,1341,veg manchurian,4.749374078,2,salty,5,5
+vishalkks@gmail.com,1343,veg momos,4.788960055,2,salty,5,5
+vishalkks@gmail.com,1344,veg momos,4.788960055,2,salty,5,5
+vishalkks@gmail.com,1346,veg hakka noodles,4.8290211,2,salty,4,4
+vishalkks@gmail.com,1360,veg spring roll,4.80605347,2,salty,3,2
+vishalkks@gmail.com,1362,veg spring roll,4.761454844,2,salty,3,2
+yourss.naman@gmail.com,116,sweet bread,5.213731496,1,sweet,4,9
+yourss.naman@gmail.com,193,barbeque chicken,5.034607422,1,sweet,5,0
+yourss.naman@gmail.com,235,chickpea curry,5.103664508,1,sweet,3,1
+yourss.naman@gmail.com,405,mediterranean yellow rice and vegetables,2.112598323,1,sweet,4,0
+yourss.naman@gmail.com,412,spicy onions,2.008904067,1,sweet,4,0
+yourss.naman@gmail.com,622,cumin lassi,1.467438345,1,sweet,2,5
+yourss.naman@gmail.com,760,bacon wraps,2.012457437,1,sweet,5,0
+yourss.naman@gmail.com,805,cheese fondue,5.077624383,1,sweet,4,0
+yourss.naman@gmail.com,808,texas cheese fries,5.619217828,1,sweet,5,0
+yourss.naman@gmail.com,883,chocolate brownie,5.167058499,1,sweet,5,10
+yourss.naman@gmail.com,892,chocolate milkshake,5.108353883,1,sweet,5,10
+yourss.naman@gmail.com,978,fried fish,2.132907696,1,sweet,5,0
+yourss.naman@gmail.com,1047,jalebi,5.085639593,1,sweet,4,9
+yourss.naman@gmail.com,1221,spicy prawn soup,5.212607742,1,sweet,5,0
+yourss.naman@gmail.com,1284,strawberry milkshake,5.115789383,1,sweet,5,10

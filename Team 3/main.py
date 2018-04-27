@@ -13,7 +13,8 @@ my_path = os.path.abspath(os.path.dirname(__file__))
 
 def print_tables(response, method):
 	m = 'Matrix Factorisation' if method == 1 else 'Tf-Idf'
-
+	if method == 3:
+		m = m + " with flavour"
 	t = PrettyTable(['USER', 'METHOD','RMSE', 'TIME'])
 	t.add_row([response['user'], m, response['predicted_test_error'], response['time']])
 	print(t)
@@ -22,15 +23,15 @@ def print_tables(response, method):
 	print("RECOMMENDED DISHES...")
 	health_score = 'health_score' in response['predicted_rating'][0]
 	if health_score:
-		t = PrettyTable(['DISH NAME', 'PREDICTED RATING', 'HEALTH SCORE', 'FABRIC SCORE'])			
+		t = PrettyTable(['DISH NAME', 'FABRIC SCORE'])			
 	else:
-		t = PrettyTable(['DISH NAME', 'PREDICTED RATING', 'FABRIC SCORE'])
+		t = PrettyTable(['DISH NAME', 'FABRIC SCORE'])
 
 	for i in response['predicted_rating']:
 		if health_score:
-			t.add_row([i['dishName'], round(i['rating'], 2), round(i['health_score'], 2), round(i['final_score'], 2)])
+			t.add_row([i['dishName'], round(i['final_score'], 2)])
 		else:	
-			t.add_row([i['dishName'], round(i['rating'], 2), round(i['final_score'], 2)])
+			t.add_row([i['dishName'], round(i['final_score'], 2)])
 
 	print(t)
 
@@ -62,6 +63,8 @@ def start(matf, retrain, tfidf, tfidf_type, flavour, health_bool, steps, floors,
 
 	elif tfidf:
 		method = 2
+		if flavour:
+			method = 3
 		if tfidf_type:
 			response = tfidf_flavour.start(profile = profile, type = tfidf_type, predict_on = predict, flavours = flavour)
 		else:
