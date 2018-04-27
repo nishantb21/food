@@ -133,8 +133,8 @@ app.post('/retrain', function(req, res){
     var steps = parseInt(req.body.steps);
     var floors = parseInt(req.body.floors);
     var matf = spawn('python', ['../Team 3/main.py', '--matF', '--predict', req.body.userID, '--retrain', '--health', '--steps', steps, '--floors', floors]);
-    var tfidf = spawn('python', ['../Team 3/main.py', '--tfidf', '--predict', req.body.userID, '--health', '--steps', steps, '--floors', floors]);
-    var tfidfflavour = spawn('python', ['../Team 3/main.py', '--tfidf', '--flavour', '--predict', req.body.userID, '--health', '--steps', steps, '--floors', floors]);
+    var tfidf = spawn('python', ['../Team 3/main.py', '--tfidf', '--predict', req.body.userID, '--retrain', '--health', '--steps', steps, '--floors', floors]);
+    var tfidfflavour = spawn('python', ['../Team 3/main.py', '--tfidf', '--flavour', '--predict', req.body.userID, '--retrain', '--health', '--steps', steps, '--floors', floors]);
     var doneflag = 0;
     var notdoneflag = 0;
     var retval = {};
