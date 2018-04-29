@@ -4,14 +4,12 @@ from kb import Rejector
 import unicodedata
 import difflib
 import math
-import copy
 from nltk import PorterStemmer
 from nltk.corpus import stopwords
 from sklearn.feature_extraction.text import CountVectorizer
 import random
 import utilities
 import itertools
-import user
 import os
 import sys
 
@@ -640,4 +638,5 @@ def jaccard_similarity(vector1, vector2):
 
 
 if __name__ == '__main__':
+  open("../Utilities/Team 2/tastes.csv", "w").close()
   main()
