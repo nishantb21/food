@@ -8,7 +8,6 @@
     "punjab"
   ],
   "keema": [
-    "north indian",
     "punjab"
   ],
   "roti": [
@@ -78,7 +77,8 @@
     "bengal"
   ],
   "red lentil": [
-    "north indian"
+    "north indian",
+    ""
   ],
   "butter chicken": [
     "north indian",
@@ -188,8 +188,7 @@
     "punjab"
   ],
   "kheer": [
-    "north indian",
-    "punjab"
+    "north indian"
   ],
   "payasa": [
     "south indian",
@@ -288,6 +287,9 @@
   "Easy Chicken Korma": [
     "north indian",
     "uttar pradesh"
+  ],
+  "Evin's Indian Apricot Chicken": [
+    ""
   ],
   "Cod Curry": [
     "south indian",
@@ -439,7 +441,7 @@
   ],
   "Roomali Roti": [
     "south indian",
-    "andhra pradesh"
+    "andhra"
   ],
   "Bengali Chicken Curry with Potatoes": [
     "east indian",
@@ -574,7 +576,7 @@
   ],
   "Chicken Biryani, Hyderabadi Style": [
     "south indian",
-    "andhra pradesh"
+    "andhra"
   ],
   "Slow Cooker Chicken Tikka Masala": [
     "north indian",
@@ -947,7 +949,7 @@
   ],
   "Bangaladumpa (Potato) Upma Koora": [
     "south indian",
-    "andhra pradesh"
+    "andhra"
   ],
   "South Indian Lentil Kootu": [
     "south indian",
@@ -1109,6 +1111,1199 @@
   "Kebab Massalam": [
     "middle east"
   ],
+  "sweet curry pumpkin seeds": [
+    "cambodian"
+  ],
+  "spinach & green pea patties": [
+    "middle east"
+  ],
+  "lentil salad": [
+    "north indian"
+  ],
+  "easy lentil dal": [
+    "north indian"
+  ],
+  "coconut chicken tikka masala": [
+    "north indian",
+    "punjab"
+  ],
+  "butter chicken chickpeas": [
+    "north indian",
+    "punjab"
+  ],
+  "3-step butter chicken": [
+    "north indian",
+    "punjab"
+  ],
+  "tandoori roasted root vegetable stew": [
+    "north indian",
+    "punjab"
+  ],
+  "zucchini & parsnip moghlai": [
+    "mughlai"
+  ],
+  "indian tuna (or chicken) salad": [
+    "south indian",
+    "andhra pradesh"
+  ],
+  "almond burfi": [
+    "south indian"
+  ],
+  "coconut and molasses-filled rice dumplings": [
+    "south indian",
+    "kerala"
+  ],
+  "holige": [
+    "south indian"
+  ],
+  "curried short ribs - nontraditional nihari": [
+    "south indian"
+  ],
+  "madras crab curry": [
+    "south indian"
+  ],
+  "peanut chaat": [
+    "north indian"
+  ],
+  "microwave khandvi": [
+    "gujarat"
+  ],
+  "carrot and ginger chutney": [
+    "south indian"
+  ],
+  "palak paneer (curried spinach)": [
+    "north indian"
+  ],
+  "spicy goat curried rice pilaf": [
+    "north indian"
+  ],
+  "tomaten chutney (fabulous tomato chutney)": [
+    "south indian"
+  ],
+  "spicy yellow squash fig chutnish": [
+    "south indian"
+  ],
+  "chicken stew (kerala-style)": [
+    "south indian",
+    "kerala"
+  ],
+  "quick indian vegetarian cottage cheese breakfast": [
+    "north indian"
+  ],
+  "garadu (baked yams)": [
+    "north indian"
+  ],
+  "punjabi lamb korma with onion cilantro salad": [
+    "north indian",
+    "punjab"
+  ],
+  "indian-style \"chettinad\" chicken": [
+    "south indian",
+    "andhra pradesh"
+  ],
+  "brinjal (eggplant) in coconut milk": [
+    "south indian",
+    "kerala"
+  ],
+  "quick paneer makhani": [
+    "north indian"
+  ],
+  "indian egg curry": [
+    "north indian"
+  ],
+  "pesaru pappu (thick indian lentil dish)": [
+    "south indian",
+    "andhra pradesh"
+  ],
+  "yellow tarka dal": [
+    "north indian"
+  ],
+  "paneer tikka sandwich": [
+    "north indian"
+  ],
+  "pomfret macher jhaal (pomfret fish curry)": [
+    "east indian",
+    "bengal"
+  ],
+  "mangalore mutton curry": [
+    "south indian",
+    "mangalore"
+  ],
+  "pasta alfredo": [
+    "italian"
+  ],
+  "pasta house company fettuccine alfredo": [
+    "italian"
+  ],
+  "aloo beans": [
+    "south indian"
+  ],
+  "aloo beans subzi": [
+    "south indian"
+  ],
+  "aloo bhindi masala": [
+    "north indian"
+  ],
+  "bhindi masala (dry)": [
+    "north indian"
+  ],
+  "aloo methi": [
+    "north indian"
+  ],
+  "aloo methi paratha": [
+    "north indian"
+  ],
+  "aloo paratha recipe dhaba style": [
+    "north indian"
+  ],
+  "appam": [
+    "south indian",
+    "kerala"
+  ],
+  "apple pie": [
+    "england"
+  ],
+  "perfect apple pie": [
+    "england"
+  ],
+  "baby corn manchurian recipe | baby corn recipes": [
+    "chinese"
+  ],
+  "bacon wraps": [
+    "american"
+  ],
+  "scallops wrapped in bacon": [
+    "american"
+  ],
+  "homemade banana chips": [
+    "south indian",
+    "kerala"
+  ],
+  "baked banana chips": [
+    "south indian",
+    "kerala"
+  ],
+  "dilled bean salad": [
+    "north indian"
+  ],
+  "cilantro corn and black bean salad": [
+    "north indian"
+  ],
+  "fiesta bean salad": [
+    "north indian"
+  ],
+  "oats bisi bele bath": [
+    "south indian"
+  ],
+  "bisi bele bath": [
+    "south indian"
+  ],
+  "black forest cake": [
+    "american"
+  ],
+  "blueberry cheesecake": [
+    "american"
+  ],
+  "miracle bread": [
+    "american"
+  ],
+  "banana bread": [
+    "american"
+  ],
+  "spiced kumquat nut bread with gold shimmer": [
+    "american"
+  ],
+  "broccoli soup": [
+    "american"
+  ],
+  "cream of broccoli soup": [
+    "american"
+  ],
+  "burnt garlic fried rice": [
+    "north indian"
+  ],
+  "gold on gold curry fried rice": [
+    "north indian"
+  ],
+  "butterscotch cake": [
+    "american"
+  ],
+  "cajun skillet pasta": [
+    "american"
+  ],
+  "cajun pasta": [
+    "american"
+  ],
+  "tortellini salad": [
+    "mexican"
+  ],
+  "chakli": [
+    "south indian"
+  ],
+  "sausage crescent cheese balls": [
+    "american"
+  ],
+  "chicken cheese ball": [
+    "american"
+  ],
+  "homemade cheese ball": [
+    "american"
+  ],
+  "triple cheese burger": [
+    "american"
+  ],
+  "bacon cheese venison burgers": [
+    "american"
+  ],
+  "everything bagel cheese burger": [
+    "american"
+  ],
+  "cheese fondue": [
+    "swiss"
+  ],
+  "cheese fries": [
+    "american"
+  ],
+  "bacon cheese fries": [
+    "american"
+  ],
+  "best grilled cheese sandwich": [
+    "american"
+  ],
+  "grilled cheese sandwich": [
+    "american"
+  ],
+  "cheese sandwiches": [
+    "american"
+  ],
+  "chicken biriyani": [
+    "north indian"
+  ],
+  "chicken dum biriyani": [
+    "north indian"
+  ],
+  "bbq chicken burgers": [
+    "american"
+  ],
+  "buffalo chicken burgers": [
+    "american"
+  ],
+  "bbq chicken chili": [
+    "north indian"
+  ],
+  "chicken fried rice": [
+    "north indian"
+  ],
+  "chicken frittata": [
+    "italian"
+  ],
+  "chicken and vegetable frittata": [
+    "italian"
+  ],
+  "frittata": [
+    "italian"
+  ],
+  "chicken alfredo lasagna rolls": [
+    "italian"
+  ],
+  "chicken lasagne": [
+    "italian"
+  ],
+  "chicken manchurian": [
+    "chinese"
+  ],
+  "chicken momo": [
+    "chinese"
+  ],
+  "chicken and noodles": [
+    "chinese"
+  ],
+  "chicken noodles": [
+    "chinese"
+  ],
+  "lemon chicken pasta": [
+    "italian"
+  ],
+  "chicken pasta": [
+    "italian"
+  ],
+  "cheese chicken pasta": [
+    "italian"
+  ],
+  "grilled buffalo chicken pizza": [
+    "italian"
+  ],
+  "bbq chicken pizza": [
+    "italian"
+  ],
+  "buffalo chicken pizza": [
+    "italian"
+  ],
+  "chicken shawarma": [
+    "middle east"
+  ],
+  "chicken spring rolls": [
+    "chinese"
+  ],
+  "chicken spring roll": [
+    "chinese"
+  ],
+  "chickpea burgers": [
+    "american"
+  ],
+  "chickpeas zucchini burger": [
+    "american"
+  ],
+  "chickpea spinach burger": [
+    "american"
+  ],
+  "chilli chicken": [
+    "north indian"
+  ],
+  "chilli paneer": [
+    "north indian"
+  ],
+  "paneer chilli": [
+    "north indian"
+  ],
+  "honey chilli potatoes": [
+    "north indian"
+  ],
+  "chipotle white bean salad sandwich": [
+    "american"
+  ],
+  "southwestern rice salad sandwich": [
+    "american"
+  ],
+  "molten chocolate lava cake": [
+    "american"
+  ],
+  "choco lava cake": [
+    "american"
+  ],
+  "keto lava cake": [
+    "american"
+  ],
+  "chocolate brownie": [
+    "american"
+  ],
+  "chocolate brownies": [
+    "american"
+  ],
+  "chocolate cakes": [
+    "american"
+  ],
+  "chocolate cake": [
+    "american"
+  ],
+  "bhatura": [
+    "north indian"
+  ],
+  "chopsuey": [
+    "american"
+  ],
+  "chowmein": [
+    "chinese"
+  ],
+  "sundal": [
+    "south indian"
+  ],
+  "chundal": [
+    "south indian"
+  ],
+  "corn palak": [
+    "north indian"
+  ],
+  "baby corn palak": [
+    "north indian"
+  ],
+  "curried capsicum masala": [
+    "north indian"
+  ],
+  "capsicum curry": [
+    "north indian"
+  ],
+  "dahi batata puri": [
+    "north indian"
+  ],
+  "dal bhari puri": [
+    "north indian"
+  ],
+  "dahi vada": [
+    "south indian"
+  ],
+  "dal khichdi": [
+    "north indian"
+  ],
+  "methi dal": [
+    "north indian"
+  ],
+  "dal tadka": [
+    "south indian"
+  ],
+  "tadka dal": [
+    "south indian"
+  ],
+  "idly": [
+    "south indian"
+  ],
+  "dhokla": [
+    "north indian"
+  ],
+  "donut": [
+    "american"
+  ],
+  "chilli mushroom": [
+    "north indian"
+  ],
+  "creamy mushrooms": [
+    "north indian"
+  ],
+  "one pot mushroom rice": [
+    "north indian"
+  ],
+  "dum aloo": [
+    "north indian"
+  ],
+  "egg roll": [
+    "north indian"
+  ],
+  "egg sandwich": [
+    "american"
+  ],
+  "fish amritsari": [
+    "north indian",
+    "punjab"
+  ],
+  "amritsari fish": [
+    "north indian",
+    "punjab"
+  ],
+  "fish & chips": [
+    "american"
+  ],
+  "fish curry": [
+    "east indian",
+    "bengal"
+  ],
+  "fish fingers": [
+    "south indian",
+    "kerala"
+  ],
+  "fried fish kerala-style": [
+    "south indian",
+    "kerala"
+  ],
+  "fish steak": [
+    "european"
+  ],
+  "french fries": [
+    "american"
+  ],
+  "french toast": [
+    "american"
+  ],
+  "korean fried chicken": [
+    "korean"
+  ],
+  "fried fish": [
+    "east indian",
+    "bengal"
+  ],
+  "chicken burrito": [
+    "mexican"
+  ],
+  "dragon fruit smoothie": [
+    "mexican"
+  ],
+  "acai fruit bowl": [
+    "south american"
+  ],
+  "fruit custard": [
+    "england"
+  ],
+  "doodhiya gajar matar": [
+    "north indian",
+    "punjab"
+  ],
+  "aloo gajar matar": [
+    "north indian",
+    "punjab"
+  ],
+  "gajar matar": [
+    "north indian",
+    "punjab"
+  ],
+  "garlic bread": [
+    "italian"
+  ],
+  "cheesy garlic bread": [
+    "italian"
+  ],
+  "gobi manchurian": [
+    "chinese"
+  ],
+  "aloo gobi matar": [
+    "north indian",
+    "punjab"
+  ],
+  "mughlai aloo matar gobi": [
+    "north indian",
+    "punjab"
+  ],
+  "gobi paratha": [
+    "north indian",
+    "punjab"
+  ],
+  "greek salad": [
+    "greek"
+  ],
+  "iced strawberry green tea": [
+    "american"
+  ],
+  "strawberry green tea with boba": [
+    "american"
+  ],
+  "peach green tea": [
+    "american"
+  ],
+  "gulab jamun": [
+    "north indian"
+  ],
+  "hashbrowns": [
+    "american"
+  ],
+  "hash-brown casserole": [
+    "american"
+  ],
+  "cheesy hashbrown casserole": [
+    "american"
+  ],
+  "hot and sour soup": [
+    "chinese"
+  ],
+  "idli": [
+    "south indian",
+    "karnataka"
+  ],
+  "masala idli": [
+    "south indian",
+    "karnataka"
+  ],
+  "jalebi": [
+    "north indian"
+  ],
+  "kachori": [
+    "west indian",
+    "rajasthan"
+  ],
+  "mawa kachori": [
+    "west indian",
+    "rajasthan"
+  ],
+  "kadhai chicken": [
+    "north indian",
+    "punjab"
+  ],
+  "kadhai paneer": [
+    "north indian",
+    "punjab"
+  ],
+  "kaju katli": [
+    "north indian"
+  ],
+  "karela sabzi": [
+    "north indian"
+  ],
+  "bharwan karela": [
+    "north indian"
+  ],
+  "bharwa karela": [
+    "north indian"
+  ],
+  "kesari bath": [
+    "south indian",
+    "karnataka"
+  ],
+  "khakhra": [
+    "west indian",
+    "gujarat"
+  ],
+  "methi khakhra": [
+    "west indian",
+    "gujarat"
+  ],
+  "bajra khakhra": [
+    "west indian",
+    "gujarat"
+  ],
+  "kolhapuri usal": [
+    "west indian",
+    "maharashtra"
+  ],
+  "misal pav": [
+    "west indian",
+    "maharashtra"
+  ],
+  "kulcha": [
+    "north indian",
+    "punjab"
+  ],
+  "lamb biriyani": [
+    "south indian",
+    "andhra pradesh"
+  ],
+  "lamb burger": [
+    "american"
+  ],
+  "spiced lamb pita burgers": [
+    "american"
+  ],
+  "lemon cheesecake": [
+    "american"
+  ],
+  "makki ki roti": [
+    "north indian",
+    "punjab"
+  ],
+  "makki di roti": [
+    "north indian",
+    "punjab"
+  ],
+  "manchow soup": [
+    "chinese"
+  ],
+  "chicken manchow soup": [
+    "chinese"
+  ],
+  "vegetable manchow soup": [
+    "chinese"
+  ],
+  "paneer masala dosa": [
+    "south indian",
+    "karnataka"
+  ],
+  "masala dosa with red chutney": [
+    "south indian",
+    "karnataka"
+  ],
+  "masala papad": [
+    "south indian",
+    "tamil nadu"
+  ],
+  "masala puri": [
+    "south indian",
+    "karnataka"
+  ],
+  "methi moong masala puri": [
+    "south indian",
+    "karnataka"
+  ],
+  "matar paneer": [
+    "north indian",
+    "punjab"
+  ],
+  "methi malai matar": [
+    "north indian"
+  ],
+  "methi matar malai": [
+    "north indian"
+  ],
+  "methi paratha": [
+    "north indian",
+    "punjab"
+  ],
+  "methi and palak paratha": [
+    "north indian",
+    "punjab"
+  ],
+  "mexican burgers": [
+    "mexican"
+  ],
+  "mexican avocado burgers": [
+    "mexican"
+  ],
+  "mexican rice": [
+    "mexican"
+  ],
+  "mixed vegetable curry": [
+    "north indian"
+  ],
+  "paneer jalfrezi": [
+    "east indian",
+    "bengal"
+  ],
+  "stuffed vegetable kulcha": [
+    "north indian",
+    "punjab"
+  ],
+  "makki mooli methi paratha": [
+    "north indian",
+    "punjab"
+  ],
+  "mooli ka paratha": [
+    "north indian",
+    "punjab"
+  ],
+  "motichoor ladoo": [
+    "north indian"
+  ],
+  "mozzarella sticks": [
+    "french"
+  ],
+  "portobello mushroom burger": [
+    "ireland"
+  ],
+  "mushroom burgers": [
+    "american"
+  ],
+  "mushroom, onion & swiss burger": [
+    "american"
+  ],
+  "skillet chili mac with cheese": [
+    "american"
+  ],
+  "mushroom and black bean chilli": [
+    "east asian"
+  ],
+  "mushroom arugula pizza": [
+    "italian"
+  ],
+  "caramelized mushrooms arugula pizza": [
+    "italian"
+  ],
+  "portobello mushroom pizzas": [
+    "italian"
+  ],
+  "mutton biriyani": [
+    "south indian",
+    "andhra pradesh"
+  ],
+  "mutton liver masala": [
+    "south indian",
+    "andhra pradesh"
+  ],
+  "loaded nachos": [
+    "mexican"
+  ],
+  "lentil nachos": [
+    "mexican"
+  ],
+  "neer dosa": [
+    "south indian",
+    "mangalore"
+  ],
+  "gyeran mari": [
+    "korean"
+  ],
+  "omelette": [
+    "french"
+  ],
+  "onion parathas": [
+    "north indian",
+    "punjab"
+  ],
+  "onion paratha": [
+    "north indian",
+    "punjab"
+  ],
+  "aloo paratha": [
+    "north indian",
+    "punjab"
+  ],
+  "cheesy palak paneer paratha": [
+    "north indian",
+    "punjab"
+  ],
+  "palak paratha": [
+    "north indian",
+    "punjab"
+  ],
+  "pancake": [
+    "americ"
+  ],
+  "singapore style noodles with paneer": [
+    "singapore"
+  ],
+  "paneer paratha": [
+    "north indian",
+    "punjab"
+  ],
+  "puri": [
+    "north indian"
+  ],
+  "paniyaram": [
+    "south indian",
+    "tamil nadu"
+  ],
+  "masala paniyaram": [
+    "south indian",
+    "tamil nadu"
+  ],
+  "kuzhi paniyaram": [
+    "south indian",
+    "tamil nadu"
+  ],
+  "pav bhaji": [
+    "west indian",
+    "maharashtra"
+  ],
+  "jain pav bhaji": [
+    "west indian",
+    "maharashtra"
+  ],
+  "broccoli pesto pasta": [
+    "italian"
+  ],
+  "arugula pesto pasta": [
+    "italian"
+  ],
+  "creamy pesto pasta": [
+    "italian"
+  ],
+  "pesto zucchini spaghetti": [
+    "italian"
+  ],
+  "spaghetti with pesto": [
+    "italian"
+  ],
+  "pesto spaghetti": [
+    "italian"
+  ],
+  "pizza": [
+    "italian"
+  ],
+  "meatball pizza": [
+    "italian"
+  ],
+  "poha": [
+    "west indian",
+    "maharashtra"
+  ],
+  "poori": [
+    "north indian"
+  ],
+  "popcorn": [
+    "american"
+  ],
+  "spiced popcorn": [
+    "american"
+  ],
+  "lasagna": [
+    "italian"
+  ],
+  "lasagna roll ups": [
+    "italian"
+  ],
+  "pork tacos": [
+    "mexican"
+  ],
+  "pulled pork tacos": [
+    "mexican"
+  ],
+  "bbq pulled pork tacos": [
+    "mexican"
+  ],
+  "mashed potatoes": [
+    "england"
+  ],
+  "potato wedges": [
+    "american"
+  ],
+  "vietnamese prawn soup": [
+    "vietnam"
+  ],
+  "garlic pudina paratha": [
+    "north indian",
+    "punjab"
+  ],
+  "pudina paratha": [
+    "north indian",
+    "punjab"
+  ],
+  "pudina lachha paratha": [
+    "north indian",
+    "punjab"
+  ],
+  "puran poli": [
+    "west indian",
+    "maharastrian"
+  ],
+  "ragi balls": [
+    "south indian",
+    "karnataka"
+  ],
+  "nachani bhakari": [
+    "west indian",
+    "maharashtra"
+  ],
+  "ragi dosa": [
+    "south indian",
+    "karnataka"
+  ],
+  "ragi roti": [
+    "south indian",
+    "karnataka"
+  ],
+  "rajma chawal": [
+    "north indian",
+    "punjab"
+  ],
+  "rasgulas": [
+    "east indian",
+    "bengal"
+  ],
+  "rava dosa": [
+    "south indian",
+    "karnataka"
+  ],
+  "rava idli": [
+    "south indian",
+    "karnataka"
+  ],
+  "nettle ravioli": [
+    "italian"
+  ],
+  "toasted ravioli": [
+    "italian"
+  ],
+  "fried ravioli": [
+    "italian"
+  ],
+  "red sauce pasta": [
+    "italian"
+  ],
+  "red brie pasta sauce": [
+    "italian"
+  ],
+  "red velvet cake": [
+    "american"
+  ],
+  "steamed rice": [
+    "south indian"
+  ],
+  "persian steamed white rice": [
+    "middle east"
+  ],
+  "rumali roti": [
+    "south indian",
+    "hyderabad"
+  ],
+  "spicy mutton gravy": [
+    "east indian",
+    "bengal"
+  ],
+  "set dosa": [
+    "south indian",
+    "tamil nadu"
+  ],
+  "masala dosa": [
+    "south indian",
+    "tamil nadu"
+  ],
+  "sev puri and papdi chat": [
+    "north indian",
+    "rajasthan"
+  ],
+  "peanut butter cookies": [
+    "american"
+  ],
+  "pork tenderloin with apple jicama slaw": [
+    "mexican"
+  ],
+  "spinach sandwich": [
+    "american"
+  ],
+  "tomato, hummus, and spinach sandwich": [
+    "american"
+  ],
+  "cheesy ham and spinach sandwiches": [
+    "american"
+  ],
+  "brussels sprouts salad": [
+    "american"
+  ],
+  "vegetable stir-fry": [
+    "chinese"
+  ],
+  "strawberry milkshake": [
+    "american"
+  ],
+  "stuffed mushrooms": [
+    "italian"
+  ],
+  "sausage stuffed mushrooms": [
+    "italian"
+  ],
+  "sugarcane juice": [
+    "south indian"
+  ],
+  "sugarcane pongal": [
+    "south indian",
+    "tamil nadu"
+  ],
+  "sugarcane shrimp": [
+    "vietnamese"
+  ],
+  "sushi": [
+    "japanese"
+  ],
+  "tandoori roti": [
+    "north indian",
+    "punjab"
+  ],
+  "tawa pulao": [
+    "west indian",
+    "maharashtra"
+  ],
+  "thepla": [
+    "north indian",
+    "gujarat"
+  ],
+  "methi thepla": [
+    "north indian",
+    "gujarat"
+  ],
+  "tiramisu": [
+    "italian"
+  ],
+  "tuna sandwiches": [
+    "american"
+  ],
+  "tuna sandwich": [
+    "american"
+  ],
+  "sooji upma": [
+    "south indian",
+    "karnataka"
+  ],
+  "upma": [
+    "south indian",
+    "karnataka"
+  ],
+  "vegetable upma": [
+    "south indian",
+    "karnataka"
+  ],
+  "pesarattu": [
+    "south indian",
+    "andhra pradesh"
+  ],
+  "medu vada": [
+    "south indian",
+    "karnataka"
+  ],
+  "medhu vada": [
+    "south indian",
+    "karnataka"
+  ],
+  "vada pav": [
+    "west indian",
+    "maharastra"
+  ],
+  "vangi bath": [
+    "south indian",
+    "karnataka"
+  ],
+  "veg cheese burger": [
+    "american"
+  ],
+  "bourbon burger": [
+    "american"
+  ],
+  "juicy steakhouse burgers": [
+    "american"
+  ],
+  "black bean and guac burritos": [
+    "mexican"
+  ],
+  "shredded chicken burritos": [
+    "mexican"
+  ],
+  "cheeseburger burritos": [
+    "mexican"
+  ],
+  "crock pot chicken fajitas": [
+    "mexican"
+  ],
+  "chicken fajitas": [
+    "mexican"
+  ],
+  "fried rice": [
+    "chinese"
+  ],
+  "veg fried rice": [
+    "chinese"
+  ],
+  "lasagna stuffed meatloaf": [
+    "italian"
+  ],
+  "veg manchurian": [
+    "chinese"
+  ],
+  "veg momos": [
+    "chinese"
+  ],
+  "spicy veg noodles": [
+    "chinese"
+  ],
+  "veg hakka noodles": [
+    "chinese"
+  ],
+  "chicken quesadilla": [
+    "mexican"
+  ],
+  "chicken quesadillas": [
+    "mexican"
+  ],
+  "grilled chicken sandwich with avocado and tomato": [
+    "american"
+  ],
+  "chicken salad sandwiches": [
+    "american"
+  ],
+  "cheese steak sandwiches": [
+    "american"
+  ],
+  "pork schnitzel": [
+    "austrian"
+  ],
+  "veg spring roll": [
+    "chinese"
+  ],
+  "spicy ethiopian lentil stew": [
+    "ethiopian"
+  ],
+  "shredded chicken tacos": [
+    "mexican"
+  ],
+  "tacos with roasted pineapple salsa": [
+    "mexican"
+  ],
+  "spicy chicken tacos": [
+    "mexican"
+  ],
+  "hummus wraps": [
+    "middle east"
+  ],
+  "chicken caesar salad wraps": [
+    "mexican"
+  ],
+  "chicken parmesan wraps": [
+    "italian"
+  ],
+  "waffles": [
+    "american"
+  ],
+  "white sauce for pasta": [
+    "italian"
+  ],
+  "white sauce recipe for pasta": [
+    "italian"
+  ],
+  "rice": [
+    "south indian"
+  ],
   "Delicious and Fast Chicken Curry": [],
   "Creamy Curried Root Vegetable Soup": [],
   "Tim Perry's Soup (Creamy Curry Cauliflower and Broccoli Soup)": [],
@@ -1200,513 +2395,35 @@
   "seriously, the best healthy turkey chili": [],
   "sundried tomato, spinach, and cheese stuffed chicken": [],
   "Hot and Spicy Himalayan Tea (Chai Tea)": [],
-  "sweet curry pumpkin seeds": [
-    "cambodian"
-  ],
-  "spinach & green pea patties": [
-    "middle east"
-  ],
-  "lentil salad": [
-    "north indian"
-  ],
-  "easy lentil dal": [
-    "north indian"
-  ],
-  "coconut chicken tikka masala": [
-    "north indian",
-    "punjab"
-  ],
-  "butter chicken chickpeas": [
-    "north indian",
-    "punjab"
-  ],
-  "3-step butter chicken": [
-    "north indian",
-    "punjab"
-  ],
   "vegetarian butter chicken stuffed peppers with mint yogurt": [],
-  "tandoori roasted root vegetable stew": [
-    "north indian",
-    "punjab"
-  ],
   "tikka masala skillet shepherd's pie": [],
-  "zucchini & parsnip moghlai": [
-    "mughlai"
-  ],
-  "indian tuna (or chicken) salad": [
-    "south indian",
-    "andhra pradesh"
-  ],
-  "almond burfi": [
-    "south indian"
-  ],
-  "coconut and molasses-filled rice dumplings": [
-    "south indian",
-    "kerala"
-  ],
-  "holige": [
-  	"south indian"
-  ],
-  "curried short ribs - nontraditional nihari": [
-  	"south indian"
-  ],
-  "madras crab curry": [
-  	"south indian"
-  ],
-  "peanut chaat": [
-  	"north indian"
-  ],
-  "microwave khandvi": [
-  	"gujarat"
-  ],
-  "carrot and ginger chutney": [
-  	"south indian"
-  ],
-  "palak paneer (curried spinach)": [
-  	"north indian"
-  ],
-  "spicy goat curried rice pilaf": [
-  	"north indian"
-  ],
-  "tomaten chutney (fabulous tomato chutney)": [
-  	"south indian"
-  ],
-  "spicy yellow squash fig chutnish": [
-  	"south indian"
-  ],
-  "chicken stew (kerala-style)": [
-  	"south indian",
-  	"kerala"
-  ],
-  "quick indian vegetarian cottage cheese breakfast": [
-  	"north indian"
-  ],
-  "garadu (baked yams)": [
-  	"north indian"
-  ],
-  "punjabi lamb korma with onion cilantro salad": [
-  	"north indian",
-  	"punjab"
-  ],
-  "indian-style \"chettinad\" chicken": [
-  	"south indian",
-  	"andhra pradesh"
-  ],
-  "brinjal (eggplant) in coconut milk": [
-  	"south indian",
-  	"kerala"
-  ],
-  "quick paneer makhani": [
-  	"north indian"
-  ],
-  "indian egg curry": [
-  	"north indian"
-  ],
-  "pesaru pappu (thick indian lentil dish)": [
-  	"south indian",
-  	"andhra pradesh"
-  ],
-  "yellow tarka dal": [
-  	"north indian"
-  ],
-  "paneer tikka sandwich": [
-  	"north indian"
-  ],
-  "pomfret macher jhaal (pomfret fish curry)": [
-  	"east indian",
-  	"bengal"
-  ],
-  "mangalore mutton curry": [
-  	"south indian",
-  	"mangalore"
-  ],
-  "pasta alfredo": [
-  	"italian"
-  ],
-  "pasta house company fettuccine alfredo": [
-  	"italian"
-  ],
-  "aloo beans": [
-  	"south indian"
-  ],
-  "aloo beans subzi": [
-  	"south indian"
-  ],
-  "aloo bhindi masala": [
-  	"north indian"
-  ],
-  "bhindi masala (dry)": [
-  	"north indian"
-  ],
-  "aloo methi": [
-  	"north indian"
-  ],
-  "aloo methi paratha": [
-  	"north indian"
-  ],
-  "aloo paratha recipe dhaba style": [
-  	"north indian"
-  ],
-  "appam": [
-  	"south indian",
-  	"kerala"
-  ],
-  "apple pie": [
-  	"england"
-  ],
-  "perfect apple pie": [
-  	"england"
-  ],
-  "baby coen manchurian recipe | baby corn recipes": [
-  	"north indian"
-  ],
-  "bacon wraps": [
-  	"american"
-  ],
-  "scallops wrapped in bacon": [
-  	"american"
-  ],
-  "homemade banana chips": [
-  	"south indian",
-  	"kerala"
-  ],
-  "baked banana chips": [
-  	"south indian",
-  	"kerala"
-  ],
-  "dilled bean salad": [
-  	"north indian"
-  ],
-  "cilantro corn and black bean salad": [
-  	"north indian"
-  ],
-  "fiesta bean salad": [
-  	"north indian"
-  ],
-  "oats bisi bele bath": [
-  	"south indian"
-  ],
-  "bisi bele bath": [
-  	"south indian"
-  ],
-  "black forest cake": [
-  	"american"
-  ],
-  "blueberry cheesecake": [
-  	"american"
-  ],
-  "miracle bread": [
-  	"american"
-  ],
-  "banana bread": [
-  	"american"
-  ],
-  "spiced kumquat nut bread with gold shimmer": [
-  	"american"
-  ],
-  "broccoli soup": [
-  	"american"
-  ],
-  "cream of broccoli soup": [
-  	"american"
-  ],
-  "burnt garlic fried rice": [
-  	"north indian"
-  ],
-  "gold on gold curry fried rice": [
-  	"north indian"
-  ],
-  "butterscotch cake": [
-  	"american"
-  ],
-  "cajun skillet pasta": [
-  	"american"
-  ],
-  "cajun pasta": [
-  	"american"
-  ],
-  "tortellini salad": [
-  	"mexican"
-  ],
-  "chakli": [
-  	"south indian"
-  ],
-  "sausage crescent cheese balls": [
-  	"american"
-  ],
-  "chicken cheese ball": [
-  	"american"
-  ],
-  "homemade cheese ball": [
-  	"american"
-  ],
-  "triple cheese burger": [
-  	"american"
-  ],
-  "bacon cheese venison burgers": [
-  	"american"
-  ],
-  "everything bagel cheese burger": [
-  	"american"
-  ],
-  "cheese fondue": [
-  	"swiss"
-  ],
-  "cheese fries": [
-  	"american"
-  ],
-  "bacon cheese fries": [
-  	"american"
-  ],
-  "best grilled cheese sandwich": [
-  	"american"
-  ],
-  "grilled cheese sandwich": [
-  	"american"
-  ],
-  "cheese sandwiches": [
-  	"american"
-  ],
-  "chicken biriyani": [
-  	"north indian"
-  ],
-  "chicken dum biriyani": [
-  	"north indian"
-  ],
-  "bbq chicken burgers": [
-  	"american"
-  ],
-  "buffalo chicken burgers": [
-  	"american"
-  ],
-  "bbq chicken chili": [
-  	"north indian"
-  ],
-  "chicken fried rice": [
-  	"north indian"
-  ],
-  "chicken frittata": [
-  	"italian"
-  ],
-  "chicken and vegetable frittata": [
-  	"italian"
-  ],
-  "frittata": [
-  	"italian"
-  ],
-  "chicken alfredo lasagna rolls": [
-  	"italian"
-  ],
-  "chicken lasagne": [
-  	"italian"
-  ],
-  "chicken manchurian": [
-  	"north indian"
-  ],
-  "chicken momo": [
-  	"tibet"
-  ],
-  "chicken and noodles": [
-  	"chinese"
-  ],
-  "chicken noodles": [
-  	"chinese"
-  ],
-  "lemon chicken pasta": [
-  	"italian"
-  ],
-  "chicken pasta": [
-  	"italian"
-  ],
-  "cheese chicken pasta": [
-  	"italian"
-  ],
-  "grilled buffalo chicken pizza": [
-  	"italian"
-  ],
-  "bbq chicken pizza": [
-  	"italian"
-  ],
-  "buffalo chicken pizza": [
-  	"italian"
-  ],
-  "chicken shawarma": [
-  	"turkish"
-  ],
-  "chicken spring rolls": [
-  	"chinese"
-  ],
-  "chicken spring roll": [
-  	"chinese"
-  ],
-  "chickpea burgers": [
-  	"american"
-  ],
-  "chickpeas zucchini burger": [
-  	"american"
-  ],
-  "chickpea spinach burger": [
-  	"american"
-  ],
-  "chilli chicken": [
-  	"north indian"
-  ],
-  "chilli paneer": [
-  	"north indian"
-  ],
-  "paneer chilli": [
-  	"north indian"
-  ],
-  "honey chilli potatoes": [
-  	"north indian"
-  ],
-  "chipotle white bean salad sandwich": [
-  	"american"
-  ],
-  "southwestern rice salad sandwich": [
-  	"american"
-  ],
-  "molten chocolate lava cake": [
-  	"american"
-  ],
-  "choco lava cake": [
-  	"american"
-  ],
-  "keto lava cake": [
-  	"american"
-  ],
-  "chocolate brownie": [
-  	"american"
-  ],
-  "chocolate brownies": [
-  	"american"
-  ],
-  "chocolate cakes": [
-  	"american"
-  ],
-  "chocolate cake": [
-  	"american"
-  ],
-  "bhatura": [
-  	"north indian"
-  ],
-  "chopsuey": [
-  	"chinese"
-  ],
-  "chowmein": [
-  	"chinese"
-  ],
-  "sundal": [
-  	"south indian"
-  ],
-  "chundal": [
-  	"south indian"
-  ],
-  "corn palak": [
-  	"north indian"
-  ],
-  "baby corn palak": [
-  	"north indian"
-  ],
-  "curried capsicum masala": [
-  	"north indian"
-  ],
-  "capsicum curry": [
-  	"north indian"
-  ],
-  "chicken tikka masala": [
-  	"north indian",
-  	"punjab"
-  ],
-  "dahi batata puri": [
-  	"north indian"
-  ],
-  "dal bhari puri": [
-  	"north indian"
-  ],
-  "dahi vada": [
-  	"south indian"
-  ],
-  "dal khichdi": [
-  	"north indian"
-  ],
-  "methi dal": [
-  	"north indian"
-  ],
-  "dal tadka": [
-  	"south indian"
-  ],
-  "tadka dal": [
-  	"south indian"
-  ],
-  "idly": [
-  	"south indian"
-  ],
-  "dhokla": [
-  	"north indian"
-  ],
-  "donut": [
-  	"american"
-  ],
-  "chilli mushroom": [
-  	"north indian"
-  ],
-  "creamy mushrooms": [
-  	"north indian"
-  ],
-  "one pot mushroom rice": [
-  	"north indian"
-  ],
-  "dum aloo": [
-  	"north indian"
-  ],
-  "egg roll": [
-  	"north indian"
-  ],
-  "egg sandwich": [
-  	"american"
-  ],
-  "fish amritsari": [
-  	"north indian",
-  	"punjab"
-  ],
-  "amritsari fish": [
-  	"north indian",
-  	"punjab"
-  ],
-  "fish & chips": [
-  	"american"
-  ],
-  "fish curry": [
-  	"east indian",
-  	"bengal"
-  ],
-  "fish fingers": [
-  	"south indian",
-  	"kerala"
-  ],
-  "fried fish kerala-style": [
-  	"south indian",
-  	"kerala"
-  ],
-  "fish steak": [
-  	"european"
-  ],
-  "french fries": [
-  	"american"
-  ],
-  "french toast": [
-  	"american"
-  ],
-  "korean fried chicken": [
-  	"korean"
-  ],
-  "fried fish": [
-  	"east indian",
-  	"bengal"
-  ],
-  "chicken burrito": [
-  	"mexican"
-  ]
-
+  "fruit ice cream": [],
+  "fruit salad": [],
+  "rainbow fruit salad": [],
+  "vanilla fruit salad": [],
+  "cinnamon ice cream": [],
+  "vanilla ice cream": [],
+  "nutella ice cream": [],
+  "indian pickle": [],
+  "lemon pickle": [],
+  "orange pudding cake": [],
+  "mango pickle": [],
+  "oats": [],
+  "orange juice": [],
+  "paneer bhurji": [],
+  "paneer curry noodles": [],
+  "chilli paneer with soba noodles": [],
+  "pani puri": [],
+  "sweet potatoes": [],
+  "rice and potatoes": [],
+  "prawn biriyani": [],
+  "spicy prawn soup": [],
+  "prawn laksa soup": [],
+  "chocolate, banana & peanut butter protein shake": [],
+  "coffee protein shake": [],
+  "strawberry protein shake": [],
+  "veg puff": [],
+  "vegetable stew": [],
+  "crockpot beef stew": [],
+  "watermelon juice": []
 }
