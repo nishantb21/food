@@ -240,6 +240,11 @@ def taste(food):
         "sour": sour(food, nutrients),
         "bitter": bitter(food, nutrients)
     }
+    if os.path.exists("adjustment_factors.json"):
+        with open("adjustment_factors.json") as adjustments:
+            for taste, adjustment in json.load(adjustments).items():
+                tastes[taste] -= adjustment
+
     if not os.path.exists("../Utilities/Team 2"):
         os.mkdir("../Utilities/Team 2")
     with open("../Utilities/Team 2/tastes.csv", "a") as csvfile:
