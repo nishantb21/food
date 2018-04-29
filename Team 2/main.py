@@ -1,28 +1,35 @@
 import argparse
-import datak
 import taster
 import json
-import utilities
 import os
-import sys
 
-parser = argparse.ArgumentParser(prog="Fabric - Taste Profiler")
-parser.add_argument("-p", "--profile", help="profile the specified dish", action='append')
+
+parser = argparse.ArgumentParser(prog="Taste Profiling of food items")
+parser.add_argument("-p",
+                    "--profile",
+                    help="profile the specified dish", action='append')
+parser.add_argument("-v",
+                    "--validate",
+                    nargs=3,
+                    action="append",
+                    metavar=("taste", "genscores", "surveyscores"),
+                    help="Run the validator and generate adjustment factors per taste.")
 arguments = parser.parse_args()
 
 if arguments.profile:
-	for dish in arguments.profile:
-		nutrition = dict()
-		if os.path.exists(utilities.hash(dish) + ".json"):
-			with open(utilities.hash(dish) + ".json") as ifile:
-				nutrition = json.load(ifile)
-		else:
-			nutrition = datak.ingredient(dish)
-			if not nutrition["item_data"].lower() == dish.lower():
-				subtitle_list = utilities.split_title(dish)
-				print(subtitle_list, file=sys.stderr)
-				nutrition = utilities.add_sides(subtitle_list, dish, save_to_file=True)
-			else:
-				nutrition = nutrition.nutrition_data
-		tastejson = taster.taste_dish(dish, nutrition)
-		print(json.dumps(tastejson, sort_keys=True))
+    for dishfile in arguments.profile:
+        with open(dishfile) as dfile:
+            taster.taste_dish(json.load(dfile))
+
+if arguments.validate:
+    from validator import Validator
+    adjustment = dict()
+    if os.path.exists("adjustment_factors.json"):
+        with open("adjustment_factors.json") as adjfile:
+            adjustment = json.load(adjfile)
+    for vjob in arguments.validate:
+        gendata = json.load(open(vjob[1]))
+        survdata = json.load(open(vjob[2]))
+        adjustment[vjob[0]] = Validator(gendata, survdata).adjustment_factor()
+    with open("adjustment_factors.json", "w") as adjfile:
+        json.dump(adjustment, adjfile, indent="    ")
