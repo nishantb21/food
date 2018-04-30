@@ -1,16 +1,27 @@
-import hashlib
-import sys
-import json
+"""
+This module consists of a list of utilities that are used throughout the
+project.
+"""
 import re
 import csv
-from multiprocessing import Pool
+import sys
 import glob
-import utilities
+import json
+import hashlib
+from multiprocessing import Pool
 import datak
+import utilities
 
+
+def load_dishes(test_file):
+	"""
+	Loads the list of dishes by reading the JSON file specified
+	"""
+    with open(test_file) as json_file:
+        return json.load(json_file)
 
 def standardize_keys(nutrition_information):
-	'''
+	"""
 	Standardize nutritional information
 	Maps common nutrients to the standard format
 	food_name: item_name
@@ -24,7 +35,7 @@ def standardize_keys(nutrition_information):
 	nf_dietary_fiber:dietary_fiber
 	nf_sugars:sugars
 	nf_protein:protein
-	'''
+	"""
 	if nutrition_information.__contains__('metric_qty '):
 		keys = [
 			"item_name",
@@ -66,6 +77,10 @@ def standardize_keys(nutrition_information):
 
 
 def read_csv(csv_file):
+	"""
+	Reads the CSV file, and writes every row to a readable JSON file
+	for easier parsing. (Used if the food data is in a CSV file)
+	"""
 	with open(csv_file) as cf:
 		reader = csv.reader(cf, delimiter=",")
 		next(reader)
@@ -83,10 +98,25 @@ def read_csv(csv_file):
 
 
 def parameterize(qstring):
-		return qstring.strip('\n').replace(' ', '+')
+	"""
+	Converts string to a format that can be used in a search URL
+	"""
+	return qstring.strip('\n').replace(' ', '+')
 
 
 def modmatchir(query_string, nriterable, threshold):
+	"""
+	From a list of strings, retrieves the best matching string
+
+	Keyword arguments:
+	query_string  --  String to find a match
+	nriterable    --  List of strings to find a match from
+	threshold     --  Match % to check while searching
+
+	Returns:
+	The best matched String
+	None if the iterable is empty or not found
+	"""
 	if len(nriterable) == 0:
 		return None
 	best_match = (None, -1)
@@ -102,6 +132,18 @@ def modmatchir(query_string, nriterable, threshold):
 
 
 def modmatchi(query_string, iterable, threshold):
+	"""
+	From a list of strings, retrieves the best matching string
+
+	Keyword arguments:
+	query_string  --  String to find a match
+	iterable	  --  List of strings to find a match from
+	threshold     --  Match % to check while searching
+
+	Returns:
+	The best matched String
+	None if the iterable is empty or not found
+	"""
 	best_match = (None, -1)
 	for word in iterable:
 		result = modmatch(query_string, word, threshold)
@@ -110,6 +152,21 @@ def modmatchi(query_string, iterable, threshold):
 
 
 def modmatch(query_string, match_string, threshold):
+	"""
+	Function to compare two strings.
+	Cleans up the strings and checks if the similarity is greater
+	than or equal to the threshold. If true, returns the match_string
+	and its similarity. Returns None if false
+
+	Keyword arguments:
+	query_string  --  String to find a match
+	match_string  --  Strings to be matched
+	threshold     --  Match % to check 
+
+	Returns:
+	A tuple of string and the similarity if match is true
+	None if false
+	"""
 	match_string = re.sub(',', ' ', match_string)
 	query_string = re.sub( ', ', ' ', query_string)
 
@@ -123,6 +180,9 @@ def modmatch(query_string, match_string, threshold):
 
 
 def hash(input_title):
+	"""
+	Returns an md5 hash of the string passed
+	"""
 	return hashlib.md5(input_title.strip().strip( '\n ').upper().encode( 'utf-8 ')).hexdigest()
 
 
@@ -141,7 +201,9 @@ def package(input_file):
 
 
 def standardize(input_file):
-	'''
+	"""
+	Standardizes the nutrition to the proper serving sizes,
+	given an input file.
 	food name: food_name
 	serving size: serving_weight_grams
 	fat:
@@ -153,7 +215,7 @@ def standardize(input_file):
 	calories: nf_calories
 	---pairwise calculation:
 	carbs: nf_total_carbohydrate
-	'''
+	"""
 	nutrition_scrubbed = dict()
 
 	with open('nutritionix_data/' + input_file) as json_file, open('nutritionix_data/' + input_file + '_std', 'w ') as json_standardized:
@@ -175,6 +237,10 @@ def standardize(input_file):
 
 
 def ratio(i_no=1):
+	"""
+	Custom implementation of finding the ratio shared between a list
+	of objects
+	"""
 	fractal = round(100 / i_no, 4)
 	perc_list = list()
 	for index in range(i_no):
@@ -188,6 +254,10 @@ def ratio(i_no=1):
 
 
 def standardize_files(file):
+	"""
+	A function that standardizes the nutritional infomation in a file
+	To a uniform format
+	"""
 	nutri = dict()
 	with open(file) as raw_file:
 		nutri = json.load(raw_file)
@@ -197,11 +267,18 @@ def standardize_files(file):
 
 
 def read_json(file):
-	with open(file) as f:
-		return json.load(f)
+	"""
+	Read from a JSON file
+	"""
+	with open(file) as json_file:
+		return json.load(json_file)
 
 
 def split_title(input_title):
+	"""
+	Removes stopwords and returns a list that contains the input title
+	split into words
+	"""
 	stopwords = [
 		' i',
 		' me',
@@ -363,6 +440,9 @@ def split_title(input_title):
 
 
 def add_sides(titles, main_title, save_to_file=False):
+	"""
+	TBD
+	"""
 	finaldish = dict()
 	for subtitle in titles:
 		ndata = datak.ingredient(subtitle)
@@ -380,6 +460,13 @@ def add_sides(titles, main_title, save_to_file=False):
 			print(utilities.hash(main_title) + ".json", file=sys.stderr)
 	return finaldish
 
+def get_dishes():
+	"""
+	Load dishes from the database
+	"""
+    with open('../Utilities/Database/database.json') as json_file:
+        foods_list = json.load(json_file)
+    return foods_list
 
 if __name__ == '__main__':
 	print(add_sides(sys.argv[1:len(sys.argv) - 1], sys.argv[-1], save_to_file=True))
