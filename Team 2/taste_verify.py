@@ -1,3 +1,7 @@
+'''
+Splits the tastes.csv file into taste-specific files, taste_verify_<taste>.csv
+These files are sorted in descending order of their respective taste scores
+'''
 import json
 
 tastes = [
@@ -11,6 +15,18 @@ tastes = [
 
 
 def clean(line):
+    '''
+    Cleans the input line string received
+    and returns a tuple of the format
+    (   dishid,
+        bitter_score,
+        rich_score,
+        salt_score,
+        sour_score,
+        sweet_score,
+        umami_score
+    )
+    '''
     linevalues = line.strip("\n").split(",")
     rlist = [linevalues[0]]
     for value in linevalues[1:]:
@@ -20,6 +36,12 @@ def clean(line):
 
 
 def stringify(item):
+    '''
+    Helper to format the string that is to be written
+    into the taste-specific file
+    Returns a string following the format
+    dishid, dishname, taste_score
+    '''
     return str(item[0]) + "," + str(item[1]) + "," + str(item[2]) + "\n"
 
 
@@ -46,7 +68,7 @@ for index in range(len(tastevalues)):
     tastevalues[index].sort(key=lambda item: item[2], reverse=True)
 
 for tastefileindex in range(len(tastes)):
-     for tastevalue in tastevalues[tastefileindex]:
+    for tastevalue in tastevalues[tastefileindex]:
         outfilehandles[tastefileindex].write(stringify(tastevalue))
 
 for handle in outfilehandles:

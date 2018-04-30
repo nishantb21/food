@@ -9,13 +9,6 @@ import json
 import hashlib
 import datak
 
-def load_dishes(test_file):
-    """
-    Loads the list of dishes by reading the JSON file specified
-    """
-    with open(test_file) as json_file:
-        return json.load(json_file)
-
 
 def standardize_keys(nutrition_information):
     """
@@ -89,11 +82,11 @@ def standardize_keys(nutrition_information):
     new_nutrition_information = dict()
     for mapping in mappings:
         new_nutrition_information[mapping[1]
-                                 ] = nutrition_information[mapping[0]]
+                                  ] = nutrition_information[mapping[0]]
     for item in full_nutrient_indices.items():
         try:
             new_nutrition_information[item[0]
-                                     ] = nutrition_information['full_nutrients'][item[1]]["value"]
+                                      ] = nutrition_information['full_nutrients'][item[1]]["value"]
         except IndexError:  # c as ie:
             new_nutrition_information[item[0]] = 0.0
     return new_nutrition_information
@@ -213,7 +206,7 @@ def hash(input_title):
     Returns an md5 hash of the string passed
     """
     return hashlib.md5(input_title.strip().strip(
-        '\n ').upper().encode('utf-8 ')).hexdigest()
+        '\n').upper().encode('utf-8')).hexdigest()
 
 
 def package(input_file):
@@ -252,7 +245,8 @@ def standardize(input_file):
     nutrition_scrubbed = dict()
 
     with open('nutritionix_data/' + input_file) as json_file, \
-            open('nutritionix_data/' + input_file + '_std', 'w') as json_standardized:
+            open('nutritionix_data/' + input_file + '_std', 'w') \
+            as json_standardized:
         nutrition = json.load(json_file)
         if nutrition['serving_weight_grams'] is not None:
             multiplier = round(100 / nutrition['serving_weight_grams'], 3)

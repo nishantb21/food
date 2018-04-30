@@ -1,43 +1,153 @@
+'''
+Taste module
+============
+This is the main component of the entire system. It performs preprocessing
+using the ingredient_parser module which converts various parts of the data
+into a format used internally, as described in greater detail
+in the documentation for that module.
+'''
+
 import os
 import re
-import sys
-import json
 from itertools import product
 import utilities
 import ingredient_parser
 
-SWEET_FACTOR_X = 0.9
-SWEET_FACTOR_Y = 0.1
 
-RICHNESS_FACTOR_X = 0.5
-RICHNESS_FACTOR_Y = 0.7
-RICHNESS_FACTOR_Z = 50
+def append_parsed(food):
+    '''
+    Obtains a list of ingredients along with their measurements
+    and replaces the ingredient key-value pair with their parsed equivalents
+    and returns the modified JSON object.
+    '''
+    parsed_ingredients = ingredient_parser.parse_recipe(food)
+    ingredient_str = ' '.join(
+        line['ingredient'] for line in parsed_ingredients if len(
+            line['ingredient']) > 0)
 
-SOURNESS_FACTOR_X = 0.1
-SOURNESS_FACTOR_Y = 0.25
-SOURNESS_FACTOR_Z = 0.5
+    food['parsed_ingredients'] = parsed_ingredients
+    food['ingredient_str'] = ingredient_str
+    return food
 
 
-def sweet(nutrition_data, SWEET_FACTOR_X=0.85, SWEET_FACTOR_Y=0.1):
+def get_nutrients(food):
+    '''
+    Replaces the nutrients that are present in the food JSON object
+    with nutrients that have been parsed and quantified.
+    Adds another key-value pair into the JSON object for
+    the total active nutritional weight of the food item.
+    '''
+    nutrients = food['nutrients']
+
+    for nutrient in nutrients:
+        if nutrients[nutrient] is not None:
+            number = re.findall(r'\d+\.\d+', nutrients[nutrient][0])
+            if len(number) > 0:
+                nutrients[nutrient] = float(number[0])
+            else:
+                nutrients[nutrient] = 0
+
+    totalweight = total_nutrient_weight(nutrients)
+    nutrients['weight'] = totalweight
+    return nutrients
+
+
+def taste(food):
+    '''
+    The main public interface of the system.
+    This function returns a JSON object that contains
+    six taste scores, on a scale of 0 to 10:
+    bitter, rich, salt, sour, sweet and umami
+    '''
+    food = append_parsed(food)
+    nutrients = get_nutrients(food)
+    tastes = {
+        "bitter": bitter(food, nutrients),
+        "rich": rich(nutrients),
+        "salt": salt(nutrients),
+        "sour": sour(food, nutrients),
+        "sweet": sweet(nutrients),
+        "umami": umami(food, nutrients)
+    }
+    if os.path.exists("adjustment_factors.json"):
+        for taste, adjustment \
+                in utilities.read_json("adjustment_factors.json").items():
+
+            tastes[taste] -= adjustment
+
+    if not os.path.exists("../Utilities/Team 2"):
+        os.mkdir("../Utilities/Team 2")
+    with open("../Utilities/Team 2/tastes.csv", "a") as csvfile:
+        csvfile.write(",".join([str(food['dish_id'])] +
+                               [str(round(tastes[key], 3))
+                                for
+                                key in
+                                sorted(tastes.keys())]
+                               ) + "\n")
+    return tastes
+
+
+def bitter(food,
+           nutrition_data,
+           LEVEL1_MULTIPLIER=0.80,
+           LEVEL2_MULTIPLIER=1.40,
+           MULTI_WORD_MULTIPLIER=2.3):
+    '''
+    This function computes the bitter score for the food item.
+    This computation is performed with three approaches:
+    - The iron content is used a fraction of the total active nutrient weight
+    - Three groups of descriptors are used, each of which
+        has a different weightage towards the final scoring.
+    - The bitter words are divided into two levels, each corresponding
+        to an particular intensity of bitterness. Each of these levels
+        again has a different weightage.
+
+    Finally, a real value from 0-10 is returned as a bitter score
+    for the food item.
+    '''
     try:
-        total_weight = nutrition_data['weight']
-        fibtg = 0
-        if 'dietary_fiber' in nutrition_data and nutrition_data['dietary_fiber'] is not None:
-            fibtg = nutrition_data['dietary_fiber']
-        sweet_score_x1 = abs(nutrition_data['sugar'] - fibtg) / total_weight
-        sweet_score_y = nutrition_data['sugar'] / nutrition_data['carbs']
-        sweet_score_1 = (SWEET_FACTOR_X * sweet_score_x1) + \
-                        (SWEET_FACTOR_Y * sweet_score_y)
-
+        bitter_descriptors = utilities.read_json("bitter_descriptors.json")
+        descriptor_score = match_descriptors(
+            food['ingredient_str'], bitter_descriptors)
+        bitterscore = (nutrition_data["iron"] /
+                       total_nutrient_weight(nutrition_data))
+        pairings = zip([LEVEL1_MULTIPLIER,
+                       LEVEL2_MULTIPLIER,
+                       MULTI_WORD_MULTIPLIER],
+                       ["bitter_l1",
+                       "bitter_l2",
+                       "multi_words"])
+        for pair in pairings:
+            if descriptor_score.__contains__(pair[1]):
+                bitterscore += pair[0] * descriptor_score[pair[1]] * 1
     except Exception:
-        sweet_score_1 = 0
-    return round(sweet_score_1 / 0.998, 3) * 10
+        bitterscore = 0
+
+    return round(bitterscore / 1.4571, 3)
 
 
 def rich(nutrition_data,
          RICHNESS_FACTOR_X=0.5,
          RICHNESS_FACTOR_Y=0.7,
          RICHNESS_FACTOR_Z=50):
+    '''
+    This function computes the rich score for the food item.
+    This computation is performed with three approaches:
+    - The saturated fat content is used as
+        a fraction of the actual fat content present in the food item
+    - Another metric measures the actual fat content as a fraction
+        of the total active nutritional weight
+    - The amount of cholesterol is also taken into account while
+        calculating the rich score. This metric has the highest impact
+        on the final output.
+
+    Each of the above metrics has a tunable weight assigned to it,
+    which determines how much that metric influences the outcome
+    of the function.
+
+    Finally, a real value from 0-10 is returned as a rich score
+    for the food item.
+    '''
     try:
         total_weight = nutrition_data['weight']
         richness_score_x = 0
@@ -45,9 +155,10 @@ def rich(nutrition_data,
             richness_score_x = nutrition_data['sat_fat'] / \
                 nutrition_data['fat']  # high
 
-        richness_score_y = nutrition_data['fat'] / total_weight  # low
+        richness_score_y = nutrition_data['fat'] / total_weight
         richness_score_z = 0
-        if 'cholesterol' in nutrition_data and nutrition_data['cholesterol'] is not None:
+        if ('cholesterol' in nutrition_data and
+                nutrition_data['cholesterol'] is not None):
             richness_score_z = nutrition_data['cholesterol'] / \
                 (total_weight * 1000)
         else:
@@ -58,87 +169,30 @@ def rich(nutrition_data,
     except Exception:
         richness_score_1 = 0
 
-        # Normalize to butter which has highest score
+    # Normalize to butter which has highest score
     return round((richness_score_1 / 0.992), 3) * 10
 
 
 def salt(dish_nutrition):
+    '''
+    Calculation of the salt score is pretty straightforward
+    since the amount of sodium directly affects how salty a dish
+    can be perceived by a user.
+    Therefore, to compute the salt score, the fraction of sodium content in
+    the total active nutritional weight is taken directly.
+
+    This score is normalized wrt amount of sodium in pure sea salt.
+
+    '''
     totalweight = dish_nutrition['weight']
     if totalweight == 0:
         return 0
 
-    return ((1000 * dish_nutrition['sodium'] / totalweight)) / 3.8758
+    saltscore = (1000 * dish_nutrition['sodium'] / totalweight) / 3.8758
 
-
-def total_weight(dish_nutrition):
-    totalweight = 0
-    for nutrient in dish_nutrition:
-        if (dish_nutrition[nutrient] is not None and
-                'g' in dish_nutrition[nutrient][0]):
-            number = re.findall(r'(\d+\.\d+|\d+)', dish_nutrition[nutrient][0])
-            numeric_value = 0
-            if len(number) > 0:
-                numeric_value = float(number[0])
-
-            totalweight += numeric_value
-
-    return totalweight
-
-
-def get_nutrients(food):
-    nutrients = food['nutrients']
-    totalweight = total_weight(nutrients)
-
-    for nutrient in nutrients:
-        if nutrients[nutrient] is not None:
-            number = re.findall(r'\d+\.\d+', nutrients[nutrient][0])
-            if len(number) > 0:
-                nutrients[nutrient] = float(number[0])
-            else:
-                nutrients[nutrient] = 0
-    nutrients['weight'] = totalweight
-    return nutrients
-
-
-def match_descriptors(dish_title, descriptor_dict):
-    dish_split = dish_title.split(" ")
-    final_scores = dict()
-    for item in descriptor_dict:
-        for pair in product(item['items'].items(), dish_split):
-            if pair[0][0].lower() in pair[1].lower().strip():
-                try:
-                    final_scores[item["name"]] += pair[0][1]
-                except KeyError:
-                    final_scores[item["name"]] = pair[0][1]
-    return final_scores
-
-
-def total_nutrient_weight(dish_nutrition):
-    return dish_nutrition['fat'] + dish_nutrition['carbs'] + \
-        dish_nutrition['protein'] + dish_nutrition['calcium'] + dish_nutrition['iron']
-
-
-def bitter(
-        food,
-        nutrition_data,
-        LEVEL1_MULTIPLIER=0.80,
-        LEVEL2_MULTIPLIER=1.40,
-        MULTI_WORD_MULTIPLIER=2.3):
-    try:
-        bitter_descriptors = utilities.read_json("bitter_descriptors.json")
-        descriptor_score = match_descriptors(
-            food['ingredient_str'], bitter_descriptors)
-        bitterscore = nutrition_data["iron"] / \
-            total_nutrient_weight(nutrition_data)
-        pairings = zip([LEVEL1_MULTIPLIER, LEVEL2_MULTIPLIER, MULTI_WORD_MULTIPLIER], [
-            "bitter_l1", "bitter_l2", "multi_words"])
-        for pair in pairings:
-            if descriptor_score.__contains__(pair[1]):
-                bitterscore += pair[0] * descriptor_score[pair[1]] * 1
-    except Exception:
-        bitterscore = 0
-
-    return round(bitterscore / 1.4571, 3)
+    if saltscore > 10:
+        return 10
+    return saltscore
 
 
 def sour(food,
@@ -146,7 +200,19 @@ def sour(food,
          SOURNESS_FACTOR_X=0.5,
          SOURNESS_FACTOR_Y=0.15,
          SOURNESS_FACTOR_Z=0.35):
+    '''
+    For sourness, an approach similar to how bitter was calculated
+    is applied.
+    Here, the nutrient directly affecting the sourness of a food item
+    is the vitamin C content. Therefore, this is given the maximum weightage
+    of 50% that counts towards the final final sour score for the dish.
 
+    The other two metrics are calculated from comparing against
+    an internally maintained database of ingredients and keywords,
+    each of which is given its own weightage. These are divided
+    into two levels: sour and too sour. Naturally, too sour keywords have
+    a higher weightage than keywords that are tagged just sour.
+    '''
     food_words = food['ingredient_str'].upper().split(' ')
 
     try:
@@ -154,11 +220,8 @@ def sour(food,
     except KeyError:
         vitamin_c = 0.0
 
-    with open('sour.json') as sour_file:
-        sour = json.load(sour_file)
-
-    with open('too_sour.json') as too_sour_file:
-        too_sour = json.load(too_sour_file)
+    sour = utilities.read_json("sour.json")
+    too_sour = utilities.read_json("too_sour.json")
     try:
         sour_score_x = vitamin_c / nutrition_data['weight']
     except ZeroDivisionError:
@@ -176,10 +239,36 @@ def sour(food,
         ((SOURNESS_FACTOR_X * sour_score_x) +
          (SOURNESS_FACTOR_Y * sour_score_y) +
          (SOURNESS_FACTOR_Z * sour_score_z)
-        ) / 1.43, 3)
+         ) / 1.43, 3)
     if sour_score > 1:
         sour_score = 1
     return round(sour_score * 10, 3)
+
+
+def sweet(nutrition_data, SWEET_FACTOR_X=0.85, SWEET_FACTOR_Y=0.1):
+    '''
+    Calculation of sweet scores is relatively straightforward,
+    similar to how salt score is calculated. here, the amount of sugar
+    as a fraction of the total nutritional weight.
+    Along with this metric, the diluting effect of fiber is also
+    taken into account.
+    '''
+    try:
+        total_weight = nutrition_data['weight']
+        fibtg = 0
+        if ('dietary_fiber' in nutrition_data and
+                nutrition_data['dietary_fiber'] is not None):
+            fibtg = nutrition_data['dietary_fiber']
+
+        sweet_score_x1 = abs(nutrition_data['sugar'] - fibtg) / total_weight
+        sweet_score_y = nutrition_data['sugar'] / nutrition_data['carbs']
+        sweet_score_1 = (SWEET_FACTOR_X * sweet_score_x1) + \
+                        (SWEET_FACTOR_Y * sweet_score_y)
+
+    except Exception:
+        sweet_score_1 = 0
+    # Normalize to cane sugar
+    return round(sweet_score_1 / 0.998, 3) * 10
 
 
 def umami(food,
@@ -188,6 +277,15 @@ def umami(food,
           VEGETABLES_MULTIPLIER=7,
           MEAT_MULTIPLIER=3,
           STRING_MULTIPLIER=9.45):
+    '''
+    Calculation of umami score is similar to that of bitter -
+    The presense of iron along with the added effects of different
+    categories of keywords, such as savoury vegetables,
+    the savouriness of different meats as well as
+    naturally occuring sources of protein, such as casein,
+    all have their own weights that determines their contribution
+    to the final score.
+    '''
     for key in nutrition_data.keys():
         if nutrition_data[key] is None:
             nutrition_data[key] = 0
@@ -195,9 +293,8 @@ def umami(food,
     descriptor_score = match_descriptors(
         food['ingredient_str'], umami_descriptors)
     try:
-        umamiscore = nutrition_data["protein"] / \
-            total_nutrient_weight(nutrition_data)
-        # umamiscore *= 10
+        umamiscore = (nutrition_data["protein"] /
+                      total_nutrient_weight(nutrition_data))
 
         pairings = zip([PROTEIN_SUPPLEMENT_MULTIPLIER,
                         VEGETABLES_MULTIPLIER,
@@ -216,93 +313,29 @@ def umami(food,
     return round(umamiscore, 3) if umamiscore <= 10 else 10
 
 
-def taste(food):
-    food = append_parsed(food)
-    nutrients = get_nutrients(food)
-    tastes = {
-        "salt": salt(nutrients),
-        "sweet": sweet(nutrients),
-        "rich": rich(nutrients),
-        "umami": umami(food, nutrients),
-        "sour": sour(food, nutrients),
-        "bitter": bitter(food, nutrients)
-    }
-    if os.path.exists("adjustment_factors.json"):
-        with open("adjustment_factors.json") as adjustments:
-            for taste, adjustment in json.load(adjustments).items():
-                tastes[taste] -= adjustment
-
-    if not os.path.exists("../Utilities/Team 2"):
-        os.mkdir("../Utilities/Team 2")
-    with open("../Utilities/Team 2/tastes.csv", "a") as csvfile:
-        csvfile.write(",".join([str(food['dish_id'])] +
-                               [str(round(tastes[key], 3))
-                                for
-                                key in
-                                sorted(tastes.keys())]
-                              )
-                      + "\n")
-    return tastes
+def match_descriptors(dish_title, descriptor_dict):
+    '''
+    Helper that matches predefined descriptor keywords
+    in the actual dish.
+    Returns a JSON object that contains the total weights
+    of all the matched keyword descriptors.
+    '''
+    dish_split = dish_title.split(" ")
+    final_scores = dict()
+    for item in descriptor_dict:
+        for pair in product(item['items'].items(), dish_split):
+            if pair[0][0].lower() in pair[1].lower().strip():
+                try:
+                    final_scores[item["name"]] += pair[0][1]
+                except KeyError:
+                    final_scores[item["name"]] = pair[0][1]
+    return final_scores
 
 
-def update_scores(taste_scores, cuisine_multipliers):
-    for taste in taste_scores:
-        taste_scores[taste] = taste_scores[taste] * cuisine_multipliers[taste]
-    return taste_scores
-
-
-def get_cuisine_multipliers(tags):
-    with open('cuisine_multipliers.json') as json_file:
-        cuisine_multipliers = json.load(json_file)
-    default = {
-        "salt": 1.0,
-        "sweet": 1.0,
-        "rich": 1.0
-    }
-    if tags is not None:
-        if len(tags) == 0:
-            return default
-        if len(tags) == 1:
-            return cuisine_multipliers[tags[0]]
-        elif len(tags) == 2:
-            return cuisine_multipliers[tags[0]][tags[1]]
-    else:
-        return default
-
-
-def append_parsed(food):
-    parsed_ingredients = ingredient_parser.parse_recipe(food)
-    ingredient_str = ' '.join(
-        line['ingredient'] for line in parsed_ingredients if len(
-            line['ingredient']) > 0)
-    # all_recipes.append(ingredient_str)
-
-    food['parsed_ingredients'] = parsed_ingredients
-    food['ingredient_str'] = ingredient_str
-    return food
-
-
-all_recipes = list()
-
-
-def main():
-        #foods_list = list()
-        # for food in get_dishes():
-        #    foods_list.append(append_parsed(food))
-        # copy_foods_list = copy.deepcopy(foods_list)
-        #test_dishes = list()
-    for datafile in sys.argv[1:]:
-        for item in utilities.load_dishes(datafile):
-            taste(item)
-    #uprofile = user.Profile(data=test_dishes, history=5)
-    #   # print("The taste profile for the dish", test_dish['dish_name'],"is")
-    # print(taste(test_dish))
-    #  print("Probable classes are ")
-    # print(json.dumps(d, indent='  '))
-    #print("User profile")
-    # print(uprofile)
-
-
-if __name__ == '__main__':
-    open("../Utilities/Team 2/tastes.csv", "w").close()
-    main()
+def total_nutrient_weight(dish_nutrition):
+    '''
+    Returns the total active nutrient weight of the food item.
+    '''
+    return dish_nutrition['fat'] + dish_nutrition['carbs'] + \
+        dish_nutrition['protein'] + \
+        dish_nutrition['calcium'] + dish_nutrition['iron']

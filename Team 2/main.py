@@ -13,13 +13,14 @@ parser.add_argument("-v",
                     nargs=3,
                     action="append",
                     metavar=("taste", "genscores", "surveyscores"),
-                    help="Run the validator and generate adjustment factors per taste.")
+                    help="Run the validator and "
+                    "generate adjustment factors per taste.")
 arguments = parser.parse_args()
 
 if arguments.profile:
     for dishfile in arguments.profile:
         with open(dishfile) as dfile:
-            taster.taste_dish(json.load(dfile))
+            taster.taste(json.load(dfile))
 
 if arguments.validate:
     from validator import Validator

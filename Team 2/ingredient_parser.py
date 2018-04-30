@@ -9,7 +9,7 @@ import difflib
 import unicodedata
 from nltk.corpus import stopwords
 from kb import Rejector
-from utilities import load_dishes
+import utilities
 
 rejector = Rejector()
 stop_words = set(stopwords.words('english'))
@@ -240,5 +240,5 @@ def identify_measurement(ingredient):
 
 if __name__ == '__main__':
     for file in sys.argv[1:]:
-        for item in load_dishes(file):
+        for item in utilities.read_json(file):
             print(parse_recipe(item))
