@@ -37,8 +37,8 @@ class Validator:
         + Final formula remains unchanged
         '''
         flavourvariancelist = sorted([round(genval - surval, 2)
-                                     for genval, surval
-                                     in self.reviewpairs])
+                                      for genval, surval
+                                      in self.reviewpairs])
         mean = sum(flavourvariancelist) / len(flavourvariancelist)
         flavourvariance = 0
         for variancevalue in flavourvariancelist:
@@ -51,8 +51,7 @@ class Validator:
 
         if self.variancevalue > 1.5:
             return round(q3 * math.log(self.variancevalue), 2)
-        else:
-            return 0
+        return 0
 
     def __str__(self):
         return str("median: {} variance: {} \
@@ -91,4 +90,3 @@ if __name__ == "__main__":
     validator = Validator(generated, surveyed)
     print(validator)
     print("Adjustment factor: ", validator.adjustment_factor())
-
