@@ -12,7 +12,7 @@ import random
 import difflib
 from sklearn.feature_extraction.text import CountVectorizer
 import taster
-from utilities import load_dishes
+from utilities import read_json
 
 vectorizer = CountVectorizer()
 all_recipes = list()
@@ -235,18 +235,18 @@ def create_training_set(foods_list, test_set):
 
 
 def classify_cuisine(
-        foods_list,
+        all_dishes,
         test_dishes,
         similarity_measure=cosine_similarity):
     """
     Main function to be run to identify cuisine of test dishes
     Appends the parsed ingredients to each object in both the
-    foods_list and test_dishes for convenience
+    all_dishes and test_dishes for convenience
     Retrieves the distances from other dishes for a test dish,
     and uses KNN to identify cuisine based on the other dishes
 
     Keyword arguments:
-    foods_list          --  List of all dishes
+    all_dishes          --  List of all dishes
     test_dishes         --  List of dishes used for testing
     similarity_measure  --  Function object that is used as a
                             callback. Default is cosine_similarity
@@ -285,8 +285,8 @@ if __name__ == '__main__':
     if len(sys.argv) != 4:
         print("3 arguments expected : Path to DB, Path to sample, sample_size")
     else:
-        all_dishes = load_dishes(sys.argv[1])
-        test_dishes = load_dishes(sys.argv[2])
+        all_dishes = read_json(sys.argv[1])
+        test_dishes = read_json(sys.argv[2])
         sample_size = int(sys.argv[3])
         for dish, value in classify_cuisine(
                 all_dishes[:sample_size],

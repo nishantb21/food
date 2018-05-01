@@ -62,12 +62,12 @@ def taste(food):
     food = append_parsed(food)
     nutrients = get_nutrients(food)
     tastes = {
-        "bitter": bitter(food, nutrients),
-        "rich": rich(nutrients),
-        "salt": salt(nutrients),
-        "sour": sour(food, nutrients),
-        "sweet": sweet(nutrients),
-        "umami": umami(food, nutrients)
+        "bitter": round(bitter(food, nutrients), 3),
+        "rich": round(rich(nutrients), 3),
+        "salt": round(salt(nutrients), 3),
+        "sour": round(sour(food, nutrients), 3),
+        "sweet": round(sweet(nutrients), 3),
+        "umami": round(umami(food, nutrients, 3))
     }
     if os.path.exists("adjustment_factors.json"):
         for taste, adjustment \
