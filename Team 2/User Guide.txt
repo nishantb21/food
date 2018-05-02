@@ -1,0 +1,49 @@
+Flavour Profiling System - User Guide:
+
+Hardware Requirements:
+	- System running Windows 7 or newer
+	- 1Ghz 64 bit (x64) processor
+	- 2GB of System Memory
+	- 20MB of Hard Disk Space
+	- CD-ROM Drive
+	- Internet Access
+
+Software Requirements:
+	- Python 3.5+ required
+	- External Python modules - scikitlearn, nltk
+
+Execution:
+	- main.py
+		- To profile a particular dish:
+			python3 main.py [-p|--profile] <path_to_dish>
+		    -- Outputs a taste profile for the specified dish
+
+		- To validate generated taste scores
+			python3 main.py [-v|--validate] <taste>[bitter|rich|sour|salt|sweet|umami] <path_to_generated_tastes> <path_to_surveyed_tastes>
+			-- Outputs a JSON object that specifies the corrections
+			   to be applied on the taste scores
+
+	- taster.py
+		- python3 taster.py <path_to_dish_database>
+		  -- Computes taste scores for all dishes in the database
+		     and writes it to tastes.csv
+
+ 	- ingredient_parser.py
+ 		- python3 ingredient_parser.py <path_to_dish>
+ 		  -- Outputs a list of JSON objects that contain the
+ 		     ingredient and their measurement
+
+ 	- cuisine_classifier.py
+ 		- python3 cuisine_classifier.py <path_do_dish_database> <path_to_test_dishes> <sample_size>(OPTIONAL)
+ 		  -- Outputs the cuisine to which each dish belongs to
+
+ 	- validator.py
+ 		- python3 validator.py
+ 		  -- Outputs a test case. Displays test data for generated
+ 		     surveyed taste scores, and also displays the factor
+ 		     for adjustment
+
+ 	- yummly_scraper.py
+ 		- python3 yummly_scraper.py <path_to_dishes_list>
+ 		  -- Scrapes data for each dish in the file specified and
+ 		     stores it in a JSON file.

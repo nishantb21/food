@@ -1,0 +1,87 @@
+[
+    {
+        "dish_id": 10,
+        "dish_name": "chicken tikka masala",
+        "description": null,
+        "overall_rating": 5.0,
+        "image_url": "https://lh6.ggpht.com/6J9f5AmM-4whmJCIUKQPB0yUJwep9ovPzrQpaz36Q4ehNXdx1T0iEURw1elwbq0bnxlfSQNvB7d4N8KhPqVC",
+        "url": "http://www.seriouseats.com/recipes/2012/06/chicken-tikka-masala-for-the-grill-recipe.html",
+        "ingredients": [
+            "5 pounds bone-in chicken pieces (breasts, legs, or a mix), skin removed",
+            "3 tablespoons toasted ground cumin",
+            "3 tablespoons toasted paprika",
+            "2 tablespoon toasted ground coriander seed",
+            "2 teaspoon ground turmeric",
+            "1 teaspoon cayenne pepper",
+            "12 cloves garlic, grated on the medium holes of a box grater, divided",
+            "3 tablespoons fresh ginger, grated on the medium holes of a box grater, divided",
+            "2 cups yogurt",
+            "3/4 cup fresh juice from 4 to 6 lemons, divided",
+            "Kosher salt",
+            "4 tablespoons butter or ghee",
+            "1 large onion, thinly sliced",
+            "1 (28-ounce) can whole peeled tomatoes, roughly mashed",
+            "1/2 cup roughly chopped cilantro leaves and tender stems",
+            "1 cup heavy cream"
+        ],
+        "directions": null,
+        "prep_time": 0,
+        "cook_time": "80 m",
+        "total_time": "80 m",
+        "query": "chicken tikka masala",
+        "nutrients": {
+            "calories": [
+                "1379.75kcal",
+                "0%%"
+            ],
+            "fat": [
+                "102.86g",
+                "158%"
+            ],
+            "carbs": [
+                "20.99g",
+                "7%"
+            ],
+            "protein": [
+                "92.54g",
+                "0%%"
+            ],
+            "cholesterol": [
+                "0.45g",
+                "152%"
+            ],
+            "sodium": [
+                "0.61g",
+                "25%"
+            ],
+            "sugar": [
+                "8.42g",
+                "0%%"
+            ],
+            "sat_fat": [
+                "38.94g",
+                "195%"
+            ],
+            "dietary_fiber": [
+                "3.78g",
+                "16%"
+            ],
+            "vitamin_c": [
+                "0.03g",
+                "50.0%"
+            ],
+            "vitamin_a": [
+                "4344.67IU",
+                "90.0%"
+            ],
+            "calcium": [
+                "0.27g",
+                "25.0%"
+            ],
+            "iron": [
+                "0.01g",
+                "50.0%"
+            ]
+        }
+    }
+]
