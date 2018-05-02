@@ -14,10 +14,6 @@ from sklearn.feature_extraction.text import CountVectorizer
 import taster
 from utilities import read_json
 
-vectorizer = CountVectorizer()
-all_recipes = list()
-
-
 def get_cuisine_tags(food):
     """
     This retrieves the cuisine tags from the JSON file which contains the
@@ -282,14 +278,21 @@ def classify_cuisine(
 
 
 if __name__ == '__main__':
-    if len(sys.argv) != 4:
-        print("3 arguments expected : Path to DB, Path to sample, sample_size")
-    else:
+    if len(sys.argv) == 3 or len(sys.argv) == 4:
+        vectorizer = CountVectorizer()
+        all_recipes = list()
+        sample_size = 1300
+        if len(sys.argv) == 4:
+            sample_size = int(sys.argv[3])
         all_dishes = read_json(sys.argv[1])
         test_dishes = read_json(sys.argv[2])
-        sample_size = int(sys.argv[3])
         for dish, value in classify_cuisine(
                 all_dishes[:sample_size],
                 test_dishes,
                 cosine_similarity).items():
-            print(dish, value)
+            print(dish)
+            print("------------")
+            print(value)
+            print()
+    else:
+        print("python3 cuisine_classifier.py <path_do_dish_database> <path_to_test_dishes> <sample_size>(OPTIONAL)")
