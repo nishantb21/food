@@ -5,6 +5,7 @@ measurement
 """
 import re
 import sys
+import json
 import difflib
 import unicodedata
 from nltk.corpus import stopwords
@@ -241,4 +242,4 @@ def identify_measurement(ingredient):
 if __name__ == '__main__':
     for file in sys.argv[1:]:
         for item in utilities.read_json(file):
-            print(parse_recipe(item))
+            print(json.dumps(parse_recipe(item),indent = "  "))
