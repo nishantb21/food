@@ -1,4 +1,4 @@
-{
+[{
   "dish_id": 10,
   "dish_name": "chicken tikka masala",
   "description": null,
@@ -82,4 +82,4 @@
       "50.0%"
     ]
   }
-}
+}]
