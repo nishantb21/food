@@ -14,6 +14,9 @@ from sklearn.feature_extraction.text import CountVectorizer
 import taster
 from utilities import read_json
 
+vectorizer = CountVectorizer()
+
+
 def get_cuisine_tags(food):
     """
     This retrieves the cuisine tags from the JSON file which contains the
@@ -279,7 +282,6 @@ def classify_cuisine(
 
 if __name__ == '__main__':
     if len(sys.argv) == 3 or len(sys.argv) == 4:
-        vectorizer = CountVectorizer()
         all_recipes = list()
         sample_size = 1300
         if len(sys.argv) == 4:
